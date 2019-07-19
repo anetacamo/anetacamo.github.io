@@ -2,7 +2,7 @@
 
 <div class="blog-container">
   {% for blog in blogs %}
-  <div class="blogs" style="position:relative">
+  <div class="blogs">
     <a href="{{ blog.url }}">
       <div class="blog-image">
         <img src="{{ blog.image }}" alt="{{ blog.title }} by anetacamo">
@@ -10,7 +10,7 @@
     </a>
 
     <div class="text-container">
-      <h3 style="margin-bottom: 6px;"><a href="{{ blog.url }}">{{ blog.title }}</a></h3>
+      <h5><a href="{{ blog.url }}">{{ blog.title }}</a></h5>
       <p>{{ blog.description }}</p>
       <p><b>
         tagged:

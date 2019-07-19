@@ -2,7 +2,6 @@
 layout: wide
 ---
 
-
 {% assign tagged = "" | split: ',' %}
 {% for blog in site.blogs %}
   {% for tag in blog.tags %}
@@ -19,7 +18,6 @@ layout: wide
   {% assign blog-image = blog.image %}
  {% endif %}
 {% endfor %}
-
 
 <div class="blog-container" style="margin-left: 0; padding:0;">
   <div style="position: absolute; font-size: 10px; font-weight: 900; text-decoration: underline; padding-right: 6px; color: white;">

@@ -1,8 +1,10 @@
 .right-side-menu {
-  position:fixed;
-  top: 0;
-  right: 0;
-
+  position: absolute;
+  top:0;
+  right:0;
+  @media (max-width: 600px) {
+    display:none;
+  }
   .keyword-search {
     input {
       border: none;
@@ -15,8 +17,9 @@
       font-weight: 900;
     }
     ::placeholder {
-      color: black;
+      color: #c3c3c3;
       font-family: Roboto Slab;
+      letter-spacing: 0.6px;
     }
     .keyword-container {
       width: 100%;

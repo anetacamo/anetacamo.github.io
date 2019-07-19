@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<div class="blogs blog-container">
+<div class="blog-container">
   <div style="position: relative;">
-    <img src="{{ page.image }}" alt="{{ page.title | slugify }}_anetacamo_AnetaCamova" style="max-width: calc(100vw - 20px); max-height: calc(100vh - 48px);">
+    <img class="full-screen" src="{{ page.image }}" alt="{{ page.title | slugify }}_anetacamo_AnetaCamova">
 
     <!-- prev/next navigation -->
     <div class="nav">
@@ -12,12 +12,12 @@ layout: default
       {% assign next = blognumber | plus: 1 %}
       {% assign previous = blognumber | minus: 1 %}
       {% assign blog_amount = site.blogs | size %}
-      <p style="margin: 0;">
+      <p class="nav-arrows" style="margin: 0;">
 
         {% if blognumber == 1 %}
-          <a href="/blogs/{{ blog_amount }}">← go to last</a>
+          <a class="left" href="/blogs/{{ blog_amount }}">← go to last</a>
         {% else %}
-          <a href="/blogs/{{ previous }}">← see previous</a>
+          <a class="left" href="/blogs/{{ previous }}">← see previous</a>
         {% endif %}
 
         {% if blognumber == blog_amount %}
@@ -28,12 +28,10 @@ layout: default
 
       </p>
     </div>
-
   </div>
 
 
   <div>
-
     <!-- blog main text -->
     <div class="text-container align-right blog-text">
       <p style="margin: 0;">
@@ -42,7 +40,7 @@ layout: default
             #<a href="/tagged/{{ tag | downcase | replace: ' ', '_'}}"><span class="tags">{{ tag | downcase }}</span></a>
           {% endfor %}
         </b><br>
-        <b></b> {{ page.date | date: "%A, %B %d, %Y" }}
+        {{ page.date | date: "%A, %B %d, %Y" }}
       </p>
       <h3 class="title">{{ page.title }}</h3>
       <p style="font-weight: 400;">{{ page.description }}</p>
