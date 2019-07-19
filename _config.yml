@@ -1,10 +1,9 @@
 # Site settings
 title: AnetaCamo | Web development & Illustration
 logo: /images/logo.png
-description: Hello there
 highlighter: rouge
-url: '//blog.anetacamova.com'
-address: '//blog.anetacamova.com'
+url: 'anetacamo.github.io'
+address: 'anetacamo.github.io'
 
 encoding: utf-8
 
@@ -40,13 +39,3 @@ defaults:
       type: "blogs"
     values:
       layout: "blog"
-
-# To run in SASS debug mode to the following:
-# 1: Make the following directive active (uncomment)
-# exclude: [css, _sass]
-# 2: From the root of this repo run:
-#    sass -I _sass --watch css/main.scss:_site/css/main.css
-# 3: Serve like business as usual
-#    jekyll serve
-# 4: Map you source in DevTools (Chrome browser) as per:
-#    https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps
