@@ -7,33 +7,12 @@
 
   {{ content }}
 
-  <div class="side-menu" style="width: 0;">
+  <div style="position: fixed; top: 0;">
     <a href="/">
-      <div style="position: fixed; left: 0;">
-        <img style="width:120px;height:auto;" src="/images/anetacamo_white.png" alt="anetacamo_AnetaCamova_logo">
-      </div>
+      <img style="width:120px;" src="/images/anetacamo_white.png" alt="anetacamo_AnetaCamova_logo">
     </a>
   </div>
 
+  {% include keyword_search.html %}
 
-
-
-  <div class="right-side-menu" style="position:fixed; top: 0; right: 0;">
-  <!-- BEGIN: KEYWORDS SEARCH -->
-    <div class="keyword-search">
-        <input type="text" id="myInput" onkeyup="myFunction();" onclick="displayKeywords();" placeholder="Find the hash..." autocomplete="off">
-        <div class="keyword-container">
-          <ul id="myUL">
-            {% for item in site.tagged %}
-              <li>
-                <a href="/tagged/{{ item.tag | downcase | replace: ' ', '_' }}">{{ item.tag }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-  </div>
-  <!-- END: KEYWORDS SEARCH -->
 </body>
-
-<script src="/javascripts/keywords_search.js"></script>

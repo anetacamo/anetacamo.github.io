@@ -12,10 +12,20 @@
 
 .nav {
   position: absolute;
-  bottom: -16px;
+  top: 45%;
   width: 100%;
   @media (max-width: 620px) {
     bottom: -20px;
+  }
+  .nav-arrows a {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  .left {
+    left: -16px;
+  }
+  .right {
+    right: -16px;
   }
 }
 
@@ -25,7 +35,7 @@
   position: absolute;
   right: 0px;
   bottom: 48px;
-  max-width: 360px;
+  max-width: 280px;
   background-color: white;
   padding-left: 40px;
   @media (max-width: 600px) {
@@ -33,6 +43,6 @@
     padding: 0;
     max-width: none;
     padding-bottom: 32px;
-    padding-top: 48px;
+    padding-top: 56px;
   }
 }

@@ -1,0 +1,55 @@
+.side-menu {
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: white;
+  width: 200px;
+  overflow: hidden;
+  @media (max-width: 1000px) {
+    width: 160px;
+  }
+  @media (max-width: 600px) {
+    height: 110px;
+    width: 100%;
+    position: absolute;
+  }
+  .logo img {
+    height: 124px;
+    cursor: pointer;
+    @media (max-width: 1000px) {
+      height: 110px;
+    }
+  }
+  .portrait-container {
+    position: absolute;
+    padding: 12px;
+    bottom: 0;
+    @media (max-width: 600px) {
+      left: 162px;
+      top: 14px;
+    }
+    p {
+      font-size: 10px;
+      line-height: 1.4;
+      margin: 12px 0;
+    }
+    .menu-list {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-family: Open Sans;
+      @media (max-width: 1000px) {
+        text-align: left;
+      }
+    }
+    .portrait {
+      margin-bottom: 8px;
+      margin-top: 8px;
+      img {
+        width: 300px;
+        @media (max-width: 1000px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
