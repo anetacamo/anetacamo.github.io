@@ -1,0 +1,37 @@
+{% assign blogs = site.blogs | sort: 'image' | reverse %}
+
+<div class="blog-container">
+  {% for blog in blogs %}
+  <div class="blogs" style="position:relative">
+    <a href="{{ blog.url }}">
+      <div class="blog-image">
+        <img src="{{ blog.image }}" alt="{{ blog.title }} by anetacamo">
+      </div>
+    </a>
+
+    <div class="text-container">
+      <h3 style="margin-bottom: 6px;"><a href="{{ blog.url }}">{{ blog.title }}</a></h3>
+      <p>{{ blog.description }}</p>
+      <p><b>
+        tagged:
+        {% for tag in blog.tags %}
+          #<a href="/tagged/{{ tag | downcase | replace: ' ', '_'}}"><span class="tags">{{ tag | downcase }}</span></a>
+        {% endfor %}
+      </b></p>
+      <p>
+        <b>written on</b>
+        {{ blog.date | date: "%A, %B %d, %Y" }}
+      </p>
+
+      <!--
+      {% for tag in blog.tags %}
+        {% if tag == 'Print' %}
+          <button class="button-color"><a href="{{ blog.url }}">Print Available</a></button>
+        {% endif %}
+      {% endfor %}
+      -->
+
+    </div>
+  </div>
+  {% endfor %}
+</div>
