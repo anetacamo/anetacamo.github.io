@@ -1,0 +1,49 @@
+---
+---
+
+{% include head.html %}
+
+<body>
+
+{{ content }}
+
+  <div class="side-menu" {% if page.no-side %} style="width: 0;" {% endif %}>
+    <a href="/">
+      <div class="logo" style="position: fixed; left: 0;">
+        <img src="/images/anetacamo_black.png" alt="anetacamo_AnetaCamova_logo">
+      </div>
+      <!--
+      <p style="position: fixed; top: 17px; left: 180px; font-size: 13px; font-weight: 900; color: #ec2acb; max-width: 123px; text-transform: uppercase; line-height: 1;">
+        Illustrator & fron-end-developer
+      </p>
+      -->
+    </a>
+
+    <div class="portrait-container">
+      <div class="menu-list" style="text-align: left;">
+        <a href="/cv">cv</a><br>
+        <a href="/">blog</a><br>
+  <!--  <a href="/tagged/print/">prints</a><br> -->
+      </div>
+
+      {% unless page.date %}
+      {% unless page.cv %}
+      <div class="portrait right">
+        <img src="/images/autoportrait.gif" alt="anetacamo_AnetaCamova_portrait">
+      </div>
+      {% endunless %}
+      {% endunless %}
+
+      <div style="margin: 0;" class="portrait-description">
+        <p>instagram // <a href="www.instagram.com/aneccca"><b>aneccca</b></a><br>
+        <a style="margin: 0;" href="mailto: anetacamova@gmail.com"><b>anetacamova@gmail.com</b></a></p>
+        <p style="font-weight:700; margin-bottom: 0;">@anetacamo, 2019. All rights reserved</p>
+      </div>
+    </div>
+  </div>
+
+  {% comment %}
+    {% include keyword_search.html %}
+  {% endcomment %}
+
+</body>
