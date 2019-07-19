@@ -1,10 +1,10 @@
 # Site settings
 title: AnetaCamo | Web development & Illustration
+description: Hi, my name is Aneta and I am really interested in web designer & illustration.
 name: Aneta Camova
 logo: /images/logo.png
 highlighter: rouge
 url: 'anetacamo.github.io'
-address: 'anetacamo.github.io'
 
 encoding: utf-8
 
