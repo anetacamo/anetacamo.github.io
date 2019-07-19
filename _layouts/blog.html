@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+<div class="blogs blog-container">
+  <div style="position: relative;">
+    <img src="{{ page.image }}" alt="{{ page.title | slugify }}_anetacamo_AnetaCamova" style="max-width: calc(100vw - 20px); max-height: calc(100vh - 48px);">
+
+    <!-- prev/next navigation -->
+    <div class="nav">
+      {% assign blognumber = page.url | replace: '/', '' | replace: 'blogs', '' | plus: 0 %}
+      {% assign next = blognumber | plus: 1 %}
+      {% assign previous = blognumber | minus: 1 %}
+      {% assign blog_amount = site.blogs | size %}
+      <p style="margin: 0;">
+
+        {% if blognumber == 1 %}
+          <a href="/blogs/{{ blog_amount }}">← go to last</a>
+        {% else %}
+          <a href="/blogs/{{ previous }}">← see previous</a>
+        {% endif %}
+
+        {% if blognumber == blog_amount %}
+          <a class="right" href="/blogs/1">go to first →</a>
+        {% else %}
+          <a class="right" href="/blogs/{{ next }}">see next →</a>
+        {% endif %}
+
+      </p>
+    </div>
+
+  </div>
+
+
+  <div>
+
+    <!-- blog main text -->
+    <div class="text-container align-right blog-text">
+      <p style="margin: 0;">
+        <b>
+          {% for tag in page.tags %}
+            #<a href="/tagged/{{ tag | downcase | replace: ' ', '_'}}"><span class="tags">{{ tag | downcase }}</span></a>
+          {% endfor %}
+        </b><br>
+        <b></b> {{ page.date | date: "%A, %B %d, %Y" }}
+      </p>
+      <h3 class="title">{{ page.title }}</h3>
+      <p style="font-weight: 400;">{{ page.description }}</p>
+
+
+      <!-- BUY -->
+      <!--
+      {% for tag in page.tags %}
+        {% if tag == 'Print' %}
+        <section class="sell">
+          <button class="button-white"><a href="{{ blog.url }}">♥ Get this print ♥</a></button>
+          <p style="margin:8px 0;"><b>180dkk // 25€</b></p>
+          <p clas="small" style="margin:8px 0; line-height: 1.4;">A3 printed on the hard paper<br> signed and shipped in the cardbox cover to you<br> no framing included</p>
+        </section>
+        {% endif %}
+      {% endfor %}
+      -->
+      <!-- BUY end -->
+
+      <!--
+      {{ content }}
+      -->
+    </div>
+  </div>
+</div>
