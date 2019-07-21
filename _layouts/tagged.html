@@ -19,23 +19,17 @@ layout: wide
  {% endif %}
 {% endfor %}
 
-<div class="blog-container" style="margin-left: 0; padding:0;">
-  <div style="position: absolute; font-size: 10px; font-weight: 900; text-decoration: underline; padding-right: 6px; color: white;">
-    tagged {{ page.tag }}
-  </div>
+<div style="height: 50vh;">
+  <img src="{% if page.image %}{{ page.image }}{% else %}{{ blog-image }}{% endif %}" class="fully-covering-image" alt="{{ page.title | slugify }}_anetacamo_AnetaCamova">
+</div>
 
-  <div style="width: 100vw; height: 50vh; position: relative;">
-    <img src="{% if page.image %}{{ page.image }}{% else %}{{ blog-image }}{% endif %}"  class="fully-covering-image" alt="{{ page.title | slugify }}_anetacamo_AnetaCamova">
-    <div style="background-image: linear-gradient(transparent 80%, white); position:absolute; top: 0; height:100%;">
-    <p style="position:absolute; margin:0; margin-bottom: -6px; bottom: 0; width: 100vw; padding: 12px; padding-bottom: 0; background: white; font-weight: 800; text-decoration: underline;">
-    All blogs tagged<a href=""> {{ page.title }}</a></p>
-  </div>
-
-
-  <div class="tag-container">
+<div class="tag-container flex-display">
+  <h5 class="center" style="width: 100%; margin-top: 12px; padding: 12px; font-weight: 800;">
+    All blogs tagged <a href="">{{ page.title }}</a>
+  </h5>
   {% for blog in tagged %}
   <a href="{{ blog.url }}">
-    <div style="width: 300px; height:300px; margin: 12px; margin-bottom: 48px; float:left; color: black;">
+    <div class="square">
       <img class="fully-covering-image" src="{{ blog.image }}">
       <p style="margin-bottom: 0; font-weight: 900; margin-top: 8px; line-height: 1.2; -webkit-text-fill-color: black;">{{ blog.title }}<br></p>
       {% if page.tag == 'Print' %}
@@ -44,6 +38,4 @@ layout: wide
     </div>
   </a>
   {% endfor %}
-  </div>
-
 </div>

@@ -2,8 +2,7 @@
   top: 0;
   bottom: 0;
   position: fixed;
-  background-color: white;
-  width: 200px;
+  width: 220px;
   overflow: hidden;
   @media (max-width: 1000px) {
     width: 160px;
@@ -11,6 +10,7 @@
   @media (max-width: 600px) {
     height: 110px;
     width: 100%;
+    background-color: white;
     position: absolute;
   }
   .logo img {
@@ -26,21 +26,14 @@
     bottom: 0;
     @media (max-width: 600px) {
       left: 162px;
-      top: 14px;
+      top: 18px;
     }
     p {
       font-size: 10px;
       line-height: 1.4;
       margin: 12px 0;
     }
-    .menu-list {
-      text-transform: uppercase;
-      font-weight: 900;
-      font-family: Open Sans;
-      @media (max-width: 1000px) {
-        text-align: left;
-      }
-    }
+
     .portrait {
       margin-bottom: 8px;
       margin-top: 8px;

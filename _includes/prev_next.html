@@ -1,0 +1,19 @@
+<!-- prev/next navigation -->
+{% assign blognumber = page.url | replace: '/', '' | replace: 'blogs', '' | plus: 0 %}
+{% assign next = blognumber | plus: 1 %}
+{% assign previous = blognumber | minus: 1 %}
+{% assign blog_amount = site.blogs | size %}
+<div class="arrows">
+  {% if blognumber == 1 %}
+    <a class="vertical-text" style="left:10px" href="/blogs/{{ blog_amount }}">← go to last</a>
+  {% else %}
+    <a class="vertical-text" style="left:10px" href="/blogs/{{ previous }}">← see previous</a>
+  {% endif %}
+
+  {% if blognumber == blog_amount %}
+    <a class="vertical-text" style="right: 6px" href="/blogs/1">go to first →</a>
+  {% else %}
+    <a class="vertical-text" style="right: 6px" href="/blogs/{{ next }}">see next →</a>
+  {% endif %}
+</div>
+<!-- prev/next -->
