@@ -4,15 +4,11 @@
 {% include head.html %}
 
 <body>
-
-  {{ content }}
-
-  <div style="position: fixed; top: 0;">
-    <a href="/">
+  <a href="/">
+    <div style="position: absolute; left: 0;">
       <img style="width:120px;" src="/images/anetacamo_white.png" alt="anetacamo_AnetaCamova_logo">
-    </a>
-  </div>
-
+    </div>
+  </a>
   {% include keyword_search.html %}
-
+  {{ content }}
 </body>
