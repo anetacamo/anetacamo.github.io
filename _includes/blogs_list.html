@@ -4,9 +4,7 @@
   {% for blog in blogs %}
   <div class="blogs">
     <a href="{{ blog.url }}">
-      <div class="blog-image">
-        <img src="{{ blog.image }}" alt="{{ blog.title }} by anetacamo">
-      </div>
+      <img class="fully-contained-image" src="{{ blog.image }}" alt="{{ blog.title }} by anetacamo">
     </a>
 
     <div class="text-container">
