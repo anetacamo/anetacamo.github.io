@@ -25,10 +25,12 @@
       float: left;
       max-height: 400px;
       max-width: 400px;
+      @media (max-width: 750px) {
+        float: none;
+      }
       @media (max-width: 600px) {
         max-width: calc(100vw - 24px);
         max-height: calc(100vh - 124px);
-        float: none;
       }
     }
 
