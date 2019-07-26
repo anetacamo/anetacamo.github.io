@@ -7,7 +7,7 @@ layout: default
 {% include prev_next.html %}
 
 <div class="single-blog-container">
-  <img class="single-blog-image" src="{{ page.image }}" alt="{{ page.title | slugify }}_anetacamo_AnetaCamova">
+  <img class="single-blog-image" src="{{ page.image }}" alt="{{ page.title }} Aneta Camo">
   <!-- blog main text -->
   <div class="align-right blog-text">
     <p style="margin: 0;">
@@ -18,7 +18,7 @@ layout: default
       </b><br>
       {{ page.date | date: "%A, %B %d, %Y" }}
     </p>
-    <h3 style="margin: 16px 0">{{ page.title }}</h3>
+    <h1>{{ page.title }}</h1>
     <p style="font-weight: 400; margin-bottom: 0;">{{ page.description }}</p>
 
 

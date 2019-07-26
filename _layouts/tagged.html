@@ -20,17 +20,19 @@ layout: wide
 {% endfor %}
 
 <div style="height: 50vh;">
-  <img src="{% if page.image %}{{ page.image }}{% else %}{{ blog-image }}{% endif %}" class="fully-covering-image" alt="{{ page.title | slugify }}_anetacamo_AnetaCamova">
+  <img src="{% if page.image %}{{ page.image }}{% else %}{{ blog-image }}{% endif %}" class="fully-covering-image" alt="{{ page.title }} Aneta Camo">
 </div>
 
 <div class="tag-container flex-display">
   <h5 class="center" style="width: 100%; margin-top: 12px; padding: 12px; font-weight: 800;">
     All blogs tagged <a href="">{{ page.title }}</a>
   </h5>
+  {% if page.description %}<div class="center" style="width: 100%;"><p style="margin:16px auto; max-width:620px;">{{ page. description }}</p></div>{% endif %}
+
   {% for blog in tagged %}
   <a href="{{ blog.url }}">
     <div class="square">
-      <img class="fully-covering-image" src="{{ blog.image }}">
+      <img class="fully-covering-image" src="{{ blog.image }}" alt="{{ blog.title }} by Aneta Camo">
       <p style="margin-bottom: 0; font-weight: 900; margin-top: 8px; line-height: 1.2; -webkit-text-fill-color: black;">{{ blog.title }}<br></p>
       {% if page.tag == 'Print' %}
         <p style="margin-top: 0; font-weight: 900;"><a href="{{ blog.url }}">250dkk // 35€</a></p>

@@ -1,12 +1,6 @@
 .side-menu {
   top: 0;
-  bottom: 0;
-  position: fixed;
-  width: 220px;
-  overflow: hidden;
-  @media (max-width: 1000px) {
-    width: 160px;
-  }
+  position: absolute;
   @media (max-width: 600px) {
     height: 110px;
     width: 100%;
@@ -20,28 +14,35 @@
       height: 110px;
     }
   }
-  .portrait-container {
-    position: absolute;
-    padding: 12px;
-    bottom: 0;
-    @media (max-width: 600px) {
-      left: 162px;
-      top: 18px;
-    }
-    p {
-      font-size: 10px;
-      line-height: 1.4;
-      margin: 12px 0;
-    }
+}
 
-    .portrait {
-      margin-bottom: 8px;
-      margin-top: 8px;
-      img {
-        width: 300px;
-        @media (max-width: 1000px) {
-          display: none;
-        }
+
+.footer {
+  position: fixed;
+  z-index: 4;
+  padding: 12px;
+  bottom: 0;
+  @media (max-width: 1000px) {
+    width: 160px;
+  }
+  @media (max-width: 600px) {
+    left: 162px;
+    top: 18px;
+    height: 60px;
+    overflow: hidden;
+  }
+  p {
+    font-size: 10px;
+    line-height: 1.4;
+    margin: 12px 0;
+  }
+  .portrait {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    img {
+      width: 300px;
+      @media (max-width: 1000px) {
+        display: none;
       }
     }
   }
