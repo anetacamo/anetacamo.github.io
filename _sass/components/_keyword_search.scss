@@ -1,10 +1,9 @@
 .right-side-menu {
   position: absolute;
   top:0;
-  right:0;
+  right:10px;
   padding-bottom: 12px;
   padding-left: 12px;
-  background-color: white;
   @media (max-width: 600px) {
     display:none;
   }
@@ -14,11 +13,14 @@
       border-bottom: black solid 1px;
       outline: none;
       background-color: transparent;
-      width: 200px;
+      width: 208px;
       padding-top: 12px;
       padding-bottom: 2px;
       font-family: Roboto Slab;
       font-weight: 600;
+      @media (max-width: 1000px) {
+        width: 160px;
+      }
     }
     ::placeholder {
       font-weight: 300;
@@ -39,7 +41,7 @@
       border: none;
       background-color: black;
       transition-duration: 350ms;
-      max-height: 200px;
+      max-height: 214px;
       a {
         color: white;
         -webkit-text-fill-color: inherit;

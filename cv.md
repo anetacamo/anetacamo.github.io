@@ -5,7 +5,7 @@ layout: content
 cv: true
 ---
 
-### Aneta Camova
+# Aneta Camova
 ### <a style="pointer-events:none;">front-end development - Illustration - Webdesign</a>
 <a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; Based in Aarhus, born in Prague
 
@@ -53,15 +53,17 @@ a static page made from a scratch for my friend Marie Kruse with custom built ca
 
 #### Two company websites
 <p style="margin-top: 0;">
-Two websites I have been working on for two past years. Static pages Built on Jekyll, runned on GitHub, and data pulled around and generated with a help of liquid, custom features built by jQuerry, sass for managing styles.</p>
+Two websites I have been working on for two past years. Static pages built on Jekyll, runned on GitHub, and data pulled around and generated with a help of liquid, custom features built with jQuery, sass for managing styles.</p>
 #### <a href="https://www.praqma.com">Praqma.com</a>
 <h4 style="margin-top: 0"><a href="https://www.code-conf.com">Code-conf.com</a></h4>
 
 #### Freelance projects
 <p style="margin-top: 0;">
-Two projects I made for Prague, dealing with a fast growing prices of apartments and still, very unevenly distributed sallaries. I had a free hand to design and build the whole thing. The second one is still in process missing some texts, icons, responsivness and settings. Using my illustrations with <a href="/tagged/easterneuropification">post-socialistic architecture </a>, the landscape of my childhood.</p>
+A website about housin crisis in Prague, dealing with a fast growing prices of apartments and still, very unevenly distributed sallaries. I had a free hand to design and build the whole thing using my illustrations with <a href="/tagged/easterneuropification">post-socialistic architecture </a> the landscape of my childhood, hehe.</p>
 #### <a href="http://dostupnebydleni.soc.cas.cz/">Sustainable housing</a>
 
+#### This blog
+Built from scratch, liquid as a template language, local server ran in docker container, temporarily using GitHub domain.
 
 
 ### LANGUAGES
