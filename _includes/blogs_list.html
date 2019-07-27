@@ -4,22 +4,24 @@
   {% for blog in blogs %}
   <div class="blogs">
     <a href="{{ blog.url }}">
-      <img class="fully-contained-image" src="{{ blog.image }}" alt="{{ blog.title }} by anetacamo">
+      {% assign image = blog.image %}
+      {% assign slashless = image | remove_first: '/' %}
+      {% assign path = slashless %}
+      {% responsive_image_block %}
+        path: {{ path }}
+        alt: {{ alt }}
+      {% endresponsive_image_block %}
     </a>
 
     <div class="text-container">
-      <h5><a href="{{ blog.url }}">{{ blog.title }}</a></h5>
+      <h4><a href="{{ blog.url }}">{{ blog.title }}</a></h4>
       <p>{{ blog.description }}</p>
-      <p><b>
-        tagged:
+      <p><b>tagged
         {% for tag in blog.tags %}
           #<a href="/tagged/{{ tag | downcase | replace: ' ', '_'}}"><span class="tags">{{ tag | downcase }}</span></a>
         {% endfor %}
       </b></p>
-      <p>
-        <b>written on</b>
-        {{ blog.date | date: "%A, %B %d, %Y" }}
-      </p>
+      <p><b>written on</b> {{ blog.date | date: "%A, %B %d, %Y" }}</p>
 
       <!--
       {% for tag in blog.tags %}

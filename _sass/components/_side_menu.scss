@@ -1,4 +1,4 @@
-.side-menu {
+.logo {
   top: 0;
   position: absolute;
   @media (max-width: 600px) {
@@ -7,7 +7,7 @@
     background-color: white;
     position: absolute;
   }
-  .logo img {
+  img {
     height: 124px;
     cursor: pointer;
     @media (max-width: 1000px) {
@@ -18,7 +18,8 @@
 
 
 .footer {
-  position: fixed;
+  background-color: white;
+  position: absolute;
   z-index: 4;
   padding: 12px;
   bottom: 0;
