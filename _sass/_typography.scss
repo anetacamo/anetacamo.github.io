@@ -54,13 +54,7 @@ b, button {
 }
 
 
-h2 {
-  padding-top: 48px;
-  font-weight: 900;
-  font-size: 36px;
-}
-
-h1, h3 {
+h1, h2 {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -68,19 +62,19 @@ h1, h3 {
   font-weight: 900;
 }
 
-h3 {
+h2 {
   margin-top: 48px;
   margin-bottom: 4px;
 }
 
-h4 {
+h3 {
   margin-top: 24px;
   margin-bottom: 4px;
   font-size: 13px;
   font-weight: 600;
 }
 
-h5 {
+h4 {
   font-family: 'Open Sans', sans-serif;
   font-size: 10px;
   line-height: 1.4;
@@ -123,7 +117,7 @@ a {
   position: relative;
 }
 
-p a:after, h5 a:after, h4 a:after, li a:after {
+p a:after, h3 a:after, h4 a:after, li a:after {
   bottom: 0;
   content: "";
   display: block;
