@@ -5,7 +5,7 @@
   <div class="blogs">
     <a href="{{ blog.url }}">
 
-      {% assign image = blog.image | replace: '/images/blogs/', '/assests/resized/400/' %}
+      {% assign image = blog.image | replace: '/images/blogs/', '/resized/400/' %}
       <img src="{{ image }} alt="{{ blog.title }}" class="fully-contained-image">
     </a>
 
