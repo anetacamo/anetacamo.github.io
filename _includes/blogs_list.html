@@ -4,15 +4,7 @@
   {% for blog in blogs %}
   <div class="blogs">
     <a href="{{ blog.url }}">
-      <!-- resposive image to generate an assets folder
-      {% assign image = blog.image %}
-      {% assign slashless = image | remove_first: '/' %}
-      {% assign path = slashless %}
-      {% responsive_image_block %}
-        path: {{ path }}
-        alt: {{ alt }}
-      {% endresponsive_image_block %}
-      -->
+
       {% assign image = blog.image | replace: '/images/blogs/', '/assests/resized/400/' %}
       <img src="{{ image }} alt="{{ blog.title }}" class="fully-contained-image">
     </a>
