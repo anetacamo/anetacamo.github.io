@@ -7,40 +7,42 @@ cv: true
 
 # Aneta Camova
 ## <a style="pointer-events:none;">front-end development - Illustration - Webdesign</a>
-<a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; Based in Aarhus, born in Prague
+<a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; based in Aarhus, born in Prague
 
 I have been working as a front-end developer for past three years
-+ Building pages from scratch or using various CMSs (Wordpress, Webflow, Squarespace etc.)
++ Pages built from scratch or using various CMSs (Wordpress, Webflow, Squarespace etc.)
 + <a href="https://github.com/anetacamo">GitHub</a> and git for automation and deploy process
-+ Creating smooth, clean, simple and functional designs & webpages, either as a developer or a designer
-+ Experience with UX and setting up SEO tools
++ Smooth, clean, simple and functional designs & webpages, either as a developer or a designer
++ Experienced with UX and setting up SEO tools
 
 Paying attention to details with respect to the project is very important for me.
-I am very curious about web development and design and always looking for an opportunity to learn more.
-And I really enjoy my work.
+I am very curious about web development and design and am always looking for an opportunity to learn more.
+And I really enjoy my work!:)
 
 
 ## Working EXPERIENCE
 ### <a href="https://www.praqma.com" target="_blank">Praqma.com</a>
 <p style="margin-top:-4px; margin-bottom: -8px; font-weight: 400;">August 2017 - now</p>
-Managing two websites ran on Jekyll, restructuring them acc. to the new designs into custom-made easy-to-use CMS; updating the structures to be easy to use for various content-creators.
+Managing two websites ran on Jekyll, restructuring them acc. to the new designs into custom-made easy-to-use CMSs; updating the structures to be easy to use for various content-creators.
 
 ### <a href="https://www.prolike.io" target="_blank">Prolike.io</a>
 <p style="margin-top:-4px; margin-bottom: -8px; font-weight: 400;">january 2018 - june 2018</p>
-rebuilding <a href="https://dataintensity.com/">data intensity</a> into the jekyll static webpage ran in Docker container; implementing blogging system; custom features
+Project of rebuilding <a href="https://dataintensity.com/">data intensity</a> into the Jekyll. Implementing blogging system; various custom features with JS
 
 ### <a href="https://www.symbio.agency" target="_blank">SYMBIO digital,s.r.o.</a>
 <p style="margin-top:-4px; margin-bottom: -8px; font-weight: 400;">November 2015 - June 2016</p>
-Building the websites, mostly taking care of HTML & CSS, workings with various CMSs (Wordpress, Squarespace, Webflow, symfony).
+Building the websites, mostly taking care of HTML & CSS, workings with various CMSs (Wordpress, Squarespace, Webflow).
 
 
 
 ## SKILLSET
 
-+ HTML, CSS (Bootstrap, Sass) JS (Jquery), liquid, some angular JS, some ruby on rails, a bit of a react.js ++lots of excitment to learn more programming.
-+ Custom features + plugins, animations, hovers and coding interactive layouts.
-+ GitHub & git, tools for automation and deployment (Jenkins, CircleCI)
-+ Setting up the pages in different environments, running everything in a a docker container.
++ HTML, CSS (Bootstrap, Sass) JS (Jquery), liquid, some angular JS, some ruby on rails, a bit of a react.js +lots of excitment to learn more programming.
++ Custom features + plugins, animations, hovers and coding interactive & responsive layouts.
++ Tools for automation and deployment (Jenkins, CircleCI, docker, GitHub & git)
++ Setting up the pages in different environments
++ UX + UI, SEO
++ Web design + Illustration, Photoshop + Illustrator
 
 
 ## LINKS
@@ -63,14 +65,15 @@ A website about housin crisis in Prague, dealing with a fast growing prices of a
 ### <a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Sustainable housing</a>
 
 ### This blog
-Built from scratch, liquid as a template language, local server ran in docker container, temporarily using GitHub domain.
+<p style="margin-top: 0;">
+Built from scratch, liquid as a template language, local server ran in docker container, temporarily using GitHub domain.</p>
 
-
-## LANGUAGES
-English, Danish, Czech, Bosnian/croatian/serbian
+## Languages
+English, Danish, Czech
 
 ## Illustration
 Two pages with some slightly different work.
+
 ### <a href="https://www.instagram.com/aneccca" target="_blank">Instagram</a>
 <h3 style="margin-top: 0"><a href="https://www.behance.com/anetacamo" style="margin-top: -18px;">Behance</a></h3>
 <br><br>
