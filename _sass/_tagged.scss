@@ -7,5 +7,17 @@
     margin-bottom: 48px;
     float:left;
     color: black;
+    .img-box {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+    }
+    img:hover {
+      height: 110%;
+      width: 110%;
+      transition-duration: 350ms;
+      margin-top: -5%;
+      margin-left: -5%;
+    }
   }
 }
