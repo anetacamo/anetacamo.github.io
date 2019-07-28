@@ -27,12 +27,14 @@ layout: wide
   <h4 class="center" style="width: 100%; margin-top: 12px; padding: 12px; font-weight: 800;">
     All blogs tagged <a href="">{{ page.title }}</a>
   </h4>
-  {% if page.description %}<div class="center" style="width: 100%;"><p style="margin:16px auto; max-width:620px;">{{ page. description }}</p></div>{% endif %}
+  {% if page.description %}<div class="center" style="width: 100%;"><p style="margin:16px auto; max-width:620px; padding: 0 12px;">{{ page.description }}</p></div>{% endif %}
 
   {% for blog in tagged %}
   <a href="{{ blog.url }}">
     <div class="square">
-      <img class="fully-covering-image" src="{{ blog.image }}" alt="{{ blog.title }} by Aneta Camo">
+      <div class="img-box">
+        <img class="fully-covering-image" src="{{ blog.image | replace: '/images/blogs/', '/resized/400/' }}" alt="{{ blog.title }} by Aneta Camo">
+      </div>
       <p style="margin-bottom: 0; font-weight: 900; margin-top: 8px; line-height: 1.2; -webkit-text-fill-color: black;">{{ blog.title }}<br></p>
       {% if page.tag == 'Print' %}
         <p style="margin-top: 0; font-weight: 900;"><a href="{{ blog.url }}">250dkk // 35€</a></p>

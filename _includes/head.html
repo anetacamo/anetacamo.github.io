@@ -7,13 +7,13 @@
 
   <title>{% if page.tag %}Tagged: {{ page.tag }}{% else %}{{ page.title }}{% endif %} | Aneta Camo</title>
 
-  <meta property="og:image" content="{% if page.image %}{{ site.address }}{{ page.image }}{% else %}{{ site.address }}{{ site.logo }}{% endif %}"/>
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+  <meta property="og:image" content="{% if page.image %}{{ page.image }}{% endif %}"/>
+  <meta property="og:title" content="{% if page.tag %}Tagged: {{ page.tag }}{% else %}{{ page.title }}{% endif %} | Aneta Camo"/>
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
   <meta property="og:url" content="{{ page.url }}" />
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.logo }}{% endif %}"/>
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+  <meta name="twitter:title" content="{% if page.tag %}Tagged: {{ page.tag }}{% else %}{{ page.title }}{% endif %} | Aneta Camo"/>
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
 
   <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>

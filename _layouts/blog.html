@@ -28,7 +28,8 @@ layout: default
       {% if tag == 'Print' %}
       <section class="sell">
         <button class="button-white"><a href="{{ blog.url }}">♥ Get this print ♥</a></button>
-        <p style="margin:8px 0;"><b>180dkk // 25€</b></p>
+        <p style="margin:8px 0;"><b>250dkk // 35€</b></p>
+        {% if page.collection %}<p style="margin:8px 0;">Available {{ page.collection }}></p>{% endif %}
         <p clas="small" style="margin:8px 0; line-height: 1.4;">A3 printed on the hard paper<br> signed and shipped in the cardbox cover to you<br> no framing included</p>
       </section>
       {% endif %}
