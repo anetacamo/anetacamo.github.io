@@ -62,7 +62,7 @@ Building the websites, mostly taking care of HTML & CSS, workings with various C
 + First one built on simple html + css + some actions added with Js 
 + The second one still in progress, installed wordpress in order to make it easily editable. 
 
-<p>On both I used my own illustrations and my own design, coded from scratch.</p>
+<p>On both I used my own <a href="/tagged/easterneuropification/">illustrations</a> and my own design, coded from scratch.</p>
 
 ### This blog
 <p style="margin-top: 0;">
