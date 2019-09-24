@@ -36,7 +36,7 @@ Building the websites, mostly taking care of HTML & CSS, workings with various C
 
 
 ## SKILLSET
-
+<br>
 + HTML, CSS ( + Bootstrap, Sass)
 + JS ( + Jquery); some of angular js, react.js  + lots of excitment to learn more framework coding.
 + Liquid, Jekyll, a little Ruby on rails, php, mySql
@@ -56,12 +56,12 @@ Building the websites, mostly taking care of HTML & CSS, workings with various C
 Static pages rebuilt completely from scratch, runned on GitHub, and data pulled around and generated with liquid, Jekyll, custom features built with jQuery. Sass. Works as a cms for various content creators. Designed by Phable</p>
 
 ### <a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Affordable housing</a>
-### <a href="https://anetacamova.com/wordpress/" target="_blank">Minimum Wage</a>
+<h3 style="margin-top: 0"><a href="https://anetacamova.com/wordpress/" target="_blank">Minimum Wage</a></h3>
 <p style="margin-top: 0;">
 Two one-page sites made for the two different organisations based in Prague trying to negotiate a better conditions for people struggling with the housing crisis and very steep fast rise in rental and real estate prices.<br>
-First one built on simple html + css + some actions added with Js 
-The second one still in progress, installed wordpress in order to make it easily editable. 
-On both I used my own illustrations and my own design, coded from scratch. 
++ First one built on simple html + css + some actions added with Js 
++ The second one still in progress, installed wordpress in order to make it easily editable. 
+On both I used my own illustrations and my own design, coded from scratch.</p>
 
 ### This blog
 <p style="margin-top: 0;">
