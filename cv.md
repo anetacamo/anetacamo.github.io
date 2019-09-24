@@ -7,7 +7,7 @@ cv: true
 
 # Aneta Camova
 ## <a style="pointer-events:none;">front-end development - Illustration - Webdesign</a>
-<a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; based in Aarhus, born in Prague
+<a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="http://www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; based in Aarhus, born in Prague
 
 I have been working as a front-end developer for past three years:
 + Responsive pages either coded from scratch or using various CMSs, writing scripts, managing databases
