@@ -51,7 +51,6 @@ Building the websites, mostly taking care of HTML & CSS, workings with various C
 ## REFERENCES
 
 ### <a href="https://www.praqma.com" target="_blank">Praqma.com</a>
-### <a href="https://www.code-conf.com" target="_blank">Code-conf.com</a>
 <h3 style="margin-top: 0"><a href="https://www.code-conf.com" target="_blank">Code-conf.com</a></h3>
 <p style="margin-top: 0;">
 Static pages rebuilt completely from scratch, runned on GitHub, and data pulled around and generated with liquid, Jekyll, custom features built with jQuery. Sass. Works as a cms for various content creators. Designed by Phable</p>
