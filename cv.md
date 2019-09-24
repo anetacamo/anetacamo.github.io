@@ -9,11 +9,12 @@ cv: true
 ## <a style="pointer-events:none;">front-end development - Illustration - Webdesign</a>
 <a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; based in Aarhus, born in Prague
 
-I have been working as a front-end developer for past three years
-+ Pages built from scratch or using various CMSs (Wordpress, Webflow, Squarespace etc.)
+I have been working as a front-end developer for past three years:
++ Responsive pages either coded from scratch or using various CMSs, writing scripts, managing databases
 + <a href="https://github.com/anetacamo">GitHub</a> and git for automation and deploy process
 + Smooth, clean, simple and functional designs & webpages, either as a developer or a designer
 + Experienced with UX and setting up SEO tools
++ Illustration
 
 Paying attention to details with respect to the project is very important for me.
 I am very curious about web development and design and am always looking for an opportunity to learn more.
@@ -57,8 +58,10 @@ Building the websites, mostly taking care of HTML & CSS, workings with various C
 ### <a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Affordable housing</a>
 <h3 style="margin-top: 0"><a href="https://anetacamova.com/wordpress/" target="_blank">Minimum Wage</a></h3>
 <p style="margin-top: 0;">Two one-page sites made for the two different organisations based in Prague trying to negotiate a better conditions for people struggling with the housing crisis and very steep fast rise in rental and real estate prices.</p>
+
 + First one built on simple html + css + some actions added with Js 
 + The second one still in progress, installed wordpress in order to make it easily editable. 
+
 <p>On both I used my own illustrations and my own design, coded from scratch.</p>
 
 ### This blog
@@ -73,6 +76,5 @@ a static page made from a scratch for my friend Marie Kruse with custom built ca
 English, Czech, some Danish
 
 ## Illustration
-
 ### <a href="https://www.instagram.com/aneccca" target="_blank">Instagram</a>
 <br><br>
