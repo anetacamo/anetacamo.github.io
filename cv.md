@@ -60,18 +60,23 @@ tags: Angular JS, javascript, sass, design
 <p style="margin-top: 0;">
 Coded from scratch and designed, built my own tagging & blogging system, responsively generated images.</p>
 A small portfolio of my favourite freetime activity
-tags: liquid, Markdown, sass, design
+<div class="tags">
+<li>Liquid</li>
+<li>Markdown</li>
+<li>Sass</li>
+<li>Design</li>
+</div>
 
 ![a home illustration](/images/bydleni.png)
 ### MDM
 <p style="margin-top: 0;">
 built and designed completely from scratch, then rebuilt into wordpress.org template and implemented via PHP, my own illustrations and design</p>
 <div class="tags">
-+ wordpress.org
-+ php
-+ javascript
-+ sass
-+ illustration
++ Wordpress.org
++ PHP
++ Javascript
++ Sass
++ Illustration
 </div>
 
 ![a home illustration](/images/laptop.png)
@@ -79,9 +84,9 @@ built and designed completely from scratch, then rebuilt into wordpress.org temp
 <p style="margin-top: 0;">
 Completely rebuilding a large website into a custom-made easy-to-use CMSs;</p>
 <div class="tags">
-+ javascript 
-+ liquid
-+ sass
+<li>Javascript</li>
+<li>Liquid</li>
+<li>Sass</li>
 </div>
 
 ![a home illustration](/images/hypoteka.png)
