@@ -65,14 +65,14 @@ tags: liquid, Markdown, sass, design
 ![a home illustration](/images/bydleni.png)
 ### MDM
 <p style="margin-top: 0;">
-built and designed completely from scratch, then rebuilt into wordpress.org template and implemented via PHP, my own illustrations and design  
+built and designed completely from scratch, then rebuilt into wordpress.org template and implemented via PHP, my own illustrations and design</p>
 tags: wordpress.org, php, javascript, sass, illustration
 
 
 ![a home illustration](/images/laptop.png)
 ### Praqma
 <p style="margin-top: 0;">
-Completely rebuilding a large website into a custom-made easy-to-use CMSs;
+Completely rebuilding a large website into a custom-made easy-to-use CMSs;</p>
 tags: sass, javascript, liquid
 
 ![a home illustration](/images/hypoteka.png)
