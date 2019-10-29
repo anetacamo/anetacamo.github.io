@@ -47,13 +47,13 @@ Building the websites, mostly taking care of HTML & CSS, workings with various C
 ![a wallet illustration](/images/penezenka.png)
 ### Calculator of Currencies
 <p style="margin-top: 0;">pulling data from a CSV file, counting the currency rates according to the data from Czech National Bank and users input</p>
-tags: react, javascript,
+<div class="tags"><li>React</li><li>Javascript</li></div>
 
 ![a camera illustration](/images/fotoaparat.png)
 ### Photography portfolio
 <p style="margin-top: 0;">A page made from a scratch for my friend Marie Kruse with custom javascript carousel.</p>
 ### <a href="http://www.anetacamo.com/mk" target="_blank">Mariekruse</a>
-tags: Angular JS, javascript, sass, design
+<div class="tags"><li>Angular JS</li><li>javascript</li><li>sass</li><li>design</li></div>
 
 ![a home illustration](/images/obyvak.png)
 ### This blog
@@ -72,11 +72,11 @@ A small portfolio of my favourite freetime activity
 <p style="margin-top: 0;">
 built and designed completely from scratch, then rebuilt into wordpress.org template and implemented via PHP, my own illustrations and design</p>
 <div class="tags">
-+ Wordpress.org
-+ PHP
-+ Javascript
-+ Sass
-+ Illustration
+<li>Wordpress.org</li>
+<li>PHP</li>
+<li>Javascript</li>
+<li>Sass</li>
+<li>Illustration</li>
 </div>
 
 ![a home illustration](/images/laptop.png)
