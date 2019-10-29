@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="blog-container">
+<div class="blog-container {% if page.cv %}cv-container{% endif %}">
 
   <div class="blogs" style="padding: 18px; max-width: 600px;">
     {{ content }}
