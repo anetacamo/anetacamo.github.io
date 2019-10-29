@@ -45,20 +45,19 @@ Building the websites, mostly taking care of HTML & CSS, workings with various C
 
 ## REFERENCES
 ![a wallet illustration](/images/penezenka.png)
-### Calculator of Currencies
-<p style="margin-top: 0;">pulling data from a CSV file, counting the currency rates according to the data from Czech National Bank and users input</p>
+### <a href="/kurzovnilistky" target="_blank">Calculator of Currencies</a>
+Pulling data from a CSV file, counting the currency rates according to the data from Czech National Bank and users input
 <div class="tags"><li>React</li><li>Javascript</li></div>
 
 ![a camera illustration](/images/fotoaparat.png)
 ### Photography portfolio
-<p style="margin-top: 0;">A page made from a scratch for my friend Marie Kruse with custom javascript carousel.</p>
 ### <a href="http://www.anetacamo.com/mk" target="_blank">Mariekruse</a>
+A page made from a scratch for my friend Marie Kruse with custom javascript carousel.
 <div class="tags"><li>Angular JS</li><li>javascript</li><li>sass</li><li>design</li></div>
 
 ![a home illustration](/images/obyvak.png)
-### This blog
-<p style="margin-top: 0;">
-Coded from scratch and designed, built my own tagging & blogging system, responsively generated images.</p>
+### <a href="/" target="_blank">This blog</a>
+Coded from scratch and designed, built my own tagging & blogging system, responsively generated images.
 A small portfolio of my favourite freetime activity
 <div class="tags">
 <li>Liquid</li>
