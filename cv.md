@@ -9,68 +9,75 @@ cv: true
 ## <a style="pointer-events:none;">front-end development - Illustration - Webdesign</a>
 <a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="http://www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; based in Aarhus, born in Prague
 
-I have been working as a front-end developer for past three years:
-+ Responsive pages either coded from scratch or using various CMSs, writing scripts, managing databases
-+ <a href="https://github.com/anetacamo">GitHub</a> and git for automation and deploy process
-+ Smooth, clean, simple and functional designs & webpages, either as a developer or a designer
-+ Experienced with UX and setting up SEO tools
-+ Illustration
-
+I have been working as a front-end developer for past three years.
 Paying attention to details with respect to the project is very important for me.
 I am very curious about web development and design and am always looking for an opportunity to learn more.
-And I really enjoy my work!:)
 
+## SKILLSET & TOOLSTACK
++ HTML
++ CSS, Bootstrap, Sass, Less
++ JS & Jquery
++ Liquid, React, some Angular JS and Ruby on Rails
++ PHP & databases
++ UX + UI, SEO
++ GitHub & Git
++ Experience with Continuous Delivery - Docker, Jenkins, CircleCI
++ Coding Interactive & Responsive layouts
++ Eye for smooth transitions and animations
++ Photoshop, Illustrator
++ Illustration (Icons, patters, backgrounds)
++ Wordpress.org, Webflow, Squarespace, HubSpot...
++ Excitement and Curiosity
 
 ## Working EXPERIENCE
 ### <a href="https://www.praqma.com" target="_blank">Praqma.com</a>
 <p style="margin-top:-4px; margin-bottom: -8px; font-weight: 400;">August 2017 - now</p>
-Managing two websites ran on Jekyll, restructuring them acc. to the new designs into custom-made easy-to-use CMSs; updating the structures to be easy to use for various content-creators.
+Completely rebuilding two large websites into custom-made easy-to-use CMSs; updating the structures to be easy to use for various content-creators.
 
 ### <a href="https://www.prolike.io" target="_blank">Prolike.io</a>
 <p style="margin-top:-4px; margin-bottom: -8px; font-weight: 400;">january 2018 - june 2018</p>
-Project of rebuilding <a href="https://dataintensity.com/">data intensity</a> into the Jekyll. Implementing blogging system; various custom features with JS
+Project of rebuilding huge and unordered html<a href="https://dataintensity.com/">data intensity</a> into the liquid generated html static system ran in docker. Building the blogging system.
 
 ### <a href="https://www.symbio.agency" target="_blank">SYMBIO digital,s.r.o.</a>
 <p style="margin-top:-4px; margin-bottom: -8px; font-weight: 400;">November 2015 - June 2016</p>
-Building the websites, mostly taking care of HTML & CSS, workings with various CMSs (Wordpress, Webflow, Typo3, Symphony).
-
-
-
-## SKILLSET
-
-+ HTML, CSS ( + Bootstrap, Sass)
-+ JS ( + Jquery); some of angular js, react.js  + lots of excitment to learn more framework coding.
-+ Liquid, Jekyll, a little Ruby on rails, php, mySql
-+ Coding interactive & responsive layouts (Custom features + installing plugins, animations etc.)
-+ Tools for automation and deployment (Jenkins, CircleCI, docker, GitHub & git)
-+ Setting up the pages in different environments and running the servers; linking to databases
-+ UX + UI, SEO
-+ Web design + Illustration, Photoshop + Illustrator
-+ Wordpress.org, Webflow, Squarespace
+Building the websites, mostly taking care of HTML & CSS, workings with various CMSs (Wordpress, Webflow, Squarespace).
 
 
 ## REFERENCES
+![a wallet illustration](/images/wallet.png)
+### Calculator of Currencies
+pulling data from a CSV file, counting the currency rates according to the data from Czech National Bank and users input
+tags: react, javascript,
 
-### <a href="https://www.praqma.com" target="_blank">Praqma.com</a>
-<h3 style="margin-top: 0"><a href="https://www.code-conf.com" target="_blank">Code-conf.com</a></h3>
-<p style="margin-top: 0;">Static pages rebuilt completely from scratch, runned on GitHub, and data pulled around and generated with liquid, Jekyll, custom features built with jQuery. Sass. Works as a cms for various content creators. Designed by Phable</p>
+![a camera illustration](/images/camera.png)
+### Photography portfolio
+<p style="margin-top: 0;">
+A page made from a scratch for my friend Marie Kruse with custom javascript carousel.
+### <a href="http://anetacamo.com/mk" target="_blank">Mariekruse</a>
+tags: Angular JS, javascript, sass, design
 
-### <a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Affordable housing</a>
-<h3 style="margin-top: 0"><a href="https://anetacamova.com/wordpress/" target="_blank">Minimum Wage</a></h3>
-<p style="margin-top: 0;">Two one-page sites made for the two different organisations based in Prague trying to negotiate a better conditions for people struggling with the housing crisis and very steep fast rise in rental and real estate prices.</p>
-
-+ First one built on simple html + css + some actions added with Js 
-+ The second one still in progress, installed wordpress in order to make it easily editable. 
-
-<p>On both I used my own <a href="/tagged/easterneuropification/">illustrations</a> and my own design, coded from scratch.</p>
-
+![a home illustration](/images/home.png)
 ### This blog
 <p style="margin-top: 0;">
-Built from scratch, liquid as a template language, local server ran in docker container</p>
+Coded from scratch and designed, built my own tagging & blogging system, responsively generated images.
+A small portfolio of my favourite freetime activity
+tags: liquid, Markdown, sass, design
 
-### <a href="http://mk.anetacamova.com" target="_blank">Mariekruse</a>
+![a home illustration](/images/home.png)
+### MDM
 <p style="margin-top: 0;">
-a static page made from a scratch for my friend Marie Kruse with custom built carousel</p>
+built and designed completely from scratch, then rebuilt into wordpress.org template and implemented via PHP, my own illustrations and design  
+tags: wordpress.org, php, javascript, sass, illustration
+
+
+![a home illustration](/images/home.png)
+### Praqma
+<p style="margin-top: 0;">
+Completely rebuilding a large website into a custom-made easy-to-use CMSs;
+tags: sass, javascript, liquid
+
+![a home illustration](/images/home.png)
+### Bydleni
 
 ## Languages
 English, Czech, some Danish
