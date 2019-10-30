@@ -52,7 +52,7 @@ Pulling data from a CSV file, building a table, then counting the currency rates
 
 <div class="box" markdown="1">
 <div class="circle"><img src="/images/fotoaparat.png" alt="a camera illustration"></div>
-### <a href="http://www.anetacamo.com/mk" target="_blank">Mariekruse</a><br>Photography portfolio<a href="http://www.anetacamo.com/mk" target="_blank">Mariekruse</a>
+### <a href="http://www.anetacamo.com/mk" target="_blank">Mariekruse</a><br>Photography portfolio
 A page made from a scratch for my friend Marie Kruse with custom javascript carousel.
 <div class="tags"><li>Angular</li><li>Javascript</li><li>Sass</li><li>Design</li></div>
 </div>
