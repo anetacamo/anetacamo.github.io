@@ -5,7 +5,7 @@ layout: content
 cv: true
 ---
 
-# Aneta Camova
+# Aneta Camo
 ## <a style="pointer-events:none;">front-end development - Illustration - Webdesign</a>
 <a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="http://www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; based in Aarhus, born in Prague
 
