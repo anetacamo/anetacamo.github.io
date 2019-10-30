@@ -25,9 +25,7 @@ I am very curious about web development and design and am always looking for an 
 + Coding Interactive & Responsive layouts
 + Eye for smooth transitions and animations
 + Photoshop, Illustrator
-+ Illustration (Icons, patters, backgrounds)
-+ Wordpress.org, Webflow, Squarespace, HubSpot...
-+ Excitement and Curiosity
++ Wordpress.org, Webflow, Squarespace, HubSpot
 
 ## Working EXPERIENCE
 ### <a href="https://www.praqma.com" target="_blank">Praqma.com</a>
