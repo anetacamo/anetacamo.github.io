@@ -30,14 +30,17 @@
     }
   }
   .box {
-    max-width: 33%;
+    max-width: 270px;
     background-color: #fbfbfb;
     padding: 12px;
     border-radius: 8px;
     padding-top: 0;
     text-align: center;
     float: left;
-    margin: 12px;
-    margin-left: 0;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  .box:nth-of-type(odd) {
+    margin-right: 12px;
   }
 }
