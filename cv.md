@@ -46,7 +46,7 @@ Building the websites, mostly taking care of HTML & CSS, workings with various C
 <div class="box" markdown="1">
 ![a wallet illustration](/images/penezenka.png)
 ### <a href="/kurzovnilistky" target="_blank">Calculator of Currencies</a>
-<p style="margin-top: 4px; margin-bottom: 6px;">
+<p style="margin-top: 8px; margin-bottom: 12px;">
 Pulling data from a CSV file, counting the currency rates according to the data from Czech National Bank and users input.</p>
 <div class="tags"><li>React</li><li>Javascript</li></div>
 </div>
@@ -54,21 +54,21 @@ Pulling data from a CSV file, counting the currency rates according to the data 
 <div class="box" markdown="1">
 ![a camera illustration](/images/fotoaparat.png)
 ### Photography portfolio<br><a href="http://www.anetacamo.com/mk" target="_blank">Mariekruse</a>
-<p style="margin-top: 4px; margin-bottom: 6px;">A page made from a scratch for my friend Marie Kruse with custom javascript carousel.</p>
+<p style="margin-top: 8px; margin-bottom: 12px;">A page made from a scratch for my friend Marie Kruse with custom javascript carousel.</p>
 <div class="tags"><li>Angular</li><li>Javascript</li><li>Sass</li><li>Design</li></div>
 </div>
 
 <div class="box" markdown="1">
 ![a living room illustration](/images/obyvak.png)
 ### <a href="/" target="_blank">This blog</a>
-<p style="margin-top: 4px; margin-bottom: 6px;">Coded from scratch and designed, built my own tagging & blogging system, responsively generated images. A small portfolio of my favourite freetime activity</p>
+<p style="margin-top: 8px; margin-bottom: 12px;">Coded from scratch and designed, built my own tagging & blogging system, responsively generated images. A small portfolio of my favourite freetime activity</p>
 <div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li><li>Design</li></div>
 </div>  
 
 <div class="box" markdown="1">
 ![a home illustration](/images/bydleni.png)
 ### <a href="http://www.anetacamo.com/wordpress" target="_blank">MDM</a>
-<p style="margin-top: 4px; margin-bottom: 6px;">
+<p style="margin-top: 8px; margin-bottom: 12px;">
 built and designed completely from scratch, then rebuilt into wordpress.org template and implemented via PHP, my own illustrations and design.</p>
 <div class="tags"><li>Wordpress.org</li><li>PHP</li><li>Javascript</li><li>Sass</li><li>Illustration</li></div>
 </div>  
@@ -76,7 +76,7 @@ built and designed completely from scratch, then rebuilt into wordpress.org temp
 <div class="box" markdown="1">
 ![a computer illustration](/images/laptop.png)
 ### <a href="http://www.praqma.com/" target="_blank">Praqma</a>
-<p style="margin-top: 4px; margin-bottom: 6px;">
+<p style="margin-top: 8px; margin-bottom: 12px;">
 Completely rebuilding a large website into a custom-made easy-to-use CMSs;</p>
 <div class="tags"><li>Javascript</li><li>Liquid</li><li>Sass</li></div>
 </div>
@@ -84,7 +84,7 @@ Completely rebuilding a large website into a custom-made easy-to-use CMSs;</p>
 <div class="box" markdown="1">
 ![a house carried by plants illustration](/images/hypoteka.png)
 ### <a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Bydleni</a>
-<p style="margin-top: 4px; margin-bottom: 6px;">
+<p style="margin-top: 8px; margin-bottom: 12px;">
 A simple one page project with a lot of text and my own suburban illustrations</p>
 <div class="tags"><li>Illustration</li></div>
 </div>
