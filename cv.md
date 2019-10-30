@@ -82,10 +82,10 @@ Completely rebuilding a large website into a custom-made easy-to-use CMSs. Build
 
 <div class="box" markdown="1">
 <div class="circle"><a href="http://dostupnebydleni.soc.cas.cz/" target="_blank"><img src="/images/hypoteka.png" alt="a house carried by plants illustration"></a></div>
-### <a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Bydleni</a>
+### <a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Bydleni</a><br>A single page site
 <p style="margin-top: 8px; margin-bottom: 12px;">
 A simple one page project with a lot of text and my own suburban illustrations</p>
-<div class="tags"><li>Illustrations</li><li>HTML</li></div>
+<div class="tags"><li>Illustrations</li><li>HTML</li><li>JQery</li></div>
 </div>
 <div style="width: 100%; height: 40px; float: left;"></div>
 
