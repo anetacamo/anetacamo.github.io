@@ -18,15 +18,19 @@
       margin-left: 0;
     }
     img {
-      width: 70px;
-      height: 70px;
+      width: 75px;
+      height: 75px;
       object-fit: contain;
       float: none !important;
       margin: 0 !important;
       margin-top: 16px !important;
       margin-bottom: -8px !important;
+    }
+    .circle {
       border-radius: 50%;
       background-color: white;
+      width: 100px;
+      height: 100px;
     }
     .tags li {
       display: inline-block;
@@ -41,7 +45,7 @@
     .box {
       max-width: 270px;
       background-color: #f7f7f7;
-      padding: 12px;
+      padding: 16px;
       border-radius: 8px;
       padding-top: 0;
       text-align: center;
