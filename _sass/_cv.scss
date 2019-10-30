@@ -8,6 +8,7 @@
     h1 {
       font-size: 46px;
       margin-bottom: -32px;
+      font-weight: 100;
     }
     h2 {
       margin-top: 32px;
@@ -42,7 +43,7 @@
       }
     }
     .box {
-      max-width: 262px;
+      width: calc(50% - 38px);
       background-color: #f7f7f7;
       padding: 16px;
       border-radius: 8px;
@@ -54,9 +55,18 @@
       &:nth-of-type(odd) {
         margin-right: 12px;
       }
+      @media (max-width: 740px) {
+        width: calc(100% - 12px);
+      }
+      @media (max-width: 600px) {
+        width: calc(50% - 38px);
+      }
+      @media (max-width: 480px) {
+        width: calc(100% - 12px);
+      }
       p {
-        margin-top: 12px; 
-        margin-bottom: 18px;
+        max-width: 320px;
+        margin: 12px auto 18px;
       }
     }
   }
