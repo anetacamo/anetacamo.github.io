@@ -87,6 +87,7 @@ Completely rebuilding a large website into a custom-made easy-to-use CMSs;</p>
 A simple one page project with a lot of text and my own suburban illustrations</p>
 <div class="tags"><li>Illustration</li></div>
 </div>
+<br><br>
 
 ## Languages
 English, Czech, some Danish
