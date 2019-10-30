@@ -44,25 +44,24 @@ Building the websites, mostly taking care of HTML & CSS, workings with various C
 ## REFERENCES
 
 <div class="box" markdown="1">
-![a wallet illustration](/images/penezenka.png)
-### <a href="/kurzovnilistky" target="_blank">Calculator of Currencies</a>
-<p style="margin-top: 8px; margin-bottom: 12px;">
-Pulling data from a CSV file, counting the currency rates according to the data from Czech National Bank and users input.</p>
-<div class="tags"><li>React</li><li>Javascript</li></div>
+  <div class="circle" markdown="1">![a wallet illustration](/images/penezenka.png)</div>
+  ### <a href="/kurzovnilistky" target="_blank">Calculator of Currencies</a>
+  Pulling data from a CSV file, building a table, then counting the currency rates according to the data from Czech National Bank and user's input.
+  <div class="tags"><li>React</li><li>Javascript</li></div>
 </div>
 
 <div class="box" markdown="1">
-![a camera illustration](/images/fotoaparat.png)
-### Photography portfolio<br><a href="http://www.anetacamo.com/mk" target="_blank">Mariekruse</a>
-<p style="margin-top: 8px; margin-bottom: 12px;">A page made from a scratch for my friend Marie Kruse with custom javascript carousel.</p>
-<div class="tags"><li>Angular</li><li>Javascript</li><li>Sass</li><li>Design</li></div>
+  <div class="circle" markdown="1">![a camera illustration](/images/fotoaparat.png)</div>
+  ### <a href="http://www.anetacamo.com/mk" target="_blank">Mariekruse</a><br>Photography portfolio<a href="http://www.anetacamo.com/mk" target="_blank">Mariekruse</a>
+  A page made from a scratch for my friend Marie Kruse with custom javascript carousel.
+  <div class="tags"><li>Angular</li><li>Javascript</li><li>Sass</li><li>Design</li></div>
 </div>
 
 <div class="box" markdown="1">
-![a living room illustration](/images/obyvak.png)
-### <a href="/" target="_blank">This blog</a>
-<p style="margin-top: 8px; margin-bottom: 12px;">Coded from scratch and designed, built my own tagging & blogging system, responsively generated images. A small portfolio of my favourite freetime activity</p>
-<div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li><li>Design</li></div>
+  ![a living room illustration](/images/obyvak.png)
+  ### <a href="/" target="_blank">This blog</a>
+  <p style="margin-top: 8px; margin-bottom: 12px;">Coded from scratch and designed, built my own tagging & blogging system, responsively generated images. A small portfolio of my favourite freetime activity</p>
+  <div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li><li>Design</li></div>
 </div>  
 
 <div class="box" markdown="1">
