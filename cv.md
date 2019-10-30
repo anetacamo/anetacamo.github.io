@@ -59,7 +59,7 @@ A page made from a scratch for my friend Marie Kruse with custom javascript caro
 
 <div class="box" markdown="1">
 <div class="circle"><a href="/" target="_blank"><img src="/images/obyvak.png" alt="a living room illustration"></a></div>
-### <a href="/" target="_blank">Aneta Camo</a>This blogging system
+### <a href="/" target="_blank">Aneta Camo</a><br>This blogging system
 <p style="margin-top: 8px; margin-bottom: 12px;">Coded from scratch and designed, built my own tagging & blogging system, responsively generated images. A small portfolio of my favourite freetime activity</p>
 <div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li><li>Design</li></div>
 </div>  
@@ -76,7 +76,7 @@ built and designed completely from scratch, then rebuilt into wordpress.org temp
 <div class="circle"><a href="http://www.praqma.com/" target="_blank"><img src="/images/laptop.png" alt="a computer illustration"></a></div>
 ### <a href="http://www.praqma.com/" target="_blank">Praqma</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Completely rebuilding a large website into a custom-made easy-to-use CMSs;</p>
+Completely rebuilding a large website into a custom-made easy-to-use CMSs. Building blogging, tagigng, pagination, auto image compression. Carousels, filters etc. Own CSS system</p>
 <div class="tags"><li>Javascript</li><li>Liquid</li><li>Sass</li></div>
 </div>
 
