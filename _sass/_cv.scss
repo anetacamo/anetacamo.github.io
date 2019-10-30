@@ -18,19 +18,19 @@
       margin-left: 0;
     }
     img {
-      width: 75px;
-      height: 75px;
+      width: 150%;
+      height: 150%;
       object-fit: contain;
       float: none !important;
-      margin: 0 !important;
-      margin-top: 16px !important;
-      margin-bottom: -8px !important;
+      margin: -25% !important;
     }
     .circle {
       border-radius: 50%;
       background-color: white;
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
+      margin: 20px auto;
+      margin-bottom: 8px;
     }
     .tags li {
       display: inline-block;
