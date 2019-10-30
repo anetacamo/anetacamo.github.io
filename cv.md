@@ -5,7 +5,7 @@ layout: content
 cv: true
 ---
 
-<img src="/images/me.jpg" alt="aneta camo portrait" style="max-width: 1000px; margin: 0; height: auto;">
+<img src="/images/me.jpg" alt="aneta camo portrait" style="max-width: 1000px; margin: 0; margin-top: -32px; height: auto;">
 
 # Aneta Camo
 ## <a style="pointer-events:none;">front-end development - Illustration - Webdesign</a>
