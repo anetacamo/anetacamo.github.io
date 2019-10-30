@@ -44,7 +44,7 @@ Building the websites, mostly taking care of HTML & CSS, workings with various C
 ## REFERENCES
 
 <div class="box" markdown="1">
-<a href="/kurzovnilistky" target="_blank"><div class="circle"><img src="/images/penezenka.png" alt="a wallet illustration"></div></a>
+<div class="circle"><a href="/kurzovnilistky" target="_blank"><img src="/images/penezenka.png" alt="a wallet illustration"></a></div>
 ### <a href="/kurzovnilistky" target="_blank">Calculator of Currencies</a>
 Pulling data from a CSV file, building a table, then counting the currency rates according to the data from Czech National Bank and user's input.
 <div class="tags"><li>React</li><li>Javascript</li></div>
@@ -58,14 +58,14 @@ A page made from a scratch for my friend Marie Kruse with custom javascript caro
 </div>
 
 <div class="box" markdown="1">
-<a href="/" target="_blank"><div class="circle"><img src="/images/obyvak.png" alt="a living room illustration"></div></a>
+<div class="circle"><a href="/" target="_blank"><img src="/images/obyvak.png" alt="a living room illustration"></a></div>
 ### <a href="/" target="_blank">This blog</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">Coded from scratch and designed, built my own tagging & blogging system, responsively generated images. A small portfolio of my favourite freetime activity</p>
 <div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li><li>Design</li></div>
 </div>  
 
 <div class="box" markdown="1">
-<a href="http://www.anetacamo.com/wordpress" target="_blank"><div class="circle"><img src="/images/bydleni.png" alt="a home illustration"></div></a>
+<div class="circle"><a href="http://www.anetacamo.com/wordpress" target="_blank"><img src="/images/bydleni.png" alt="a home illustration"></a></div>
 ### <a href="http://www.anetacamo.com/wordpress" target="_blank">MDM</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 built and designed completely from scratch, then rebuilt into wordpress.org template and implemented via PHP, my own illustrations and design.</p>
@@ -73,7 +73,7 @@ built and designed completely from scratch, then rebuilt into wordpress.org temp
 </div>  
 
 <div class="box" markdown="1">
-<a href="http://www.praqma.com/" target="_blank"><div class="circle"><img src="/images/laptop.png" alt="a computer illustration"></div></a>
+<div class="circle"><a href="http://www.praqma.com/" target="_blank"><img src="/images/laptop.png" alt="a computer illustration"></a></div>
 ### <a href="http://www.praqma.com/" target="_blank">Praqma</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 Completely rebuilding a large website into a custom-made easy-to-use CMSs;</p>
@@ -81,13 +81,13 @@ Completely rebuilding a large website into a custom-made easy-to-use CMSs;</p>
 </div>
 
 <div class="box" markdown="1">
-<a href="http://dostupnebydleni.soc.cas.cz/" target="_blank"><div class="circle"><img src="/images/hypoteka.png" alt="a house carried by plants illustration"></div></a>
+<div class="circle"><a href="http://dostupnebydleni.soc.cas.cz/" target="_blank"><img src="/images/hypoteka.png" alt="a house carried by plants illustration"></a></div>
 ### <a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Bydleni</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 A simple one page project with a lot of text and my own suburban illustrations</p>
 <div class="tags"><li>Illustration</li></div>
 </div>
-<br><br>
+<div style="width: 100%; height: 40px; float: left;"></div>
 
 ## Languages
 English, Czech, some Danish
