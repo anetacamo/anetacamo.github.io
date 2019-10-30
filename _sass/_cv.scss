@@ -19,10 +19,12 @@
     margin: 0 !important;
     margin-top: 16px !important;
     margin-bottom: -16px !important;
+    border-radius: 50%;
+    background-color: white;
   }
   .tags li {
     display: inline-block;
-    background: #f2f2f2;
+    background-color: white;
     padding: 0px 8px;
     border-radius: 4px;
     &:before {
@@ -31,7 +33,7 @@
   }
   .box {
     max-width: 270px;
-    background-color: #fbfbfb;
+    background-color: #f4f4f4;
     padding: 12px;
     border-radius: 8px;
     padding-top: 0;
