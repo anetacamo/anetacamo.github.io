@@ -5,11 +5,11 @@ layout: content
 cv: true
 ---
 
+<img src="/images/me.jpg" alt="aneta camo portrait" style="max-width: 1000px; margin: 0; height: auto;">
+
 # Aneta Camo
 ## <a style="pointer-events:none;">front-end development - Illustration - Webdesign</a>
 <a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="http://www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; based in Aarhus, born in Prague
-
-<img src="/images/me.jpg" alt="a selfportrait">
 
 I have been working as a front-end developer for past three years.
 Paying attention to details with respect to the project is very important for me.
