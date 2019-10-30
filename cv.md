@@ -76,7 +76,7 @@ built and designed completely from scratch, then rebuilt into wordpress.org temp
 <div class="circle"><a href="http://www.praqma.com/" target="_blank"><img src="/images/laptop.png" alt="a computer illustration"></a></div>
 ### <a href="http://www.praqma.com/" target="_blank">Praqma</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Completely rebuilding a large website into a custom-made easy-to-use CMSs. Building blogging, tagigng, pagination, auto image compression. Carousels, filters etc. Own CSS system</p>
+Completely rebuilding a large website into a custom-made easy-to-use CMSs. Building blogging, tagigng, pagination, auto image compression. Carousels, filters etc.</p>
 <div class="tags"><li>Javascript</li><li>Liquid</li><li>Sass</li></div>
 </div>
 
@@ -84,7 +84,7 @@ Completely rebuilding a large website into a custom-made easy-to-use CMSs. Build
 <div class="circle"><a href="http://dostupnebydleni.soc.cas.cz/" target="_blank"><img src="/images/hypoteka.png" alt="a house carried by plants illustration"></a></div>
 ### <a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Bydleni</a><br>A single page site
 <p style="margin-top: 8px; margin-bottom: 12px;">
-A simple one page project with a lot of text and my own suburban illustrations</p>
+A simple one page project coded from scratch with a lot of text and my own suburban illustrations</p>
 <div class="tags"><li>Illustrations</li><li>HTML</li><li>JQery</li></div>
 </div>
 <div style="width: 100%; height: 40px; float: left;"></div>
