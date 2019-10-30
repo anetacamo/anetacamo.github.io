@@ -44,10 +44,10 @@ Building the websites, mostly taking care of HTML & CSS, workings with various C
 ## REFERENCES
 
 <div class="box" markdown="1">
-  <div class="circle" markdown="1">![a wallet illustration](/images/penezenka.png)</div>
-  ### <a href="/kurzovnilistky" target="_blank">Calculator of Currencies</a>
-  Pulling data from a CSV file, building a table, then counting the currency rates according to the data from Czech National Bank and user's input.
-  <div class="tags"><li>React</li><li>Javascript</li></div>
+<div class="circle" markdown="1">![a wallet illustration](/images/penezenka.png)</div>
+### <a href="/kurzovnilistky" target="_blank">Calculator of Currencies</a>
+Pulling data from a CSV file, building a table, then counting the currency rates according to the data from Czech National Bank and user's input.
+<div class="tags"><li>React</li><li>Javascript</li></div>
 </div>
 
 <div class="box" markdown="1">
