@@ -9,6 +9,8 @@ cv: true
 ## <a style="pointer-events:none;">front-end development - Illustration - Webdesign</a>
 <a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="http://www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; based in Aarhus, born in Prague
 
+<a href="/kurzovnilistky" target="_blank"><img src="/images/me.jpg" alt="a wallet illustration">
+
 I have been working as a front-end developer for past three years.
 Paying attention to details with respect to the project is very important for me.
 I am very curious about web development and design and am always looking for an opportunity to learn more.
