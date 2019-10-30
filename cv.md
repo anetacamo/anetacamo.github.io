@@ -59,7 +59,7 @@ A page made from a scratch for my friend Marie Kruse with custom javascript caro
 
 <div class="box" markdown="1">
 <div class="circle"><a href="/" target="_blank"><img src="/images/obyvak.png" alt="a living room illustration"></a></div>
-### <a href="/" target="_blank">This blog</a>
+### <a href="/" target="_blank">Aneta Camo</a>This blogging system
 <p style="margin-top: 8px; margin-bottom: 12px;">Coded from scratch and designed, built my own tagging & blogging system, responsively generated images. A small portfolio of my favourite freetime activity</p>
 <div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li><li>Design</li></div>
 </div>  
