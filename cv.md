@@ -11,9 +11,9 @@ cv: true
 ## <a style="pointer-events:none;">front-end development - Illustration - Webdesign</a>
 <a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="http://www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; based in Aarhus, born in Prague
 
-I have been working as a front-end developer for past three years.
-Paying attention to details with respect to the project is very important for me.
-I am very curious about web development and design and am always looking for an opportunity to learn more.
+I have been working as a front-end developer for past three years.<br>
+Paying attention to details with respect to the project is very important for me.<br>
+And I really enjoy my work and am very eager to learn more.
 
 ## SKILLSET & TOOLSTACK
 + HTML
@@ -95,5 +95,5 @@ A simple one page project coded from scratch with a lot of text and my own subur
 English, Czech, some Danish
 
 ## Illustration
-### <a href="https://www.instagram.com/aneccca" target="_blank">Instagram</a>
+instagram // <a href="https://www.instagram.com/aneccca" target="_blank">Aneccca</a>
 <br><br>
