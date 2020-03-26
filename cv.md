@@ -40,16 +40,17 @@ Building the small websites and doing smaller front-end tasks for various custom
 <div class="box" markdown="1">
 <div class="circle"><a href="/movie-search" target="_blank"><img src="/images/penezenka.png" alt="a wallet illustration"></a></div>
 ### <a href="/movie-search" target="_blank">Movie Search</a>
+<p style="margin-top: 8px; margin-bottom: 12px;">A simple page done in React that searches through the large online database of movies and displays their info. Lets you to like and add movies to your local storage.</p>
 
 <div class="tags">
-  <li>React</li>
+  <li>React</li><li>React Hooks</li>
 </div>
 </div>
 
 <div class="box" markdown="1">
 <div class="circle"><a href="/" target="_blank"><img src="/images/obyvak.png" alt="a living room illustration"></a></div>
 ### <a href="/" target="_blank">Aneta Camo</a><br>Blogging system. This website.
-<p style="margin-top: 8px; margin-bottom: 12px;">I like to draw and I wanted to have a plce where I can organise my drawings into a different categories, so I hvae built my own simple tagging & blogging system, auto compressed images.</p>
+<p style="margin-top: 8px; margin-bottom: 12px;">I like to draw and I wanted to have a plce where I can organise my drawings into a different categories, so I have built my own simple tagging & blogging system with auto compressed images.</p>
 <div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li><li>Docker</li></div>
 </div>  
 
@@ -77,10 +78,3 @@ A simple one page project coded from scratch with a lot of czech text and some h
 <div class="tags"><li>Illustrations</li><li>HTML</li><li>JQery</li></div>
 </div>
 <div style="width: 100%; height: 40px; float: left;"></div>
-
-## Languages
-English, Czech, almost Danish
-
-## Illustration
-instagram // <a href="https://www.instagram.com/aneccca" target="_blank">Aneccca</a>
-<br><br>
