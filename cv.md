@@ -40,7 +40,7 @@ Building the small websites and doing smaller front-end tasks for various custom
 <div class="box" markdown="1">
 <div class="circle"><a href="/movie-search" target="_blank"><img src="/images/penezenka.png" alt="a wallet illustration"></a></div>
 ### <a href="/movie-search" target="_blank">Movie Search</a>
-<p style="margin-top: 8px; margin-bottom: 12px;">A simple page done in React that searches through the large online database of movies and displays their info. Lets you to like and add movies to your local storage.</p>
+<p style="margin-top: 8px; margin-bottom: 12px;">A simple page done in React that searches through the large online database of movies and displays their info on click. Lets you to like and add movies to your local storage.</p>
 
 <div class="tags">
   <li>React</li><li>React Hooks</li>
