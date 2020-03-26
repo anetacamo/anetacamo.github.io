@@ -7,8 +7,7 @@ cv: true
 
 <img src="/images/me.jpg" alt="aneta camo portrait" style="max-width: 1000px; margin: 0; margin-top: -32px; height: auto;">
 
-# Aneta Camo
-## <a style="pointer-events:none;">front-end development - Illustration - Webdesign</a>
+## Hi, my name is Aneta Camo
 <a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="http://www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; born in Prague, based in Aarhus,
 
 ## SKILLSET & TOOLSTACK
@@ -43,17 +42,9 @@ Building the small websites and doing smaller front-end tasks for various custom
 ### <a href="/movie-search" target="_blank">Movie Search</a>
 
 <div class="tags">
-+ React
+  <li>React</li>
 </div>
-
-<!--
-<div class="box" markdown="1">
-<div class="circle"><a href="http://www.anetacamo.com/mk" target="_blank"><img src="/images/fotoaparat.png" alt="a camera illustration"></a></div>
-### <a href="http://www.anetacamo.com/mk" target="_blank">Mariekruse</a><br>Photography portfolio
-A page made from a scratch for my friend Marie Kruse with custom-made javascript carousel.
-<div class="tags"><li>Javascript</li><li>Sass</li><li>Design</li></div>
 </div>
--->
 
 <div class="box" markdown="1">
 <div class="circle"><a href="/" target="_blank"><img src="/images/obyvak.png" alt="a living room illustration"></a></div>
