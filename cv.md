@@ -8,7 +8,7 @@ cv: true
 <img src="/images/me.jpg" alt="aneta camo portrait" style="max-width: 1000px; margin: 0; margin-top: -32px; height: auto;">
 
 ## Hi, my name is Aneta Camo
-<a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="http://www.anetacamova.com">anetacamova.com</a> &nbsp; | &nbsp; born in Prague, based in Aarhus,
+<a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="http://anetacamo.github.io">website</a> &nbsp; | &nbsp; born in Prague, based in Aarhus,
 
 ## SKILLSET & TOOLSTACK
 + HTML
