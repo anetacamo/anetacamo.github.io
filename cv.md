@@ -49,7 +49,7 @@ Building the small websites and doing smaller front-end tasks for various custom
 
 <div class="box" markdown="1">
 <div class="circle"><a href="/" target="_blank"><img src="/images/obyvak.png" alt="a living room illustration"></a></div>
-### <a href="/" target="_blank">Aneta Camo</a><br>Blogging system. This website.
+### <a href="/" target="_blank">Aneta Camo</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">I like to draw and I wanted to have a plce where I can organise my drawings into a different categories, so I have built my own simple tagging & blogging system with auto compressed images.</p>
 <div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li><li>Docker</li></div>
 </div>  
@@ -72,7 +72,7 @@ Rebuilding a large website into a custom-made easy-to-use CMSs. Building bloggin
 
 <div class="box" markdown="1">
 <div class="circle"><a href="http://dostupnebydleni.soc.cas.cz/" target="_blank"><img src="/images/hypoteka.png" alt="a house carried by plants illustration"></a></div>
-### <a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Affordable housing</a><br>A single page site
+### <a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Affordable housing</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 A simple one page project coded from scratch with a lot of czech text and some house illustrations.</p>
 <div class="tags"><li>Illustrations</li><li>HTML</li><li>JQery</li></div>
