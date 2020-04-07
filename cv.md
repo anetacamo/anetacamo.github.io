@@ -49,9 +49,9 @@ Building the small websites and doing smaller front-end tasks for various custom
 
 <div class="box" markdown="1">
 <div class="circle"><a href="/" target="_blank"><img src="/images/obyvak.png" alt="a living room illustration"></a></div>
-### <a href="/" target="_blank">Aneta Camo</a>
+### <a href="/" target="_blank">My portfolio with images</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">I like to draw and I wanted to have a plce where I can organise my drawings into a different categories, so I have built my own simple tagging & blogging system with auto compressed images.</p>
-<div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li><li>Docker</li></div>
+<div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li></div>
 </div>  
 
 <div class="box" markdown="1">
