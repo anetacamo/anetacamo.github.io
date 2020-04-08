@@ -8,14 +8,14 @@ cv: true
 <img src="/images/me.jpg" alt="aneta camo portrait" style="max-width: 1000px; margin: 0; margin-top: -32px; height: auto;">
 
 ## Hi, my name is Aneta Camova
-<a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="http://anetacamo.github.io">website</a> &nbsp; | &nbsp; born in Prague, based in Aarhus,
+<a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp; | &nbsp; <a href="http://anetacamo.github.io">website</a> &nbsp; | &nbsp; born in Prague based in Aarhus
 
 ## SKILLSET & TOOLSTACK
 + HTML
 + CSS, Bootstrap, Sass
 + JS
-+ interested in JS frameworks like React and Angular JS
-+ Liquid, PHP
++ I am very interested in JS frameworks like React and React Native and Angular
++ Liquid, PH P
 + GitHub & Git
 + Wordpress.org, Webflow, Squarespace, HubSpot
 + Basic use of Docker, Jenkins, CircleCI
@@ -56,7 +56,7 @@ Building the small websites and doing smaller front-end tasks for various custom
 
 <div class="box" markdown="1">
 <div class="circle"><a href="http://www.dustojnamzda.cz" target="_blank"><img src="/images/bydleni.png" alt="a home illustration"></a></div>
-### <a href="http://www.anetacamo.com/wordpress" target="_blank">MDM</a>
+### <a href="http://www.dustojnamzda.cz" target="_blank">MDM</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 A custom built and designed wordpress template, using plugin Advanced Custom Fields, to make it easier to fill in everything. Few illustrations.</p>
 <div class="tags"><li>Wordpress.org</li><li>PHP</li><li>Javascript</li><li>Sass</li><li>Illustration</li></div>
