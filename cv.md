@@ -70,6 +70,23 @@ Rebuilding a large website into a custom-made easy-to-use CMSs. Building bloggin
 <div class="tags"><li>Javascript</li><li>Liquid</li><li>Sass</li></div>
 </div>
 
+
+<div class="box" markdown="1">
+<div class="circle"><a href="https://anetacamo-store.herokuapp.com/" target="_blank"><img src="/images/laptop.png" alt="a computer illustration"></a></div>
+### <a href="https://anetacamo-store.herokuapp.com/" target="_blank">A fake store</a>
+<p style="margin-top: 8px; margin-bottom: 12px;">
+</p>
+<div class="tags"><li>React</li><li>Heroku</li><li>Sass</li><li>Firebase</li></div>
+</div>
+
+<div class="box" markdown="1">
+<div class="circle"><a href="http://www.casaonline.cz/" target="_blank"><img src="/images/laptop.png" alt="a computer illustration"></a></div>
+### <a href="http://www.praqma.com/" target="_blank">CASA</a>
+<p style="margin-top: 8px; margin-bottom: 12px;">
+Rebuilding and redesigning a website to a responsive web with easy navigation and layout</p>
+<div class="tags"><li>Wordpress</li><li>Simple PHP</li><li>Sass</li></div>
+</div>
+
 <div class="box" markdown="1">
 <div class="circle"><a href="http://dostupnebydleni.soc.cas.cz/" target="_blank"><img src="/images/hypoteka.png" alt="a house carried by plants illustration"></a></div>
 ### <a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Affordable housing</a>
