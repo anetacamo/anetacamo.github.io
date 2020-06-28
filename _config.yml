@@ -12,9 +12,9 @@ encoding: utf-8
 # the gems must be installed on your local system to support jekyll build/serve
 # Example
 #    $ gem install jekyll-redirect-from
-plugins:
+# plugins:
 #  - jekyll-redirect-from
-- jekyll-responsive-image
+# - jekyll-responsive-image
 
 # Build settings
 markdown: kramdown
