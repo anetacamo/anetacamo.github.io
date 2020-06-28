@@ -1,14 +1,22 @@
 function displayKeywords() {
   $('.keyword-container').css('height','auto');
-  $('.keyword-container').css('padding','4px 0 8px 0');
 };
 
-$('.keyword-search').mouseleave(function(){
-  $('.keyword-container').css('height','0');
-  $('.keyword-container').css('padding','0');
+$('.hash').click(function() {
+//  $('.right-side-menu').toggle();
+        $('.right-side-menu').css('top', 0);
+})
+
+$('html').click(function(e) {
+  //if clicked element is not your element and parents aren't your div
+  if (e.target.id != 'right-side-menu' && $(e.target).parents('#right-side-menu').length == 0) {
+      $('.right-side-menu').css('top', -300);
+  }
 });
 
-function myFunction() {
+
+
+function letterChangeListener() {
   // Declare variables
   var input, filter, ul, li, a, i;
   input = document.getElementById('myInput');

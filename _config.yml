@@ -1,6 +1,6 @@
 # Site settings
 title: AnetaCamo | Web development & Illustration
-description: Hi, my name is Aneta and I am really interested in web designer & illustration.
+description: Hi, my name is Aneta
 name: Aneta Camova
 logo: /images/logo.png
 highlighter: rouge
@@ -13,8 +13,8 @@ encoding: utf-8
 # Example
 #    $ gem install jekyll-redirect-from
 plugins:
-  - jekyll-redirect-from
-  - jekyll-responsive-image
+#  - jekyll-redirect-from
+- jekyll-responsive-image
 
 # Build settings
 markdown: kramdown

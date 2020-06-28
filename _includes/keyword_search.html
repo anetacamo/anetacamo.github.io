@@ -1,7 +1,10 @@
 <!-- BEGIN: KEYWORDS SEARCH -->
+<div class="top-right" id="right-side-menu">
+<div class="hash"></div>
 <div class="right-side-menu" {% unless page.date %}style="position:fixed;"{% endunless %}>
+
   <div class="keyword-search">
-    <input type="text" id="myInput" onkeyup="myFunction();" onclick="displayKeywords();" placeholder="Find the hash..." autocomplete="off">
+    <input type="text" id="myInput" onkeyup="letterChangeListener();" onclick="displayKeywords();" placeholder="Find the hash..." autocomplete="off">
       <div class="keyword-container">
         <ul id="myUL">
           {% for item in site.tagged %}
@@ -13,6 +16,6 @@
       </div>
     </div>
 </div>
-
+</div>
 <script src="/javascripts/keywords_search.js"></script>
 <!-- END: KEYWORDS SEARCH -->
