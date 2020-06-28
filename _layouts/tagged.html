@@ -25,22 +25,22 @@ layout: wide
 {% endfor %}
 
 
-  <p style="margin-top: 140px; padding: 12px; text-transform:uppercase; letter-spacing: 2px; margin-bottom: 0; font-family: 'Open Sans', sans-serif;">
-    <b>All blogs tagged <br><span style="font-weight: 800; text-decoration: underline;">{{ page.title }}</span></b>
+  <p style="margin-top: 160px; padding: 12px; text-transform:uppercase; letter-spacing: 2px; margin-bottom: 0; font-family: 'Open Sans', sans-serif;">
+    <b>All blogs tagged <br><span class="bold underlined" style="font-weight: 800;">{{ page.title }}</span></b>
   </p>
 
   {% if page.description %}<p style="margin:16px 0; max-width:620px; padding: 0 12px;">{{ page.description }}</p>{% endif %}
 
-  <div class="squares">
+  <div class="squares{% if p_tag == "Everything" %} small{% endif %}">
     {% for blog in tagged %}
-      <div class="square{% if p_tag == "Everything" %} small{% endif %}">
+      <div class="square">
         <a href="{{ blog.url }}">
           <div class="img-box">
-            <img class="fully-covering-image" src="{{ blog.image | replace: '/images/blogs/', '/resized/400/' }}" alt="{{ blog.title }} by Aneta Camo">
+            <img class="fully-covering-image" src="{{ blog.image | replace: '/images/blogs/', '/assets/resized/400/' }}" alt="{{ blog.title }} by Aneta Camo">
           </div>
         </a>
       </div>
     {% endfor %}
   </div>
 
-  <div class="tag">hello</div>
+<!--  <div class="tag">hello</div>-->

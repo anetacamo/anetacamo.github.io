@@ -4,17 +4,14 @@
   {% for blog in blogs %}
   <div class="blogs">
 
-
-    <!--<img src="{{ blog.image | replace: '/images/blogs/', '/resized/400/' }}" alt="{{ blog.title }}" class="fully-contained-image">-->
-
     <a href="{{ blog.url }}">
       {% if blog.image %}
         {% comment %}
-        <!--{% responsive_image_block %}
-          path: {{ blog.image | remove_first: "/" }}
-        {% endresponsive_image_block %}-->
+          {% responsive_image_block %}
+            path: {{ blog.image | remove_first: "/" }}
+          {% endresponsive_image_block %}
         {% endcomment %}
-        <img src="{{ blog.image | replace: '/images/blogs/', '/resized/400/' }}" alt="{{ blog.title }}" class="fully-contained-image">
+        <img src="{{ blog.image | replace: '/images/blogs/', 'assets/resized/400/' }}" alt="{{ blog.title }}" class="fully-contained-image">
       {% endif %}
     </a>
 
@@ -32,7 +29,7 @@
         {% endif %}
       {% endfor %}
       -->
-      {{ blog.content }}
+      <!--{{ blog.content }}-->
     </div>
   </div>
   {% endfor %}

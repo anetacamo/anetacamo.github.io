@@ -1,6 +1,6 @@
 .blog-container {
   padding-left: 0;
-  max-width: 400px;
+  max-width: 480px;
   margin: auto;
   overflow: auto;
   padding: 12px;
@@ -25,10 +25,10 @@
         filter: none;
         transition-duration: 350ms;
       }
-      max-width: 100%;
+      min-width: 100%;
       margin-bottom: 4px;
       @media (max-width: 600px) {
-        max-height: calc(100vh - 124px);
+      //  max-height: calc(100vh - 124px);
       }
     }
 
