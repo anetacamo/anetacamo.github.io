@@ -2,12 +2,11 @@
 layout: default
 ---
 
-
-
 {% include prev_next.html %}
-
 <div class="single-blog-container">
-  <img class="single-blog-image" src="{{ page.image }}" alt="{{ page.title }} Aneta Camo">
+  {% if page.image %}
+    <img class="single-blog-image" src="{{ page.image }}" alt="{{ page.title }} Aneta Camo">
+  {% endif %}
   <!-- blog main text -->
   <div class="align-right blog-text">
     <p style="margin: 0;">
@@ -19,9 +18,7 @@ layout: default
       {{ page.date | date: "%A, %B %d, %Y" }}
     </p>
     <h1>{{ page.title }}</h1>
-    <p style="font-weight: 400; margin-bottom: 0;">{{ page.description }}</p>
-
-
+    <p>{{ page.description }}</p>
     <!-- BUY -->
     <!--
     {% for tag in page.tags %}
@@ -34,12 +31,10 @@ layout: default
       </section>
       {% endif %}
     {% endfor %}
-    -->
+-->
     <!-- BUY end -->
-
-    <!--
+  </div>
+  <div class="blog-container">
     {{ content }}
-    -->
-
   </div>
 </div>

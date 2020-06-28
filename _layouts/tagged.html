@@ -2,11 +2,16 @@
 layout: wide
 ---
 
+{% assign p_tag = page.tag %}
+
 {% assign tagged = "" | split: ',' %}
 {% for blog in site.blogs %}
   {% for tag in blog.tags %}
-    {% assign p_tag = page.tag %}
+
     {% if tag == p_tag %}
+      {% assign tagged = tagged | push: blog %}
+    {% endif %}
+    {% if p_tag == "Everything" %}
       {% assign tagged = tagged | push: blog %}
     {% endif %}
   {% endfor %}
@@ -19,27 +24,23 @@ layout: wide
  {% endif %}
 {% endfor %}
 
-<div style="height: 50vh;">
-  <img src="{% if page.image %}{{ page.image }}{% else %}{{ blog-image }}{% endif %}" class="fully-covering-image" alt="{{ page.title }} Aneta Camo">
-</div>
 
-<div class="tag-container flex-display">
-  <h4 class="center" style="width: 100%; margin-top: 12px; padding: 12px; font-weight: 800;">
-    All blogs tagged <a href="">{{ page.title }}</a>
-  </h4>
-  {% if page.description %}<div class="center" style="width: 100%;"><p style="margin:16px auto; max-width:620px; padding: 0 12px;">{{ page.description }}</p></div>{% endif %}
+  <p style="margin-top: 140px; padding: 12px; text-transform:uppercase; letter-spacing: 2px; margin-bottom: 0; font-family: 'Open Sans', sans-serif;">
+    <b>All blogs tagged <br><span style="font-weight: 800; text-decoration: underline;">{{ page.title }}</span></b>
+  </p>
 
-  {% for blog in tagged %}
-  <a href="{{ blog.url }}">
-    <div class="square">
-      <div class="img-box">
-        <img class="fully-covering-image" src="{{ blog.image | replace: '/images/blogs/', '/resized/400/' }}" alt="{{ blog.title }} by Aneta Camo">
+  {% if page.description %}<p style="margin:16px 0; max-width:620px; padding: 0 12px;">{{ page.description }}</p>{% endif %}
+
+  <div class="squares">
+    {% for blog in tagged %}
+      <div class="square{% if p_tag == "Everything" %} small{% endif %}">
+        <a href="{{ blog.url }}">
+          <div class="img-box">
+            <img class="fully-covering-image" src="{{ blog.image | replace: '/images/blogs/', '/resized/400/' }}" alt="{{ blog.title }} by Aneta Camo">
+          </div>
+        </a>
       </div>
-      <p style="margin-bottom: 0; font-weight: 900; margin-top: 8px; line-height: 1.2; -webkit-text-fill-color: black;">{{ blog.title }}<br></p>
-      {% if page.tag == 'Print' %}
-        <p style="margin-top: 0; font-weight: 900;"><a href="{{ blog.url }}">250dkk // 35€</a></p>
-      {% endif %}
-    </div>
-  </a>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>
+
+  <div class="tag">hello</div>

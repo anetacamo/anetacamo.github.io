@@ -1,11 +1,9 @@
 .logo {
   top: 0;
-  position: absolute;
+  position: fixed;
   @media (max-width: 600px) {
-    height: 110px;
     width: 100%;
     background-color: white;
-    position: absolute;
   }
   img {
     height: 124px;
@@ -14,37 +12,68 @@
       height: 110px;
     }
   }
+  &.small-sized {
+    img {
+      height: 110px;
+    }
+  }
 }
 
-
-.footer {
-  background-color: white;
-  position: absolute;
-  z-index: 4;
-  padding: 12px;
+.portrait {
+  position: fixed;
   bottom: 0;
-  @media (max-width: 1000px) {
-    width: 160px;
+  left: 8px;
+  width: 500px;
+  height: 200px;
+  background-image: url(/images/profile.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition-duration: 350ms;
+  cursor: pointer;
+  &:hover {
+    background-image: url(/images/meh.png);
+    transition-duration: 350ms;
+  }
+  &.small-sized {
+    height: 140px;
+  }
+  @media (max-width: 900px) {
+    width: 180px;
+    height: 120px;
   }
   @media (max-width: 600px) {
-    left: 162px;
-    top: 18px;
-    height: 60px;
-    overflow: hidden;
+    top: 16px;
+    left: 180px;
+    width: 132px;
+    height: 80px;
   }
-  p {
-    font-size: 10px;
-    line-height: 1.4;
-    margin: 12px 0;
-  }
-  .portrait {
-    margin-bottom: 8px;
-    margin-top: 8px;
-    img {
-      width: 300px;
-      @media (max-width: 1000px) {
-        display: none;
-      }
-    }
+}
+
+.hash {
+position: fixed;
+top: 12px;
+right: 8px;
+width: 60px;
+height: 100px;
+z-index: 1;
+background-image: url(/images/hash.gif);
+background-size: contain;
+background-repeat: no-repeat;
+cursor: pointer;
+}
+
+// scrollbar
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $pink;
+}
+body, a, img {
+  cursor: url(/images/pointer4.png), auto;
+  transition-duration: 350ms;
+  &:hover {
+    cursor: url(/images/pointer4.png), auto;
+    transition-duration: 350ms;
   }
 }

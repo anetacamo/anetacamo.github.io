@@ -1,35 +1,33 @@
 .blog-container {
+  padding-left: 0;
+  max-width: 400px;
+  margin: auto;
   overflow: auto;
   padding: 12px;
   padding-bottom: 0;
-  @media (max-width: 1200px) {
-    padding-left: 232px;
-  }
-  @media (max-width: 1000px) {
-    padding-left: 176px;
+  @media (max-width: 800px) {
+    margin-right: 0;
   }
   @media (max-width: 600px) {
     padding-top: 112px;
     padding-left: 12px;
+    margin-right: auto;
   }
   .blogs {
     overflow: auto;
-    max-width: 680px;
     margin: auto;
     @media (max-width: 1200px) {
       margin:0;
     }
     img {
-      margin-bottom: 12px;
-      margin-right: 12px;
-      float: left;
-      max-height: 400px;
-      max-width: 400px;
-      @media (max-width: 750px) {
-        float: none;
+      filter: grayscale(100%);
+      &:hover {
+        filter: none;
+        transition-duration: 350ms;
       }
+      max-width: 100%;
+      margin-bottom: 4px;
       @media (max-width: 600px) {
-        max-width: calc(100vw - 24px);
         max-height: calc(100vh - 124px);
       }
     }

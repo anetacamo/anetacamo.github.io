@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Roboto+Condensed:300,400,700|Roboto+Slab:100,300,400,700|Roboto:100,300,400,500,700,900&display=swap');
 
-
-$pink: #ffa802;
+$pink: #ff00f7;;
 $yellow: #dc0cb7;
+$blue: #72ffd2;
 
 * {
   margin: 0;
   padding: 0;
 }
 
+b {
+  font-weight: 400;
+}
+
 body {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.4px;
   font-weight: 300;
   font-size: 12px;
@@ -19,6 +23,7 @@ body {
 
 p {
   line-height: 1.8;
+  font-family: 'Roboto Slab';
 }
 
 
@@ -36,7 +41,7 @@ li {
     content: "+";
     font-weight: 100;
     font-size: 18px;
-    color: #112062;
+    color: $blue;
     margin-right: 8px;
     position: absolute;
     top: -6px;
@@ -44,15 +49,10 @@ li {
   }
 }
 
-
-
-
-
-
 b, button {
   letter-spacing: 0.8px;
+  font-weight: 600;
 }
-
 
 h1, h2 {
   font-family: 'Open Sans', sans-serif;
@@ -79,8 +79,6 @@ h4 {
   font-size: 10px;
   line-height: 1.4;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 
@@ -110,20 +108,19 @@ h4 {
 
 
 a {
-  cursor: pointer;
-  background: linear-gradient(to right, $pink, $yellow);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  color: $pink;
+  text-decoration: none;
   position: relative;
 }
 
-p a:after, h3 a:after, h4 a:after, li a:after {
+/*
+a:after {
   bottom: 0;
   content: "";
-  display: block;
+  display: inline;
   height: 2px;
   position: absolute;
-  background: linear-gradient(to right, #ffa802, #dc0cb7);
+  background: $pink;
   transition: width 0.3s ease 0s, left 0.3s ease;
   width: 0;
   left: 0;
@@ -133,8 +130,42 @@ a:hover:after {
   width: 100%;
   left: 0;
 }
+*/
 
 
+
+.fully-covering-image {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.align-right {
+  text-align: right;
+}
+.flex-display {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+
+.full-screen {
+  max-width: calc(100vw - 224px);
+  max-height: calc(100vh - 24px);
+  @media (max-width: 1000px){
+    max-width: calc(100vw - 184px);
+  }
+  @media (max-width: 600px){
+    max-width: calc(100vw - 24px);
+  }
+}
+
+
+
+
+
+/* unused
 
 button {
   border: none;
@@ -178,35 +209,4 @@ button {
     }
   }
 }
-
-
-
-
-
-
-.fully-covering-image {
-  width:100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.align-right {
-  text-align: right;
-}
-.flex-display {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-
-.full-screen {
-  max-width: calc(100vw - 224px);
-  max-height: calc(100vh - 24px);
-  @media (max-width: 1000px){
-    max-width: calc(100vw - 184px);
-  }
-  @media (max-width: 600px){
-    max-width: calc(100vw - 24px);
-  }
-}
+*/

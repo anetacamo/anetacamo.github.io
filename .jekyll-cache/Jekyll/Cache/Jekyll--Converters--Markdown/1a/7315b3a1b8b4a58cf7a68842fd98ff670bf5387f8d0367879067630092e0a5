@@ -1,0 +1,94 @@
+I"<p><img src="/images/me.jpg" alt="aneta camo portrait" style="max-width: 1000px; margin: 0; margin-top: -32px; height: auto;" /></p>
+
+<h2 id="hi-my-name-is-aneta-camova">Hi, my name is Aneta Camova</h2>
+<p><a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a>   |   <a href="http://anetacamo.github.io">website</a>   |   born in Prague based in Aarhus</p>
+
+<h2 id="skillset--toolstack">SKILLSET &amp; TOOLSTACK</h2>
+<ul>
+  <li>HTML</li>
+  <li>CSS, Bootstrap, Sass</li>
+  <li>JS</li>
+  <li>React, some of Redux, GraphQl, React Native</li>
+  <li>Liquid, PHP</li>
+  <li>GitHub &amp; Git</li>
+  <li>Gatsby, Jekyll, Wordpress, Webflow, Squarespace, HubSpot</li>
+  <li>Basic use of Docker, Jenkins, CircleCI</li>
+  <li>SEO basics, interested in UX and UI</li>
+  <li>Photoshop</li>
+</ul>
+
+<h2 id="working-experience">Working EXPERIENCE</h2>
+<h4 id="praqmacom"><a href="https://www.praqma.com" target="_blank">Praqma.com</a></h4>
+<h4 id="august-2017---now">August 2017 - now</h4>
+<p>Rebuilding two large websites into custom-made easy-to-use system generated from simple markdown files. <a href="https://www.praqma.com" target="_blank">praqma.com</a> &amp; <a href="https://www.code-conf.com" target="_blank">code-conf</a>; updating the structures to be easy to use for various content-creators.</p>
+
+<h4 id="prolikeio"><a href="https://www.prolike.io" target="_blank">Prolike.io</a></h4>
+<h4 id="january-2018---june-2018">january 2018 - june 2018</h4>
+<p>Restructuring large webpage made of unordered html files <a href="https://dataintensity.com/">data intensity</a> into static pages generating system made of sections to make front-end development easy and convenient. Building the blogging system.</p>
+
+<h4 id="symbio-digitalsro"><a href="https://www.symbio.agency" target="_blank">SYMBIO digital,s.r.o.</a></h4>
+<h4 id="november-2015---june-2016">November 2015 - June 2016</h4>
+<p>Building the small websites and doing smaller front-end tasks for various customers, mostly taking care of HTML &amp; CSS, workings with various CMSs.</p>
+
+<h2 id="references">REFERENCES</h2>
+<div class="boxes">
+<div class="box">
+    <div class="circle"><a href="/movie-search" target="_blank"><img src="/images/penezenka.png" alt="a wallet illustration" /></a></div>
+    <h3 id="movie-search"><a href="/movie-search" target="_blank">Movie Search</a></h3>
+    <p style="margin-top: 8px; margin-bottom: 12px;">A simple page done in React that searches through the large online database of movies and displays their info on click. Lets you to like and add movies to your local storage.</p>
+
+    <div class="tags">
+  <li>React</li><li>React Hooks</li>
+</div>
+  </div>
+
+<div class="box">
+    <div class="circle"><a href="/" target="_blank"><img src="/images/obyvak.png" alt="a living room illustration" /></a></div>
+    <h3 id="my-portfolio-with-images"><a href="/" target="_blank">My portfolio with images</a></h3>
+    <p style="margin-top: 8px; margin-bottom: 12px;">I like to draw and I wanted to have a plce where I can organise my drawings into a different categories, so I have built my own simple tagging &amp; blogging system with auto compressed images.</p>
+    <div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li></div>
+  </div>  
+
+<div class="box">
+    <div class="circle"><a href="http://www.dustojnamzda.cz" target="_blank"><img src="/images/bydleni.png" alt="a home illustration" /></a></div>
+    <h3 id="mdm"><a href="http://www.dustojnamzda.cz" target="_blank">MDM</a></h3>
+    <p style="margin-top: 8px; margin-bottom: 12px;">
+A custom built and designed wordpress template, using plugin Advanced Custom Fields, to make it easier to fill in everything. Few illustrations.</p>
+    <div class="tags"><li>Wordpress.org</li><li>PHP</li><li>Javascript</li><li>Sass</li><li>Illustration</li></div>
+  </div>  
+
+<div class="box">
+    <div class="circle"><a href="http://www.praqma.com/" target="_blank"><img src="/images/laptop.png" alt="a computer illustration" /></a></div>
+    <h3 id="praqma"><a href="http://www.praqma.com/" target="_blank">Praqma</a></h3>
+    <p style="margin-top: 8px; margin-bottom: 12px;">
+Rebuilding a large website into a custom-made easy-to-use CMSs. Building blogging system, tagging, pagination, auto image compression. Carousels, filters done with Javascript.</p>
+    <div class="tags"><li>Javascript</li><li>Liquid</li><li>Sass</li></div>
+  </div>
+
+
+<div class="box">
+    <div class="circle"><a href="https://anetacamo-store.herokuapp.com/" target="_blank"><img src="/images/laptop.png" alt="a computer illustration" /></a></div>
+    <h3 id="a-fake-store"><a href="https://anetacamo-store.herokuapp.com/" target="_blank">A fake store</a></h3>
+    <p style="margin-top: 8px; margin-bottom: 12px;">A small store with sign in and trace of the products in the shopping back, user authentification done through firebase, payments via Stripe, deployed on Heroku and stored on GitHub. More in about section.
+</p>
+    <div class="tags"><li>React</li><li>Heroku</li><li>Sass</li><li>Firebase</li></div>
+  </div>
+
+<div class="box">
+    <div class="circle"><a href="http://www.casaonline.cz/" target="_blank"><img src="/images/laptop.png" alt="a computer illustration" /></a></div>
+    <h3 id="casa"><a href="http://www.casaonline.cz/" target="_blank">CASA</a></h3>
+    <p style="margin-top: 8px; margin-bottom: 12px;">
+Rebuilding and redesigning a website to a responsive web with easy navigation and layout</p>
+    <div class="tags"><li>Wordpress</li><li>Simple PHP</li><li>Sass</li></div>
+  </div>
+
+<div class="box">
+    <div class="circle"><a href="http://dostupnebydleni.soc.cas.cz/" target="_blank"><img src="/images/hypoteka.png" alt="a house carried by plants illustration" /></a></div>
+    <h3 id="affordable-housing"><a href="http://dostupnebydleni.soc.cas.cz/" target="_blank">Affordable housing</a></h3>
+    <p style="margin-top: 8px; margin-bottom: 12px;">
+A simple one page project coded from scratch with a lot of czech text and some house illustrations.</p>
+    <div class="tags"><li>Illustrations</li><li>HTML</li><li>JQery</li></div>
+  </div>
+<div style="width: 100%; height: 40px; float: left;"></div>
+</div>
+:ET
