@@ -11,18 +11,21 @@
     flex: 1 1;
     overflow: hidden;
     margin-bottom: 12px;
-    &.small {
-      height: 160px;
-      min-width: 160px;
-      max-width: 200px;
-      margin: 4px;
-    }
     img:hover {
       height: 110%;
       width: 110%;
       transition-duration: 350ms;
       margin-top: -5%;
       margin-left: -5%;
+    }
+  }
+  &.small {
+    margin: -4px;
+    .square {
+      height: 160px;
+      min-width: 160px;
+      max-width: 200px;
+      margin: 4px;
     }
   }
 }

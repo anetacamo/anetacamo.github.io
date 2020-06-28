@@ -2,22 +2,36 @@
 {% assign blognumber = page.url | replace: '/', '' | replace: 'blogs', '' | plus: 0 %}
 {% assign next = blognumber | plus: 1 %}
 {% assign previous = blognumber | minus: 1 %}
-{% assign previous = previous | prepend: '000' | slice: -2, 2  %}
 {% assign blog_amount = site.blogs | size %}
+
 {% if next < 10 %}
   {% assign next = next | prepend: '00' %}
 {% elsif next > 9 %}
   {% assign next = next | prepend: '0' %}
 {% endif %}
+
+{% if previous < 10 %}
+  {% assign previous = previous | prepend: '00' %}
+{% elsif previous > 9 %}
+  {% assign previous = previous | prepend: '0' %}
+{% endif %}
+
+{% if blog_amount < 10 %}
+  {% assign b_amount = blog_amount | prepend: '00' %}
+{% elsif blog_amount > 9 %}
+  {% assign b_amount = blog_amount | prepend: '0' %}
+{% endif %}
+
 <div class="arrows">
   {% if blognumber == 1 %}
-    <a class="vertical-text" style="left:10px" href="/blogs/{{ blog_amount }}">← go to last</a>
+    <a class="vertical-text" style="left:10px" href="/blogs/{{ b_amount }}">← go to last</a>
   {% else %}
     <a class="vertical-text" style="left:10px" href="/blogs/{{ previous }}">← see previous</a>
   {% endif %}
 
+
   {% if blognumber == blog_amount %}
-    <a class="vertical-text" style="right: 6px" href="/blogs/1">go to first →</a>
+    <a class="vertical-text" style="right: 6px" href="/blogs/001">go to first →</a>
   {% else %}
     <a class="vertical-text" style="right: 6px" href="/blogs/{{ next }}">see next →</a>
   {% endif %}
