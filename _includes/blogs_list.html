@@ -11,7 +11,7 @@
             path: {{ blog.image | remove_first: "/" }}
           {% endresponsive_image_block %}
         {% endcomment %}
-        <img src="{{ blog.image | replace: '/images/blogs/', 'assets/resized/400/' }}" alt="{{ blog.title }}" class="fully-contained-image">
+        <img src="{{ blog.image | replace: '/images/blogs/', '/resized/400/' }}" alt="{{ blog.title }}" class="fully-contained-image">
       {% endif %}
     </a>
 
