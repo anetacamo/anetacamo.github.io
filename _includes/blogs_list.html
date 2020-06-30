@@ -3,7 +3,6 @@
 <div class="blog-container">
   {% for blog in blogs %}
   <div class="blogs">
-
     <a href="{{ blog.url }}">
       {% if blog.image %}
         {% comment %}
@@ -29,7 +28,9 @@
         {% endif %}
       {% endfor %}
       -->
-      <!--{{ blog.content }}-->
+      <div class="blog-text">
+        {{ blog.content }}
+      </div>
     </div>
   </div>
   {% endfor %}

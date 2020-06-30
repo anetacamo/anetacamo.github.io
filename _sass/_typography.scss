@@ -14,6 +14,10 @@ b {
   font-weight: 400;
 }
 
+i, em {
+  color: $pink;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.4px;
@@ -132,6 +136,10 @@ a:hover:after {
 }
 */
 
+
+.blog-text p {
+  margin-bottom: 12px !important;
+}
 
 
 .fully-covering-image {

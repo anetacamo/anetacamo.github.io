@@ -1,8 +1,10 @@
 ---
 tag: Easterneuropification
-description: "Missing you, bad neigbourhoods <br><br>Sidliste Pisnice - [maybe the only place in the world] where gentrification went reversed, no matter what traces were left in the bushes, what secret treasures were burried in those hills; with how much blood, sweat and tears we contaminated and marked this teritory; families made new families, kids went closer to the city.
-<br><br>
-Only the last few castaways still resisting the time<br> slowly sinking in the sea of things collected over the years.<br>
-but no regrets, its the manifest of the life that has been lived - you cannot deny it; you cannot overlook it; it's a monumental pile of life; if you just stand still for a while you might start disolving, too; a landmark of this flat; all the proofs, relics, artifacts are here to be discovered in the layers of the time; the childhood, puberty, adulthood - open the archeological site; call the ministry of culture and start excavating. the child room still intact somewhere within there; dig the hole into the paralel universes; dig through the layers deep enough, Cambrian, Precambrian; a burried diary of angry years covered in the duct tape - dont touch it though when you find it; call the police."
+description: "Missing you, bad neigbourhoods <br><br>Sidliste Pisnice - [maybe the only place in the world] where gentrification went reversed, no matter what traces were left in the bushes, what secret treasures were burried in those hills; with how much blood, sweat and tears we contaminated and marked this teritory; families made new families, kids went closer to the city."
+
 
 ---
+<!--<br><br>
+<
+Only the last few castaways still resisting the time<br> slowly sinking in the sea of things collected over the years.<br>
+but no regrets, its the manifest of the life that has been lived - you cannot deny it; you cannot overlook it; it's a monumental pile of life; if you just stand still for a while you might start disolving, too; a landmark of this flat; all the proofs, relics, artifacts are here to be discovered in the layers of the time; the childhood, puberty, adulthood - open the archeological site; call the ministry of culture and start excavating. the child room still intact somewhere within there; dig the hole into the paralel universes; dig through the layers deep enough, Cambrian, Precambrian; a burried diary of angry years covered in the duct tape - dont touch it though when you find it; call the police."-->
