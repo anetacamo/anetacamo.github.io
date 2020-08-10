@@ -29,7 +29,8 @@ layout: wide
     <b>All blogs tagged <br><span class="bold underlined" style="font-weight: 800;">{{ page.title }}</span></b>
   </p>
 
-  {% if page.description %}<p style="margin:16px 0; max-width:620px; padding: 0 12px;">{{ page.description }}</p>{% endif %}
+  {% if page.description %}<div style="margin:16px 0; max-width:620px; padding: 0 12px;">{{ page.description }}</div>{% endif %}
+  <div style="margin:16px 0; max-width:620px; padding: 0 12px;">{{ page.content }}</div>
 
   <div class="squares{% if p_tag == "Everything" %} small{% endif %}">
     {% for blog in tagged %}
