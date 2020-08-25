@@ -1,3 +1,5 @@
+FROM ME TO ME. WITH LOVE
+
 JEKYLL RESPONSIVE image
 
 when adding a new blogs - Adding a new picture, the code at includes/blogs list needs to be uncommented.

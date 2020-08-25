@@ -4,10 +4,18 @@
 $pink: #ff00f7;;
 $yellow: #dc0cb7;
 $blue: #72ffd2;
+$purple: #4f18d9;
 
 * {
   margin: 0;
   padding: 0;
+}
+
+::selection {
+  background: $blue; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $blue; /* Gecko Browsers */
 }
 
 b {
