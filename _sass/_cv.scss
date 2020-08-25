@@ -1,4 +1,49 @@
 .cv-container {
+  .main-img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right:0;
+    img {
+      object-fit: contain;
+    }
+    @media (max-width: 1200px) {
+      position: fixed;
+      left:6px;
+      bottom: 6px;
+      width: 350px;
+      height: 350px;
+    }
+    @media (max-width: 1000px) {
+      position: static;
+      margin-left: -10px;
+    }
+  }
+  i,a, em, li:before {
+    color: #7d5ae4;
+  }
+  p {
+    max-width: 500px;
+  }
+  .large-font {
+    font-size: 6.5em;
+    color: $blue;
+    float: left;
+    margin-top: -0.33em;
+    margin-left: -12px;
+    margin-right: 12px;
+  }
+  .divider {
+    width: 60px;
+    height: 2px;
+    background-color: #000000;
+    margin: 24px 0;
+    margin-bottom: 48px;
+  }
+  a:hover {
+    text-decoration: underline;
+    animation-duration: 250ms;
+  }
   max-width: 800px;
   padding: 12px;
   @media (max-width: 1200px) {
@@ -15,17 +60,19 @@
       margin-bottom: -32px;
     }
     h2 {
-      margin-top: 32px;
+      margin-top: 40px;
       margin-bottom: 12px;
       font-size: 16px;
+
     }
     h4 {
-      font-size: 12px;
+      font-size: 16px;
       font-weight: 400;
-      margin-top: 4px;
+      margin-top: 24px;
+      margin-bottom: -14px;
       a {
         font-weight: 700;
-        color: $pink;
+        color: $purple;
       }
     }
     li {
@@ -48,10 +95,14 @@
     }
     .tags li {
       display: inline-block;
-      background-color: white;
-      padding: 0px 8px;
-      border-radius: 4px;
+      background-color: $blue;
+      padding: 4px 8px;
       margin-top: 0;
+      color: black;
+      font-weight: 600;
+      font-size: 0.5rem;
+      letter-spacing: 1px;
+text-transform: uppercase;
       &:before {
         content: none;
       }
@@ -64,19 +115,28 @@
       overflow: hidden;
     }
     .box {
-        background-color: #f7f7f7;
-        margin: 6px;
-        padding: 16px;
-        border-radius: 4px;
-        padding-top: 0;
-        text-align: center;
-        flex: 1 1;
-        min-width: 200px;
-        max-width: 400px;
+      background-color: #f7f7f7;
+      margin: 6px;
+      padding: 16px;
+      padding: 32px;
+      border-radius: 4px;
+      text-align: center;
+      flex: 1 1;
+      min-width: 300px;
+      max-width: 600px;
+      transition-duration: 350ms;
+      &:hover {
+        background-color: black;
+        p {color: white}
+      }
       p {
         max-width: 320px;
-        margin: 12px auto 18px;
+        margin: 18px auto !important;
       }
+      h2 a {      color: $purple;}
     }
   }
+}
+.logo {
+  z-index: 4;
 }
