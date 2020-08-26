@@ -49,7 +49,7 @@ Building the small websites and doing smaller front-end tasks for various custom
 ## REFERENCES
 <div class="boxes">
 <div class="box" markdown="1">
-<div class="circle"><a href="http://www.verifa.io" target="_blank"><img src="/images/penezenka.png" alt="a wallet illustration"></a></div>
+<div class="circle"><a href="http://www.verifa.io" target="_blank"><img src="/images/verifa.png" alt="a wallet illustration"></a></div>
 ## <a href="http://www.verifa.io" target="_blank">Verifa.io</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">A website with blog built in Gatsby with React. Blogging system fed by markdown files via GraphQl</p>
 <div class="tags">
@@ -59,7 +59,7 @@ Building the small websites and doing smaller front-end tasks for various custom
 
 
 <div class="box" markdown="1">
-<div class="circle"><a href="http://www.praqma.com/" target="_blank"><img src="/images/laptop.png" alt="a computer illustration"></a></div>
+<div class="circle"><a href="http://www.praqma.com/" target="_blank"><img src="/images/praqma.png" alt="a computer illustration"></a></div>
 ## <a href="http://www.praqma.com/" target="_blank">Praqma</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 A website built with Jekyll. Blogging system, tagging, pagination, auto image compression. Carousels, filters done with Javascript.</p>
@@ -77,7 +77,7 @@ A website built with Jekyll. Blogging system, tagging, pagination, auto image co
 -->
 
 <div class="box" markdown="1">
-<div class="circle"><a href="https://www.dustojnamzda.cz/minimum-decent-wage/" target="_blank"><img src="/images/bydleni.png" alt="a home illustration"></a></div>
+<div class="circle"><a href="https://www.dustojnamzda.cz/minimum-decent-wage/" target="_blank"><img src="/images/mdm.png" alt="a home illustration"></a></div>
 ## <a href="https://www.dustojnamzda.cz/minimum-decent-wage/" target="_blank">MDM</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 Built and designed website via wordpress, using Advanced Custom Fields to make it easier to fill in everything. Illustrations.</p>
@@ -85,7 +85,7 @@ Built and designed website via wordpress, using Advanced Custom Fields to make i
 </div>  
 
 <div class="box" markdown="1">
-<div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/bydleni.png" alt="a home illustration"></a></div>
+<div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a home illustration"></a></div>
 ## <a href="http://anetacamo.github.io/movie-search" target="_blank">Movie Search</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 A simple page done in React that searches through the large online database of movies and displays their info on click. Lets you to like and add movies to your local storage</p>
@@ -93,7 +93,7 @@ A simple page done in React that searches through the large online database of m
 </div>  
 
 <div class="box" markdown="1">
-<div class="circle"><a href="http://www.ferovamigracnipolitika.cz/english/" target="_blank"><img src="/images/laptop.png" alt="a computer illustration"></a></div>
+<div class="circle"><a href="http://www.ferovamigracnipolitika.cz/english/" target="_blank"><img src="/images/migrace.png" alt="a computer illustration"></a></div>
 ## <a href="http://www.ferovamigracnipolitika.cz/english/" target="_blank">Fair Migration Politics</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 Building a webpage in wordpress.org on the custom built and designed template</p>
