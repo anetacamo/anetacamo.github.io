@@ -1,4 +1,7 @@
 .cv-container {
+  img {
+    filter: none !important;
+  }
   .main-img {
     width: 400px;
     height: 400px;
@@ -135,6 +138,11 @@ text-transform: uppercase;
       }
       h2 a {      color: $purple;}
     }
+  }
+  .circle img {
+    width: 140%;
+    height: 140%;
+    margin: -20%;
   }
 }
 .logo {
