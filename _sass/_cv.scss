@@ -35,7 +35,14 @@
     margin-top: -0.33em;
     margin-left: -12px;
     margin-right: 12px;
+    @media (max-width: 380px) {
+      font-size: 3.1em;
+      margin-top: -0.26em;
+      margin-left: -4px;
+      margin-right: 8px;
+    }
   }
+
   .divider {
     width: 60px;
     height: 2px;
