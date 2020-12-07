@@ -4,7 +4,7 @@ description: Hi, my name is Aneta
 name: Aneta Camova
 logo: /images/logo.png
 highlighter: rouge
-url: 'anetacamo.github.io'
+url: "anetacamo.github.io"
 
 encoding: utf-8
 
@@ -13,8 +13,8 @@ encoding: utf-8
 # Example
 #    $ gem install jekyll-redirect-from
 plugins:
-# - jekyll-redirect-from
- - jekyll-responsive-image
+  # - jekyll-redirect-from
+  - jekyll-responsive-image
 
 # Build settings
 markdown: kramdown
@@ -28,21 +28,16 @@ collections:
     permalink: /tagged/:path/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "tagged"
     values:
       layout: "tagged"
-  -
-    scope:
+  - scope:
       path: ""
       type: "blogs"
     values:
       layout: "blog"
-
-
-
 
 responsive_image:
   # [Required]
@@ -56,7 +51,7 @@ responsive_image:
   # An array of resize configuration objects. Each object must contain at least
   # a `width` value.
   sizes:
-    - width: 400  # [Required] How wide the resized image will be.
+    - width: 400 # [Required] How wide the resized image will be.
 
   # [Optional, Default: false]
   # Strip EXIF and other JPEG profiles. Helps to minimize JPEG size and win friends
