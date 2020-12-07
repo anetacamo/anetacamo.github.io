@@ -4,23 +4,36 @@
   {% for blog in blogs %}
   <div class="blogs">
     <a href="{{ blog.url }}">
-      {% if blog.image %}
-        {% comment %}
-          {% responsive_image_block %}
-            path: {{ blog.image | remove_first: "/" }}
-          {% endresponsive_image_block %}
-        {% endcomment %}
-        <img src="{{ blog.image | replace: '/images/blogs/', '/resized/400/' }}" alt="{{ blog.title }}" class="fully-contained-image">
+      {% if blog.image %} {% comment %} {% responsive_image_block %} path: {{
+      blog.image | remove_first: "/" }} {% endresponsive_image_block %} {%
+      endcomment %}
+      <img
+        src="{{ blog.image | replace: '/images/blogs/', '/resized/400/' }}"
+        alt="{{ blog.title }}"
+        class="fully-contained-image"
+      />
       {% endif %}
     </a>
 
     <div class="text-container">
-      <p style="padding-bottom: 4px"><a href="{{ blog.url }}" style="color: black;">{{ blog.title }}</a></p>
-      <p>{% if blog.description %}{{ blog.description }}<br>{% endif%}<span style="font-weight: 600;">tagged</span>
+      <p style="padding-bottom: 4px">
+        <a href="{{ blog.url }}" style="color: black">{{ blog.title }}</a>
+      </p>
+      <p>
+        {% if blog.description %}{{ blog.description }}<br />{% endif%}<span
+          style="font-weight: 600"
+          >tagged</span
+        >
         {% for tag in blog.tags %}
-          <a href="/tagged/{{ tag | downcase | replace: ' ', '_'}}"><span class="tags" style="margin-left: 4px;">{{ tag | downcase }}</span></a>
-        {% endfor %}<br>
-      <span style="font-weight: 600;">published</span> {{ blog.date | date: "%A, %B %d, %Y" }}</p>
+        <a href="/tagged/{{ tag | downcase | replace: ' ', '_'}}"
+          ><span class="tags" style="margin-left: 4px"
+            >{{ tag | downcase }}</span
+          ></a
+        >
+        {% endfor %}<br />
+        <span style="font-weight: 600">published</span> {{ blog.date | date:
+        "%A, %B %d, %Y" }}
+      </p>
       <!--
       {% for tag in blog.tags %}
         {% if tag == 'Print' %}
@@ -28,9 +41,7 @@
         {% endif %}
       {% endfor %}
       -->
-      <div class="blog-text">
-        {{ blog.content }}
-      </div>
+      <div class="blog-text">{{ blog.content }}</div>
     </div>
   </div>
   {% endfor %}
