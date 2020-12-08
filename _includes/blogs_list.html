@@ -4,9 +4,9 @@
   {% for blog in blogs %}
   <div class="blogs">
     <a href="{{ blog.url }}">
-      {% if blog.image %} {% comment %} {% responsive_image_block %} path: {{
-      blog.image | remove_first: "/" }} {% endresponsive_image_block %} {%
-      endcomment %}
+      {% if blog.image %} {% responsive_image_block %} path: {{ blog.image |
+      remove_first: "/" }} {% endresponsive_image_block %}
+
       <img
         src="{{ blog.image | replace: '/images/blogs/', '/resized/400/' }}"
         alt="{{ blog.title }}"
