@@ -1,0 +1,25 @@
+.jumping-text {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  margin: auto;
+}
+.jumping-text i {
+  font-weight: 800;
+  padding: 0 2px;
+  cursor: pointer;
+}
+.jumping-text:hover i {
+  animation-name: jump;
+  animation-duration: 350ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+@keyframes jump {
+  50% {
+    transform: translateY(-24px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

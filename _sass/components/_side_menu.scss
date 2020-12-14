@@ -11,18 +11,20 @@
     cursor: pointer;
   }
 }
-
-.portrait {
+.portrait,
+.postcard {
   position: fixed;
-  bottom: 4px;
   left: 8px;
-  width: 500px;
-  height: 140px;
-  background-image: url(/images/profile.gif);
   background-size: contain;
   background-repeat: no-repeat;
   transition-duration: 350ms;
   cursor: pointer;
+}
+.portrait {
+  bottom: 194px;
+  width: 500px;
+  height: 140px;
+  background-image: url(/images/profile.gif);
   &:hover {
     background-image: url(/images/meh.png);
     transition-duration: 350ms;
@@ -40,6 +42,18 @@
     left: 180px;
     width: 132px;
     height: 80px;
+  }
+}
+.postcard {
+  bottom: 4px;
+  height: 180px;
+  width: 320px;
+  background-image: url(/images/homes.jpg);
+  &:hover {
+    background-image: url(/images/homes_bw.jpg);
+  }
+  &.small-sized {
+    display: none;
   }
 }
 
@@ -63,7 +77,9 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: $pink;
 }
-body, a, img {
+body,
+a,
+img {
   cursor: url(/images/pointer4.png), auto;
   transition-duration: 350ms;
   &:hover {

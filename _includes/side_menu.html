@@ -1,11 +1,19 @@
 {% include logo.html %}
-
+<div class="postcard{% unless page.title == "All Blogs" %} small-sized{% endunless %}"></div>
 <a href="/cv"><div class="portrait{% unless page.title == "All Blogs" %} small-sized{% endunless %}"></div></a>
 
 {% unless page.date %}
 <div class="menu-links" style="position: fixed; bottom: 0; right: 0; text-align: right; padding: 12px;">
-  <h4><a href="/tagged/print/">PRINTS</a> <a href="<a href="mailto:anetacamova@gmail.com?subject=greeting">_email me</a></h4>
+  <a href="/tagged/print/" class="jumping-text">
+    <i style="--i:1">P</i>
+    <i style="--i:2">R</i>
+    <i style="--i:3">I</i>
+    <i style="--i:4">N</i>
+    <i style="--i:5">T</i>
+    <i style="--i:6">S</i>
+  </a>
+  <h4><a href="mailto:anetacamova@gmail.com?subject=greeting" target="_blank">_email_me_something</a></h4>
   <h4>instagram // <a href="https://www.instagram.com/anetacamo" target="_blank">anetacamo</a><br></h4>
-  <h4 style="margin-bottom: 0;">2020, All rights reserved, @<span style="font-weight: 600">anetacamo</span></h4>
+  <h4 style="margin-bottom: 0;">2020, All rights reserved, <span style="font-weight: 600">anetacamo</span></h4>
 </div>
 {% endunless %}
