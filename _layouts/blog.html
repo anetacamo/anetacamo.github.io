@@ -4,17 +4,26 @@ layout: default
 
 {% include prev_next.html %}
 <div class="single-blog-container">
-  {% if page.image %}
-    <img class="single-blog-image" src="{{ page.image }}" alt="{{ page.title }} Aneta Camo">
+  {% if page.image %} {% comment %}{% responsive_image_block %} path: {{
+  page.image | remove_first: "/" }} {% endresponsive_image_block %}{% endcomment
+  %}
+  <img
+    src="{{ page.image | replace: '/images/blogs/', '/resized/800/' }}"
+    alt="{{ page.title }} by Aneta Camo"
+    class="single-blog-image"
+  />
   {% endif %}
+
   <!-- blog main text -->
   <div class="align-right blog-text">
-    <p style="margin: 0;">
+    <p style="margin: 0">
       <b>
-        {% for tag in page.tags %}
-          #<a href="/tagged/{{ tag | downcase | replace: ' ', '_'}}"><span class="tags">{{ tag | downcase }}</span></a>
-        {% endfor %}
-      </b><br>
+        {% for tag in page.tags %} #<a
+          href="/tagged/{{ tag | downcase | replace: ' ', '_'}}"
+          ><span class="tags">{{ tag | downcase }}</span></a
+        >
+        {% endfor %} </b
+      ><br />
       {{ page.date | date: "%A, %B %d, %Y" }}
     </p>
     <h1>{{ page.title }}</h1>
@@ -40,5 +49,5 @@ layout: default
     {{ content }}
   </div>
   {% endif %}
-  -->
+  --></div>
 </div>

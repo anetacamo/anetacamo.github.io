@@ -51,7 +51,9 @@ responsive_image:
   # An array of resize configuration objects. Each object must contain at least
   # a `width` value.
   sizes:
-    - width: 400 # [Required] How wide the resized image will be.
+    - width: 400
+    - width: 800 # [Required] How wide the resized image will be.
+  # [Required] How wide the resized image will be.
 
   # [Optional, Default: false]
   # Strip EXIF and other JPEG profiles. Helps to minimize JPEG size and win friends
