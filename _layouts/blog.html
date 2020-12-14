@@ -4,7 +4,7 @@ layout: default
 
 {% include prev_next.html %}
 <div class="single-blog-container">
-  {% if page.image %} {% comment %}{% responsive_image_block %} path: {{
+  {% if page.image %}{% comment %}{% responsive_image_block %} path: {{
   page.image | remove_first: "/" }} {% endresponsive_image_block %}{% endcomment
   %}
   <img
@@ -16,31 +16,32 @@ layout: default
 
   <!-- blog main text -->
   <div class="align-right blog-text">
-    <p style="margin: 0">
+    <p style="margin: 0 !important">
       <b>
-        {% for tag in page.tags %} #<a
-          href="/tagged/{{ tag | downcase | replace: ' ', '_'}}"
+        {% for tag in page.tags %}
+        <a href="/tagged/{{ tag | downcase | replace: ' ', '_'}}"
           ><span class="tags">{{ tag | downcase }}</span></a
         >
-        {% endfor %} </b
-      ><br />
+        {% endfor %}
+      </b>
+    </p>
+    <p style="margin: 0; font-size: 10px">
       {{ page.date | date: "%A, %B %d, %Y" }}
     </p>
     <h1>{{ page.title }}</h1>
+
     <p>{{ page.description }}</p>
     <!-- BUY -->
-    <!--
-    {% for tag in page.tags %}
-      {% if tag == 'Print' %}
-      <section class="sell">
-        <button class="button-white"><a href="{{ blog.url }}">♥ Get this print ♥</a></button>
-        <p style="margin:8px 0;"><b>250dkk // 35€</b></p>
-        {% if page.collection %}<p style="margin:8px 0;">Available {{ page.collection }}></p>{% endif %}
-        <p clas="small" style="margin:8px 0; line-height: 1.4;">A3 printed on the hard paper<br> signed and shipped in the cardbox cover to you<br> no framing included</p>
-      </section>
-      {% endif %}
-    {% endfor %}
--->
+    {% for tag in page.tags %} {% if tag == 'Print' %}
+    <section class="sell">
+      <div class="btn-bg">
+        <a href="{{ blog.url }}">Get this print</a>
+      </div>
+      <!--{% if page.collection %}
+      <p style="margin: 8px 0">Available {{ page.collection }}</p>
+      {% endif %}-->
+    </section>
+    {% endif %} {% endfor %}
     <!-- BUY end -->
     <!--
   </div>

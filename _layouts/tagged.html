@@ -17,7 +17,7 @@ layout: wide
   {% endfor %}
 {% endfor %}
 {% assign tagged = tagged | uniq %}
-
+{% assign tagged = tagged | reverse %}
 {% for blog in tagged %}
  {% if forloop.first %}
   {% assign blog-image = blog.image %}
@@ -25,20 +25,22 @@ layout: wide
 {% endfor %}
 
 
-  <p style="margin-top: 160px; padding: 12px; text-transform:uppercase; letter-spacing: 2px; margin-bottom: 0; font-family: 'Open Sans', sans-serif;">
-    <b>All blogs tagged <br><span class="bold underlined" style="font-weight: 800;">{{ page.title }}</span></b>
+  <p style="margin-top: 160px; padding: 12px; letter-spacing: 1px; margin-bottom: 0;">
+    All blogs tagged <i class="pink underlined">{{ page.title }}</i>
   </p>
 
   {% if page.description %}<div style="margin:16px 0; max-width:620px; padding: 0 12px;">{{ page.description }}</div>{% endif %}
   <div style="margin:16px 0; max-width:620px; padding: 0 12px;">{{ page.content }}</div>
 
-  <div class="squares{% if p_tag == "Everything" %} small{% endif %}">
+  <div class="squares{% if p_tag == "Everything" %} small{% endif %}{% if p_tag == "Print" %} prints{% endif %}">
     {% for blog in tagged %}
       <div class="square">
         <a href="{{ blog.url }}">
           <div class="img-box">
             <img class="fully-covering-image" src="{{ blog.image | replace: '/images/blogs/', '/resized/400/' }}" alt="{{ blog.title }} by Aneta Camo">
           </div>
+          <h2>{{ blog.title}}</h2>
+      
         </a>
       </div>
     {% endfor %}

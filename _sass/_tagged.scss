@@ -28,6 +28,25 @@
       margin: 4px;
     }
   }
+  &.prints {
+    .square {
+      height: 480px;
+      margin: 12px;
+      img {
+        height: 300px;
+      }
+      img:hover {
+        height: 300px;
+      }
+      h2,
+      p {
+        margin: 24px auto;
+        color: black;
+        text-align: center;
+        max-width: 280px;
+      }
+    }
+  }
 }
 
 .tag {
