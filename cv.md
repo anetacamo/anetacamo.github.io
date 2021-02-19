@@ -6,7 +6,7 @@ cv: true
 ---
 
 <h2><span class="large-font">Hi</span> my name is Aneta Camova</h2>
-<a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp;| &nbsp; <a href="https://www.instagram.com/aneccca" target="_blank"> illustrations</a> <br />born in Prague &nbsp; | &nbsp;  based in Aarhus  &nbsp;
+<a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp;| &nbsp; <a href="https://www.instagram.com/anetacamo" target="_blank"> illustrations</a> <br />born in Prague &nbsp; | &nbsp;  based in Aarhus  &nbsp;
 
 <div class="divider"></div>
 
