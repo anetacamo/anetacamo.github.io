@@ -10,19 +10,17 @@ cv: true
 
 <div class="divider"></div>
 
-## SKILLSET & TOOLSTACK
-+ HTML
+## TOOLSTACK
 + CSS, Bootstrap, Sass
-+ JS
-+ React
-+ Gatsby JS
++ JS, React
++ Gatsby, Jekyll
 + Understanding to: Redux, GraphQl, React Native
 + Liquid, PHP
 + GitHub & Git
-+ Gatsby, Jekyll, Wordpress, Webflow, Squarespace, HubSpot
++ Worked a lot with various CMSs: Wordpress, Forestry, Webflow, Squarespace, HubSpot
 + Basic use of Docker, Jenkins, CircleCI
-+ SEO basics, interested in UX and UI
-+ Photoshop
++ SEO, UX
++ Photoshop, InDesign
 
 <div class="divider"></div>
 
@@ -30,15 +28,15 @@ cv: true
 
 #### <a href="https://www.phable.io" target="_blank">Phable.io</a>
 *from June 2020*<br />
-Working as a freelance front-end developer for a design office based in London, building a static websites with Gatsby and React for various customers. Most recent: <a href="http://www.verifa.io" target="_blank">verifa</a>
+Working as a freelance front-end developer for a design office based in London, building webpages with Gatsby and React for various customers. Most recent: <a href="http://www.verifa.io" target="_blank">verifa</a>
 
 #### <a href="https://www.praqma.com" target="_blank">Praqma.com</a>
 *August 2017 - June 2020*<br />
-Rebuilding two large websites into custom-made easy-to-use system generated from simple markdown files. <a href="https://www.praqma.com" target="_blank">praqma.com</a> & <a href="https://www.code-conf.com" target="_blank">code-conf</a>; updating the structures to be easy to use for various content-creators.
+Rebuilding two large websites into custom-made easy-to-use CMSs generated from markdown files, maintaining it. <a href="https://www.praqma.com" target="_blank">praqma.com</a> & <a href="https://www.code-conf.com" target="_blank">code-conf</a>.
 
 #### <a href="https://www.prolike.io" target="_blank">Prolike.io</a>
 *January 2018 - June 2018*<br />
-Restructuring large webpage made of unordered html files <a href="https://dataintensity.com/">data intensity</a> into static pages generating system made of sections to make front-end development easy and convenient. Building the blogging system.
+Rebuilding <a href="https://dataintensity.com/">data intensity</a> into a static build with Jekyll & Liquid.
 
 #### <a href="https://www.symbio.agency" target="_blank">SYMBIO digital,s.r.o.</a>
 *November 2015 - June 2016*<br />
@@ -53,7 +51,7 @@ Building the small websites and doing smaller front-end tasks for various custom
 ## <a href="http://www.verifa.io" target="_blank">Verifa.io</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">A website with blog built in Gatsby with React. Blogging system fed by markdown files via GraphQl</p>
 <div class="tags">
-  <li>React</li><li>React Hooks</li><li>GraphQL</li><li>Gatsby</li>
+  <li>React</li><li>Gatsby</li>
 </div>
 </div>
 
@@ -80,7 +78,7 @@ A website built with Jekyll. Blogging system, tagging, pagination, auto image co
 <div class="circle"><a href="https://www.dustojnamzda.cz/minimum-decent-wage/" target="_blank"><img src="/images/mdm.png" alt="a home illustration"></a></div>
 ## <a href="https://www.dustojnamzda.cz/minimum-decent-wage/" target="_blank">MDM</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Built and designed website via wordpress, using Advanced Custom Fields to make it easier to fill in everything. Illustrations.</p>
+Built and designed website via wordpress from a scratch, using Advanced Custom Fields to make it easier to fill in everything. Illustrations.</p>
 <div class="tags"><li>Wordpress.org</li><li>PHP</li><li>Javascript</li><li>Sass</li><li>Illustration</li></div>
 </div>  
 
