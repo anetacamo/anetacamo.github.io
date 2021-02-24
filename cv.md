@@ -5,7 +5,7 @@ layout: inkognito
 cv: true
 ---
 
-<h2><span class="large-font">Hi</span> my name is Aneta Camova</h2>
+<h2><span class="large-font">Hi</span> my name is Aneta Camo</h2>
 <a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp;| &nbsp; <a href="https://www.instagram.com/anetacamo" target="_blank"> illustrations</a> <br />born in Prague &nbsp; | &nbsp;  based in Aarhus  &nbsp;
 
 <div class="divider"></div>
@@ -94,9 +94,9 @@ A simple page done in React that searches through the large online database of m
 
 <div class="box" markdown="1">
 <div class="circle"><a href="http://anetacamo.github.io/sidliste" target="_blank"><img src="/images/movie-search.png" alt="a home illustration"></a></div>
-## <a href="http://anetacamo.github.io/movie-search" target="_blank">Prague suburbs changing in time</a>
+## <a href="http://anetacamo.github.io/movie-search" target="_blank">Prague suburbs</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-One page with lots of transitions build via js, still in progress</p>
+A nine chapters about the trasitions that Prague post soviet suburbs undertook over the years. One page with lots of transitions build via js, still in progress</p>
 <div class="tags"><li>Photoshop</li><li>JS</li></div>
 </div>  
 
