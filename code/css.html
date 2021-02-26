@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>The Big Begginers Coding Quide</title>
+  <link rel="stylesheet" href="styles/typo.css" />
+  <link rel="stylesheet" href="styles/table.css" />
+  <link rel="stylesheet" href="styles/code.css" />
+  <link rel="stylesheet" href="styles/widths.css" />
+  <link rel="stylesheet" href="styles/progressbar.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Most commonly <br/> used styles</h1>
+<br/>
+    <table>
+      <tr>
+        <th>Property name</th>
+        <th>Values or examples of values</th>
+        <th>Default value</th>
+        <th>Description</th>
+      </tr>
+    </table>
+
+    <h3>background styling</h3>
+    <table>
+      <tr>
+        <th>background-color</th>
+        <td>blue, Tomato, DodgerBlue... | #fff, #f0f0f0 | rgb(255,255,0)</td>
+        <td>transparent</td>
+        <td>
+          a background color of a div. Accepts hex color, rgb or any of the
+          predefined color names.
+          <a href="https://www.w3schools.com/cssref/css_colors_legal.asp">More about colors</a>
+        </td>
+      </tr>
+      <tr>
+        <th>background-image</th>
+        <td>url("img/image.jpg")</td>
+        <td>none</td>
+        <td>a background image of a div</td>
+      </tr>
+      <tr>
+        <th>background-origin</th>
+        <td>padding-box|border-box|content-box|initial|inherit</td>
+        <td>padding-box</td>
+        <td>Specifies where does the image start in a div</td>
+      </tr>
+      <tr>
+        <th>background-position</th>
+        <td>left top | top right | 10% 20% | 200px 300px</td>
+        <td>0% 0%</td>
+        <td>
+          Specifies the position of the bg image. By default, a
+          background-image is placed at the top-left corner of an element, and
+          repeated both vertically and horizontally
+        </td>
+      </tr>
+      <tr>
+        <th>background-repeat</th>
+        <td>no-repeat | repeat</td>
+        <td>repeat</td>
+        <td>
+          The background-repeat property sets if/how a background image will
+          be repeated. By default, a background-image is repeated both
+          vertically and horizontally.
+        </td>
+      </tr>
+      <tr>
+        <th>background-size</th>
+        <td>
+          auto | length | percentage | cover | contain | initial | inherit
+        </td>
+        <td>auto</td>
+        <td>Specifies the position of the bg image.</td>
+      </tr>
+    </table>
+
+
+    <h3>managing the size and space</h3>
+    <table>
+      <tr>
+        <th>margin</th>
+        <td>-20px | 20px | auto</td>
+        <td>0</td>
+        <td>
+          Creates an outer frame for the div content. 
+        </td>
+      </tr>
+      <tr>
+        <th>padding</th>
+        <td>20px, auto</td>
+        <td>0</td>
+        <td>Invisible inner frame that creates space that will not be taken by child element. Works like a border without a color.</td>
+      </tr>
+      <tr>
+        <th>box-sizing</th>
+        <td>content-box | border-box</td>
+        <td>content-box</td>
+        <td>
+          Defines how the width and height of an
+          element are calculated: should they include padding and borders, or
+          not.
+        </td>
+      </tr>
+      <tr>
+        <th>height</th>
+        <td>200px | 50% | 100vh</td>
+        <td>auto</td>
+        <td>
+          The height property sets the height of an element. The height of an
+          element does not include padding, borders, or margins!
+        </td>
+      </tr>
+      <tr>
+        <th>width</th>
+        <td>0.3s, 300ms</td>
+        <td>auto</td>
+        <td>
+          sets the width of an element. The width of an element does not
+          include padding, borders, or margins!
+        </td>
+      </tr>
+      <tr>
+        <th>max-width, max-height</th>
+        <td>200px | 100% | 100vh</td>
+        <td>none</td>
+        <td>Sets the maximum height of an element</td>
+      </tr>
+      <tr>
+        <th>overflow</th>
+        <td></td>
+        <td>visible</td>
+        <td>
+          The overflow property specifies what should happen if content
+          overflows an element's box. This property specifies whether to clip
+          content or to add scrollbars when an element's content is too big to
+          fit in a specified area. Note: The overflow property only works for
+          block elements with a specified height.
+        </td>
+      </tr>
+    </table>
+
+    <div class="flex">
+      <div class="square"><b>width: 140px<br/> height: 140px</b></div>
+      <div class="square padding">width: 140px<br/> height: 140px<br/><b>padding: 16px</b></div>
+      <div class="square padding framed">width: 140px<br/> height: 140px<br/>padding: 16px<br/><b>border: 16px</b></div>
+      <div class="square padding framed margin">width: 140px<br/> height: 140px<br/>padding: 16px<br/>border: 16px<br><b>margin: 16px</b></div>
+    </div>
+
+    <h3>border</h3>
+    <table>
+      <tr>
+        <th>border</th>
+        <td>2px solid blue</td>
+        <td>medium none color</td>
+        <td>
+          The border property is a shorthand property for: border-width,
+          border-style (required), border-color
+        </td>
+      </tr>
+      <tr>
+        <th>border-style</th>
+        <td>
+          dotted | dashed | solid | double | groove | ridge | inset | outset
+        </td>
+        <td>none</td>
+        <td>
+          The border-style property sets the style of an element's four
+          borders. This property can have from one to four values.
+        </td>
+      </tr>
+      <tr>
+        <th>border-image</td>
+        <td>url("img/image.jpg")</td>
+        <td>none</td>
+        <td>
+          The border-image property allows you to specify an image to be used
+          as the border around an element
+        </td>
+      </tr>
+      <tr>
+        <th>border-radius</th>
+        <td>4px | 1rem</td>
+        <td>0</td>
+        <td>
+          This property allows you to add rounded corners to elements! This
+          property can have from one to four values
+        </td>
+      </tr>
+      <tr>
+        <th>box-shadow</th>
+        <td><i> h-offset v-offset blur spread color</i></td>
+        <td>none</td>
+        <td>
+          adds one or more shadows to an element.<i> h-offset, v-offset</i> horizontal and vertical offset of a shadow
+          in numeric values. <i>blur</i> level of blurness in numeric values. <i>spread</i> spreading of a shade
+          <i>color</i> of a shade.
+        </td>
+      </tr>
+    </table>
+
+    <h3>display</h3>
+    <table>
+      <tr>
+        <th>display</td>
+        <td>block | inline | inline-block | flex | none</td>
+        <td>block for a div</td>
+        <td>
+          <i>block</i> means an item defaultly takes the full width of a container. Most of elements are block by default
+          <i>inline</i> will only take as much space as its element needs. Ignores margin and padding if it is setted, width and height. Example of inline elements: <code>a, b, i, input, span</code>
+          <i>inline-block</i> common for <code>buttons</code> or menu items, allows to set a width and height on the element. Top and bottom margins/paddings are respected.
+          <i>none</i> will make element disappear
+        </td>
+      </tr>
+      <tr>
+        <th>text-align</th>
+        <td>left | right | center | justify</td>
+        <td>left</td>
+        <td>Sets how <i>inline</i> content is aligned </td>
+      </tr>
+    </table>
+
+    <h3>flexbox</h3>
+    <p>Flexbox is a great way how to handle content that needs to be centered. Especially when working with
+      multiple columns. Following features are only working on a element that has setted <code>display:flex</code></p>
+    <table>
+
+      <tr>
+        <th>flex-direction</th>
+        <td>row | row-reverse | column | column-reverse</td>
+        <td>row</td>
+        <td>
+          Specifies the default alignment for items within the flex
+          container..
+        </td>
+      </tr>
+      <tr>
+        <th>flex-wrap</th>
+        <td>nowrap | wrap | wrap-reverse</td>
+        <td>nowrap</td>
+        <td>
+          By default, flex items will all try to fit onto one line. You can
+          change that and allow the items to wrap as needed with this
+          property.
+        </td>
+      </tr>
+      <tr>
+        <th>justify-content</th>
+        <td>
+          flex-start | flex-end | center | space-between | space-around |
+          space-evenly | start | end | left | right ... + safe | unsafe
+        </td>
+        <td>flex-start</td>
+        <td>
+          It helps distribute extra free space leftover when either all the
+          flex items on a line are inflexible, or are flexible but have
+          reached their maximum size
+        </td>
+      </tr>
+      <tr>
+        <th>align-items</th>
+        <td>
+          stretch | flex-start | flex-end | center | baseline | first baseline
+          | last baseline | start | end | self-start | self-end + ... safe |
+          unsafe
+        </td>
+        <td>stretch</td>
+        <td>distributes items along the cross axis on the current line</td>
+      </tr>
+    </table>
+    <p>
+      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">a complete quide to flexbox</a>
+    </p>
+
+    <h3>position</h3>
+    <table>
+      <tr>
+        <th>position</th>
+        <td>static | absolute | fixed | relative | sticky</td>
+        <td>static</td>
+        <td>
+          <i>static</i> Elements render in order, as they appear in the
+          document flow. <i>fixed</i> The element is positioned relative to
+          the browser window. <i>absolute</i> The element is positioned
+          relative to its first positioned (not static) ancestor element.
+          <a href="https://www.w3schools.com/cssref/pr_class_position.asp">More about positions</a>
+        </td>
+      </tr>
+      <tr>
+        <th>z-index</th>
+        <td>1,2,3...999</td>
+        <td>0</td>
+        <td>
+          <i>Only works on non-static elements</i> Specifies a layering or stacking order for positioned elements.
+        </td>
+      </tr>
+      <tr>
+        <th>top | bottom | left | right</th>
+        <td>200px | 10% | 1rem </td>
+        <td>0</td>
+        <td>
+          <i>Only works on non-static elements</i> takes the first parent element with setted position relative as a
+          referance. and from its borders positions itself.
+        </td>
+      </tr>
+    </table>
+
+    <h3>Cursor</h3>
+    <table>
+      <tr>
+        <th>cursor</th>
+        <td>
+          pointer | progress | text | url | wait | none |
+          url("img/image.jpg")
+        </td>
+        <td>auto</td>
+        <td>
+          specifies the look of mouse cursor when <i>hovering</i> -
+          pointing over an element.
+        </td>
+      </tr>
+    </table>
+
+    <h3>font styling</h3>
+    <table>
+      <tr>
+        <th>font-family</th>
+        <td>Open Sans, Roboto Slab, Oswald</td>
+        <td>depends on the browser. Usually Times New Roman</td>
+        <td>
+          The font-family property specifies the font for an element. The
+          font-family property can hold several font names as a "fallback"
+          system. If the browser does not support the first font, it tries the
+          next font.
+        </td>
+      </tr>
+      <tr>
+        <th>color</th>
+        <td>blue, Tomato, DodgerBlue... | #fff, #f0f0f0 | rgb(255,255,0)</td>
+        <td>trasparent</td>
+        <td>Sets the color of the font</td>
+      </tr>
+      <tr>
+        <th>font-size</th>
+        <td>1rem | 2em | 24px</td>
+        <td>medium</td>
+        <td>Sets the size of a font.</td>
+      </tr>
+      <tr>
+        <th>font-style</th>
+        <td>normal | italic</td>
+        <td>normal</td>
+        <td>A way to make a text italic</td>
+      </tr>
+      <tr>
+        <th>font-weight</td>
+        <td>
+          100, 200, 300, 400, 500, 600, 700, 800, 900 | thin, regular, bold
+        </td>
+        <td>regular / 400</td>
+        <td>Sets the boldness of a font.</td>
+      </tr>
+      <tr>
+        <th>letter-spacing</th>
+        <td>1.2px, 2px</td>
+        <td>1</td>
+        <td>
+          Specifies the area between all letters in a line of text. It is not
+          to be confused with kerning, which refers to the manipulation of
+          space between two individual letters. Kerning is not usually
+          practiced on the web.
+        </td>
+      </tr>
+      <tr>
+        <th>line-height</td>
+        <td>1,1; 2,2</td>
+        <td>normal</td>
+        <td>The line-height property specifies the height of a line.</td>
+      </tr>
+      <tr>
+        <th>text-shadow</td>
+        <td><i>h-shadow v-shadow blur-radius color</i></td>
+        <td>none</td>
+        <td>
+          Applies one or more shadows to the text content of an element.
+          <i>h-shadow</i> Required. The position of the horizontal shadow.
+          Negative values are allowed <i>v-shadow</i> Required. The position
+          of the vertical shadow. Negative values are allowed
+          <i>blur-radius</i> Optional. The blur radius. Default value is 0
+          <i>color</i> Optional. The color of the shadow. Look at CSS Color
+          Values for a complete list of possible color values
+        </td>
+      </tr>
+      <tr>
+        <th>text-transform</th>
+        <td>none | capitalize | uppercase | lowercase</td>
+        <td>none</td>
+        <td>Controls the capitalization of text.</td>
+      </tr>
+      <tr>
+        <th>text-decoration</th>
+        <td>
+          <i> text-decoration-line text-decoration-color text-decoration-style</i>
+        </td>
+        <td>none currentcolor solid</td>
+        <td>
+          Specifies the decoration added to text, optionally color and style
+          of it. <i>text-decoration-line</i> Sets the kind of text decoration
+          to use (like underline, overline, line-through).
+          <i>text-decoration-style</i> Sets the style of the text decoration
+          (like solid, wavy, dotted, dashed, double)
+        </td>
+      </tr>
+      <tr>
+        <th>writing-mode</td>
+        <td>horizontal-tb | vertical-rl | vertical-lr</td>
+        <td>horizontal-tb</td>
+        <td>
+          specifies whether lines of text are laid out horizontally or
+          vertically
+        </td>
+      </tr>
+    </table>
+
+    <h3>list styling</h3>
+    <table>
+      <tr>
+        <th>list-style</th>
+        <td>square, circle, disc | none | url('image.png')</td>
+        <td>disc outside none</td>
+        <td>
+          The list-style property is a shorthand for the following properties:
+          list-style-type list-style-position list-style-image If one of the
+          values are missing, the default value for that property will be
+          used.
+        </td>
+      </tr>
+    </table>
+
+
+    <h3>image adjustments</h3>
+    <p>object behaves similarly to background. Instead of an image setted via background-image it is applied on img
+      element in html itself</p>
+    <table>
+      <tr>
+        <th>object-fit</th>
+        <td>fill | contain | cover | scale-down | none</td>
+        <td>1</td>
+        <td>
+          The object-fit property is used to specify how an img or video
+          should be resized to fit its container. This property tells the
+          content to fill the container in a variety of ways; such as
+          "preserve that aspect ratio" or "stretch up and take up as much
+          space as possible".
+        </td>
+      </tr>
+    </table>
+
+    <h3>opacity</h3>
+    <table>
+      <tr>
+        <th>opacity</th>
+        <td>from 0 (invisible) to 1 (visible)</td>
+        <td>1</td>
+        <td>
+          Transparency level, where 1 is not transparent at all, 0.5 is 50%
+          see-through, and 0 is completely transparent.
+        </td>
+      </tr>
+    </table>
+
+
+    <h3>transitions</h3>
+    <table>
+      <tr>
+        <th>transition-delay</th>
+        <td>0.3s | 300ms</td>
+        <td>0s</td>
+        <td>specifies when the transition effect will start.</td>
+      </tr>
+      <tr>
+        <th>transition-duration</th>
+        <td>0.3s | 300ms</td>
+        <td>0s</td>
+        <td>
+          Specifies how many seconds (s) or milliseconds (ms) a transition
+          effect takes to complete.
+        </td>
+      </tr>
+    </table>
+
+    <a href="https://www.w3schools.com/cssref/">Here you can look at all the available properties and their values.</a>
+
+  </div>
+</body>
+
+</html>
