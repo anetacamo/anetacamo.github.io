@@ -1,0 +1,58 @@
+/* progress bar */
+progress {
+  height: 5px;
+
+  /* Reset the appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-image: -webkit-linear-gradient(left, #f44, blueviolet);
+
+  /* Progress bar value for IE10+ */
+  background-image: -webkit-linear-gradient(left, #f44, blueviolet);
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  width: 101vh;
+  position: absolute;
+  top: calc(50% - 3px);
+  left: calc(-50vh + 58px);
+
+  height: 63px;
+  top: calc(50% - 30px);
+  left: calc(-50vh + 26px);
+  z-index: -1;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: white;
+
+  background-color: blueviolet;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(left, #f44, blueviolet),
+    -webkit-linear-gradient(135deg, #fbfbfb, transparent);
+  background-image: linear-gradient(
+    left,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(157, 69, 255, 1) 90%,
+    blueviolet 90%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(157, 69, 255, 1) 99%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(173, 0, 194, 1) 71%,
+    rgba(151, 0, 247, 1) 98%,
+    blueviolet 100%
+  );
+}
