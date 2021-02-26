@@ -1,0 +1,33 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.container {
+  background-color: white;
+  padding: 24px;
+}
+
+body {
+  background-image: url(../images/random.png);
+  background-size: 500px;
+}
+
+.square {
+  background-color: tomato;
+  height: 140px;
+  width: 140px;
+  color: white;
+}
+.framed {
+  border: 16px solid blueviolet;
+}
+.padding {
+  padding: 16px;
+}
+.margin {
+  margin: 16px;
+}
+.flex {
+  display: flex;
+}
