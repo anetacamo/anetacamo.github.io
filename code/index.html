@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>The Big Begginers Coding Quide</title>
+    <link rel="stylesheet" href="styles/typo.css" />
+    <link rel="stylesheet" href="styles/table.css" />
+    <link rel="stylesheet" href="styles/code.css" />
+    <link rel="stylesheet" href="styles/widths.css" />
+    <link rel="stylesheet" href="styles/progressbar.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Get Started</h2>
+      <h3>HTML and CSS</h3>
+      <p>
+        <i>HTML</i> stands for hypertext markup language. It is a skeleton of
+        elements a page consists of.
+      </p>
+      <p>
+        <i>CSS</i> stands for cascading stylesheets and is a way to style
+        elements - <i>tags</i> - defined in the html files. Via css you can for
+        example control color, width, height, style the fonts etc..
+      </p>
+      <blockquote>
+        <i>cascading</i> means that a style applied to a parent element will
+        also apply to all children elements within the parent. So, if you set
+        the color of the body text to "blue", all headings, paragraphs, and
+        other text elements within the body will also get the same color (unless
+        you specify something else)!
+      </blockquote>
+      <h3>Getting a code a code editor</h3>
+      <p>
+        To start you will need an program that will make it easy to write and
+        read the code. Visual Studio Code is completely free and one of the most
+        powerful and easy to use programs available.
+      </p>
+      <p>
+        <a href="https://code.visualstudio.com/" target="_blank"
+          >Download VS Code here</a
+        >
+      </p>
+
+      <p></p>
+
+      <p>
+        Create a folder on your desktop and open it in the VS Code. Here, create
+        a new file and call it <code>index.html</code>. This will be a first
+        file a web browser will look for when accessing your folder.
+      </p>
+      <p>
+        Go to your browser and click <code>CTR + o</code>. Find your folder and
+        open <code>index.html</code>. At this point your file might be empty.
+        But this is a plce you will/can see all the code being executed! You can
+        refresh the page with <code>CTRL + r</code>.
+      </p>
+
+      <h3>Recommended order of files and folders</h3>
+      <p>
+        Your website might have more then a homepage named
+        <code>index.html</code>. If so, those pages should be placed in the same
+        folder and saved with their specific names: <code>about.html</code> and
+        <code>contact.html</code> You will probably need a folder with images
+        and a folder with styles. And this is how the structure of your folder
+        might end up looking:
+      </p>
+
+      <pre>
+        homepage/
+        -- index.html
+        -- about.html 
+        -- contact.html 
+        -- styles/ 
+        ---- style.css 
+        ---- typography.css 
+        -- images/ 
+        ---- image01.jpg 
+        ---- image02.jpg
+      </pre>
+
+      <h3>index.html structure</h3>
+      <p>Each <code>.html</code> file consist of body and a head.</p>
+      <p>
+        <b>Head</b> is where you define setting for your page: where you link
+        the styles, give a page name and an icon that will be displayed in the
+        browser window (<i>favicon</i>), etc.
+      </p>
+      <p>
+        <b>Body</b> is a place where you would write the actual code to be
+        rendered directly
+      </p>
+
+      <pre>
+      &lt;!DOCTYPE.html> 
+      &lt;html>
+        &lt;head>
+          &lt;title>The Homepage Title displayed in the browser windows&lt;title>
+          &lt;link rel="stylesheet" href="styles/style.css" />
+          &lt;link rel="stylesheet" href="styles/typography.css" />
+        &lt;/head>
+        &lt;body>
+          this is where the coding happens!
+        &lt;/body>
+      &lt;html>
+    </pre
+      >
+
+      <h2>Most commonly used HTML tags</h2>
+
+      <h3>div and its family tree</h3>
+      <p>
+        <code>&lt;div>&lt;/div></code>
+      </p>
+
+      <p>
+        A div itself has no styling, it is a basic unit of the html document.
+        Unstyled and empty, it is see-through and has 0 width and 0 height. It
+        adjusts its size to its content.
+      </p>
+
+      <h3>pair vs non-pair element</h3>
+      <p>
+        Div is always a <i>pair</i> element. It means it will always consist of
+        a double tag: an opening tag without a dash <code>&lt;div></code> and a
+        closing tag with a dash<code>&lt;/div></code>. It is an essential
+        feature for wrapping more content in.
+      </p>
+      <p>
+        A <i>non-pair</i> element. For example <code>&lt;img /></code> or
+        <code>&lt;input /></code> They are already content themselfs, they
+        cannot contain anymore elements, therefore they are single tags.
+      </p>
+
+      <p>Divs are pretty much all about hierarchy:</p>
+      <pre>
+        &lt;div>&lt;/div>&lt;div>&lt;/div>
+
+        &lt;div>&lt;/div>
+        &lt;div>&lt;/div>
+      </pre>
+
+      <p>vs</p>
+
+      <pre>
+        &lt;div>&lt;div>&lt;/div>&lt;/div>
+
+        &lt;div>
+        &lt;div>&lt;/div>
+        &lt;/div>
+      </pre>
+      <p>
+        <code>&lt;body>&lt;/body></code>
+      </p>
+      <p>
+        A pair tag that wraps around all the directly rendered code of html
+        page.
+      </p>
+
+      <h3>LINKS</h3>
+      <p>
+        <code>&lt;a href="">&lt;/a></code>
+      </p>
+
+      <p>
+        <code>&lt;a href="/about.html">see about&lt;/a></code><br />
+        <code>&lt;a href="https://google.com">go to google&lt;/a></code><br />
+        <code
+          >&lt;a href="https://google.com" target="_blank">open google in the
+          new tab&lt;/a></code
+        >
+      </p>
+      <p>
+        <a href="https://google.com" target="_blank"
+          >open google in the new tab</a
+        >
+      </p>
+
+      <p>
+        this is a link to the <i>local</i> file called
+        <code>about.html</code> in your folder. You can also link to an
+        <i>external</i> link online. <code>target="_blank"</code> opens the link
+        in new tab
+      </p>
+
+      <h3>Headings and font styles</h3>
+      <p>Notice how each element hints itself with its name</p>
+      <p>
+        <code>&lt;p>paragraph&lt;/p></code>
+      </p>
+      <p>
+        <code>&lt;h1>First level Heading&lt;/h1></code>
+      </p>
+      <p>First level heading should be only used once on an each page</p>
+      <p>
+        <code>&lt;h2>Second level Heading&lt;/h2></code>
+      </p>
+      <p>
+        <code>&lt;h3>Third level Heading&lt;/h3></code>
+      </p>
+      <p>
+        <code>&lt;h4>Fourth level Heading&lt;/h4></code>
+      </p>
+      <p>
+        <code>&lt;h5>Fifth level Heading&lt;/h5></code>
+      </p>
+      <p>
+        <code>&lt;h6>Sixth level Heading&lt;/h6></code>
+      </p>
+
+      <br />
+
+      <p>
+        <code>&lt;i>Italic text&lt;/i></code>
+      </p>
+      <p>
+        <code>&lt;b>Bolded text&lt;/b></code>
+      </p>
+      <p>
+        <code>&lt;em>Emphasized text&lt;/em></code>
+      </p>
+      <p>
+        <code>&lt;u>Underlined text&lt;/u></code>
+      </p>
+      <p>
+        <code>&lt;br /></code>
+      </p>
+      <p>
+        <code>&lt;blockquote>&lt;/blockquote></code>
+      </p>
+      <p><code>&lt;button>&lt;button/></code></p>
+      <p><code>&lt;-- --></code></p>
+
+      <h3>LISTS</h3>
+      <p>
+        <code>&lt;ul>&lt;/ul></code>
+      </p>
+      <p><i>unordered list</i> - displays only bullets</p>
+      <p></p>
+      <pre>
+        &lt;ul>
+          &lt;li>Coffee&lt;/li>
+          &lt;li>Tea&lt;/li>
+          &lt;li>Milk&lt;/li>
+        &lt;/ul>
+      </pre>
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+      <p>
+        <code>&lt;ol>&lt;/ol></code>
+      </p>
+      <p><i>ordered list</i> - displays numbers</p>
+      <p></p>
+      <pre>
+      &lt;ol>
+        &lt;li>Coffee&lt;/li>
+        &lt;li>Tea&lt;/li>
+        &lt;li>Milk&lt;/li>
+      &lt;/ol>
+      </pre>
+      <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+
+      <h3>image</h3>
+      <p>
+        <code>&lt;img src="" /></code>
+      </p>
+      <p>
+        <code
+          >&lt;img src="" alt="an descriptive image name - important for the
+          SEO" /></code
+        >
+      </p>
+
+      <!--
+      <h3>form</h3>
+      If the name attribute is omitted, the value of the input field will not be
+      sent at all.
+
+      <p><code>&lt;label>&lt;label/></code></p>
+      <p><code>&lt;input>&lt;input/></code></p>
+      <p><code>&lt;form>&lt;form/></code></p>
+      <p><code>&lt;select>&lt;select/></code></p>
+      <p><code>&lt;option>&lt;option/></code></p>
+
+      <form action="mailto:you@yourdomain.com ">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" value="your mail" />
+        <label for="email">Email:</label>
+        <input type="email" name="mail" id="mail" name="mail" value="mail" />
+        Select an option:
+        <select>
+          <option>option 1</option>
+          <option selected>option 2</option>
+          <option>option 3</option>
+        </select>
+        Select an option:
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+        <label for="vehicle1"> I have a bike</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+        <label for="vehicle2"> I have a car</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+        <label for="vehicle3"> I have a boat</label>
+        <input type="submit" />
+      </form>
+      -->
+      <h3>TABLE</h3>
+      <p><code>&lt;table>&lt;/table></code></p>
+      <p><code>&lt;tr>&lt;/tr></code></p>
+      <p><code>&lt;th>&lt;/th></code></p>
+      <p><code>&lt;td>&lt;/td></code></p>
+
+      <pre>
+      &lt;table>
+        &lt;tr>
+          &lt;th>Month&lt;/th>
+          &lt;th>Savings&lt;/th>
+        &lt;/tr>
+        &lt;tr>
+          &lt;td>January&lt;/td>
+          &lt;td>$100&lt;/td>
+        &lt;/tr>
+      &lt;/table>
+
+      <table>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+      </table></pre>
+
+      <h2>Most commonly used styles</h2>
+
+      <table>
+        <tr>
+          <th>Property name</th>
+          <th>Values or examples of values</th>
+          <th>Default value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>background-color</td>
+          <td>blue, Tomato, DodgerBlue... | #fff, #f0f0f0 | rgb(255,255,0)</td>
+          <td>transparent</td>
+          <td>
+            a background color of a div. Accepts hex color, rgb or any of the
+            predefined color names.
+            <a href="https://www.w3schools.com/cssref/css_colors_legal.asp"
+              >More about colors</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>background-image</td>
+          <td>url("images/image.jpg")</td>
+          <td>none</td>
+          <td>a background image of a div</td>
+        </tr>
+        <tr>
+          <td>background-origin</td>
+          <td>padding-box|border-box|content-box|initial|inherit</td>
+          <td>padding-box</td>
+          <td>Specifies where does the image start in a div</td>
+        </tr>
+        <tr>
+          <td>background-position</td>
+          <td>left top | top right | 10% 20% | 200px 300px</td>
+          <td>0% 0%</td>
+          <td>
+            Specifies the position of the bg image. By default, a
+            background-image is placed at the top-left corner of an element, and
+            repeated both vertically and horizontally
+          </td>
+        </tr>
+        <tr>
+          <td>background-repeat</td>
+          <td>no-repeat | repeat</td>
+          <td>repeat</td>
+          <td>
+            The background-repeat property sets if/how a background image will
+            be repeated. By default, a background-image is repeated both
+            vertically and horizontally.
+          </td>
+        </tr>
+        <tr>
+          <td>background-size</td>
+          <td>
+            auto | length | percentage | cover | contain | initial | inherit
+          </td>
+          <td>auto</td>
+          <td>Specifies the position of the bg image.</td>
+        </tr>
+        <tr>
+          <td>border</td>
+          <td>2px solid blue</td>
+          <td>medium none color</td>
+          <td>
+            The border property is a shorthand property for: border-width,
+            border-style (required), border-color
+          </td>
+        </tr>
+        <tr>
+          <td>border-style</td>
+          <td>
+            dotted | dashed | solid | double | groove | ridge | inset | outset
+          </td>
+          <td>none</td>
+          <td>
+            The border-style property sets the style of an element's four
+            borders. This property can have from one to four values.
+          </td>
+        </tr>
+        <tr>
+          <td>border-image</td>
+          <td>url("images/image.jpg")</td>
+          <td>none</td>
+          <td>
+            The border-image property allows you to specify an image to be used
+            as the border around an element
+          </td>
+        </tr>
+        <tr>
+          <td>border-radius</td>
+          <td>4px|1rem</td>
+          <td>0</td>
+          <td>
+            This property allows you to add rounded corners to elements! This
+            property can have from one to four values
+          </td>
+        </tr>
+        <tr>
+          <td>box-shadow</td>
+          <td>h-offset v-offset blur spread color |inset</td>
+          <td>none</td>
+          <td>
+            The box-shadow property attaches one or more shadows to an element.
+          </td>
+        </tr>
+        <tr>
+          <td>box-sizing</td>
+          <td>content-box | border-box</td>
+          <td>content-box</td>
+          <td>
+            The box-sizing property defines how the width and height of an
+            element are calculated: should they include padding and borders, or
+            not.
+          </td>
+        </tr>
+        <tr>
+          <td>cursor</td>
+          <td>
+            pointer | progress | text | url | wait | none |
+            custom("images/image.jpg")
+          </td>
+          <td>auto</td>
+          <td>
+            The cursor property specifies the mouse cursor to be displayed when
+            pointing over an element.
+          </td>
+        </tr>
+        <tr>
+          <td>display</td>
+          <td>block | inline | inline-block | flex | none</td>
+          <td>block for a div</td>
+          <td>
+            The display property specifies the display behavior (the type of
+            rendering box) of an element.
+          </td>
+        </tr>
+        <tr>
+          <td>font-family</td>
+          <td>Open Sans, Roboto Slab, Oswald</td>
+          <td>depends on the browser. Usually Times New Roman</td>
+          <td>
+            The font-family property specifies the font for an element. The
+            font-family property can hold several font names as a "fallback"
+            system. If the browser does not support the first font, it tries the
+            next font.
+          </td>
+        </tr>
+        <tr>
+          <td>font-size</td>
+          <td>1rem | 2em | 24px</td>
+          <td>medium</td>
+          <td>Sets the size of a font.</td>
+        </tr>
+        <tr>
+          <td>Font-style</td>
+          <td>normal | italic</td>
+          <td>normal</td>
+          <td>A way to make a text italic</td>
+        </tr>
+        <tr>
+          <td>font-weight</td>
+          <td>
+            100, 200, 300, 400, 500, 600, 700, 800, 900 | thin, regular, bold
+          </td>
+          <td>regular / 400</td>
+          <td>Sets the boldness of a font.</td>
+        </tr>
+        <tr>
+          <td>height</td>
+          <td>200px | 50% | 100vh</td>
+          <td>auto</td>
+          <td>
+            The height property sets the height of an element. The height of an
+            element does not include padding, borders, or margins!
+          </td>
+        </tr>
+        <tr>
+          <td>letter-spacing</td>
+          <td>1.2px, 2px</td>
+          <td>1</td>
+          <td>
+            Specifies the area between all letters in a line of text. It is not
+            to be confused with kerning, which refers to the manipulation of
+            space between two individual letters. Kerning is not usually
+            practiced on the web.
+          </td>
+        </tr>
+        <tr>
+          <td>line-height</td>
+          <td>1,1; 2,2</td>
+          <td>normal</td>
+          <td>The line-height property specifies the height of a line.</td>
+        </tr>
+        <tr>
+          <td>list-style</td>
+          <td>square, circle, disc | none | url('image.png')</td>
+          <td>disc outside none</td>
+          <td>
+            The list-style property is a shorthand for the following properties:
+            list-style-type list-style-position list-style-image If one of the
+            values are missing, the default value for that property will be
+            used.
+          </td>
+        </tr>
+        <tr>
+          <td>margin</td>
+          <td>-20px | 20px | auto</td>
+          <td>0</td>
+          <td>
+            Creates an outer frame for the div content.Can have a negative
+            value.
+          </td>
+        </tr>
+        <tr>
+          <td>max-width, max-height</td>
+          <td>200px | 100% | 100vh</td>
+          <td>none</td>
+          <td>
+            Set the maximum height of a
+            <p>element</p>
+          </td>
+        </tr>
+        <tr>
+          <td>object-fit</td>
+          <td>fill | contain | cover | scale-down | none</td>
+          <td>1</td>
+          <td>
+            The object-fit property is used to specify how an img or video
+            should be resized to fit its container. This property tells the
+            content to fill the container in a variety of ways; such as
+            "preserve that aspect ratio" or "stretch up and take up as much
+            space as possible".
+          </td>
+        </tr>
+        <tr>
+          <td>opacity</td>
+          <td>from 0 (invisible) to 1 (visible)</td>
+          <td>1</td>
+          <td>
+            Transparency level, where 1 is not transparent at all, 0.5 is 50%
+            see-through, and 0 is completely transparent.
+          </td>
+        </tr>
+        <tr>
+          <td>overflow</td>
+          <td></td>
+          <td>visible</td>
+          <td>
+            The overflow property specifies what should happen if content
+            overflows an element's box. This property specifies whether to clip
+            content or to add scrollbars when an element's content is too big to
+            fit in a specified area. Note: The overflow property only works for
+            block elements with a specified height.
+          </td>
+        </tr>
+        <tr>
+          <td>padding</td>
+          <td>20px, auto</td>
+          <td>0</td>
+          <td>unvisible inner frame that will not be used by child element</td>
+        </tr>
+        <tr>
+          <td>position</td>
+          <td>static | absolute | fixed | relative | sticky</td>
+          <td>static</td>
+          <td>
+            <i>static</i> Elements render in order, as they appear in the
+            document flow. <i>fixed</i> The element is positioned relative to
+            the browser window. <i>absolute</i> The element is positioned
+            relative to its first positioned (not static) ancestor element.
+            <a href="https://www.w3schools.com/cssref/pr_class_position.asp"
+              >More about positions</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>text-align</td>
+          <td>left | right | center | justify</td>
+          <td>left</td>
+          <td>Sets the horizontal alignment of inline content</td>
+        </tr>
+        <tr>
+          <td>text-decoration</td>
+          <td>
+            text-decoration-line text-decoration-color text-decoration-style
+          </td>
+          <td>none currentcolor solid</td>
+          <td>
+            Specifies the decoration added to text, optionally color and style
+            of it. <i>text-decoration-line</i> Sets the kind of text decoration
+            to use (like underline, overline, line-through).
+            <i>text-decoration-style</i>Sets the style of the text decoration
+            (like solid, wavy, dotted, dashed, double)
+          </td>
+        </tr>
+        <tr>
+          <td>text-shadow</td>
+          <td>h-shadow v-shadow blur-radius color</td>
+          <td>none</td>
+          <td>
+            Applies one or more shadows to the text content of an element.
+            <i>h-shadow</i> Required. The position of the horizontal shadow.
+            Negative values are allowed <i>v-shadow</i> Required. The position
+            of the vertical shadow. Negative values are allowed
+            <i>blur-radius</i> Optional. The blur radius. Default value is 0
+            <i>color</i> Optional. The color of the shadow. Look at CSS Color
+            Values for a complete list of possible color values
+          </td>
+        </tr>
+        <tr>
+          <td>text-transform</td>
+          <td>none | capitalize | uppercase | lowercase</td>
+          <td>none</td>
+          <td>Controls the capitalization of text.</td>
+        </tr>
+        <tr>
+          <td>transition-delay</td>
+          <td>0.3s | 300ms</td>
+          <td>0s</td>
+          <td>specifies when the transition effect will start.</td>
+        </tr>
+        <tr>
+          <td>transition-duration</td>
+          <td>0.3s | 300ms</td>
+          <td>0s</td>
+          <td>
+            Specifies how many seconds (s) or milliseconds (ms) a transition
+            effect takes to complete.
+          </td>
+        </tr>
+        <tr>
+          <td>width</td>
+          <td>0.3s, 300ms</td>
+          <td>auto</td>
+          <td>
+            sets the width of an element. The width of an element does not
+            include padding, borders, or margins!
+          </td>
+        </tr>
+        <tr>
+          <td>writing-mode</td>
+          <td>horizontal-tb | vertical-rl | vertical-lr</td>
+          <td>horizontal-tb</td>
+          <td>
+            specifies whether lines of text are laid out horizontally or
+            vertically
+          </td>
+        </tr>
+      </table>
+
+      <a href="https://www.w3schools.com/cssref/"
+        >Here you can look at all the available properties and their values.</a
+      >
+
+      <h3>Position absolute</h3>
+
+      <table>
+        <tr>
+          <td>position</td>
+          <td>absolute</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td>z-index</td>
+          <td>1,2,3...</td>
+          <td>
+            Specifies a layering or stacking order for positioned elements. only
+            works on non-static elements
+          </td>
+        </tr>
+        <tr>
+          <td>position</td>
+          <td>1,2,3...</td>
+          <td>
+            Specifies a layering or stacking order for positioned elements. only
+            works on non-static elements
+          </td>
+        </tr>
+        <tr>
+          <td>top, bottom, left, right</td>
+          <td>1,2,3...</td>
+          <td>
+            takes the first parent element with setted position relative as a
+            referance. and from its borders positions itself.
+          </td>
+        </tr>
+      </table>
+
+      <h3>margins vs padding</h3>
+
+      <h3>flexbox</h3>
+      <p>
+        flexbox is a great tool to position or center multiple items. Should be
+        applied on the parent container within the child elements are listed
+      </p>
+
+      <table>
+        <tr>
+          <th>display</th>
+          <td>flex</td>
+        </tr>
+      </table>
+
+      <pre>
+&lt;div class="flex-parent">
+        &lt;div class="item">&lt;/div>
+        &lt;div class="item">&lt;/div>
+        &lt;div class="item">&lt;/div>
+      &lt;/div></pre
+      >
+
+      <pre>
+.flex-container {
+        display: flex;
+      }
+      </pre>
+
+      <p>most important attributes to style the flexbox</p>
+      <table>
+        <tr>
+          <th>flex-direction</th>
+          <td>row</td>
+          <td>row | row-reverse | column | column-reverse</td>
+          <td>
+            Specifies the default alignment for items within the flex
+            container..
+          </td>
+        </tr>
+        <tr>
+          <th>flex-wrap</th>
+          <td>nowrap</td>
+          <td>nowrap | wrap | wrap-reverse</td>
+          <td>
+            By default, flex items will all try to fit onto one line. You can
+            change that and allow the items to wrap as needed with this
+            property.
+          </td>
+        </tr>
+        <tr>
+          <th>justify-content</th>
+          <td>flex-start</td>
+          <td>
+            flex-start | flex-end | center | space-between | space-around |
+            space-evenly | start | end | left | right ... + safe | unsafe
+          </td>
+          <td>
+            It helps distribute extra free space leftover when either all the
+            flex items on a line are inflexible, or are flexible but have
+            reached their maximum size
+          </td>
+        </tr>
+        <tr>
+          <th>align-items</th>
+          <td>stretch</td>
+          <td>
+            stretch | flex-start | flex-end | center | baseline | first baseline
+            | last baseline | start | end | self-start | self-end + ... safe |
+            unsafe
+          </td>
+          <td>distributes items along the cross axis on the current line</td>
+        </tr>
+      </table>
+      <p>
+        <a
+          href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+          target="_blank"
+          >a complete quide to flexbox</a
+        >
+      </p>
+
+      <h3>Moving texts</h3>
+      <marquee
+        behavior="scroll"
+        direction="down"
+        scrollamount="1"
+        height="100px"
+        >langzaam omlaag</marquee
+      >
+      <marquee behavior="scroll" direction="up" scrollamount="5" height="50px"
+        >Beetje snel naar boven</marquee
+      >
+      <marquee behavior="scroll" direction="left" scrollamount="20"
+        >Snel naar links</marquee
+      >
+      <marquee behavior="scroll" direction="right" scrollamount="50"
+        >Erg snel naar rechts</marquee
+      >
+      <marquee width="50%" direction="right"
+        >Deze tekst gaat tot de helft</marquee
+      >
+      <marquee width="100%" behavior="alternate"
+        >Deze tekst gaat op en neer</marquee
+      >
+      <h1 class="stroked">STROKED</h1>
+      <p>vertical</p>
+    </div>
+  </body>
+</html>
