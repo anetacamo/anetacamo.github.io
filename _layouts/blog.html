@@ -4,9 +4,8 @@ layout: default
 
 {% include prev_next.html %}
 <div class="single-blog-container">
-  {% if page.image %}{% comment %}{% responsive_image_block %} path: {{
-  page.image | remove_first: "/" }} {% endresponsive_image_block %}{% endcomment
-  %}
+  {% if page.image %} {% responsive_image_block %} path: {{ page.image |
+  remove_first: "/" }} {% endresponsive_image_block %}
   <img
     src="{{ page.image | replace: '/images/blogs/', '/resized/800/' }}"
     alt="{{ page.title }} by Aneta Camo"
@@ -29,20 +28,21 @@ layout: default
       {{ page.date | date: "%A, %B %d, %Y" }}
     </p>
     <h1>{{ page.title }}</h1>
+    <!--
+    <p>{{ page.description }}</p>-->
 
-    <p>{{ page.description }}</p>
-    <!-- BUY -->
+    <!-- BUY 
     {% for tag in page.tags %} {% if tag == 'Print' %}
     <section class="sell">
       <div class="btn-bg">
         <a href="{{ blog.url }}">Get this print</a>
       </div>
-      <!--{% if page.collection %}
+      {% if page.collection %}
       <p style="margin: 8px 0">Available {{ page.collection }}</p>
-      {% endif %}-->
+      {% endif %}
     </section>
     {% endif %} {% endfor %}
-    <!-- BUY end -->
+    BUY end -->
     <!--
   </div>
   {% if page.content %}
