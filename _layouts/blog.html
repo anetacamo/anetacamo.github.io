@@ -4,20 +4,18 @@ layout: default
 
 {% include prev_next.html %}
 <div class="single-blog-container">
-  {% comment %}
-    {% if page.image %} 
+  {% if page.image %} 
+    {% comment %}
        {% responsive_image_block %} 
           path: {{ page.image | remove_first: "/" }} 
         {% endresponsive_image_block %}
-  {% endcomment %}
+    {% endcomment %}
   <img
     src="{{ page.image | replace: '/images/blogs/', '/resized/800/' }}"
     alt="{{ page.title }} by Aneta Camo"
     class="single-blog-image"
   />
-  {% comment %}
-    {% endif %}
-  {% endcomment %}
+  {% endif %}
 
   <!-- blog main text -->
   <div class="align-right blog-text">
