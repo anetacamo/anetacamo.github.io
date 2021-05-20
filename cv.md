@@ -107,6 +107,14 @@ A nine chapters about the trasitions that Prague post soviet suburbs undertook o
 Building a webpage in wordpress.org on the custom built and designed template</p>
 <div class="tags"><li>Wordpress</li><li>PHP</li></div>
 </div>
+  
+<div class="box" markdown="1">
+<div class="circle"><a href="http://www.tvareklimatickezmeny.cz/" target="_blank"><img src="/images/migrace.png" alt="a computer illustration"></a></div>
+## <a href="http://www.tvareklimatickezmeny.cz/" target="_blank">Faces of the climate change</a>
+<p style="margin-top: 8px; margin-bottom: 12px;">
+Building & designing webpage in wordpress.org on the custom built and designed template.</p>
+<div class="tags"><li>Wordpress</li><li>PHP</li></div>
+</div>
 
 <!--
 <div class="box" markdown="1">
