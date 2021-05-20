@@ -5,8 +5,10 @@ layout: default
 {% include prev_next.html %}
 <div class="single-blog-container">
   {% comment %}
-  {% if page.image %} {% responsive_image_block %} path: {{ page.image |
-  remove_first: "/" }} {% endresponsive_image_block %}
+    {% if page.image %} 
+       {% responsive_image_block %} 
+          path: {{ page.image | remove_first: "/" }} 
+        {% endresponsive_image_block %}
   {% endcomment %}
   <img
     src="{{ page.image | replace: '/images/blogs/', '/resized/800/' }}"
@@ -14,7 +16,7 @@ layout: default
     class="single-blog-image"
   />
   {% comment %}
-  {% endif %}
+    {% endif %}
   {% endcomment %}
 
   <!-- blog main text -->
