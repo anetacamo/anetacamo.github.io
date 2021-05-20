@@ -1,4 +1,4 @@
-I"T<h2><span class="large-font">Hi</span> my name is Aneta Camo</h2>
+I"p <h2><span class="large-font">Hi</span> my name is Aneta Camo</h2>
 <p><a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a>  |   <a href="https://www.instagram.com/anetacamo" target="_blank"> illustrations</a> <br />born in Prague   |    based in Aarhus   </p>
 
 <div class="divider"></div>
@@ -100,6 +100,14 @@ A nine chapters about the trasitions that Prague post soviet suburbs undertook o
     <h2 id="fair-migration-politics"><a href="http://www.ferovamigracnipolitika.cz/english/" target="_blank">Fair Migration Politics</a></h2>
     <p style="margin-top: 8px; margin-bottom: 12px;">
 Building a webpage in wordpress.org on the custom built and designed template</p>
+    <div class="tags"><li>Wordpress</li><li>PHP</li></div>
+  </div>
+  
+<div class="box">
+    <div class="circle"><a href="http://www.tvareklimatickezmeny.cz/" target="_blank"><img src="/images/migrace.png" alt="a computer illustration" /></a></div>
+    <h2 id="faces-of-the-climate-change"><a href="http://www.tvareklimatickezmeny.cz/" target="_blank">Faces of the climate change</a></h2>
+    <p style="margin-top: 8px; margin-bottom: 12px;">
+Building &amp; designing webpage in wordpress.org on the custom built and designed template.</p>
     <div class="tags"><li>Wordpress</li><li>PHP</li></div>
   </div>
 
