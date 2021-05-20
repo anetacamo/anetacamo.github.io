@@ -57,26 +57,16 @@ Building the small websites and doing smaller front-end tasks for various custom
 ## <a href="http://www.verifa.io" target="_blank">Verifa.io</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">A website with blog built in Gatsby with React. Blogging system fed by markdown files via GraphQl</p>
 <div class="tags">
-  <li>React</li><li>Gatsby</li>
+  <li>React</li><li>Gatsby</li><li>GraphQl</li>
 </div>
 </div>
 
 <div class="box" markdown="1">
-<div class="circle"><a href="http://www.praqma.com/" target="_blank"><img src="/images/praqma.png" alt="a computer illustration"></a></div>
-## <a href="http://www.praqma.com/" target="_blank">Praqma</a>
-<p style="margin-top: 8px; margin-bottom: 12px;">
-A website built with Jekyll. Blogging system, tagging, pagination, auto image compression. Carousels, filters done with Javascript.</p>
-<div class="tags"><li>Javascript</li><li>Liquid</li><li>Sass</li><li>Jekyll</li></div>
+<div class="circle"><a href="/" target="_blank"><img src="/images/anetacamo_small.png" alt="a living room illustration"></a></div>
+## <a href="/" target="_blank">My portfolio</a>
+<p style="margin-top: 8px; margin-bottom: 12px;">My own blog that where I can organise my activities and illustartions into different categories, tagging & blogging system with auto compressed images.</p>
+<div class="tags"><li>Liquid</li><li>Jekyll</li><li>Sass</li></div>
 </div>
-
-<!--
-<div class="box" markdown="1">
-<div class="circle"><a href="/" target="_blank"><img src="/images/obyvak.png" alt="a living room illustration"></a></div>
-## <a href="/" target="_blank">My portfolio with images</a>
-<p style="margin-top: 8px; margin-bottom: 12px;">I like to draw and I wanted to have a plce where I can organise my drawings into a different categories, so I have built my own simple tagging & blogging system with auto compressed images.</p>
-<div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li></div>
-</div>
--->
 
 <div class="box" markdown="1">
 <div class="circle"><a href="https://www.dustojnamzda.cz/minimum-decent-wage/" target="_blank"><img src="/images/mdm.png" alt="a home illustration"></a></div>
@@ -85,16 +75,6 @@ A website built with Jekyll. Blogging system, tagging, pagination, auto image co
 Built and designed website via wordpress from a scratch, using Advanced Custom Fields to make it easier to fill in everything. Illustrations.</p>
 <div class="tags"><li>Wordpress.org</li><li>PHP</li><li>Javascript</li><li>Sass</li><li>Illustration</li></div>
 </div>
-
-<!--
-<div class="box" markdown="1">
-<div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a home illustration"></a></div>
-## <a href="http://anetacamo.github.io/movie-search" target="_blank">Movie Search</a>
-<p style="margin-top: 8px; margin-bottom: 12px;">
-A simple page done in React that searches through the large online database of movies and displays their info on click. Lets you to like and add movies to your local storage</p>
-<div class="tags"><li>React</li><li>React Hooks</li></div>
-</div>
--->
 
 <div class="box" markdown="1">
 <div class="circle"><a href="http://anetacamo.github.io/sidliste" target="_blank"><img src="/images/sidliste.png" alt="a home illustration"></a></div>
@@ -118,6 +98,14 @@ Building a webpage in wordpress on the custom built and designed template; illus
 <p style="margin-top: 8px; margin-bottom: 12px;">
 Building & designing webpage in wordpress on the my custom built template.</p>
 <div class="tags"><li>Wordpress</li><li>PHP</li></div>
+</div>
+
+<div class="box" markdown="1">
+<div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a home illustration"></a></div>
+## <a href="http://anetacamo.github.io/movie-search" target="_blank">Movie Search</a>
+<p style="margin-top: 8px; margin-bottom: 12px;">
+A simple page coded in React where you can search through the online database of movies and displays their info, save them as liked or seen into the local browser storage</p>
+<div class="tags"><li>React</li></div>
 </div>
 
 <!--
@@ -149,3 +137,10 @@ A simple one page project coded from scratch with a lot of czech text and some h
 <div style="width: 100%; height: 40px; float: left;"></div>
 </div>
 -->
+<div class="box" markdown="1">
+<div class="circle"><a href="http://www.praqma.com/" target="_blank"><img src="/images/praqma.png" alt="a computer illustration"></a></div>
+## <a href="http://www.praqma.com/" target="_blank">Praqma</a>
+<p style="margin-top: 8px; margin-bottom: 12px;">
+A website built with Jekyll. Blogging system, tagging, pagination, auto image compression. Carousels, filters done with Javascript.</p>
+<div class="tags"><li>Javascript</li><li>Liquid</li><li>Sass</li><li>Jekyll</li></div>
+</div>
