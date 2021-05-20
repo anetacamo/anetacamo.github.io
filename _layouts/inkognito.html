@@ -3,20 +3,23 @@
 
 {% include head.html %}
 
-
-
 <body>
   <div class="logo">
-    <img src="/images/anetacamo_black.png" alt="Aneta Camo illustrations and web design logo">
+    <img
+      src="/images/anetacamo_small.png"
+      alt="Aneta Camo illustrations and web design logo"
+    />
   </div>
   <div class="blog-container {% if page.cv %}cv-container{% endif %}">
     <div class="blogs">
       <div class="main-img">
-        <img src="/images/me.png" alt="aneta camo portrait" style=" object-fit:cover; filter: none;">
+        <img
+          src="/images/me.png"
+          alt="aneta camo portrait"
+          style="object-fit: cover; filter: none"
+        />
       </div>
-      <div style="padding-top: 20px;">
-      {{ content }}
-      </div>
+      <div style="padding-top: 20px">{{ content }}</div>
     </div>
   </div>
 </body>

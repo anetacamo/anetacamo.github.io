@@ -6,45 +6,51 @@ cv: true
 ---
 
 <h2><span class="large-font">Hi</span> my name is Aneta Camo</h2>
-<a href="mailto:anetacamova@gmail.com">anetacamova@gmail.com</a> &nbsp;| &nbsp; <a href="https://www.instagram.com/anetacamo" target="_blank"> illustrations</a> <br />born in Prague &nbsp; | &nbsp;  based in Aarhus  &nbsp;
+<a href="mailto:anetacamova@gmail.com">anetacamo@gmail.com</a> &nbsp;| &nbsp; <a href="https://www.instagram.com/anetacamo" target="_blank"> illustrations</a> <br />born in Prague &nbsp; | &nbsp;  based in Aarhus  &nbsp;
 
 <div class="divider"></div>
 
 ## TOOLSTACK
-+ CSS, Bootstrap, Sass
-+ JS, React
-+ Gatsby, Jekyll
-+ Understanding to: Redux, GraphQl, React Native
-+ Liquid, PHP
-+ GitHub & Git
-+ Worked a lot with various CMSs: Wordpress, Forestry, Webflow, Squarespace, HubSpot
-+ Basic use of Docker, Jenkins, CircleCI
-+ SEO, UX
-+ Photoshop, InDesign
+
+- CSS, Bootstrap, Sass
+- JS, React
+- Gatsby, Jekyll
+- Understanding to: Redux, GraphQl, React Native
+- Liquid, PHP
+- GitHub & Git
+- Worked a lot with various CMSs: Wordpress, Forestry, Webflow, Squarespace, HubSpot
+- Basic use of Docker, Jenkins, CircleCI
+- SEO, UX
+- Photoshop, InDesign
 
 <div class="divider"></div>
 
 ## Working EXPERIENCE
 
 #### <a href="https://www.phable.io" target="_blank">Phable.io</a>
-*from June 2020*<br />
+
+_from June 2020_<br />
 Working as a freelance front-end developer for a design office based in London, building webpages with Gatsby and React for various customers. Most recent: <a href="http://www.verifa.io" target="_blank">verifa</a>
 
 #### <a href="https://www.praqma.com" target="_blank">Praqma.com</a>
-*August 2017 - June 2020*<br />
+
+_August 2017 - June 2020_<br />
 Rebuilding two large websites into custom-made easy-to-use CMSs generated from markdown files, maintaining it. <a href="https://www.praqma.com" target="_blank">praqma.com</a> & <a href="https://www.code-conf.com" target="_blank">code-conf</a>.
 
 #### <a href="https://www.prolike.io" target="_blank">Prolike.io</a>
-*January 2018 - June 2018*<br />
+
+_January 2018 - June 2018_<br />
 Rebuilding <a href="https://dataintensity.com/">data intensity</a> into a static build with Jekyll & Liquid.
 
 #### <a href="https://www.symbio.agency" target="_blank">SYMBIO digital,s.r.o.</a>
-*November 2015 - June 2016*<br />
+
+_November 2015 - June 2016_<br />
 Building the small websites and doing smaller front-end tasks for various customers, mostly taking care of HTML & CSS, workings with various CMSs.
 
 <div class="divider"></div>
 
 ## REFERENCES
+
 <div class="boxes">
 <div class="box" markdown="1">
 <div class="circle"><a href="http://www.verifa.io" target="_blank"><img src="/images/verifa.png" alt="a wallet illustration"></a></div>
@@ -55,7 +61,6 @@ Building the small websites and doing smaller front-end tasks for various custom
 </div>
 </div>
 
-
 <div class="box" markdown="1">
 <div class="circle"><a href="http://www.praqma.com/" target="_blank"><img src="/images/praqma.png" alt="a computer illustration"></a></div>
 ## <a href="http://www.praqma.com/" target="_blank">Praqma</a>
@@ -64,14 +69,13 @@ A website built with Jekyll. Blogging system, tagging, pagination, auto image co
 <div class="tags"><li>Javascript</li><li>Liquid</li><li>Sass</li><li>Jekyll</li></div>
 </div>
 
-
 <!--
 <div class="box" markdown="1">
 <div class="circle"><a href="/" target="_blank"><img src="/images/obyvak.png" alt="a living room illustration"></a></div>
 ## <a href="/" target="_blank">My portfolio with images</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">I like to draw and I wanted to have a plce where I can organise my drawings into a different categories, so I have built my own simple tagging & blogging system with auto compressed images.</p>
 <div class="tags"><li>Liquid</li><li>Markdown</li><li>Sass</li></div>
-</div>  
+</div>
 -->
 
 <div class="box" markdown="1">
@@ -80,7 +84,7 @@ A website built with Jekyll. Blogging system, tagging, pagination, auto image co
 <p style="margin-top: 8px; margin-bottom: 12px;">
 Built and designed website via wordpress from a scratch, using Advanced Custom Fields to make it easier to fill in everything. Illustrations.</p>
 <div class="tags"><li>Wordpress.org</li><li>PHP</li><li>Javascript</li><li>Sass</li><li>Illustration</li></div>
-</div>  
+</div>
 
 <!--
 <div class="box" markdown="1">
@@ -89,30 +93,30 @@ Built and designed website via wordpress from a scratch, using Advanced Custom F
 <p style="margin-top: 8px; margin-bottom: 12px;">
 A simple page done in React that searches through the large online database of movies and displays their info on click. Lets you to like and add movies to your local storage</p>
 <div class="tags"><li>React</li><li>React Hooks</li></div>
-</div>  
+</div>
 -->
 
 <div class="box" markdown="1">
-<div class="circle"><a href="http://anetacamo.github.io/sidliste" target="_blank"><img src="/images/movie-search.png" alt="a home illustration"></a></div>
+<div class="circle"><a href="http://anetacamo.github.io/sidliste" target="_blank"><img src="/images/sidliste.png" alt="a home illustration"></a></div>
 ## <a href="http://anetacamo.github.io/movie-search" target="_blank">Prague suburbs</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-A nine chapters about the trasitions that Prague post soviet suburbs undertook over the years. One page with lots of transitions build via js, still in progress</p>
+A nine chapters about the trasitions that Prague post soviet suburbs undertook over the years. One page with lots of transitions build via js, still in progress + Illustrations</p>
 <div class="tags"><li>Photoshop</li><li>JS</li></div>
-</div>  
+</div>
 
 <div class="box" markdown="1">
 <div class="circle"><a href="http://www.ferovamigracnipolitika.cz/english/" target="_blank"><img src="/images/migrace.png" alt="a computer illustration"></a></div>
 ## <a href="http://www.ferovamigracnipolitika.cz/english/" target="_blank">Fair Migration Politics</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Building a webpage in wordpress.org on the custom built and designed template</p>
+Building a webpage in wordpress on the custom built and designed template; illustrations also done by me</p>
 <div class="tags"><li>Wordpress</li><li>PHP</li></div>
 </div>
   
 <div class="box" markdown="1">
-<div class="circle"><a href="http://www.tvareklimatickezmeny.cz/" target="_blank"><img src="/images/migrace.png" alt="a computer illustration"></a></div>
+<div class="circle"><a href="http://www.tvareklimatickezmeny.cz/" target="_blank"><img src="/images/zmena.png" alt="a computer illustration"></a></div>
 ## <a href="http://www.tvareklimatickezmeny.cz/" target="_blank">Faces of the climate change</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Building & designing webpage in wordpress.org on the custom built and designed template.</p>
+Building & designing webpage in wordpress on the my custom built template.</p>
 <div class="tags"><li>Wordpress</li><li>PHP</li></div>
 </div>
 
