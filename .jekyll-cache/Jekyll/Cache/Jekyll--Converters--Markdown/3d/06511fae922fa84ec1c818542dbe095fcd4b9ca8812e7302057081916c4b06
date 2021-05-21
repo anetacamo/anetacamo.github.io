@@ -1,4 +1,4 @@
-I"� <h2><span class="large-font">Hi</span> my name is Aneta Camo</h2>
+I"�"<h2><span class="large-font">Hi</span> my name is Aneta Camo</h2>
 <p><a href="mailto:anetacamova@gmail.com">anetacamo@gmail.com</a>  |   <a href="https://www.instagram.com/anetacamo" target="_blank"> illustrations</a> <br />born in Prague   |    based in Aarhus   </p>
 
 <div class="divider"></div>
@@ -58,7 +58,7 @@ Building the small websites and doing smaller front-end tasks for various custom
 
 <div class="box">
     <div class="circle"><a href="/" target="_blank"><img src="/images/anetacamo_small.png" alt="a living room illustration" /></a></div>
-    <h2 id="my-portfolio-with-images"><a href="/" target="_blank">My portfolio with images</a></h2>
+    <h2 id="my-portfolio"><a href="/" target="_blank">My portfolio</a></h2>
     <p style="margin-top: 8px; margin-bottom: 12px;">My own blog that where I can organise my activities and illustartions into different categories, tagging &amp; blogging system with auto compressed images.</p>
     <div class="tags"><li>Liquid</li><li>Jekyll</li><li>Sass</li></div>
   </div>
@@ -96,10 +96,18 @@ Building &amp; designing webpage in wordpress on the my custom built template.</
   </div>
 
 <div class="box">
-    <div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a home illustration" /></a></div>
+    <div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a camera illustration" /></a></div>
     <h2 id="movie-search"><a href="http://anetacamo.github.io/movie-search" target="_blank">Movie Search</a></h2>
     <p style="margin-top: 8px; margin-bottom: 12px;">
 A simple page coded in React where you can search through the online database of movies and displays their info, save them as liked or seen into the local browser storage</p>
+    <div class="tags"><li>React</li></div>
+  </div>
+
+<div class="box">
+    <div class="circle"><a href="http://anetacamo.github.io/coding" target="_blank"><img src="/images/glasses.png" alt="a glasses illustration" /></a></div>
+    <h2 id="coding-workshops"><a href="http://anetacamo.github.io/coding" target="_blank">Coding Workshops</a></h2>
+    <p style="margin-top: 8px; margin-bottom: 12px;">
+A web made in React, texts generated from md files. Tool I coded to share materials for the free coding workshops I have been doing in Aarhus. Still under construction and investigation</p>
     <div class="tags"><li>React</li></div>
   </div>
 
