@@ -101,10 +101,18 @@ Building & designing webpage in wordpress on the my custom built template.</p>
 </div>
 
 <div class="box" markdown="1">
-<div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a home illustration"></a></div>
+<div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a camera illustration"></a></div>
 ## <a href="http://anetacamo.github.io/movie-search" target="_blank">Movie Search</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 A simple page coded in React where you can search through the online database of movies and displays their info, save them as liked or seen into the local browser storage</p>
+<div class="tags"><li>React</li></div>
+</div>
+
+<div class="box" markdown="1">
+<div class="circle"><a href="http://anetacamo.github.io/coding" target="_blank"><img src="/images/glasses.png" alt="a glasses illustration"></a></div>
+## <a href="http://anetacamo.github.io/coding" target="_blank">Coding Workshops</a>
+<p style="margin-top: 8px; margin-bottom: 12px;">
+A web made in React, texts generated from md files. Tool I coded to share materials for the free coding workshops I have been doing in Aarhus. Still under construction and investigation</p>
 <div class="tags"><li>React</li></div>
 </div>
 
