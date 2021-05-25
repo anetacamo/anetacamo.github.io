@@ -52,19 +52,14 @@ Building the small websites and doing smaller front-end tasks for various custom
 ## REFERENCES
 
 <div class="boxes">
-<div class="box" markdown="1">
-<div class="circle"><a href="http://www.verifa.io" target="_blank"><img src="/images/verifa.png" alt="a wallet illustration"></a></div>
+<div class="box" markdown="1"><div class="circle"><a href="http://www.verifa.io" target="_blank"><img src="/images/verifa.png" alt="a wallet illustration"></a></div>
 ## <a href="http://www.verifa.io" target="_blank">Verifa.io</a>
-<p style="margin-top: 8px; margin-bottom: 12px;">A website with blog built in Gatsby with React. Blogging system fed by markdown files via GraphQl</p>
-<div class="tags">
-  <li>React</li><li>Gatsby</li><li>GraphQl</li>
-</div>
-</div>
+<p style="margin-top: 8px; margin-bottom: 12px;">A website with blog built in Gatsby with React. Blogging system fed by markdown files via GraphQl</p><div class="tags"><li>React</li><li>Gatsby</li><li>GraphQl</li></div></div>
 
 <div class="box" markdown="1">
 <div class="circle"><a href="/" target="_blank"><img src="/images/anetacamo_small.png" alt="a living room illustration"></a></div>
 ## <a href="/" target="_blank">My portfolio</a>
-<p style="margin-top: 8px; margin-bottom: 12px;">My own blog that where I can organise my activities and illustartions into different categories, tagging & blogging system with auto compressed images.</p>
+<p style="margin-top: 8px; margin-bottom: 12px;">My own blog where I can organise my activities and illustartions into different categories, tagging & blogging system with auto compressed images.</p>
 <div class="tags"><li>Liquid</li><li>Jekyll</li><li>Sass</li></div>
 </div>
 
@@ -72,7 +67,7 @@ Building the small websites and doing smaller front-end tasks for various custom
 <div class="circle"><a href="https://www.dustojnamzda.cz/minimum-decent-wage/" target="_blank"><img src="/images/mdm.png" alt="a home illustration"></a></div>
 ## <a href="https://www.dustojnamzda.cz/minimum-decent-wage/" target="_blank">MDM</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Built and designed website via wordpress from a scratch, using Advanced Custom Fields to make it easier to fill in everything. Illustrations.</p>
+Built and designed website via wordpress from scratch, Advanced Custom Fields to make it easier to fill in everything. Illustrations.</p>
 <div class="tags"><li>Wordpress.org</li><li>PHP</li><li>Javascript</li><li>Sass</li><li>Illustration</li></div>
 </div>
 
@@ -80,7 +75,7 @@ Built and designed website via wordpress from a scratch, using Advanced Custom F
 <div class="circle"><a href="http://anetacamo.github.io/sidliste" target="_blank"><img src="/images/sidliste.png" alt="a home illustration"></a></div>
 ## <a href="http://anetacamo.github.io/movie-search" target="_blank">Prague suburbs</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-A nine chapters about the trasitions that Prague post soviet suburbs undertook over the years. One page with lots of transitions build via js, still in progress + Illustrations</p>
+Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. One page with lots of css & js animations, still in progress + Illustrations</p>
 <div class="tags"><li>Photoshop</li><li>JS</li></div>
 </div>
 
@@ -96,7 +91,7 @@ Building a webpage in wordpress on the custom built and designed template; illus
 <div class="circle"><a href="http://www.tvareklimatickezmeny.cz/" target="_blank"><img src="/images/zmena.png" alt="a computer illustration"></a></div>
 ## <a href="http://www.tvareklimatickezmeny.cz/" target="_blank">Faces of the climate change</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Building & designing webpage in wordpress on the my custom built template.</p>
+Building & designing webpage in wordpress on my custom built template.</p>
 <div class="tags"><li>Wordpress</li><li>PHP</li></div>
 </div>
 
@@ -104,7 +99,7 @@ Building & designing webpage in wordpress on the my custom built template.</p>
 <div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a camera illustration"></a></div>
 ## <a href="http://anetacamo.github.io/movie-search" target="_blank">Movie Search</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-A simple page coded in React where you can search through the online database of movies and displays their info, save them as liked or seen into the local browser storage</p>
+A simple page coded in React where you can search through the online database of movies and display their info, save them as liked or seen into the local browser storage.</p>
 <div class="tags"><li>React</li></div>
 </div>
 
