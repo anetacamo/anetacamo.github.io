@@ -99,9 +99,18 @@ Building & designing webpage in wordpress on my custom built template.</p>
 <div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a camera illustration"></a></div>
 ## <a href="http://anetacamo.github.io/movie-search" target="_blank">Movie Search</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
+A simple page coded in React for our small movie club. You can search through the online database of movies and display their info, save them as liked or seen into the local browser storage. Later I'd like to implement way to generate the posters and save them somewhere more permanent.</p>
+<div class="tags"><li>React</li></div>
+<a href="https://github.io/anetacamo/movie-search"><p>git repo</p></a>
+</div>
+  
+<div class="box" markdown="1">
+<div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a camera illustration"></a></div>
+## <a href="http://anetacamo.github.io/movie-search" target="_blank">Movie Search</a>
+<p style="margin-top: 8px; margin-bottom: 12px;">
 A simple page coded in React where you can search through the online database of movies and display their info, save them as liked or seen into the local browser storage.</p>
 <div class="tags"><li>React</li></div>
-</div>
+</div>  
 
 <div class="box" markdown="1">
 <div class="circle"><a href="http://anetacamo.github.io/coding" target="_blank"><img src="/images/glasses.png" alt="a glasses illustration"></a></div>
@@ -110,7 +119,8 @@ A simple page coded in React where you can search through the online database of
 A web made in React, texts generated from md files. Tool I coded to share materials for the free coding workshops I have been doing in Aarhus. Still under construction and investigation</p>
 <div class="tags"><li>React</li></div>
 </div>
-
+  
+  
 <!--
 <div class="box" markdown="1">
 <div class="circle"><a href="https://anetacamo-store.herokuapp.com/" target="_blank"><img src="/images/laptop.png" alt="a computer illustration"></a></div>
