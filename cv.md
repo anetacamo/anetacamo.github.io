@@ -101,7 +101,7 @@ Building & designing webpage in wordpress on my custom built template.</p>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 A simple page coded in React for our small movie club. You can search through the online database of movies and display their info, save them as liked or seen into the local browser storage. And add director manually. Later I'd like to implement way to generate the posters and save them somewhere more permanent.</p>
 <div class="tags"><li>React</li></div>
-<a href="https://github.io/anetacamo/movie-search"><p>git repo</p></a>
+<a href="https://github.com/anetacamo/movie-search/tree/master">git repo</a>
 </div>
   
 <div class="box" markdown="1">
@@ -110,6 +110,7 @@ A simple page coded in React for our small movie club. You can search through th
 <p style="margin-top: 8px; margin-bottom: 12px;">
 I have been liking designs with the oldschool grids so I thought it would be fun to build my own template and see live how it would look with the items inside. Later Id like to build this into my own webshop</p>
 <div class="tags"><li>React</li></div>
+<a href="https://github.com/anetacamo/grid/tree/master">link to repo</a>
 </div>  
 
 <div class="box" markdown="1">
