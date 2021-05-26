@@ -60,23 +60,23 @@ Building the small websites and doing smaller front-end tasks for various custom
 <div class="circle"><a href="/" target="_blank"><img src="/images/anetacamo_small.png" alt="a living room illustration"></a></div>
 ## <a href="/" target="_blank">My portfolio</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">My own blog where I can organise my activities and illustartions into different categories, tagging & blogging system with auto compressed images.</p>
-<div class="tags"><li>Liquid</li><li>Jekyll</li><li>Sass</li></div>
+<div class="tags"><li>Liquid</li><li>Jekyll</li><li>Sass</li><li>Design</li><li>Illustration</li></div>
 </div>
 
 <div class="box" markdown="1">
 <div class="circle"><a href="https://www.dustojnamzda.cz/minimum-decent-wage/" target="_blank"><img src="/images/mdm.png" alt="a home illustration"></a></div>
 ## <a href="https://www.dustojnamzda.cz/minimum-decent-wage/" target="_blank">MDM</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Built and designed website via wordpress from scratch, Advanced Custom Fields to make it easier to fill in everything. Illustrations.</p>
-<div class="tags"><li>Wordpress.org</li><li>PHP</li><li>Javascript</li><li>Sass</li><li>Illustration</li></div>
+Built and designed website via wordpress from scratch, 2019. Used advanced Custom fields to make it easier to fill in everything and javascript for animations. Illustrations and design.</p>
+<div class="tags"><li>Wordpress</li><li>PHP</li><li>Javascript</li><li>Sass</li><li>Illustration</li></div>
 </div>
 
 <div class="box" markdown="1">
 <div class="circle"><a href="http://anetacamo.github.io/sidliste" target="_blank"><img src="/images/sidliste.png" alt="a home illustration"></a></div>
 ## <a href="http://anetacamo.github.io/movie-search" target="_blank">Prague suburbs</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. One page with lots of css & js animations, still in progress + Illustrations</p>
-<div class="tags"><li>Photoshop</li><li>JS</li></div>
+Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. One page with lots of css & js animations. Also includes a brochure I designed and illustrated.</p>
+<div class="tags"><li>Illustration</li><li>Design</li><li>JS</li></div>
 </div>
 
 <div class="box" markdown="1">
@@ -84,15 +84,15 @@ Nine chapters about the trasitions that Prague post-soviet suburbs undertook ove
 ## <a href="http://www.ferovamigracnipolitika.cz/english/" target="_blank">Fair Migration Politics</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 Building a webpage in wordpress on the custom built and designed template; illustrations also done by me</p>
-<div class="tags"><li>Wordpress</li><li>PHP</li></div>
+<div class="tags"><li>Wordpress</li><li>PHP</li><li>Illustration</li><li>Design</li></div>
 </div>
   
 <div class="box" markdown="1">
 <div class="circle"><a href="http://www.tvareklimatickezmeny.cz/" target="_blank"><img src="/images/zmena.png" alt="a computer illustration"></a></div>
 ## <a href="http://www.tvareklimatickezmeny.cz/" target="_blank">Faces of the climate change</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Building & designing webpage in wordpress on my custom built template.</p>
-<div class="tags"><li>Wordpress</li><li>PHP</li></div>
+Building & designing webpage in wordpress on my custom built template. Illustration done by czech illustrator <a href="https://toybox.cz/en/illustration/">Toybox</a></p>
+<div class="tags"><li>Wordpress</li><li>PHP</li><li>Design</li></div>
 </div>
 
 <div class="box" markdown="1">
@@ -108,8 +108,8 @@ A simple page coded in React for our small movie club. You can search through th
 <div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a camera illustration"></a></div>
 ## <a href="http://anetacamo.github.io/movie-search" target="_blank">Adjustable grid</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-I have been liking designs with the oldschool grids so I thought it would be fun to build my own template and see live how it would look with the items inside. Later Id like to build this into my own webshop</p>
-<div class="tags"><li>React</li></div>
+Coded a reusuable and adjustuble grid to reuse later. When you click style the grid in the corner you can play with they layout. Later Id like to build this into my own webshop.</p>
+<div class="tags"><li>React</li><li>Design</li></div>
 <a href="https://github.com/anetacamo/grid/tree/master">link to repo</a>
 </div>  
 
@@ -118,7 +118,8 @@ I have been liking designs with the oldschool grids so I thought it would be fun
 ## <a href="http://anetacamo.github.io/coding" target="_blank">Coding Workshops</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 A web made in React, texts generated from md files. Tool I coded to share materials for the free coding workshops I have been doing in Aarhus. Still under construction and investigation</p>
-<div class="tags"><li>React</li></div>
+<div class="tags"><li>React</li><li>Illustration</li><li>Design</li></div>
+<a href="https://github.com/anetacamo/coding/tree/master">link to repo</a>
 </div>
   
   
