@@ -54,7 +54,7 @@ Building the small websites and doing smaller front-end tasks for various custom
 <div class="boxes">
 <div class="box" markdown="1"><div class="circle"><a href="http://www.verifa.io" target="_blank"><img src="/images/verifa.png" alt="a wallet illustration"></a></div>
 ## <a href="http://www.verifa.io" target="_blank">Verifa.io</a>
-<p style="margin-top: 8px; margin-bottom: 12px;">A website with blog built in Gatsby with React. Blogging system fed by markdown files via GraphQl</p><div class="tags"><li>React</li><li>Gatsby</li><li>GraphQl</li></div></div>
+<p style="margin-top: 8px; margin-bottom: 12px;">A website with blog built in Gatsby with React. Blogging system fed by markdown files via GraphQl. Design by <a href="https://www.phable.io" target="_blank">Phable</a></p><div class="tags"><li>React</li><li>Gatsby</li><li>GraphQl</li></div></div>
 
 <div class="box" markdown="1">
 <div class="circle"><a href="/" target="_blank"><img src="/images/anetacamo_small.png" alt="a living room illustration"></a></div>
@@ -73,7 +73,7 @@ Built and designed website via wordpress from scratch, 2019. Used advanced custo
 
 <div class="box" markdown="1">
 <div class="circle"><a href="http://anetacamo.github.io/sidliste" target="_blank"><img src="/images/sidliste.png" alt="a home illustration"></a></div>
-## <a href="http://anetacamo.github.io/movie-search" target="_blank">Prague suburbs</a>
+## <a href="http://anetacamo.github.io/sidliste" target="_blank">Prague suburbs</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. One page with lots of css & js animations. In the printet brochure too.</p>
 <div class="tags"><li>Illustration</li><li>Design</li><li>JS</li></div>
@@ -105,8 +105,8 @@ A simple page coded in React for our small movie club. You can search through th
 </div>
   
 <div class="box" markdown="1">
-<div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a camera illustration"></a></div>
-## <a href="http://anetacamo.github.io/movie-search" target="_blank">Adjustable grid</a>
+<div class="circle"><a href="http://anetacamo.github.io/grid" target="_blank"><img src="/images/movie-search.png" alt="a camera illustration"></a></div>
+## <a href="http://anetacamo.github.io/grid" target="_blank">Adjustable grid</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
 Coded adjustuble grid to reuse later. When you click style the grid in the corner you can play with they layout. Later, I'd like to build this into my own webshop.</p>
 <div class="tags"><li>React</li><li>Design</li></div>
@@ -121,6 +121,15 @@ A web made in React, texts generated from md files. Tool I coded to share materi
 <div class="tags"><li>React</li><li>Illustration</li><li>Design</li></div>
 <a href="https://github.com/anetacamo/coding/tree/master">link to repo</a>
 </div>
+  
+<div class="box" markdown="1">
+<div class="circle"><a href="https://sweetcity.dk" target="_blank"><img src="/images/glasses.png" alt="a glasses illustration"></a></div>
+## <a href="https://sweetcity.dk" target="_blank">Sweet City | 2021</a>
+<p style="margin-top: 8px; margin-bottom: 12px;">
+A web made in React for the local politics event</p>
+<div class="tags"><li>React</li><li>Illustration</li><li>Design</li></div>
+<a href="https://github.com/anetacamo/sc/tree/master">link to repo</a>
+</div>  
   
   
 <!--
