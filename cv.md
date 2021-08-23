@@ -67,7 +67,7 @@ Building the small websites and doing smaller front-end tasks for various custom
 <div class="circle"><a href="https://www.dustojnamzda.cz/minimum-decent-wage/" target="_blank"><img src="/images/mdm.png" alt="a home illustration"></a></div>
 ## <a href="https://www.dustojnamzda.cz/minimum-decent-wage/" target="_blank">MDM</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Built and designed website via wordpress from scratch, 2019. Used advanced custom fields to make it easier to fill in everything and javascript for animations. Also made illustrations</p>
+Built and designed website via wordpress from scratch, 2019. Used advanced custom fields to fill in everything and javascript for animations. Also made illustrations.</p>
 <div class="tags"><li>Wordpress</li><li>PHP</li><li>Javascript</li><li>Sass</li><li>Illustration</li></div>
 </div>
 
@@ -75,7 +75,7 @@ Built and designed website via wordpress from scratch, 2019. Used advanced custo
 <div class="circle"><a href="http://anetacamo.github.io/sidliste" target="_blank"><img src="/images/sidliste.png" alt="a home illustration"></a></div>
 ## <a href="http://anetacamo.github.io/sidliste" target="_blank">Prague suburbs</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. One page with lots of css & js animations. In the printet brochure too.</p>
+Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years, 2020. One page with lots of css & js animations. In the printed brochure too.</p>
 <div class="tags"><li>Illustration</li><li>Design</li><li>JS</li></div>
 </div>
 
@@ -83,7 +83,7 @@ Nine chapters about the trasitions that Prague post-soviet suburbs undertook ove
 <div class="circle"><a href="http://www.ferovamigracnipolitika.cz/english/" target="_blank"><img src="/images/migrace.png" alt="a computer illustration"></a></div>
 ## <a href="http://www.ferovamigracnipolitika.cz/english/" target="_blank">Fair Migration Politics</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Building a webpage in wordpress on the custom built and designed template; illustrations also done by me.</p>
+Built & designed in wordpress from scratch, 2019. Illustrations also done by me.</p>
 <div class="tags"><li>Wordpress</li><li>PHP</li><li>Illustration</li><li>Design</li></div>
 </div>
   
@@ -91,7 +91,7 @@ Building a webpage in wordpress on the custom built and designed template; illus
 <div class="circle"><a href="http://www.tvareklimatickezmeny.cz/" target="_blank"><img src="/images/zmena.png" alt="a computer illustration"></a></div>
 ## <a href="http://www.tvareklimatickezmeny.cz/" target="_blank">Faces of the climate change</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Building & designing webpage in wordpress on my custom built template. Illustrations done by czech illustrator <a href="https://toybox.cz/en/illustration/">Toybox</a></p>
+Built & designed in wordpress from scratch, 2020. Illustrations done by czech illustrator <a href="https://toybox.cz/en/illustration/">Toybox</a></p>
 <div class="tags"><li>Wordpress</li><li>PHP</li><li>Design</li></div>
 </div>
 
@@ -99,7 +99,7 @@ Building & designing webpage in wordpress on my custom built template. Illustrat
 <div class="circle"><a href="http://anetacamo.github.io/movie-search" target="_blank"><img src="/images/movie-search.png" alt="a camera illustration"></a></div>
 ## <a href="http://anetacamo.github.io/movie-search" target="_blank">Movie Search</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-A simple page coded in React for our small movie club. You can search through the online database of movies and display their info, save them as liked or seen into the local browser storage. And add director manually. Later, I'd like to implement way to generate the posters and save them somewhere more permanent.</p>
+A simple page coded in React for our small movie club, 2021. You can search through the online database of movies and display their info, save them as liked or seen into the local browser storage. And add director manually. Later, I'd like to implement way to generate the posters and save them somewhere more permanent.</p>
 <div class="tags"><li>React</li></div>
 <a href="https://github.com/anetacamo/movie-search/tree/master">git repo</a>
 </div>
@@ -108,7 +108,7 @@ A simple page coded in React for our small movie club. You can search through th
 <div class="circle"><a href="http://anetacamo.github.io/grid" target="_blank"><img src="/images/movie-search.png" alt="a camera illustration"></a></div>
 ## <a href="http://anetacamo.github.io/grid" target="_blank">Adjustable grid</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-Coded adjustuble grid to reuse later. When you click style the grid in the corner you can play with they layout. Later, I'd like to build this into my own webshop.</p>
+Coded adjustuble grid to reuse later, 2021. You can style the grid in the corner and play with they layout. Later, I'd like to build this into my own webshop with my illustration.</p>
 <div class="tags"><li>React</li><li>Design</li></div>
 <a href="https://github.com/anetacamo/grid/tree/master">link to repo</a>
 </div>  
@@ -117,7 +117,7 @@ Coded adjustuble grid to reuse later. When you click style the grid in the corne
 <div class="circle"><a href="http://anetacamo.github.io/coding" target="_blank"><img src="/images/glasses.png" alt="a glasses illustration"></a></div>
 ## <a href="http://anetacamo.github.io/coding" target="_blank">Coding Workshops</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-A web made in React, texts generated from md files. Tool I coded to share materials for the free coding workshops I have been doing in Aarhus. Still under construction and investigation</p>
+A web made in React, texts generated from .md files, 2021. Tool I coded to share materials for the free coding workshops I have been doing in Aarhus. Still under construction and investigation</p>
 <div class="tags"><li>React</li><li>Illustration</li><li>Design</li></div>
 <a href="https://github.com/anetacamo/coding/tree/master">link to repo</a>
 </div>
@@ -126,7 +126,7 @@ A web made in React, texts generated from md files. Tool I coded to share materi
 <div class="circle"><a href="https://sweetcity.dk" target="_blank"><img src="/images/glasses.png" alt="a glasses illustration"></a></div>
 ## <a href="https://sweetcity.dk" target="_blank">Sweet City | 2021</a>
 <p style="margin-top: 8px; margin-bottom: 12px;">
-A web made in React for the local politics event</p>
+A web made in React for the local elections related event in Aarhus</p>
 <div class="tags"><li>React</li><li>Illustration</li><li>Design</li></div>
 <a href="https://github.com/anetacamo/sc/tree/master">link to repo</a>
 </div>  
@@ -161,6 +161,7 @@ A simple one page project coded from scratch with a lot of czech text and some h
 <div style="width: 100%; height: 40px; float: left;"></div>
 </div>
 -->
+  <!--
 <div class="box" markdown="1">
 <div class="circle"><a href="http://www.praqma.com/" target="_blank"><img src="/images/praqma.png" alt="a computer illustration"></a></div>
 ## <a href="http://www.praqma.com/" target="_blank">Praqma</a>
@@ -168,3 +169,4 @@ A simple one page project coded from scratch with a lot of czech text and some h
 A website built with Jekyll. Blogging system, tagging, pagination, auto image compression. Carousels, filters done with Javascript.</p>
 <div class="tags"><li>Javascript</li><li>Liquid</li><li>Sass</li><li>Jekyll</li></div>
 </div>
+-->
