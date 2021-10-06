@@ -1,0 +1,158 @@
+/* side menu */
+
+:root {
+  --menu-width: 60px;
+}
+
+.side {
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  /*  background-color: blueviolet;*/
+  color: white;
+  width: var(--menu-width);
+  z-index: 0;
+}
+.side-inner {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 48px);
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* hamburger menu */
+.menu-box {
+  width: 30px;
+  overflow: auto;
+}
+.line {
+  margin-bottom: 6px;
+  background-color: white;
+  height: 2px;
+}
+.long {
+  width: 30px;
+}
+.supershort {
+  width: 16px;
+}
+.short {
+  width: 22px;
+}
+
+.animated .long {
+  animation: long 1000ms;
+}
+.animated .supershort {
+  animation: supershort 1000ms;
+}
+.animated .short {
+  animation: short 1000ms;
+}
+@keyframes long {
+  0% {
+    width: 30px;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    width: 0px;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    width: 30px;
+    animation-timing-function: ease-in;
+  }
+}
+@keyframes short {
+  0% {
+    width: 22px;
+  }
+  25% {
+    width: 30px;
+  }
+  66% {
+    width: 0px;
+  }
+  100% {
+    width: 22px;
+  }
+}
+@keyframes supershort {
+  0% {
+    width: 18px;
+  }
+  40% {
+    width: 30px;
+  }
+  75% {
+    width: 0px;
+  }
+  100% {
+    width: 18px;
+  }
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 12px;
+  margin-top: 12px;
+
+  overflow: hidden;
+  height: 240px;
+  width: 31px;
+
+  position: relative;
+}
+.page-name {
+  position: absolute;
+  left: -50px;
+  transition-duration: 400ms;
+}
+.page-name.visible {
+  left: 0;
+}
+
+.side-bottom {
+  width: var(--menu-width);
+}
+
+.menu-image {
+  width: var(--menu-width);
+  height: 52px;
+}
+
+.side-bottom img {
+  height: 32px;
+  width: 40px;
+  object-fit: contain;
+  margin: 10px;
+}
+
+.side-item:hover .hidden {
+  margin-left: 0;
+}
+
+.hidden {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  width: 280px;
+  padding-left: 8px;
+  position: absolute;
+  left: 60px;
+  margin-left: -500px;
+  transition: ease 750ms;
+  z-index: -2;
+}
+.hidden-in {
+  background-color: #e8e8e8;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+.hidden p {
+  margin: 0;
+  line-height: 1.2;
+}
