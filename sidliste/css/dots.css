@@ -1,0 +1,50 @@
+.animation .dot {
+  border-radius: 50%;
+  margin-left: -2px;
+}
+.animation .dot-outside {
+  animation-name: growth;
+  animation-duration: 750ms;
+  animation-iteration-count: 2;
+}
+.animation .dot-inside {
+  padding: 4px;
+  background: blueviolet;
+  transition: 350ms;
+  animation-name: growthinner;
+  animation-duration: 750ms;
+  animation-iteration-count: 2;
+}
+
+@keyframes growth {
+  0% {
+    padding: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+  }
+  66% {
+    padding: 20px;
+    background-color: rgb(0, 0, 0, 0.35);
+    margin-left: -20px;
+  }
+  100% {
+    padding: 10px;
+    background-color: rgb(0, 0, 0, 0.05);
+    margin-left: -10px;
+  }
+}
+@keyframes growthinner {
+  0% {
+    padding: 4px;
+    background-color: blueviolet;
+  }
+
+  50% {
+    padding: 3px;
+    background-color: blueviolet;
+  }
+
+  100% {
+    padding: 4px;
+    background-color: blueviolet;
+  }
+}

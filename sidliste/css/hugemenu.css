@@ -1,0 +1,29 @@
+/* huge menu */
+.menu-full {
+  position: absolute;
+  height: calc(100vh - 16px);
+  z-index: -2;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: repeating-linear-gradient(45deg, blueviolet, red);
+  z-index: 2;
+  place-items: stretch;
+  padding: 8px;
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 16px);
+  left: -2000px;
+  transition: 350ms ease;
+}
+.menu-full a,
+.menu-full .colorful {
+  display: block;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  max-width: calc(25% - 96px);
+}
