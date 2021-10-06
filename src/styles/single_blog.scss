@@ -1,0 +1,112 @@
+.single-blog-container {
+  padding: 12px;
+  height: calc(100vh - 24px);
+  @media (max-width: 600px) {
+    padding-top: 100px;
+    height: calc(100vh - 124px);
+  }
+  .single-blog-image {
+    width: 100%;
+    object-fit: contain;
+    max-height: calc(100vh - 24px);
+    @media (max-width: 1000px) {
+      object-position: right;
+      height: calc(100vh - 24px);
+      width: calc(100vw - 24px);
+    }
+    @media (max-width: 600px) {
+      object-position: center;
+      height: auto;
+    }
+  }
+  .blog-text {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    line-height: 1;
+    margin: 0;
+    max-width: 240px;
+    font-size: 10px;
+    padding: 12px;
+    p {
+      margin: 0 !important;
+      line-height: 1.4;
+    }
+    @media (max-width: 600px) {
+      position: static;
+      max-width: none;
+      padding: 32px 0;
+      padding-top: 12px;
+    }
+    h1,
+    h2 {
+      font-size: 18px;
+    }
+  }
+}
+
+.vertical-text {
+  text-align: center;
+  position: absolute;
+  height: 100vh;
+  z-index: 2;
+  top: 0;
+}
+
+/*
+.sell {
+  .btn-bg {
+    padding: 4px;
+    border: 1px solid #ffb4fd;
+    display: inline-block;
+    margin-top: 24px;
+  }
+  a {
+    padding: 12px 40px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: black;
+    //background: linear-gradient(90deg, $pink, $yellow, $blue, $purple, $pink);
+    background-size: 300%;
+    z-index: 1;
+  }
+  a:hover {
+    animation: animate 8s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+  a:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    right: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, $pink, $yellow, $blue, $purple, $pink);
+    background-size: 400%;
+    border-radius: 40px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  a:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+  }
+}
+*/

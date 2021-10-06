@@ -1,0 +1,109 @@
+{
+  "cv": {
+    "toolstack": [
+      "CSS, Bootstrap, Sass",
+      "JS, React",
+      "Gatsby, Jekyll",
+      "Understanding to, Redux, GraphQl, React Native",
+      "Liquid, ",
+      "PHP",
+      "GitHub & Git",
+      "Worked a lot with various CMSs, Wordpress, Forestry, Webflow, Squarespace, HubSpot",
+      "Basic use of Docker, Jenkins, CircleCI",
+      "SEO, UX",
+      "Photoshop"
+    ],
+    "experience": [
+      {
+        "company": "Phable",
+        "time": "from June 2020",
+        "text": "Working as a freelance front-end developer for a design office based in London, building webpages with Gatsby and React for various customers.",
+        "link": "https://www.phable.io"
+      },
+      {
+        "company": "Praqma - now Eficode",
+        "time": "August 2017 - June 2020",
+        "text": "Rebuilding two large websites into custom-made easy-to-use CMSs generated from markdown files, maintaining it.",
+        "link": "https://www.eficode.com"
+      },
+      {
+        "company": "Prolike.io",
+        "time": "from June 2020",
+        "text": "Working on one project: Rebuilding https://dataintensity.com/ into a static web build with Jekyll & Liquid.",
+        "link": "https://www.prolike.io"
+      },
+      {
+        "company": "SYMBIO digital,s.r.o.",
+        "time": "November 2015 - June 2016",
+        "text": "Building the small websites and doing smaller front-end tasks for various customers, mostly taking care of HTML & CSS, workings with various CMSs.",
+        "link": "https://www.symbio.agency"
+      }
+    ],
+
+    "references": [
+      {
+        "image": "/images/praqma.png",
+        "time": "2019",
+        "title": "Verifa",
+        "text": "A website with blog built in Gatsby with React. Blogging system fed by markdown files via GraphQl",
+        "link": "https://www.verifa.io",
+        "tags": ["React", "Gatsby", "GraphQL"]
+      },
+      {
+        "image": "/images/anetacamo_small.png",
+        "time": "2018",
+        "title": "My portfolio",
+        "text": "My own blog where I can organise my activities and illustartions into different categories, tagging & blogging system with auto compressed images, pagination",
+        "link": "/",
+        "tags": ["Jekyll", "Liquid", "Sass", "Design", "Illustration"]
+      },
+      {
+        "image": "/images/mdm.png",
+        "time": "2019",
+        "title": "MDM / Minimum Decent Wage",
+        "text": "Built and designed website via wordpress from scratch, Advanced Custom Fields to make it easier to fill in everything. Illustrations.",
+        "link": "https://www.dustojnamzda.cz/minimum-decent-wage/",
+        "tags": [
+          "Wordpress",
+          "Php",
+          "Advanced Custom Fields",
+          "Javascript",
+          "Design",
+          "Illustration"
+        ]
+      },
+      {
+        "image": "/images/sidliste.png",
+        "time": "December 2020",
+        "title": "Prague suburbs",
+        "text": "Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. One page with lots of css & js animations, still in progress + Illustrations",
+        "link": "https://anetacamo.github.io/sidliste",
+        "tags": ["Design", "Illustration", "InDesign", "JS"]
+      },
+      {
+        "image": "/images/sweetcity.png",
+        "time": "September 2021",
+        "title": "Sweet City",
+        "text": "A project built in React to promote the upcoming local elections and try to get young people more involved in the process. Implemented markdown files as a way to add new events via github repo.",
+        "link": "http://www.sweetcity.dk",
+        "tags": ["React", "Design", "Illustration"]
+      },
+      {
+        "image": "/images/migrace.png",
+        "time": "October 2020",
+        "title": "Fair Migration Politics",
+        "text": "Building a webpage in wordpress on the custom built and designed template; illustrations also done by me",
+        "link": "http://www.ferovamigracnipolitika.cz/english/",
+        "tags": ["Wordpress", "PHP", "Illustration"]
+      },
+      {
+        "image": "/images/movie-search.png",
+        "time": "February 2020",
+        "title": "Movie Search",
+        "text": "one page coded in React where you can search through the online database of movies and display their info, save them as liked or seen into the local browser storage.",
+        "link": "https://anetacamo.github.io/movie-search",
+        "tags": ["React", "Design"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+.carousel {
+  max-width: calc(100vw - 24px);
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  .flex {
+    margin: -6px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    .flex-child {
+      margin: 6px;
+      flex: 1 1 0px;
+    }
+  }
+  .fade {
+    opacity: 0;
+    transition-duration: 250ms;
+  }
+  a {
+    font-size: 10px;
+    text-decoration: underline;
+  }
+  p {
+    margin-top: 4px;
+  }
+  .carousel-item {
+    max-width: 240px;
+    min-width: 180px;
+    height: 120px;
+    img {
+      object-position: center center;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.dot {
+  height: 32px;
+  width: 32px;
+  margin: 12px;
+  margin-left: 0;
+  margin-bottom: 24px;
+  cursor: pointer;
+  flex: none !important;
+  background-image: url(/images/profile.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &.active {
+    filter: invert(19%) sepia(70%) saturate(6155%) hue-rotate(299deg)
+      brightness(114%) contrast(128%);
+    cursor: default;
+    transition-duration: 350ms;
+  }
+  &:hover {
+    filter: invert(1);
+  }
+}

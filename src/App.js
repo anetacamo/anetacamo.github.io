@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Blog, BlogList, Cv, KeywordSearch, Logo, Tagged } from './components/';
+
+import tagged from './tagged.json';
+import blogs from './blogs.json';
+import { Route, Switch, Link } from 'react-router-dom';
 
 function App() {
+  blogs.sort(function (a, b) {
+    if (a.date < b.date) return 1;
+    if (a.date > b.date) return -1;
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Logo />
+      <KeywordSearch />
+      <Switch>
+        <Route path='/' component={BlogList} exact />
+        <Route path='/cv' component={Cv} exact />
+        {blogs.map((blog, index) => (
+          <Route path={`/:name`} component={Blog} exact key={index} />
+        ))}
+        {tagged.map((tag, index) => (
+          <Route path={`/tagged/:name`} component={Tagged} key={index} />
+        ))}
+      </Switch>
+    </>
   );
 }
 

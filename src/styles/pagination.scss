@@ -1,0 +1,20 @@
+.pagination {
+  padding-bottom: 12px;
+  .number {
+    display: inline-block;
+    padding-right: 8px;
+    cursor: pointer;
+    font-family: Roboto Slab;
+    letter-spacing: 1px;
+    font-size: 10px;
+    &.active {
+      font-weight: 600;
+      color: $pink;
+      cursor: default;
+    }
+    &:hover {
+      font-weight: 600;
+      transition-duration: 350ms;
+    }
+  }
+}
