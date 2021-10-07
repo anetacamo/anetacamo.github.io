@@ -1,9 +1,10 @@
 .tagged {
   p {
-    margin-top: 160px;
+    margin-top: 132px;
     padding: 12px;
     letter-spacing: 1px;
-    margin-bottom: 0;
+    margin-bottom: -8px;
+    padding-bottom: 0;
   }
   .squares {
     display: flex;
@@ -13,7 +14,7 @@
     padding: 6px;
     .square {
       height: 300px;
-      min-width: 320px;
+      min-width: 280px;
       max-width: 100%;
       flex: 1 1;
       overflow: hidden;

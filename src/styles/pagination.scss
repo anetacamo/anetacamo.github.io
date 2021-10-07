@@ -17,4 +17,11 @@
       transition-duration: 350ms;
     }
   }
+  .right {
+    text-align: right;
+    .number {
+      padding-right: 0;
+      padding-left: 8px;
+    }
+  }
 }

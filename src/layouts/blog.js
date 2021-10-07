@@ -25,7 +25,7 @@ const Blog = ({ match }) => {
         <img
           src={blog.image}
           alt={`${blog.title} by Aneta Camo`}
-          className='single-blog-image'
+          className={`single-blog-image ${'wide' in blog ? 'wide' : null}`}
         />
         <div class='blog-text'>
           <Tags blog={blog} />

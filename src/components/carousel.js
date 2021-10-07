@@ -26,6 +26,17 @@ const Carousel = ({ items }) => {
 
   return (
     <div className='carousel'>
+      <div className='flex-center'>
+        {tagged.map(
+          (item, index) =>
+            index % itemsPerSlide == 0 && (
+              <Button
+                divname={`dot ${index === currentSlide ? 'active' : null}`}
+                activity={() => setCurrentSlide(index)}
+              ></Button>
+            )
+        )}
+      </div>
       <div className='flex'>
         {[...Array(itemsPerSlide)].map((e, i) => (
           <div className='flex-child'>
@@ -57,17 +68,6 @@ const Carousel = ({ items }) => {
             </Link>
           </div>
         ))}
-      </div>
-      <div className='flex-center'>
-        {tagged.map(
-          (item, index) =>
-            index % itemsPerSlide == 0 && (
-              <Button
-                divname={`dot ${index === currentSlide ? 'active' : null}`}
-                activity={() => setCurrentSlide(index)}
-              ></Button>
-            )
-        )}
       </div>
     </div>
   );

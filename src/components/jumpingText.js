@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function JumpingText({ text }) {
   const letters = text.split('');
   return (
-    <a href='/tagged/print/' className='jumping-text'>
+    <Link to='/tagged/print/' className='jumping-text'>
       {letters.map((letter, index) => (
         <i style={{ '--i': index }}>{letter}</i>
       ))}
-    </a>
+    </Link>
   );
 }
 export default JumpingText;

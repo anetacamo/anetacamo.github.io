@@ -24,14 +24,13 @@ const Tagged = ({ match }) => {
   });
   singleTags.sort((a, b) => a.localeCompare(b));
 
-  console.log(tags);
-  console.log(singleTags);
   return (
     <>
       <div className='tagged'>
-        <p style={{ paddingBottom: 0, marginBottom: -8 }}>
+        <p>
           all blogs tagged <span class='pink underlined'>{title}</span>
         </p>
+
         <div class='squares'>
           {sametag.map((blog) => (
             <div class='square'>

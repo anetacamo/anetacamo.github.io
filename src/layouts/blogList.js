@@ -4,7 +4,7 @@ import { Pagination, Blogs, Footer, Carousel } from '../components';
 import { Link } from 'react-router-dom';
 
 function BlogList() {
-  const pageSize = 10;
+  const [pageSize, setPageSize] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
   const pages = Math.ceil(blogs?.length / pageSize);
   return (
@@ -15,12 +15,15 @@ function BlogList() {
       <Link to='/tagged/comics/'>
         <div className='postcard small-sized'></div>
       </Link>
+      <div className='carousel-top' />
       <Carousel />
       <div className='blog-container'>
         <Pagination
           page={currentPage}
           pages={pages}
           onChangePage={setCurrentPage}
+          onPageSizeChange={setPageSize}
+          thisPages={pageSize}
         />
         <Blogs
           skip={pageSize * (currentPage - 1)}
