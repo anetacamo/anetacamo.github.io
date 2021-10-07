@@ -1,7 +1,15 @@
 import React from 'react';
 import { Button } from './';
 
-function Pagination({ page, pages, onChangePage }) {
+const sortBy = [10, 25, 40];
+
+function Pagination({
+  page,
+  pages,
+  onChangePage,
+  onPageSizeChange,
+  thisPages,
+}) {
   if (pages > 1) {
     return (
       <div className='pagination'>
@@ -29,6 +37,18 @@ function Pagination({ page, pages, onChangePage }) {
             next
           </Button>
         )}
+        <div className='right'>
+          <span className='number'>sort by </span>
+          {sortBy.map((number) => (
+            <Button
+              activity={() => onPageSizeChange(number)}
+              divname={`number ${number === thisPages && 'active'}`}
+            >
+              {' '}
+              {number}
+            </Button>
+          ))}
+        </div>
       </div>
     );
   } else {

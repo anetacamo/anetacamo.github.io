@@ -2,3 +2,17 @@ $pink: #ff00f7;
 $yellow: #dc0cb7;
 $blue: #72ffd2;
 $purple: #4f18d9;
+:root {
+  --pink: #ff00f7;
+  --yellow: #dc0cb7;
+  --blue: #72ffd2;
+  --purple: #4f18d9;
+}
+
+$colors: 'pink', 'yellow', 'blue', 'purple';
+
+@each $color in $colors {
+  .#{$color} {
+    color: var(--#{$color});
+  }
+}

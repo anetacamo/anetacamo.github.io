@@ -18,6 +18,15 @@
       object-position: center;
       height: auto;
     }
+    @media (min-width: 1000px) {
+      &.wide {
+        width: calc(100vw - 160px);
+        object-fit: cover;
+        padding-left: 137px;
+        height: 100%;
+        object-position: center;
+      }
+    }
   }
   .blog-text {
     position: absolute;
@@ -28,6 +37,7 @@
     max-width: 240px;
     font-size: 10px;
     padding: 12px;
+    background-color: white;
     p {
       margin: 0 !important;
       line-height: 1.4;
