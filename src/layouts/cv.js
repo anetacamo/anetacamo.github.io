@@ -1,6 +1,6 @@
 import React from 'react';
 import cv from '../cv.json';
-import { Footer } from '../components';
+import { Footer, Href } from '../components';
 import { Link } from 'react-router-dom';
 
 const Cv = () => {
@@ -23,11 +23,13 @@ const Cv = () => {
               <span className='large-font'>Hi</span> my name is Aneta Camo
             </h2>
             <a href='mailto:anetacamova@gmail.com'>anetacamo@gmail.com</a>{' '}
-            &nbsp;| &nbsp;{' '}
-            <a href='https://www.instagram.com/anetacamo' target='_blank'>
-              {' '}
+            &nbsp;| &nbsp;
+            <Href href='mailto:anetacamova@gmail.com?subject=greeting'>
+              anetacamo@gmail.com
+            </Href>
+            <Href href='https://www.instagram.com/anetacamo'>
               illustrations
-            </a>{' '}
+            </Href>
             <br />
             born in Prague &nbsp; | &nbsp; based in Aarhus &nbsp;
             <div class='divider'></div>
@@ -57,12 +59,12 @@ const Cv = () => {
               {cv.cv.references.map((ref) => (
                 <div className='box'>
                   <div className='circle'>
-                    <a href={ref.link} target='_blank'>
+                    <Href href={ref.link}>
                       <img src={ref.image} alt='a wallet illustration' />
-                    </a>
+                    </Href>
                   </div>
                   <h2>
-                    <a href={ref.link}>{ref.title}</a>
+                    <Href href={ref.link}>{ref.title}</Href>
                   </h2>
                   <p style={{ marginTop: 8, marginBottom: 12 }}>{ref.text}</p>
                   <div className='tags'>

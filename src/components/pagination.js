@@ -41,6 +41,7 @@ function Pagination({
           <span className='number'>sort by </span>
           {sortBy.map((number) => (
             <Button
+              key={number}
               activity={() => onPageSizeChange(number)}
               divname={`number ${number === thisPages && 'active'}`}
             >

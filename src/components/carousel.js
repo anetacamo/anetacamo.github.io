@@ -4,24 +4,26 @@ import { slugify } from '../utils/slugify';
 import { Link } from 'react-router-dom';
 import { Button } from './';
 
-const Carousel = ({ items }) => {
+const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [fade, setFade] = React.useState('');
+  // eslint-disable-next-line
   const [itemsPerSlide, setItemsPerSlide] = React.useState(6);
 
   useEffect(() => {
     setFade('');
     const interval = setInterval(() => {
-      setTimeout(function () {
-        setFade('fade');
-      }, 2750);
+      setFade('fade');
+      console.log('fade');
       handleRightArrowClick(itemsPerSlide);
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
+    // eslint-disable-next-line
   }, [currentSlide]);
 
   const handleRightArrowClick = (n) => {
     setCurrentSlide(currentSlide !== tagged.length - n ? currentSlide + n : 0);
+    console.log('changed');
   };
 
   return (
@@ -29,7 +31,7 @@ const Carousel = ({ items }) => {
       <div className='flex-center'>
         {tagged.map(
           (item, index) =>
-            index % itemsPerSlide == 0 && (
+            index % itemsPerSlide === 0 && (
               <Button
                 divname={`dot ${index === currentSlide ? 'active' : null}`}
                 activity={() => setCurrentSlide(index)}
@@ -49,6 +51,11 @@ const Carousel = ({ items }) => {
             >
               <div className='carousel-item'>
                 <img
+                  alt={`tagged ${
+                    tagged[
+                      currentSlide + i < tagged.length ? currentSlide + i : 0
+                    ].title
+                  }`}
                   src={
                     tagged[
                       currentSlide + i < tagged.length ? currentSlide + i : 0
