@@ -15,8 +15,10 @@ const Tagged = ({ match }) => {
 
   const tags = [];
   const singleTags = [];
+  // eslint-disable-next-line
   blogs.map((blog) => {
     var blogtags = blog.tags.split(', ');
+    // eslint-disable-next-line
     blogtags.map((btag) => {
       tags.push(btag);
       singleTags.indexOf(btag) === -1 && singleTags.push(btag);

@@ -17,12 +17,12 @@ function KeywordSearch() {
           <input
             type='text'
             placeholder='Find the hash...'
-            autocomplete='off'
+            autoComplete='off'
           />
           <div className='keyword-container'>
             <ul>
-              {tagged.map((tag) => (
-                <li>
+              {tagged.map((tag, index) => (
+                <li key={index}>
                   <Link to={`/tagged/${slugify(tag.title)}`}>{tag.title}</Link>
                 </li>
               ))}
