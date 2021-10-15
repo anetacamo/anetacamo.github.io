@@ -6,8 +6,13 @@ import { Route, Switch } from 'react-router-dom';
 
 function App() {
   const [chosenItems, setChosenItems] = useState([]);
-
-  const reversed = blogs.reverse();
+  blogs.sort(function (a, b) {
+    // Sort by votes
+    // If the first item has a higher number, move it down
+    // If the first item has a lower number, move it up
+    if (a.date < b.date) return 1;
+    if (a.date > b.date) return -1;
+  });
   const addThisItem = (title, size) => {
     //check for item with same name and size in the array
     const itemIndex = chosenItems.findIndex(
@@ -79,7 +84,7 @@ function App() {
           )}
           exact
         />
-        {reversed.map((blog, index) => (
+        {blogs.map((blog, index) => (
           <Route path={`/:name`} component={Blog} key={index} exact />
         ))}
         {tagged.map((tag, index) => (
