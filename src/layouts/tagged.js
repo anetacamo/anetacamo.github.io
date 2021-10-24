@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { slugify } from '../utils/slugify';
 import { Carousel } from '../components/index.js';
 
-const Tagged = ({ match }) => {
+const Tagged = ({ match, onItemAdd, sizes }) => {
   let title = match.params.name;
   // let slug = match.params.name;
   // const thistag = tagged.filter((tag) => slugify(tag.title) === title);
@@ -30,19 +30,35 @@ const Tagged = ({ match }) => {
     <>
       <div className='tagged'>
         <p>
-          all blogs tagged <span class='pink underlined'>{title}</span>
+          all blogs tagged <span className='pink underlined'>{title}</span>
         </p>
 
-        <div class='squares'>
+        <div className='squares'>
           {sametag.map((blog) => (
-            <div class='square'>
+            <div className='square'>
               <Link to={`/${slugify(blog.title)}`}>
                 <img
-                  class='fully-covering-image'
+                  className='fully-covering-image'
                   src={`${blog.image}`}
                   alt='by Aneta Camo'
                 />
               </Link>
+              <div className='selling-button'>
+                {blog.tags.includes('print') && (
+                  <p>
+                    get this in{' '}
+                    {sizes.map((size, index) => (
+                      <span
+                        className='pink'
+                        onClick={() => onItemAdd(blog.title, size)}
+                      >
+                        {' '}
+                        {index !== 0 && '|'} {size}
+                      </span>
+                    ))}
+                  </p>
+                )}
+              </div>
             </div>
           ))}
         </div>

@@ -11,5 +11,6 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
+// eslint-disable-next-line
 const app = initializeApp(firebaseConfig);
 export default getFirestore();

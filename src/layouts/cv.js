@@ -9,9 +9,9 @@ const Cv = () => {
       <Link to='/cv'>
         <div className='portrait'></div>
       </Link>
-      <div class='blog-container cv-container'>
-        <div class='blogs'>
-          <div class='main-img'>
+      <div className='blog-container cv-container'>
+        <div className='blogs'>
+          <div className='main-img'>
             <img
               src='/images/intro.png'
               alt='aneta camo portrait'
@@ -32,12 +32,12 @@ const Cv = () => {
             </Href>
             <br />
             born in Prague &nbsp; | &nbsp; based in Aarhus &nbsp;
-            <div class='divider'></div>
+            <div className='divider'></div>
             <h2>TOOLSTACK</h2>
             {cv.cv.toolstack.map((tool) => (
               <li>{tool}</li>
             ))}
-            <div class='divider'></div>
+            <div className='divider'></div>
             <h2>Working EXPERIENCE</h2>
             {cv.cv.experience.map((exp) => (
               <>
@@ -53,7 +53,7 @@ const Cv = () => {
                 </p>
               </>
             ))}
-            <div class='divider'></div>
+            <div className='divider'></div>
             <h2>REFERENCES</h2>
             <div className='boxes'>
               {cv.cv.references.map((ref) => (

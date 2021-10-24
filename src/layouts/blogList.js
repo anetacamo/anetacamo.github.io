@@ -3,7 +3,7 @@ import blogs from '../blogs.json';
 import { Pagination, Blogs, Footer, Carousel } from '../components';
 import { Link } from 'react-router-dom';
 
-function BlogList({ onItemAdd, itemsInCart }) {
+function BlogList({ onItemAdd, itemsInCart, sizes }) {
   const [pageSize, setPageSize] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
   const pages = Math.ceil(blogs?.length / pageSize);
@@ -31,6 +31,7 @@ function BlogList({ onItemAdd, itemsInCart }) {
           skip={pageSize * (currentPage - 1)}
           take={pageSize * currentPage}
           blogs={blogs}
+          sizes={sizes}
         />
         <Pagination
           page={currentPage}

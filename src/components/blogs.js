@@ -12,9 +12,7 @@ import {
   addDoc,
 } from 'firebase/firestore';
 
-const sizes = ['a3', 'a4', 'a5'];
-
-const Blogs = ({ blogs, skip, take, onItemAdd }) => {
+const Blogs = ({ blogs, skip, take, onItemAdd, sizes }) => {
   useEffect(() => {
     const unsubscribe = onSnapshot(collection(db, 'blogs'), (snapshot) => {
       setLikedItems(
@@ -25,32 +23,38 @@ const Blogs = ({ blogs, skip, take, onItemAdd }) => {
   }, []);
 
   const addBlog = async (title) => {
+    // get index of item in liked items from online db
     const itemIndex = likedItems.findIndex((item) => item.name === title);
+    // index of items liked by user
     const userLikedIndex = userLikedItems.findIndex(
       (item) => item.title === title
     );
+
+    // if item is not liked yet - like
     if (userLikedIndex === -1) {
-      // LIKE - make heart red
-      console.log('not liked yet. LIKE');
       const userLikedItem = { title: title };
-      setUserLikedItems([...userLikedItems, userLikedItem]); //simple value
-      console.log(userLikedItems);
-      // and also add in the online database -- either create new entry or update existing
-      if (itemIndex != -1) {
+      const updatedArray = [...userLikedItems, userLikedItem];
+      localStorage.setItem('itemsLikedByUser', JSON.stringify(updatedArray));
+      setUserLikedItems(updatedArray); //simple value
+      // plus add item into the online database: either create new entry or update existing
+      if (itemIndex !== -1) {
+        //update item
         const docRef = doc(db, 'blogs', likedItems[itemIndex].id);
         const payload = { name: title, likes: likedItems[itemIndex].likes + 1 };
         await setDoc(docRef, payload);
       } else {
+        //add item
         const collectionRef = collection(db, 'blogs');
         const payload = { name: title, likes: 1 };
         await addDoc(collectionRef, payload);
       }
     } else {
       // UNLIKE
-      console.log('item is already liked. UNLIKE');
-      const updatedArray = userLikedItems;
-      setUserLikedItems(updatedArray.filter((item) => item.title !== title));
-      console.log(userLikedItems);
+      const updatedArray = userLikedItems.filter(
+        (item) => item.title !== title
+      );
+      localStorage.setItem('itemsLikedByUser', JSON.stringify(updatedArray));
+      setUserLikedItems(updatedArray);
       // remove a like from the online db
       const docRef = doc(db, 'blogs', likedItems[itemIndex].id);
       const payload = { name: title, likes: likedItems[itemIndex].likes - 1 };
@@ -58,6 +62,7 @@ const Blogs = ({ blogs, skip, take, onItemAdd }) => {
     }
   };
 
+  // get the  number of likes from the online database
   const getLikes = (title) => {
     if (likedItems.some((item) => item.name === title)) {
       const item = likedItems.find((item) => item.name === title);
@@ -66,6 +71,8 @@ const Blogs = ({ blogs, skip, take, onItemAdd }) => {
       return 0;
     }
   };
+
+  // get likes from the local storage.
   const getLike = (title) => {
     if (userLikedItems === undefined) {
       return false;
@@ -74,18 +81,14 @@ const Blogs = ({ blogs, skip, take, onItemAdd }) => {
     }
   };
 
-  const reversed = blogs.reverse();
-  const [userLikedItems, setUserLikedItems] = useState([]);
+  const likedByUser =
+    JSON.parse(localStorage.getItem('itemsLikedByUser')) || [];
+  const [userLikedItems, setUserLikedItems] = useState(likedByUser);
   const [likedItems, setLikedItems] = useState([]);
-  const [chosenItems, setChosenItems] = useState([]);
+
   return (
     <div className='blogs'>
-      {chosenItems.map((item) => (
-        <p>
-          {item.title}, {item.size}, {item.amount}
-        </p>
-      ))}
-      {reversed.slice(skip, take).map((blog) => (
+      {blogs.slice(skip, take).map((blog) => (
         <div className='blogs' style={{ position: 'relative' }}>
           <Link to={slugify(blog.title)}>
             <img src={blog.image} alt={blog.title} />
@@ -124,7 +127,7 @@ const Blogs = ({ blogs, skip, take, onItemAdd }) => {
                     onClick={() => onItemAdd(blog.title, size)}
                   >
                     {' '}
-                    {index != 0 && '|'} {size}
+                    {index !== 0 && '|'} {size}
                   </span>
                 ))}
               </p>

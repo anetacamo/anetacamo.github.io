@@ -1,4 +1,12 @@
 .cv-container {
+  .circle {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    margin-bottom: 8px;
+    position: static !important;
+  }
   .main-img {
     width: 400px;
     height: 400px;
@@ -94,13 +102,7 @@
       object-fit: contain;
       float: none !important;
     }
-    .circle {
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      margin: 20px auto;
-      margin-bottom: 8px;
-    }
+
     .tags li {
       display: inline-block;
       background-color: $blue;

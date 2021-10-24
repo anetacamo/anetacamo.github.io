@@ -1,0 +1,11 @@
+- lift like button to everywhere
+- likes and shop items in separated blog pages
+- add form
+- add stripe checkout
+- add to cart animation
+- seo pages
+- cv tagging system
+- fix cart remove click
+- fix buttons css
+- add cursors everywhere
+- cv contact fix

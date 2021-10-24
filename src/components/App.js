@@ -1,78 +1,70 @@
 import React, { useState } from 'react';
 import tagged from '../tagged.json';
 import blogs from '../blogs.json';
-import { Blog, BlogList, Cart, Cv, KeywordSearch, Logo, Tagged } from './';
+import {
+  Blog,
+  BlogList,
+  Cart,
+  Cv,
+  KeywordSearch,
+  Logo,
+  ShoppingCart,
+  Tagged,
+} from './';
 import { Route, Switch } from 'react-router-dom';
 
+const sizes = ['a3', 'a4', 'a5'];
+
 function App() {
-  const [chosenItems, setChosenItems] = useState([]);
+  //items in the cart - first check the local storage
+  const cartContent = JSON.parse(localStorage.getItem('cartContent')) || [];
+  const [itemsInCart, setItemsInCart] = useState(cartContent);
+
+  //sorting the blogs here
   blogs.sort(function (a, b) {
-    // Sort by votes
-    // If the first item has a higher number, move it down
-    // If the first item has a lower number, move it up
     if (a.date < b.date) return 1;
     if (a.date > b.date) return -1;
   });
+
   const addThisItem = (title, size) => {
     //check for item with same name and size in the array
-    const itemIndex = chosenItems.findIndex(
+    const itemIndex = itemsInCart.findIndex(
       (item) => item.title === title && item.size === size
     );
 
     // if not here, simply add it.
     if (itemIndex === -1) {
       const itemInCart = { title: title, size: size, amount: 1 };
-      setChosenItems([...chosenItems, itemInCart]); //simple value
-    } else {
-      {
-        /* 
-      const itemInCart = {
-        title: title,
-        size: size,
-        amount: chosenItems[itemIndex].amount + 1,
-      };
-      const updatedArray = chosenItems;
-      chosenItems[itemIndex] = itemInCart;
-      setChosenItems(chosenItems);
-      */
-      }
+      localStorage.setItem(
+        'cartContent',
+        JSON.stringify([...itemsInCart, itemInCart])
+      );
+      setItemsInCart([...itemsInCart, itemInCart]); //simple value
     }
   };
 
   const removeThisItem = (title, size) => {
-    const filtered = chosenItems.filter(
-      (item) => item.title !== title && item.size !== size
+    const filtered = itemsInCart.filter(
+      (item) => item.title !== title || item.size !== size
     );
-    setChosenItems(filtered);
+    localStorage.setItem('cartContent', JSON.stringify(filtered));
+    setItemsInCart(filtered);
   };
 
-  const removeOne = (title, size) => {
-    const itemIndex = chosenItems.findIndex(
-      (item) => item.title === title && item.size === size
-    );
-    const amount = chosenItems[itemIndex].amount;
-    if (amount === 1) {
-      removeThisItem(title, size);
-    } else {
-      const itemInCart = {
-        title: title,
-        size: size,
-        amount: amount - 1,
-      };
-      const updatedArray = chosenItems;
-      updatedArray[itemIndex] = itemInCart;
-      setChosenItems(updatedArray);
-    }
-  };
   return (
     <>
       <Logo />
       <KeywordSearch />
+      <ShoppingCart itemsInCart={itemsInCart} />
       <Switch>
         <Route
           path='/'
           render={() => (
-            <BlogList onItemAdd={addThisItem} itemsInCart={chosenItems} />
+            <BlogList
+              onItemAdd={addThisItem}
+              itemsInCart={itemsInCart}
+              sizes={sizes}
+            />
           )}
           exact
         />
@@ -80,15 +72,37 @@ function App() {
         <Route
           path='/cart'
           render={() => (
-            <Cart itemsInCart={chosenItems} onItemAdd={addThisItem} />
+            <Cart
+              itemsInCart={itemsInCart}
+              onItemAdd={addThisItem}
+              onCartItemRemove={removeThisItem}
+            />
           )}
           exact
         />
         {blogs.map((blog, index) => (
-          <Route path={`/:name`} component={Blog} key={index} exact />
+          <Route
+            path={`/:name`}
+            component={Blog}
+            sizes={sizes}
+            key={index}
+            exact
+          />
         ))}
         {tagged.map((tag, index) => (
-          <Route path={`/tagged/:name`} component={Tagged} key={index} />
+          <Route
+            key={index}
+            path={`/tagged/:name`}
+            render={(props) => (
+              <Tagged
+                {...props}
+                key={index}
+                sizes={sizes}
+                onItemAdd={addThisItem}
+              />
+            )}
+            exact
+          />
         ))}
       </Switch>
     </>
