@@ -13,12 +13,12 @@ const Blog = ({ match }) => {
       <Link to='/cv'>
         <div className='portrait'></div>
       </Link>
-      <div class='single-blog-container'>
-        {/*<div class='arrows'>
-          <a class='vertical-text' style={{ left: 10 }} href=''>
+      <div className='single-blog-container'>
+        {/*<div className='arrows'>
+          <a className='vertical-text' style={{ left: 10 }} href=''>
             see previous ↓
           </a>
-          <a class='vertical-text' style={{ right: 6 }} href=''>
+          <a className='vertical-text' style={{ right: 6 }} href=''>
             see next ↑
           </a>
         </div> */}
@@ -27,7 +27,7 @@ const Blog = ({ match }) => {
           alt={`${blog.title} by Aneta Camo`}
           className={`single-blog-image ${'wide' in blog ? 'wide' : null}`}
         />
-        <div class='blog-text'>
+        <div className='blog-text'>
           <Tags blog={blog} />
           <p>
             <Moment date={blog.date} format='dddd MMMM D, YYYY'></Moment>

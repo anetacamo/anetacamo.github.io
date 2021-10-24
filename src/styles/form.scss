@@ -1,0 +1,29 @@
+button {
+  padding: 8px 12px;
+  background: transparent;
+  margin: 4px;
+  font-size: 12px;
+  font-family: Roboto Slab;
+  cursor: pointer;
+  &:hover {
+    background-color: $pink;
+    border-color: $pink;
+    color: white;
+    transition-duration: 350ms;
+  }
+}
+
+input {
+  padding: 8px 12px;
+  margin: 4px;
+  border: 2px solid $pink;
+  color: $pink;
+  font-family: Roboto Slab;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  width: 162px;
+  &.large {
+    width: 360px;
+  }
+}

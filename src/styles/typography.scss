@@ -37,6 +37,10 @@ p {
 
 p,
 h1,
+h2,
+h3,
+h4,
+input,
 button {
   margin: 16px 0;
 }
@@ -73,14 +77,7 @@ h2 {
   font-weight: 900;
 }
 
-h2 {
-  margin-top: 48px;
-  margin-bottom: 4px;
-}
-
 h3 {
-  margin-top: 24px;
-  margin-bottom: 4px;
   font-size: 13px;
   font-weight: 600;
 }
@@ -147,6 +144,14 @@ a:after {
 
 .blog-text p {
   margin-bottom: 12px !important;
+}
+
+.divider {
+  background-color: $blue;
+
+  margin: 60px auto 60px;
+  width: 60px;
+  height: 4px;
 }
 
 .fully-covering-image {

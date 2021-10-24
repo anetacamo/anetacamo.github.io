@@ -8,7 +8,8 @@
   .single-blog-image {
     width: 100%;
     object-fit: contain;
-    max-height: calc(100vh - 24px);
+    height: calc(100vh - 24px);
+    object-position: center center;
     @media (max-width: 1000px) {
       object-position: right;
       height: calc(100vh - 24px);

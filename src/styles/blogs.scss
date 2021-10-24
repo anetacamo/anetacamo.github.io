@@ -8,15 +8,18 @@
     margin-right: 0;
   }
   @media (max-width: 600px) {
-    padding-top: 100px;
     padding-left: 12px;
     margin-right: auto;
+    width: calc(100% - 24px);
   }
   .blogs {
     overflow: auto;
     margin: auto;
     @media (max-width: 1200px) {
       margin: 0;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
     }
     img {
       filter: grayscale(100%);
@@ -35,6 +38,7 @@
     .text-container {
       position: relative;
       padding-bottom: 24px;
+      padding-right: 36px;
       font-size: 10px;
       .title {
         padding-bottom: 12px;
