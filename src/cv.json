@@ -42,6 +42,14 @@
 
     "references": [
       {
+        "image": "/images/sweetcity.png",
+        "time": "September 2021",
+        "title": "Sweet City",
+        "text": "A project built in React to promote the upcoming local elections and try to get young people more involved in the process. Implemented markdown files as a way to add new events via github repo.",
+        "link": "http://www.sweetcity.dk",
+        "tags": ["React", "Design", "Illustration"]
+      },
+      {
         "image": "/images/praqma.png",
         "time": "2019",
         "title": "Verifa",
@@ -51,11 +59,11 @@
       },
       {
         "image": "/images/anetacamo_small.png",
-        "time": "2018",
+        "time": "2021",
         "title": "My portfolio",
-        "text": "My own blog where I can organise my activities and illustartions into different categories, tagging & blogging system with auto compressed images, pagination",
+        "text": "My own blog where I can organise my activities and illustartions into different categories. Tagging & blogging system, pagination, shooping cart. Liking feature - likes stored in firebase plus Cart items & like arrays stored in local storage. Also implemented Stripe payment with own Node server hosted on Heroku",
         "link": "/",
-        "tags": ["Jekyll", "Liquid", "Sass", "Design", "Illustration"]
+        "tags": ["React", "Node.js", "Design", "Illustration"]
       },
       {
         "image": "/images/mdm.png",
@@ -80,14 +88,7 @@
         "link": "https://anetacamo.github.io/sidliste",
         "tags": ["Design", "Illustration", "InDesign", "JS"]
       },
-      {
-        "image": "/images/sweetcity.png",
-        "time": "September 2021",
-        "title": "Sweet City",
-        "text": "A project built in React to promote the upcoming local elections and try to get young people more involved in the process. Implemented markdown files as a way to add new events via github repo.",
-        "link": "http://www.sweetcity.dk",
-        "tags": ["React", "Design", "Illustration"]
-      },
+
       {
         "image": "/images/migrace.png",
         "time": "October 2020",
