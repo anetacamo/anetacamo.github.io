@@ -56,8 +56,14 @@ const CheckoutForm = ({ totalPrice, itemsInCart }) => {
       },
     };
 
-    const description = JSON.stringify(itemsInCart);
-    const customer = address.fullname;
+    const something = itemsInCart.map(
+      (item) => `${item.title}: ${item.size}, `
+    );
+    console.log('some', something);
+
+    const description = JSON.stringify(something);
+    const receipt_email = billingDetails.email;
+    console.log(receipt_email);
 
     const { error, paymentMethod } = await stripe.createPaymentMethod({
       type: 'card',
@@ -66,8 +72,7 @@ const CheckoutForm = ({ totalPrice, itemsInCart }) => {
     });
 
     console.log('payment sent', paymentMethod);
-    setProcessing(false);
-    console.log('error', error);
+    elements.getElement(CardElement).clear();
 
     if (!error) {
       try {
@@ -78,20 +83,20 @@ const CheckoutForm = ({ totalPrice, itemsInCart }) => {
             amount: totalPrice * 100,
             id,
             description: description,
-            customer: customer,
+            receipt_email: receipt_email,
           }
         );
-        console.log('response', response.data);
+
         if (response.data.success) {
+          setCheckoutError(
+            'Succesful payment! Thank you. Receipt sent to your mail'
+          );
           setProcessing(false);
-          setCheckoutError('Succesful payment! Thank you');
           setSuccess(true);
+          elements.getElement(CardElement).clear();
         }
-      } catch (error) {
-        console.log('error', error);
-      }
+      } catch (error) {}
     } else {
-      console.log(error.message);
       setCheckoutError(error.message);
     }
   };
@@ -117,11 +122,6 @@ const CheckoutForm = ({ totalPrice, itemsInCart }) => {
           value={address['email']}
           onInputChange={(e) => setAddress({ ...address, ['email']: e })}
         />
-      </ShopSection>
-      <ShopSection title='How do you wanna get your piece?'>
-        <p>Can be either handed in Aarhus or delivered via post in EU.</p>
-        <button>Pick up in Aarhus</button>
-        <button>Pay online and get by post</button>
       </ShopSection>
       <ShopSection title='Shipping address'>
         {/*{Object.keys(address).map((item, index) => (
@@ -160,7 +160,7 @@ const CheckoutForm = ({ totalPrice, itemsInCart }) => {
           onInputChange={(e) => setAddress({ ...address, ['postal_code']: e })}
         />
         <Input
-          placeholder='Country'
+          placeholder='Country code'
           value={address['country']}
           onInputChange={(e) => setAddress({ ...address, ['country']: e })}
         />
@@ -178,8 +178,8 @@ const CheckoutForm = ({ totalPrice, itemsInCart }) => {
             {isProcessing ? 'Processing' : `Pay ${totalPrice} dkk`}
           </button>
         )}
+
         <p>{checkoutError}</p>
-        <div className='divider'></div>{' '}
       </ShopSection>
     </form>
   );

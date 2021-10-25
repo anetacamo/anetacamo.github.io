@@ -8,6 +8,7 @@ export { default as Cart } from '../layouts/cart';
 export { default as CheckoutForm } from './checkoutForm';
 export { default as Cv } from '../layouts/cv';
 export { default as Footer } from './footer';
+export { default as Formspree } from './formspree';
 export { default as Href } from './href';
 export { default as Image } from './image';
 export { default as Input } from './input';
