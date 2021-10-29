@@ -7,10 +7,15 @@ function ContactForm({ itemsInCart }) {
   let description = '';
 
   if (state.succeeded) {
-    return <h2>Thanks for the message!</h2>;
+    return (
+      <>
+        <h2>Thanks for the message!</h2>
+        <p>Will get back to you ASAP!</p>
+      </>
+    );
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='formspree' onSubmit={handleSubmit}>
       <input
         id='name'
         type='textl'
@@ -25,15 +30,23 @@ function ContactForm({ itemsInCart }) {
         className='large'
         placeholder='Mail to contact you'
       />
-      <p style={{ marginBottom: 1 }}>those are the items from your cart:</p>
+      <p style={{ textDecoration: 'underline', marginBottom: 8 }}>
+        those are the items from your cart:
+      </p>
       <input
         id='prints'
-        type='prints'
+        type='hidden'
         name='prints'
-        className='large pink'
         value={itemsInCart.map((item) => ` ${item.title}: ${item.size}`)}
       />
-      <p style={{ marginTop: 0 }}>
+      <ul>
+        {itemsInCart.map((item) => (
+          <li>
+            {item.title}: {item.size}
+          </li>
+        ))}
+      </ul>
+      <p style={{ marginTop: 8 }}>
         If you wanna add/remove any, either scroll to the top or choose them on
         the web.
       </p>

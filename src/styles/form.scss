@@ -4,8 +4,11 @@ button {
   margin: 4px;
   font-size: 12px;
   font-family: Roboto Slab;
+  border-style: dashed;
+  border-color: $pink;
   cursor: pointer;
-  &:hover {
+  &:hover,
+  &.active {
     background-color: $pink;
     border-color: $pink;
     color: white;
@@ -14,7 +17,8 @@ button {
 }
 
 input,
-textarea {
+textarea,
+select {
   padding: 8px 12px;
   margin: 4px;
   border: 2px solid $pink;
@@ -22,10 +26,37 @@ textarea {
   font-family: Roboto Slab;
   font-size: 12px;
   letter-spacing: 0.4px;
-  font-weight: 400;
+  font-weight: 300;
   width: 162px;
+  box-sizing: content-box;
+  @media (max-width: 424px) {
+    width: calc(50% - 36px);
+  }
+  @media (max-width: 360px) {
+    width: calc(100% - 36px);
+  }
   &.large {
     width: 360px;
+    @media (max-width: 424px) {
+      width: calc(100% - 36px);
+    }
+  }
+  &:focus-visible,
+  &:focus {
+    background-color: #f7f7f7;
+    border: none;
+    transition-duration: 350ms;
+    padding: 10px 14px;
+    outline: none;
+  }
+  &:valid {
+    position: relative;
+    &:after {
+      content: '✓';
+      position: absolute;
+      right: 8px;
+      color: $blue;
+    }
   }
 }
 textarea {
@@ -49,4 +80,21 @@ textarea {
 input.pink {
   background-color: $pink;
   color: white;
+}
+
+.formspree {
+  max-width: 400px;
+  margin: auto;
+  p,
+  li {
+    text-align: left;
+  }
+  p,
+  ul {
+    padding-left: 8px;
+  }
+}
+
+.cart {
+  padding: 8px;
 }

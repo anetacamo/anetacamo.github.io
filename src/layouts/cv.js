@@ -1,11 +1,16 @@
 import React from 'react';
 import cv from '../cv.json';
-import { Footer, Href } from '../components';
+import { Footer, Href, MetaTags } from '../components';
 import { Link } from 'react-router-dom';
 
 const Cv = () => {
   return (
     <>
+      <MetaTags
+        name='CV'
+        description='Hi! My name is Aneta and I have been working as a freelance front end developer and illustrator'
+        image='/images/intro.png'
+      />
       <Link to='/cv'>
         <div className='portrait'></div>
       </Link>

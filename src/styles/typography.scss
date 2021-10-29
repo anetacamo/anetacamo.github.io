@@ -180,6 +180,11 @@ a:after {
   }
 }
 
+.desktop {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
 /* unused
 
 button {
