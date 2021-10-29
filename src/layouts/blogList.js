@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import blogs from '../blogs.json';
-import { Pagination, Blogs, Footer, Carousel } from '../components';
+import { Blogs, Carousel, Footer, MetaTags, Pagination } from '../components';
 import { Link } from 'react-router-dom';
 
 function BlogList({ onItemAdd, itemsInCart, sizes }) {
@@ -10,6 +10,11 @@ function BlogList({ onItemAdd, itemsInCart, sizes }) {
 
   return (
     <>
+      <MetaTags
+        name='Home'
+        description='Hi! My name is Aneta and I have been working as a freelance front end developer and illustrator'
+        image='/images/intro.png'
+      />
       <Link to='/cv'>
         <div className='portrait movedup'></div>
       </Link>

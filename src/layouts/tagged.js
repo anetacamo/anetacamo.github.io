@@ -2,7 +2,7 @@ import React from 'react';
 import blogs from '../blogs.json';
 import { Link } from 'react-router-dom';
 import { slugify } from '../utils/slugify';
-import { Carousel } from '../components/index.js';
+import { Carousel, MetaTags } from '../components/';
 
 const Tagged = ({ match, onItemAdd, sizes }) => {
   let title = match.params.name;
@@ -28,6 +28,11 @@ const Tagged = ({ match, onItemAdd, sizes }) => {
 
   return (
     <>
+      <MetaTags
+        name={`tagged ${title}`}
+        description={`all blogs tagged ${title}`}
+        image={sametag[0].image}
+      />
       <div className='tagged'>
         <p>
           all blogs tagged <span className='pink underlined'>{title}</span>

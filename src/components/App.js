@@ -13,7 +13,7 @@ import {
 } from './';
 import { Route, Switch } from 'react-router-dom';
 
-const sizes = ['a3', 'a4', 'a5'];
+const sizes = ['a3', 'a4'];
 
 function App() {
   //items in the cart - first check the local storage

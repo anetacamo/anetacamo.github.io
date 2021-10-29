@@ -4,7 +4,7 @@ import { Href, Image, JumpingText } from './';
 const Footer = () => {
   return (
     <div className='menu-links'>
-      <Image path='/work.png' />
+      <Image path='/work.png' nameClass='desktop' />
       <JumpingText text='PRINTS' link='/tagged/print/' />
       <h4>
         <Href href='mailto:anetacamova@gmail.com?subject=greeting'>

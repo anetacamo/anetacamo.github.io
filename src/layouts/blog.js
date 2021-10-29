@@ -3,16 +3,22 @@ import blogs from '../blogs.json';
 import { slugify } from '../utils/slugify';
 import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
-import { Tags } from '../components';
+import { MetaTags, Tags } from '../components';
 
 const Blog = ({ match }) => {
   let title = match.params.name;
   let blog = blogs.find((blog) => slugify(blog.title) === title);
   return (
     <>
+      <MetaTags
+        name={blog.title}
+        description={blog.description}
+        image={blog.image}
+      />
       <Link to='/cv'>
         <div className='portrait'></div>
       </Link>
+
       <div className='single-blog-container'>
         {/*<div className='arrows'>
           <a className='vertical-text' style={{ left: 10 }} href=''>

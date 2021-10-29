@@ -8,7 +8,7 @@ function KeywordSearch() {
   console.log(hash);
   return (
     <div className='top-right'>
-      <div className='hash' onClick={() => displayHash(!hash)}></div>
+      <div className='hash desktop' onClick={() => displayHash(!hash)}></div>
       <div
         className={`right-side-menu ${hash || 'hidden'}`}
         onClick={() => displayHash(!hash)}

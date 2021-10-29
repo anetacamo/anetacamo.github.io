@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
-import { Input, ShopSection } from './';
+import { Input, Select, ShopSection } from './';
 
 const CheckoutForm = ({ totalPrice, itemsInCart }) => {
   const [isProcessing, setProcessing] = useState(false);
@@ -110,7 +110,7 @@ const CheckoutForm = ({ totalPrice, itemsInCart }) => {
         </p>
         <Input
           large
-          placeholder='Full Name'
+          placeholder='Name'
           value={address['fullname']}
           onInputChange={(e) => setAddress({ ...address, ['fullname']: e })}
           required
@@ -159,9 +159,7 @@ const CheckoutForm = ({ totalPrice, itemsInCart }) => {
           value={address['postal_code']}
           onInputChange={(e) => setAddress({ ...address, ['postal_code']: e })}
         />
-        <Input
-          placeholder='Country code'
-          value={address['country']}
+        <Select
           onInputChange={(e) => setAddress({ ...address, ['country']: e })}
         />
       </ShopSection>

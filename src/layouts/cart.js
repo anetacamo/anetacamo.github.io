@@ -4,6 +4,7 @@ import {
   CheckoutForm,
   Footer,
   Formspree,
+  MetaTags,
   ShopSection,
   YourBag,
 } from '../components';
@@ -36,6 +37,10 @@ const Cart = ({ itemsInCart, onCartItemRemove }) => {
 
   return (
     <div className='cart'>
+      <MetaTags
+        name='Your Bag'
+        description='Review your items and proceed to checkout'
+      />
       <Link to='/cv'>
         <div className='portrait'></div>
       </Link>
@@ -49,42 +54,37 @@ const Cart = ({ itemsInCart, onCartItemRemove }) => {
             />
           </>
         )}
-        <div className='divider'></div>
-        <h2>Total</h2>
-        <p style={{ marginTop: 0 }}>{itemsTotalPrice()} dkk</p>
-        {checkout === 'cart' ? (
+        {itemsInCart.length === 0 ? (
           <>
-            <button onClick={() => setCheckout('choose')}>Checkout</button>
             <Link to='/tagged/print'>
-              <button>All Prints</button>
-            </Link>{' '}
+              <button style={{ marginTop: 20 }}>Prints</button>
+            </Link>
           </>
-        ) : (
-          <p onClick={() => setCheckout('cart')} className='underlined'>
-            see cart items
-          </p>
-        )}
-        {checkout === 'choose' ? (
-          <ShopSection title='How do you wanna get your piece?'>
-            <p>Can be either handed in Aarhus or delivered via post in EU.</p>
-            <button onClick={() => setCheckout('pickup')}>
-              Pick up in Aarhus
-            </button>
-
-            <button onClick={() => setCheckout('post')}>
-              Pay online and get by post
-            </button>
-          </ShopSection>
         ) : (
           <>
             <div className='divider'></div>
-            <button onClick={() => setCheckout('pickup')}>
+            <h2>Total</h2>
+            <p style={{ marginTop: 0 }}>
+              {itemsInCart.length} items - {itemsTotalPrice()} dkk
+            </p>
+            <button
+              className={checkout === 'pickup' && 'active'}
+              onClick={() => setCheckout('pickup')}
+            >
               Pick up in Aarhus
             </button>
-            <button onClick={() => setCheckout('post')}>
+            <button
+              className={checkout === 'post' && 'active'}
+              onClick={() => setCheckout('post')}
+            >
               Pay online and get by post
             </button>
           </>
+        )}
+        {checkout !== 'cart' && (
+          <p onClick={() => setCheckout('cart')} className='underlined'>
+            see cart items
+          </p>
         )}
         {checkout === 'pickup' && (
           <ShopSection title='Pick up in Aarhus'>
