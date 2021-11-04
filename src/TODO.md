@@ -9,6 +9,7 @@
 - typescript
 - get md filenames
 - form name and mail into state
+- date of last update
 
 DONE
 

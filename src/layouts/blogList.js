@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import blogs from '../blogs.json';
 import { Blogs, Carousel, Footer, MetaTags, Pagination } from '../components';
 import { Link } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 function BlogList({ onItemAdd, itemsInCart, sizes }) {
   const [pageSize, setPageSize] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
   const pages = Math.ceil(blogs?.length / pageSize);
+  ReactGA.pageview('/');
 
   return (
     <>
