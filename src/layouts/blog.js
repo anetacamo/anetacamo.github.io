@@ -4,12 +4,10 @@ import { slugify } from '../utils/slugify';
 import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
 import { MetaTags, Tags } from '../components';
-import ReactGA from 'react-ga';
 
 const Blog = ({ match }) => {
   let title = match.params.name;
   let blog = blogs.find((blog) => slugify(blog.title) === title);
-  ReactGA.pageview(match.path);
   return (
     <>
       <MetaTags
