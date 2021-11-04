@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import tagged from '../tagged.json';
 import blogs from '../blogs.json';
 import {
@@ -12,10 +12,15 @@ import {
   Tagged,
 } from './';
 import { Route, Switch } from 'react-router-dom';
+import { initGA, trackingPageGA } from './reactGA';
 
 const sizes = ['a3', 'a4'];
 
 function App() {
+  useEffect(() => {
+    initGA(); // Initialize google analytics
+    trackingPageGA('/'); // = ReactGA.pageview (window.location.pathname);
+  }, []);
   //items in the cart - first check the local storage
   const cartContent = JSON.parse(localStorage.getItem('cartContent')) || [];
   const [itemsInCart, setItemsInCart] = useState(cartContent);
