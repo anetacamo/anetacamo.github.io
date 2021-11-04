@@ -30,9 +30,6 @@
       min-width: 100%;
       width: 100%;
       margin-bottom: 4px;
-      @media (max-width: 600px) {
-        //  max-height: calc(100vh - 124px);
-      }
     }
 
     .text-container {
@@ -56,34 +53,8 @@
 }
 
 .circle {
-  height: 80px;
-  width: 80px;
-  background-color: $pink;
-  border-radius: 50%;
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  color: white;
-  text-align: center;
-  animation: rotating 2s ease-in-out infinite;
   h2 {
     margin-top: 24px;
     line-height: 0.9;
-  }
-}
-@keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
   }
 }

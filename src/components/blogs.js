@@ -95,7 +95,7 @@ const Blogs = ({ blogs, skip, take, onItemAdd, sizes }) => {
           </Link>
 
           {blog.tags.includes('print') && (
-            <div className='circle'>
+            <div className='circle prints-icon'>
               <h2>get this</h2>
             </div>
           )}

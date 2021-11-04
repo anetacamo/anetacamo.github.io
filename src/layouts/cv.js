@@ -16,27 +16,28 @@ const Cv = () => {
       </Link>
       <div className='blog-container cv-container'>
         <div className='blogs'>
-          <div className='main-img'>
+          <div className='portrait-img'>
             <img
               src='/images/intro.png'
               alt='aneta camo portrait'
               style={{ objectFit: 'cover', filter: 'none' }}
             />
           </div>
-          <div style={{ paddingTop: 20 }}>
+          <div className='header'>
             <h2>
               <span className='large-font'>Hi</span> my name is Aneta Camo
             </h2>
-            <a href='mailto:anetacamova@gmail.com'>anetacamo@gmail.com</a>{' '}
-            &nbsp;| &nbsp;
             <Href href='mailto:anetacamova@gmail.com?subject=greeting'>
               anetacamo@gmail.com
             </Href>
+            &nbsp;&nbsp; | &nbsp;&nbsp;
             <Href href='https://www.instagram.com/anetacamo'>
               illustrations
             </Href>
             <br />
-            born in Prague &nbsp; | &nbsp; based in Aarhus &nbsp;
+            <p style={{ marginTop: 4 }}>
+              born in Prague &nbsp; | &nbsp; based in Aarhus &nbsp;
+            </p>
             <div className='divider'></div>
             <h2>TOOLSTACK</h2>
             {cv.cv.toolstack.map((tool) => (
@@ -54,7 +55,9 @@ const Cv = () => {
                 </p>
                 <p>
                   {exp.text}
-                  <a href={exp.link}>{exp.company}</a>
+                  <li>
+                    <a href={exp.link}>{exp.company}</a>
+                  </li>
                 </p>
               </>
             ))}
@@ -63,7 +66,7 @@ const Cv = () => {
             <div className='boxes'>
               {cv.cv.references.map((ref) => (
                 <div className='box'>
-                  <div className='circle'>
+                  <div className='cv-circle circle'>
                     <Href href={ref.link}>
                       <img src={ref.image} alt='a wallet illustration' />
                     </Href>
@@ -71,7 +74,7 @@ const Cv = () => {
                   <h2>
                     <Href href={ref.link}>{ref.title}</Href>
                   </h2>
-                  <p style={{ marginTop: 8, marginBottom: 12 }}>{ref.text}</p>
+                  <p>{ref.text}</p>
                   <div className='tags'>
                     {ref.tags.map((tag) => (
                       <li>{tag}</li>
