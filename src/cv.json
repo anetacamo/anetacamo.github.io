@@ -82,7 +82,7 @@
       },
       {
         "image": "/images/sidliste.png",
-        "time": "December 2020",
+        "time": "December 2021",
         "title": "Prague suburbs",
         "text": "Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. One page with lots of css & js animations, still in progress + Illustrations",
         "link": "https://anetacamo.github.io/sidliste",
@@ -102,7 +102,7 @@
         "time": "February 2020",
         "title": "Movie Search",
         "text": "one page coded in React where you can search through the online database of movies and display their info, save them as liked or seen into the local browser storage.",
-        "link": "https://anetacamo.github.io/movie-search",
+        "link": "https://anetacamo.github.io/filmclub",
         "tags": ["React", "Design"]
       }
     ]
