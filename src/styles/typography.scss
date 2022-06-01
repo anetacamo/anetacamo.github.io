@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Roboto+Condensed:300,400,700|Roboto+Slab:100,300,400,700|Roboto:100,300,400,500,700,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Roboto+Condensed:300,400,700|Roboto+Slab:100,300,400,700|Roboto:100,300,400,500,700,900&display=swap");
 
 * {
   margin: 0;
@@ -23,8 +23,8 @@ em {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Roboto Slab';
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Slab";
   letter-spacing: 0.4px;
   font-weight: 300;
   font-size: 12px;
@@ -32,7 +32,7 @@ body {
 
 p {
   line-height: 1.8;
-  font-family: 'Roboto Slab';
+  font-family: "Roboto Slab";
 }
 
 p,
@@ -51,7 +51,7 @@ li {
   line-height: 1.8;
   position: relative;
   &:before {
-    content: '+';
+    content: "+";
     font-weight: 100;
     font-size: 18px;
     color: $blue;
@@ -70,7 +70,7 @@ button {
 
 h1,
 h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 18px;
@@ -83,7 +83,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 10px;
   line-height: 1.4;
   font-weight: 600;
@@ -126,7 +126,7 @@ a {
 .animation:after,
 a:after {
   bottom: 0;
-  content: '';
+  content: "";
   display: inline;
   height: 2px;
   position: absolute;
@@ -235,6 +235,7 @@ button {
   display: flex;
 }
 .flex-center {
-  justify-content: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
