@@ -1,14 +1,12 @@
-import React from 'react';
-import blogs from '../blogs.json';
-import { Link } from 'react-router-dom';
-import { slugify } from '../utils/slugify';
-import { Carousel, MetaTags } from '../components/';
+import React from "react";
+import blogs from "../blogs.json";
+import { Link } from "react-router-dom";
+import { slugify } from "../utils/slugify";
+import { Carousel, MetaTags } from "../components/";
+import ShopItems from "./shopItems";
 
-const Tagged = ({ match, onItemAdd, sizes }) => {
+const Tagged = ({ match, onItemAdd }) => {
   let title = match.params.name;
-  // let slug = match.params.name;
-  // const thistag = tagged.filter((tag) => slugify(tag.title) === title);
-  // const sametag = blogs.filter((blog) => blog.tags?.includes(thistag[0].title));
   const sametag = blogs.filter(
     (blog) => blog.tags && slugify(blog.tags).includes(title)
   );
@@ -17,7 +15,7 @@ const Tagged = ({ match, onItemAdd, sizes }) => {
   const singleTags = [];
   // eslint-disable-next-line
   blogs.map((blog) => {
-    var blogtags = blog.tags.split(', ');
+    var blogtags = blog.tags.split(", ");
     // eslint-disable-next-line
     blogtags.map((btag) => {
       tags.push(btag);
@@ -33,47 +31,40 @@ const Tagged = ({ match, onItemAdd, sizes }) => {
         description={`all blogs tagged ${title}`}
         image={sametag[0].image}
       />
-      <div className='tagged'>
+      <div className="tagged">
         <p>
-          all blogs tagged <span className='pink underlined'>{title}</span>
+          all blogs tagged <span className="pink underlined">{title}</span>
         </p>
+        {title === "print" && (
+          <div className="center">
+            <h1>SHOP</h1>
+            <div className="divider"></div>
+          </div>
+        )}
 
-        <div className='squares'>
+        <div className={`squares ${title === "print" && "prints"}`}>
           {sametag.map((blog) => (
-            <div className='square'>
+            <div className="square">
               <Link to={`/${slugify(blog.title)}`}>
                 <img
-                  className='fully-covering-image'
+                  className="fully-covering-image"
                   src={`${blog.image}`}
-                  alt='by Aneta Camo'
+                  alt="by Aneta Camo"
                 />
               </Link>
-              <div className='selling-button'>
-                {blog.tags.includes('print') && (
-                  <p>
-                    get this in{' '}
-                    {sizes.map((size, index) => (
-                      <span
-                        className='pink'
-                        onClick={() => onItemAdd(blog.title, size)}
-                      >
-                        {' '}
-                        {index !== 0 && '|'} {size}
-                      </span>
-                    ))}
-                  </p>
-                )}
-              </div>
+              {blog.tags.includes("print") && (
+                <ShopItems blog={blog} onItemAdd={onItemAdd} />
+              )}
             </div>
           ))}
         </div>
       </div>
-      <p className='center' style={{ paddingTop: 32 }}>
+      <p className="center" style={{ paddingTop: 32 }}>
         all & featured tags
       </p>
       <p
-        className='center'
-        style={{ maxWidth: 800, margin: 'auto', paddingBottom: 32 }}
+        className="center"
+        style={{ maxWidth: 800, margin: "auto", paddingBottom: 32 }}
       >
         {singleTags.map((tag) => (
           <Link to={`/tagged/${slugify(tag)}`}>#{tag} </Link>

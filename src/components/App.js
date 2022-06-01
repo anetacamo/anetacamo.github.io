@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import tagged from '../tagged.json';
-import blogs from '../blogs.json';
+import React, { useState, useEffect } from "react";
+import tagged from "../tagged.json";
+import blogs from "../blogs.json";
 import {
   Blog,
   BlogList,
@@ -10,19 +10,19 @@ import {
   Logo,
   ShoppingCart,
   Tagged,
-} from './';
-import { Route, Switch } from 'react-router-dom';
-import { initGA, trackingPageGA } from './reactGA';
+} from "./";
+import { Route, Switch } from "react-router-dom";
+import { initGA, trackingPageGA } from "./reactGA";
 
-const sizes = ['a3', 'a4'];
+const sizes = ["a3", "a4"];
 
 function App() {
   useEffect(() => {
     initGA(); // Initialize google analytics
-    trackingPageGA('/'); // = ReactGA.pageview (window.location.pathname);
+    trackingPageGA("/"); // = ReactGA.pageview (window.location.pathname);
   }, []);
   //items in the cart - first check the local storage
-  const cartContent = JSON.parse(localStorage.getItem('cartContent')) || [];
+  const cartContent = JSON.parse(localStorage.getItem("cartContent")) || [];
   const [itemsInCart, setItemsInCart] = useState(cartContent);
 
   //sorting the blogs here
@@ -41,7 +41,7 @@ function App() {
     if (itemIndex === -1) {
       const itemInCart = { title: title, size: size, amount: 1 };
       localStorage.setItem(
-        'cartContent',
+        "cartContent",
         JSON.stringify([...itemsInCart, itemInCart])
       );
       setItemsInCart([...itemsInCart, itemInCart]); //simple value
@@ -52,7 +52,7 @@ function App() {
     const filtered = itemsInCart.filter(
       (item) => item.title !== title || item.size !== size
     );
-    localStorage.setItem('cartContent', JSON.stringify(filtered));
+    localStorage.setItem("cartContent", JSON.stringify(filtered));
     setItemsInCart(filtered);
   };
 
@@ -63,7 +63,7 @@ function App() {
       <ShoppingCart itemsInCart={itemsInCart} />
       <Switch>
         <Route
-          path='/'
+          path="/"
           render={() => (
             <BlogList
               onItemAdd={addThisItem}
@@ -73,9 +73,9 @@ function App() {
           )}
           exact
         />
-        <Route path='/cv' component={Cv} exact />
+        <Route path="/cv" component={Cv} exact />
         <Route
-          path='/cart'
+          path="/cart"
           render={() => (
             <Cart
               itemsInCart={itemsInCart}

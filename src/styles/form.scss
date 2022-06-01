@@ -52,11 +52,17 @@ select {
   &:valid {
     position: relative;
     &:after {
-      content: '✓';
+      content: "✓";
       position: absolute;
       right: 8px;
       color: $blue;
     }
+  }
+}
+input[type="radio"] {
+  width: auto;
+  &:after {
+    content: "";
   }
 }
 textarea {
