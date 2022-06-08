@@ -38,7 +38,14 @@ const Tagged = ({ match, onItemAdd }) => {
         {title === "print" && (
           <div className="center">
             <h1>SHOP</h1>
-            <div className="divider"></div>
+            <p style={{ marginTop: 0 }}>
+              Following prints can be sent by post in EU or picked up in Aarhus.
+              <br />
+              When picking them up it is possible to get them in wooden oak
+              frame included in price. <br />
+              Shipping costs 50dkk. Pick up is free.
+            </p>
+            <div className="divider" style={{ margin: "44px auto" }}></div>
           </div>
         )}
 

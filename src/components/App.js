@@ -14,8 +14,6 @@ import {
 import { Route, Switch } from "react-router-dom";
 import { initGA, trackingPageGA } from "./reactGA";
 
-const sizes = ["a3", "a4"];
-
 function App() {
   useEffect(() => {
     initGA(); // Initialize google analytics
@@ -65,11 +63,7 @@ function App() {
         <Route
           path="/"
           render={() => (
-            <BlogList
-              onItemAdd={addThisItem}
-              itemsInCart={itemsInCart}
-              sizes={sizes}
-            />
+            <BlogList onItemAdd={addThisItem} itemsInCart={itemsInCart} />
           )}
           exact
         />
@@ -88,10 +82,9 @@ function App() {
         {blogs.map((blog, index) => (
           <Route
             path={`/:name`}
-            component={Blog}
-            sizes={sizes}
-            key={index}
             exact
+            key={index}
+            render={(props) => <Blog {...props} onItemAdd={addThisItem} />}
           />
         ))}
         {tagged.map((tag, index) => (
@@ -99,12 +92,7 @@ function App() {
             key={index}
             path={`/tagged/:name`}
             render={(props) => (
-              <Tagged
-                {...props}
-                key={index}
-                sizes={sizes}
-                onItemAdd={addThisItem}
-              />
+              <Tagged {...props} key={index} onItemAdd={addThisItem} />
             )}
             exact
           />

@@ -3,16 +3,56 @@
   top: 12px;
   right: 60px;
   text-align: right;
-  z-index: 3;
+  z-index: 2;
   @media (max-width: 600px) {
     right: 12px;
   }
   img {
-    width: 40px;
-    height: 50px;
     object-fit: contain;
     object-position: top right;
     filter: grayscale(1);
+    z-index: 2;
+    position: relative;
+    background-color: #e2e2e2;
+    border-radius: 50%;
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+    }
+  }
+  .items-count {
+    position: absolute;
+    background-color: white;
+    padding: 7px 4px 8px 4px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 0;
+    border-radius: 50%;
+    top: 0px;
+    right: 34px;
+    z-index: 3;
+  }
+  .success-message {
+    background-color: $pink;
+    position: absolute;
+    z-index: 1;
+    width: max-content;
+    color: white;
+    margin: 0;
+    line-height: 0;
+    padding: 12px 12px;
+    top: -22px;
+    width: 2px;
+    right: 5px;
+    transition-duration: 425ms;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+    &.visible {
+      right: 45px;
+      width: 130px;
+    }
   }
 }
 

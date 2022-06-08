@@ -1,20 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { slugify } from '../utils/slugify';
-import Moment from 'react-moment';
-import { Like, Tags } from './';
-import db from '../firebase';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { slugify } from "../utils/slugify";
+import Moment from "react-moment";
+import { Like, Tags } from "./";
+import db from "../firebase";
+import ShopItemsLeft from "../layouts/shopItemsLeft";
+import FlowerItemsLeft from "../layouts/flowerItemsLeft";
+import Gallery from "../components/Gallery/Gallery";
 import {
   onSnapshot,
   collection,
   setDoc,
   doc,
   addDoc,
-} from 'firebase/firestore';
+} from "firebase/firestore";
 
-const Blogs = ({ blogs, skip, take, onItemAdd, sizes }) => {
+const Blogs = ({ blogs, skip, take, onItemAdd }) => {
   useEffect(() => {
-    const unsubscribe = onSnapshot(collection(db, 'blogs'), (snapshot) => {
+    const unsubscribe = onSnapshot(collection(db, "blogs"), (snapshot) => {
       setLikedItems(
         snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
       );
@@ -34,17 +37,17 @@ const Blogs = ({ blogs, skip, take, onItemAdd, sizes }) => {
     if (userLikedIndex === -1) {
       const userLikedItem = { title: title };
       const updatedArray = [...userLikedItems, userLikedItem];
-      localStorage.setItem('itemsLikedByUser', JSON.stringify(updatedArray));
+      localStorage.setItem("itemsLikedByUser", JSON.stringify(updatedArray));
       setUserLikedItems(updatedArray); //simple value
       // plus add item into the online database: either create new entry or update existing
       if (itemIndex !== -1) {
         //update item
-        const docRef = doc(db, 'blogs', likedItems[itemIndex].id);
+        const docRef = doc(db, "blogs", likedItems[itemIndex].id);
         const payload = { name: title, likes: likedItems[itemIndex].likes + 1 };
         await setDoc(docRef, payload);
       } else {
         //add item
-        const collectionRef = collection(db, 'blogs');
+        const collectionRef = collection(db, "blogs");
         const payload = { name: title, likes: 1 };
         await addDoc(collectionRef, payload);
       }
@@ -53,10 +56,10 @@ const Blogs = ({ blogs, skip, take, onItemAdd, sizes }) => {
       const updatedArray = userLikedItems.filter(
         (item) => item.title !== title
       );
-      localStorage.setItem('itemsLikedByUser', JSON.stringify(updatedArray));
+      localStorage.setItem("itemsLikedByUser", JSON.stringify(updatedArray));
       setUserLikedItems(updatedArray);
       // remove a like from the online db
-      const docRef = doc(db, 'blogs', likedItems[itemIndex].id);
+      const docRef = doc(db, "blogs", likedItems[itemIndex].id);
       const payload = { name: title, likes: likedItems[itemIndex].likes - 1 };
       await setDoc(docRef, payload);
     }
@@ -82,28 +85,29 @@ const Blogs = ({ blogs, skip, take, onItemAdd, sizes }) => {
   };
 
   const likedByUser =
-    JSON.parse(localStorage.getItem('itemsLikedByUser')) || [];
+    JSON.parse(localStorage.getItem("itemsLikedByUser")) || [];
   const [userLikedItems, setUserLikedItems] = useState(likedByUser);
   const [likedItems, setLikedItems] = useState([]);
 
   return (
-    <div className='blogs'>
+    <div className="blogs">
       {blogs.slice(skip, take).map((blog) => (
-        <div className='blogs' style={{ position: 'relative' }}>
-          <Link to={slugify(blog.title)}>
-            <img src={blog.image} alt={blog.title} />
-          </Link>
+        <div className="blogs" style={{ position: "relative" }}>
+          {blog.gallery ? (
+            <Gallery blog={blog} />
+          ) : (
+            <Link to={slugify(blog.title)}>
+              <img src={blog.image} alt={blog.title} />
+            </Link>
+          )}
 
-          {blog.tags.includes('print') && (
-            <div className='circle prints-icon'>
+          {blog.tags.includes("print") && (
+            <div className="circle prints-icon">
               <h2>get this</h2>
             </div>
           )}
-          <div className='text-container'>
-            <p className='title'>{blog.title}</p>
-            {'gallery' in blog && (
-              <div className='arrow left'>{blog.gallery}</div>
-            )}
+          <div className="text-container">
+            <p className="title">{blog.title}</p>
 
             <Like
               onIconClick={() => addBlog(blog.title)}
@@ -113,24 +117,16 @@ const Blogs = ({ blogs, skip, take, onItemAdd, sizes }) => {
             <p>{blog.description}</p>
             <Tags blog={blog} />
             <p>
-              <span className='bolded'>published</span>{' '}
-              <Moment date={blog.date} format='dddd MMMM D, YYYY'></Moment>
+              <span className="bolded">published</span>{" "}
+              <Moment date={blog.date} format="dddd MMMM D, YYYY"></Moment>
             </p>
-            <div className='blog-text'>{blog.content}</div>
+            <div className="blog-text">{blog.content}</div>
 
-            {blog.tags.includes('print') && (
-              <p>
-                <br />> get this in{' '}
-                {sizes.map((size, index) => (
-                  <span
-                    className='pink'
-                    onClick={() => onItemAdd(blog.title, size)}
-                  >
-                    {' '}
-                    {index !== 0 && '|'} {size}
-                  </span>
-                ))}
-              </p>
+            {blog.tags.includes("print") && (
+              <ShopItemsLeft blog={blog} onItemAdd={onItemAdd} />
+            )}
+            {blog.tags.includes("flower") && (
+              <FlowerItemsLeft blog={blog} onItemAdd={onItemAdd} />
             )}
           </div>
         </div>

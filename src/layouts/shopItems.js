@@ -7,10 +7,10 @@ function ShopItems({ blog, onItemAdd }) {
   return (
     <div className="selling-button">
       <p className="bolded">{blog.title}</p>
-      <p>choose a size of a print</p>
+      <p>available in:</p>
       <form className="flex-center">
         {prints.map((size, index) => (
-          <label className="flex-center">
+          <label className="label flex-center">
             {size.size}
             <input
               type="radio"
@@ -19,15 +19,18 @@ function ShopItems({ blog, onItemAdd }) {
               value={index}
               onChange={(e) => setRadio(e.target.value)}
             />
+            <span class="checkmark"></span>
           </label>
         ))}
       </form>
-      <p className="pink bolded">{prints[radio].price}dkk</p>
+      <p className="pink bolded" style={{ marginTop: 12 }}>
+        {prints[radio].price}dkk
+      </p>
       <button
         onClick={() => onItemAdd(blog.title, prints[radio].size)}
         style={{ marginTop: 16 }}
       >
-        add this to the cart
+        add to cart
       </button>
     </div>
   );

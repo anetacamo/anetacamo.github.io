@@ -1,0 +1,23 @@
+@import "/./src/styles/colors.scss";
+
+.left {
+  font-size: 69px;
+  position: absolute;
+  left: -13px;
+  background-color: white;
+  z-index: 2;
+  padding: 12px;
+}
+.right {
+  font-size: 69px;
+  position: absolute;
+  right: -13px;
+  background-color: white;
+  z-index: 2;
+  padding: 12px;
+}
+
+.active {
+  background-color: $pink;
+  cursor: default;
+}
