@@ -1,0 +1,12 @@
+.shopLink {
+  position: absolute;
+  top: 56px;
+  right: 10px;
+  font-weight: 900;
+  text-decoration: underline;
+  cursor: pointer;
+  transition-duration: 350ms;
+  &:hover {
+    text-decoration: none;
+  }
+}
