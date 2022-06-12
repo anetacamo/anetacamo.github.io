@@ -5,7 +5,6 @@ import styles from "./Gallery.module.scss";
 
 const Gallery = ({ blog }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
   const images = new Array(parseInt(blog.gallery)).fill(0);
 
   const handleRight = () => {
@@ -22,8 +21,12 @@ const Gallery = ({ blog }) => {
         <span className={styles.left} onClick={handleLeft}>
           L
         </span>
-        <Link to={slugify(blog.title)}>
-          <img src={`${blog.image}/${currentSlide}.jpg`} alt={blog.title} />
+        <Link to={`/${slugify(blog.title)}`}>
+          <img
+            src={`${blog.image}/${currentSlide}.jpg`}
+            alt={blog.title}
+            className="fully-covering-image"
+          />
         </Link>
         <span onClick={handleRight} className={styles.right}>
           R

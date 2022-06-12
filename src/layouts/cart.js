@@ -15,21 +15,12 @@ const stripePromise = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
 
 const Cart = ({ itemsInCart, onCartItemRemove }) => {
   const [checkout, setCheckout] = useState("cart");
-  const countPrice = (size) => {
-    if (size === "a3") {
-      return 450;
-    } else if (size === "a4") {
-      return 350;
-    }
-    return 250;
-  };
+  console.log(itemsInCart);
 
   const itemsTotalPrice = () => {
     if (itemsInCart !== undefined) {
       const totalPrice = Object.keys(itemsInCart).reduce((previous, key) => {
-        return (
-          previous + itemsInCart[key].amount * countPrice(itemsInCart[key].size)
-        );
+        return previous + itemsInCart[key].amount * itemsInCart[key].price;
       }, 0);
       return totalPrice;
     }
@@ -55,11 +46,9 @@ const Cart = ({ itemsInCart, onCartItemRemove }) => {
           </>
         )}
         {itemsInCart.length === 0 ? (
-          <>
-            <Link to="/tagged/print">
-              <button style={{ marginTop: 20 }}>Prints</button>
-            </Link>
-          </>
+          <Link to="/tagged/print">
+            <button style={{ marginTop: 20 }}>Prints</button>
+          </Link>
         ) : (
           <>
             <div className="divider"></div>

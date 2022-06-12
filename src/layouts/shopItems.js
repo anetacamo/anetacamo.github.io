@@ -4,6 +4,14 @@ import { prints } from "../types/shopItems";
 function ShopItems({ blog, onItemAdd }) {
   const [radio, setRadio] = useState(0);
 
+  const countPrice = (size) => {
+    if (size === "a3") {
+      return 450;
+    } else if (size === "a4") {
+      return 350;
+    }
+  };
+
   return (
     <div className="selling-button">
       <p className="bolded">{blog.title}</p>
@@ -27,8 +35,14 @@ function ShopItems({ blog, onItemAdd }) {
         {prints[radio].price}dkk
       </p>
       <button
-        onClick={() => onItemAdd(blog.title, prints[radio].size)}
-        style={{ marginTop: 16 }}
+        onClick={() =>
+          onItemAdd(
+            blog.title,
+            prints[radio].size,
+            countPrice(prints[radio].size)
+          )
+        }
+        style={{ marginTop: 0, border: "none", textDecoration: "underline" }}
       >
         add to cart
       </button>

@@ -5,6 +5,8 @@ import Moment from "react-moment";
 import { Link } from "react-router-dom";
 import { MetaTags, Tags } from "../components";
 import ShopItemsLeft from "./shopItemsLeft";
+import FlowerItemsLeft from "./flowerItemsLeft";
+import SingleBlogGallery from "../components/SingleBlogGallery/SingleBlogGallery";
 
 const Blog = ({ match, onItemAdd }) => {
   let title = match.params.name;
@@ -21,29 +23,15 @@ const Blog = ({ match, onItemAdd }) => {
       </Link>
 
       <div className="single-blog-container">
-        {/*<div className='arrows'>
-          <a className='vertical-text' style={{ left: 10 }} href=''>
-            see previous ↓
-          </a>
-          <a className='vertical-text' style={{ right: 6 }} href=''>
-            see next ↑
-          </a>
-        </div> */}
-        <img
-          src={blog.image}
-          alt={`${blog.title} by Aneta Camo`}
-          className={`single-blog-image ${"wide" in blog ? "wide" : null}`}
-        />
-
         {blog.gallery ? (
-          <div className="flex-center">
-            {Array(parseInt(blog.gallery))
-              .fill(0)
-              .map((value, index) => (
-                <button>{index}</button>
-              ))}
-          </div>
-        ) : null}
+          <SingleBlogGallery blog={blog} />
+        ) : (
+          <img
+            alt={`${blog.title} by Aneta Camo`}
+            src={blog.image}
+            className={`single-blog-image ${"wide" in blog ? "wide" : null}`}
+          />
+        )}
 
         <div className="blog-text">
           <Tags blog={blog} />
@@ -52,8 +40,11 @@ const Blog = ({ match, onItemAdd }) => {
           </p>
           <h1>{blog.title}</h1>
           <p>{blog.description}</p>
-          {blog.tags.includes("print" || "flower") && (
+          {blog.tags.includes("print") && (
             <ShopItemsLeft blog={blog} onItemAdd={onItemAdd} />
+          )}
+          {blog.tags.includes("flower") && (
+            <FlowerItemsLeft blog={blog} onItemAdd={onItemAdd} />
           )}
         </div>
       </div>
