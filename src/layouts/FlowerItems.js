@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
-function FlowerItemsLeft({ blog, onItemAdd }) {
+function FlowerItems({ blog, onItemAdd }) {
   const [radio, setRadio] = useState(0);
 
   return (
     <div className="selling-button">
+      <p className="bolded">{blog.title}</p>
       <p style={{ paddingBottom: 4 }}>
         <em>Choose a color:</em> {blog.colors.split(", ")[radio]}
       </p>
-      <form className="flex-center" style={{ justifyContent: "flex-start" }}>
+      <form className="flex-center">
         {blog.colors.split(", ").map((color, index) => (
           <label className="label flex-center" style={{ margin: "4px 0" }}>
             <input
@@ -22,31 +22,24 @@ function FlowerItemsLeft({ blog, onItemAdd }) {
             <span class="checkmark" style={{ backgroundColor: color }}></span>
           </label>
         ))}
-        <p>
-          <span className="pink bolded" style={{ margin: 8 }}>
-            |
-          </span>
-          {blog.price}dkk
-        </p>
       </form>
 
+      <p className="pink bolded" style={{ marginTop: 12 }}>
+        {blog.price}dkk
+      </p>
       <button
         onClick={() =>
           onItemAdd(
             blog.title,
             blog.colors.split(", ")[radio],
-            parseInt(blog.price, 10),
-            blog.price
+            parseInt(blog.price, 10)
           )
         }
-        style={{ marginTop: 16, marginLeft: 0 }}
+        style={{ marginTop: 0, border: "none", textDecoration: "underline" }}
       >
         add to cart
       </button>
-      <Link to="/tagged/flower">
-        <button>flowers shop</button>
-      </Link>
     </div>
   );
 }
-export default FlowerItemsLeft;
+export default FlowerItems;

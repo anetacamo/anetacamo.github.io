@@ -5,16 +5,25 @@ import { Link } from "react-router-dom";
 function ShopItemsLeft({ blog, onItemAdd }) {
   const [radio, setRadio] = useState(0);
 
+  const countPrice = (size) => {
+    if (size === "a3") {
+      return 450;
+    } else if (size === "a4") {
+      return 350;
+    }
+  };
+
   return (
     <div className="selling-button">
-      <br />
-      <br />
-      <p>
-        <em>This drawing is available as a print in:</em>
+      <p style={{ fontSize: 12 }} className="pink">
+        This drawing is available as a print in:
       </p>
       <form className="flex-center" style={{ justifyContent: "flex-start" }}>
         {prints.map((size, index) => (
-          <label className="label flex-center" style={{ margin: "4px 0" }}>
+          <label
+            className="label flex-center"
+            style={{ padding: "12px 0", fontSize: 12 }}
+          >
             {size.size}
             <input
               type="radio"
@@ -26,12 +35,15 @@ function ShopItemsLeft({ blog, onItemAdd }) {
             <span class="checkmark"></span>
           </label>
         ))}
-
-        <span className="pink bolded"> | {prints[radio].price}dkk</span>
       </form>
 
+      <p style={{ fontSize: 12 }}>{prints[radio].price}dkk</p>
+
       <button
-        onClick={() => onItemAdd(blog.title, prints[radio].size)}
+        onClick={
+          (() => onItemAdd(blog.title, prints[radio].size),
+          countPrice(prints[radio].size))
+        }
         style={{ marginTop: 16, marginLeft: 0 }}
       >
         add to cart

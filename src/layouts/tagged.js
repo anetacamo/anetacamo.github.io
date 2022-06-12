@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { slugify } from "../utils/slugify";
 import { Carousel, MetaTags } from "../components/";
 import ShopItems from "./shopItems";
+import FlowerItems from "./FlowerItems";
+
+import GalleryTagged from "../components/GalleryTagged/GalleryTagged";
 
 const Tagged = ({ match, onItemAdd }) => {
   let title = match.params.name;
@@ -29,7 +32,6 @@ const Tagged = ({ match, onItemAdd }) => {
       <MetaTags
         name={`tagged ${title}`}
         description={`all blogs tagged ${title}`}
-        image={sametag[0].image}
       />
       <div className="tagged">
         <p>
@@ -49,18 +51,29 @@ const Tagged = ({ match, onItemAdd }) => {
           </div>
         )}
 
-        <div className={`squares ${title === "print" && "prints"}`}>
+        <div
+          className={`squares ${title === "print" && "prints"} ${
+            title === "flower" && "prints"
+          }`}
+        >
           {sametag.map((blog) => (
             <div className="square">
-              <Link to={`/${slugify(blog.title)}`}>
-                <img
-                  className="fully-covering-image"
-                  src={`${blog.image}`}
-                  alt="by Aneta Camo"
-                />
-              </Link>
+              {blog.gallery ? (
+                <GalleryTagged blog={blog} />
+              ) : (
+                <Link to={`/${slugify(blog.title)}`}>
+                  <img
+                    src={blog.image}
+                    alt={blog.title}
+                    className="fully-covering-image"
+                  />
+                </Link>
+              )}
               {blog.tags.includes("print") && (
                 <ShopItems blog={blog} onItemAdd={onItemAdd} />
+              )}
+              {blog.tags.includes("flower") && (
+                <FlowerItems blog={blog} onItemAdd={onItemAdd} />
               )}
             </div>
           ))}

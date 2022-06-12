@@ -29,7 +29,7 @@ function App() {
     if (a.date > b.date) return -1;
   });
 
-  const addThisItem = (title, size) => {
+  const addThisItem = (title, size, price) => {
     //check for item with same name and size in the array
     const itemIndex = itemsInCart.findIndex(
       (item) => item.title === title && item.size === size
@@ -37,7 +37,7 @@ function App() {
 
     // if not here, simply add it.
     if (itemIndex === -1) {
-      const itemInCart = { title: title, size: size, amount: 1 };
+      const itemInCart = { title: title, size: size, amount: 1, price: price };
       localStorage.setItem(
         "cartContent",
         JSON.stringify([...itemsInCart, itemInCart])

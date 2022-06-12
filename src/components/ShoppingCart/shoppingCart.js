@@ -30,10 +30,10 @@ const ShoppingCart = ({ itemsInCart }) => {
           {open && "cart content updated"}
         </p>
       </Link>
-
-      <Link to="/tagged/print" className={styles.shopLink}>
-        shop
-      </Link>
+      <div className={styles.shopLink}>
+        <Link to="/tagged/print">prints</Link>
+        <Link to="/tagged/flower">flowers</Link>
+      </div>
     </div>
   );
 };

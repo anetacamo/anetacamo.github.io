@@ -91,46 +91,49 @@ const Blogs = ({ blogs, skip, take, onItemAdd }) => {
 
   return (
     <div className="blogs">
-      {blogs.slice(skip, take).map((blog) => (
-        <div className="blogs" style={{ position: "relative" }}>
-          {blog.gallery ? (
-            <Gallery blog={blog} />
-          ) : (
-            <Link to={slugify(blog.title)}>
-              <img src={blog.image} alt={blog.title} />
-            </Link>
-          )}
+      {blogs.slice(skip, take).map(
+        (blog) =>
+          blog.tags.includes("flower") || (
+            <div className="blogs" style={{ position: "relative" }}>
+              {blog.gallery ? (
+                <Gallery blog={blog} />
+              ) : (
+                <Link to={slugify(blog.title)}>
+                  <img src={blog.image} alt={blog.title} />
+                </Link>
+              )}
 
-          {blog.tags.includes("print") && (
-            <div className="circle prints-icon">
-              <h2>get this</h2>
+              {blog.tags.includes("print") && (
+                <div className="circle prints-icon">
+                  <h2>get this</h2>
+                </div>
+              )}
+              <div className="text-container">
+                <p className="title">{blog.title}</p>
+
+                <Like
+                  onIconClick={() => addBlog(blog.title)}
+                  likes={getLikes(blog.title)}
+                  liked={getLike(blog.title)}
+                />
+                <p>{blog.description}</p>
+                <Tags blog={blog} />
+                <p>
+                  <span className="bolded">published</span>{" "}
+                  <Moment date={blog.date} format="dddd MMMM D, YYYY"></Moment>
+                </p>
+                <div className="blog-text">{blog.content}</div>
+
+                {blog.tags.includes("print") && (
+                  <ShopItemsLeft blog={blog} onItemAdd={onItemAdd} />
+                )}
+                {blog.tags.includes("flower") && (
+                  <FlowerItemsLeft blog={blog} onItemAdd={onItemAdd} />
+                )}
+              </div>
             </div>
-          )}
-          <div className="text-container">
-            <p className="title">{blog.title}</p>
-
-            <Like
-              onIconClick={() => addBlog(blog.title)}
-              likes={getLikes(blog.title)}
-              liked={getLike(blog.title)}
-            />
-            <p>{blog.description}</p>
-            <Tags blog={blog} />
-            <p>
-              <span className="bolded">published</span>{" "}
-              <Moment date={blog.date} format="dddd MMMM D, YYYY"></Moment>
-            </p>
-            <div className="blog-text">{blog.content}</div>
-
-            {blog.tags.includes("print") && (
-              <ShopItemsLeft blog={blog} onItemAdd={onItemAdd} />
-            )}
-            {blog.tags.includes("flower") && (
-              <FlowerItemsLeft blog={blog} onItemAdd={onItemAdd} />
-            )}
-          </div>
-        </div>
-      ))}
+          )
+      )}
     </div>
   );
 };
