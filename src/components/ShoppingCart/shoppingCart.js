@@ -32,7 +32,7 @@ const ShoppingCart = ({ itemsInCart }) => {
       </Link>
       <div className={styles.shopLink}>
         <Link to="/tagged/print">prints</Link>
-        <Link to="/tagged/flower">flowers</Link>
+        {/* <Link to="/tagged/flower">flowers</Link> */}
       </div>
     </div>
   );

@@ -1,15 +1,15 @@
 {
   "cv": {
     "toolstack": [
-      "CSS, Bootstrap, Sass",
-      "JS, React",
-      "Gatsby, Jekyll",
-      "Understanding to, Redux, GraphQl, React Native",
-      "Liquid, ",
+      "React",
+      "Next",
+      "Typescript",
+      "Jekyll & liquid",
+      "Gatsby and GraphQl",
+      "Firebase",
       "PHP",
-      "GitHub & Git",
-      "Worked a lot with various CMSs, Wordpress, Forestry, Webflow, Squarespace, HubSpot",
-      "Basic use of Docker, Jenkins, CircleCI",
+      "Git",
+      "CMSs like Wordpress, Forestry, Webflow, Squarespace, HubSpot",
       "SEO, UX",
       "Photoshop"
     ],

@@ -13,7 +13,7 @@ import { loadStripe } from "@stripe/stripe-js";
 
 const stripePromise = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
 
-const Cart = ({ itemsInCart, onCartItemRemove }) => {
+const Cart = ({ itemsInCart, onCartItemRemove, onItemAdd }) => {
   const [checkout, setCheckout] = useState("cart");
   console.log(itemsInCart);
 
@@ -42,6 +42,7 @@ const Cart = ({ itemsInCart, onCartItemRemove }) => {
             <YourBag
               itemsInCart={itemsInCart}
               onCartItemRemove={onCartItemRemove}
+              onItemAdd={onItemAdd}
             />
           </>
         )}

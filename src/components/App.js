@@ -30,23 +30,58 @@ function App() {
   });
 
   const addThisItem = (title, size, price) => {
-    //check for item with same name and size in the array
-    const itemIndex = itemsInCart.findIndex(
-      (item) => item.title === title && item.size === size
+    //is item already in the bag?
+
+    // all existing cart items WITHOUT the new item
+    const filtered = itemsInCart.filter(
+      (item) => item.title !== title || item.size !== size
     );
+    const filteredTwo = itemsInCart.filter((item) => item.title !== title);
+    const itemInCart = { title: title, size: size, amount: 1, price: price };
+    console.log("allItems: ", itemsInCart);
+    console.log("items without chosen item: ", filtered);
+    console.log(itemInCart);
 
     // if not here, simply add it.
-    if (itemIndex === -1) {
-      const itemInCart = { title: title, size: size, amount: 1, price: price };
+    if (filtered.length === itemsInCart.length) {
+      console.log("created new item");
       localStorage.setItem(
         "cartContent",
         JSON.stringify([...itemsInCart, itemInCart])
       );
       setItemsInCart([...itemsInCart, itemInCart]); //simple value
+      console.log(filtered);
+      console.log(itemsInCart);
+      console.log("added one");
+    } else {
+      // otherwise increase amount plus 1
+      console.log("increased number at existing item");
+      localStorage.setItem(
+        "cartContent",
+        JSON.stringify([
+          ...filteredTwo,
+          {
+            title: title,
+            size: size,
+            amount: 7,
+            price: price,
+          },
+        ])
+      );
+
+      setItemsInCart([...itemsInCart, itemInCart]); //simple value
     }
   };
 
   const removeThisItem = (title, size) => {
+    const filtered = itemsInCart.filter(
+      (item) => item.title !== title || item.size !== size
+    );
+    localStorage.setItem("cartContent", JSON.stringify(filtered));
+    setItemsInCart(filtered);
+  };
+
+  const minusThisItem = (title, size) => {
     const filtered = itemsInCart.filter(
       (item) => item.title !== title || item.size !== size
     );
