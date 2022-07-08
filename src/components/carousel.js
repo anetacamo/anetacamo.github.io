@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import tagged from '../tagged.json';
-import { slugify } from '../utils/slugify';
-import { Link } from 'react-router-dom';
-import { Button } from './';
+import React, { useEffect, useState } from "react";
+import tagged from "../tagged.json";
+import { slugify } from "../utils/slugify";
+import { Link } from "react-router-dom";
+import { Button } from "./";
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [fade, setFade] = React.useState('');
+  const [fade, setFade] = React.useState("");
   // eslint-disable-next-line
   const [itemsPerSlide, setItemsPerSlide] = React.useState(6);
 
   useEffect(() => {
-    setFade('');
+    setFade("");
     const interval = setInterval(() => {
-      setFade('fade');
-      console.log('fade');
+      setFade("fade");
+      console.log("fade");
       handleRightArrowClick(itemsPerSlide);
     }, 4000);
     return () => clearInterval(interval);
@@ -23,33 +23,33 @@ const Carousel = () => {
 
   const handleRightArrowClick = (n) => {
     setCurrentSlide(currentSlide !== tagged.length - n ? currentSlide + n : 0);
-    console.log('changed');
+    console.log("changed");
   };
 
   return (
-    <div className='carousel'>
-      <div className='flex-center'>
+    <div className="carousel">
+      <div className="flex-center">
         {tagged.map(
           (item, index) =>
             index % itemsPerSlide === 0 && (
               <Button
-                divname={`dot ${index === currentSlide ? 'active' : null}`}
+                key={index}
+                divname={`dot ${index === currentSlide ? "active" : null}`}
                 activity={() => setCurrentSlide(index)}
               ></Button>
             )
         )}
       </div>
-      <div className='flex'>
+      <div className="flex">
         {[...Array(itemsPerSlide)].map((e, i) => (
-          <div className='flex-child'>
+          <div className="flex-child" key={i}>
             <Link
               to={`/tagged/${slugify(
                 tagged[currentSlide + i < tagged.length ? currentSlide + i : 0]
                   .title
               )}`}
-              key={i}
             >
-              <div className='carousel-item'>
+              <div className="carousel-item">
                 <img
                   alt={`tagged ${
                     tagged[
