@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-export function Href({ children, href, nameClass }) {
+export function Href({ children, href, nameclass }) {
   return (
     <a
       href={href}
-      target='_blank'
-      rel='noopener noreferrer'
-      nameClass={nameClass}
+      target="_blank"
+      rel="noopener noreferrer"
+      nameclass={nameclass}
     >
       {children}
     </a>

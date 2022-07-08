@@ -1,55 +1,68 @@
 import React, { useState, useEffect } from "react";
+import Moment from "react-moment";
 import { Link } from "react-router-dom";
 import { slugify } from "../utils/slugify";
-import Moment from "react-moment";
 import { Like, Tags } from "./";
-import db from "../firebase";
+import { db } from "../firebase";
+import { collection, doc, getDocs, setDoc, addDoc } from "firebase/firestore";
 import ShopItemsLeft from "../layouts/shopItemsLeft";
 import FlowerItemsLeft from "../layouts/flowerItemsLeft";
 import Gallery from "../components/Gallery/Gallery";
-import {
-  onSnapshot,
-  collection,
-  setDoc,
-  doc,
-  addDoc,
-} from "firebase/firestore";
 
 const Blogs = ({ blogs, skip, take, onItemAdd }) => {
+  const likedBlogsRef = collection(db, "blogs");
+  const likedByUser =
+    JSON.parse(localStorage.getItem("itemsLikedByUser")) || [];
+  const [userLikedItems, setUserLikedItems] = useState(likedByUser);
+  const [likedItems, setLikedItems] = useState([]);
+
+  const getLikedBlogs = async () => {
+    const data = await getDocs(likedBlogsRef);
+    setLikedItems(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    console.log(data);
+  };
+
   useEffect(() => {
-    const unsubscribe = onSnapshot(collection(db, "blogs"), (snapshot) => {
-      setLikedItems(
-        snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
-      );
-    });
-    return unsubscribe;
+    getLikedBlogs();
   }, []);
+
+  console.log(likedItems);
 
   const addBlog = async (title) => {
     // get index of item in liked items from online db
+    console.log("title", title);
+    console.log(likedByUser.length);
+    console.log(likedItems.length);
+
+    // index of item from firebase collection
     const itemIndex = likedItems.findIndex((item) => item.name === title);
-    // index of items liked by user
+    console.log(itemIndex);
+    // index of item from localstorage
     const userLikedIndex = userLikedItems.findIndex(
       (item) => item.title === title
     );
 
-    // if item is not liked yet - like
+    console.log(title, "like!");
+    // item is not liked by user => like and update liked array
     if (userLikedIndex === -1) {
       const userLikedItem = { title: title };
       const updatedArray = [...userLikedItems, userLikedItem];
       localStorage.setItem("itemsLikedByUser", JSON.stringify(updatedArray));
-      setUserLikedItems(updatedArray); //simple value
-      // plus add item into the online database: either create new entry or update existing
+      setUserLikedItems(updatedArray);
+
+      // plus add item into the online database => either create new entry or update existing
       if (itemIndex !== -1) {
         //update item
+        // find the item
         const docRef = doc(db, "blogs", likedItems[itemIndex].id);
         const payload = { name: title, likes: likedItems[itemIndex].likes + 1 };
         await setDoc(docRef, payload);
       } else {
         //add item
-        const collectionRef = collection(db, "blogs");
         const payload = { name: title, likes: 1 };
-        await addDoc(collectionRef, payload);
+        await addDoc(likedBlogsRef, payload);
+        console.log("added!");
+        getLikedBlogs();
       }
     } else {
       // UNLIKE
@@ -58,10 +71,14 @@ const Blogs = ({ blogs, skip, take, onItemAdd }) => {
       );
       localStorage.setItem("itemsLikedByUser", JSON.stringify(updatedArray));
       setUserLikedItems(updatedArray);
-      // remove a like from the online db
-      const docRef = doc(db, "blogs", likedItems[itemIndex].id);
-      const payload = { name: title, likes: likedItems[itemIndex].likes - 1 };
-      await setDoc(docRef, payload);
+      // check if is present on online db if not=> do nothing
+      if (itemIndex !== -1) {
+        // remove a like from the online db
+        const docRef = doc(db, "blogs", likedItems[itemIndex].id);
+        const payload = { name: title, likes: likedItems[itemIndex].likes - 1 };
+        await setDoc(docRef, payload);
+        getLikedBlogs();
+      }
     }
   };
 
@@ -84,17 +101,16 @@ const Blogs = ({ blogs, skip, take, onItemAdd }) => {
     }
   };
 
-  const likedByUser =
-    JSON.parse(localStorage.getItem("itemsLikedByUser")) || [];
-  const [userLikedItems, setUserLikedItems] = useState(likedByUser);
-  const [likedItems, setLikedItems] = useState([]);
-
   return (
     <div className="blogs">
       {blogs.slice(skip, take).map(
         (blog) =>
           blog.tags.includes("flower") || (
-            <div className="blogs" style={{ position: "relative" }}>
+            <div
+              className="blogs"
+              style={{ position: "relative" }}
+              key={blog.title}
+            >
               {blog.gallery ? (
                 <Gallery blog={blog} />
               ) : (
