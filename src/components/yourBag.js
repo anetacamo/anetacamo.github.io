@@ -13,7 +13,11 @@ const YourBag = ({
       return cartItem[0].image + ".jpg";
     } else return cartItem[0]?.image;
   };
-  console.log(itemsInCart);
+
+  const renderTagged = (title) => {
+    const cartItem = blogs.filter((blog) => title === blog.title);
+    return cartItem[0].tags.indexOf("print");
+  };
 
   return (
     <>
@@ -31,18 +35,22 @@ const YourBag = ({
                 <span className="capitalised pink"> | {item.size}</span>
               </p>
               <p className="bolded">{item.price * item.amount} dkk</p>
-              <button
-                style={{ padding: "4px 9px", marginLeft: 0 }}
-                onClick={() => onItemAdd(item.title, item.size, 50)}
-              >
-                +
-              </button>
-              <button
-                style={{ padding: "4px 9px" }}
-                onClick={() => onCartItemMinus(item.title, item.size)}
-              >
-                -
-              </button>
+              {renderTagged(item.title) < 0 && (
+                <>
+                  <button
+                    style={{ padding: "4px 9px", marginLeft: 0 }}
+                    onClick={() => onItemAdd(item.title, item.size, 50)}
+                  >
+                    +
+                  </button>
+                  <button
+                    style={{ padding: "4px 9px" }}
+                    onClick={() => onCartItemMinus(item.title, item.size)}
+                  >
+                    -
+                  </button>
+                </>
+              )}
               <button
                 className="x-button"
                 onClick={() => onCartItemRemove(item.title, item.size)}
