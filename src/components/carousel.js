@@ -14,7 +14,6 @@ const Carousel = () => {
     setFade("");
     const interval = setInterval(() => {
       setFade("fade");
-      console.log("fade");
       handleRightArrowClick(itemsPerSlide);
     }, 4000);
     return () => clearInterval(interval);
@@ -23,7 +22,6 @@ const Carousel = () => {
 
   const handleRightArrowClick = (n) => {
     setCurrentSlide(currentSlide !== tagged.length - n ? currentSlide + n : 0);
-    console.log("changed");
   };
 
   return (

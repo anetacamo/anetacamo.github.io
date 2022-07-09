@@ -2,9 +2,9 @@
 // For more help visit https://formspr.ee/react-help
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-function ContactForm({ itemsInCart }) {
+
+function ContactForm({ itemsInCart, messageText }) {
   const [state, handleSubmit] = useForm("mqkwowdd");
-  let description = "";
 
   if (state.succeeded) {
     return (
@@ -57,7 +57,7 @@ function ContactForm({ itemsInCart }) {
         id="message"
         name="message"
         className="large"
-        placeholder="Let me know when would it suit you - but please give me at least two working day to get the order ready:)"
+        placeholder={messageText}
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <br />
@@ -68,7 +68,7 @@ function ContactForm({ itemsInCart }) {
     </form>
   );
 }
-function Formspree({ itemsInCart }) {
-  return <ContactForm itemsInCart={itemsInCart} />;
+function Formspree({ itemsInCart, messageText }) {
+  return <ContactForm itemsInCart={itemsInCart} messageText={messageText} />;
 }
 export default Formspree;

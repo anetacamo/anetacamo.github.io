@@ -58,11 +58,13 @@ const Cart = ({ itemsInCart, onCartItemRemove, onItemAdd }) => {
               {itemsInCart.length} items - {itemsTotalPrice()} dkk
             </p>
             <p>
-              Hi there! Currently the online payment is being implemented.{" "}
-              <br /> If you still wish to buy a print, please write me a message
-              on <a href="mailto:anetacamo@gmail.com">a mail</a> or fill a short
-              form via pick up in Aarhus.
-              <br /> (even id you want the prints to be sent via mail)
+              Hi there! To buy a print please choose how youd like to receive
+              it.
+              <br /> Or send me <a href="mailto:anetacamo@gmail.com">a mail</a>
+              <br />
+            </p>
+            <p>
+              <i>Mailing by post costs 50dkk. Pick up is free</i>
             </p>
             <button
               className={checkout === "pickup" && "active"}
@@ -70,12 +72,12 @@ const Cart = ({ itemsInCart, onCartItemRemove, onItemAdd }) => {
             >
               Pick up in Aarhus
             </button>
-            {/* <button
-              className={checkout === 'post' && 'active'}
-              onClick={() => setCheckout('post')}
+            <button
+              className={checkout === "post" && "active"}
+              onClick={() => setCheckout("post")}
             >
-              Pay online and get by post
-            </button> */}
+              Receive by post
+            </button>
           </>
         )}
         {checkout !== "cart" && (
@@ -87,20 +89,37 @@ const Cart = ({ itemsInCart, onCartItemRemove, onItemAdd }) => {
           <ShopSection title="Pick up in Aarhus">
             <p>
               Pick up can be done every working day from 11 - 17 in Aaarhus,
-              Frontløberne. I accept mobile pay or cash.
+              Frontløberne. <br />I accept mobile pay or cash.
             </p>
 
             <br />
-            <Formspree itemsInCart={itemsInCart} />
+            <Formspree
+              itemsInCart={itemsInCart}
+              messageText="Let me know when would it suit you - but please give me at least two working day to get the order ready:)"
+            />
           </ShopSection>
         )}
         {checkout === "post" && (
-          <Elements stripe={stripePromise}>
-            <CheckoutForm
-              totalPrice={itemsTotalPrice()}
+          // <Elements stripe={stripePromise}>
+          //   <CheckoutForm
+          //     totalPrice={itemsTotalPrice()}
+          //     itemsInCart={itemsInCart}
+          //   />
+          // </Elements>
+          <ShopSection title="Receive by post">
+            <p>
+              Orders can be shipped anywhere in Europe. It costs 50dkk.
+              <br /> When I receive you message I will send you confitmation
+              message with payment deatils, prepare your order & when the order
+              is payed, it will be shipped.
+            </p>
+
+            <br />
+            <Formspree
               itemsInCart={itemsInCart}
+              messageText="Please share with me your address here :)"
             />
-          </Elements>
+          </ShopSection>
         )}
         <div className="divider"></div>{" "}
       </div>
