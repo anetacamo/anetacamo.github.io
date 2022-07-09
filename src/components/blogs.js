@@ -19,30 +19,20 @@ const Blogs = ({ blogs, skip, take, onItemAdd }) => {
   const getLikedBlogs = async () => {
     const data = await getDocs(likedBlogsRef);
     setLikedItems(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    console.log(data);
   };
 
   useEffect(() => {
     getLikedBlogs();
   }, []);
 
-  console.log(likedItems);
-
   const addBlog = async (title) => {
-    // get index of item in liked items from online db
-    console.log("title", title);
-    console.log(likedByUser.length);
-    console.log(likedItems.length);
-
     // index of item from firebase collection
     const itemIndex = likedItems.findIndex((item) => item.name === title);
-    console.log(itemIndex);
     // index of item from localstorage
     const userLikedIndex = userLikedItems.findIndex(
       (item) => item.title === title
     );
 
-    console.log(title, "like!");
     // item is not liked by user => like and update liked array
     if (userLikedIndex === -1) {
       const userLikedItem = { title: title };
@@ -53,6 +43,7 @@ const Blogs = ({ blogs, skip, take, onItemAdd }) => {
       // plus add item into the online database => either create new entry or update existing
       if (itemIndex !== -1) {
         //update item
+
         // find the item
         const docRef = doc(db, "blogs", likedItems[itemIndex].id);
         const payload = { name: title, likes: likedItems[itemIndex].likes + 1 };
@@ -61,7 +52,6 @@ const Blogs = ({ blogs, skip, take, onItemAdd }) => {
         //add item
         const payload = { name: title, likes: 1 };
         await addDoc(likedBlogsRef, payload);
-        console.log("added!");
         getLikedBlogs();
       }
     } else {
