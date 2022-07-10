@@ -5,7 +5,6 @@ import { slugify } from "../utils/slugify";
 import { Carousel, MetaTags } from "../components/";
 import ShopItems from "./shopItems";
 import FlowerItems from "./FlowerItems";
-
 import GalleryTagged from "../components/GalleryTagged/GalleryTagged";
 
 const Tagged = ({ match, onItemAdd }) => {

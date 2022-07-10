@@ -1,5 +1,7 @@
 import React from "react";
 import blogs from "../blogs.json";
+import { Link } from "react-router-dom";
+import { slugify } from "../utils/slugify";
 
 const YourBag = ({
   itemsInCart,
@@ -26,9 +28,11 @@ const YourBag = ({
       <div className="flex">
         {itemsInCart?.map((item, index) => (
           <div className="cart-item" key={index}>
-            <div className="image-holder">
-              <img src={renderImage(item.title)} alt={item.title} />
-            </div>
+            <Link to={slugify(item.title)}>
+              <div className="image-holder">
+                <img src={renderImage(item.title)} alt={item.title} />
+              </div>
+            </Link>
             <div style={{ position: "relative", paddingRight: 20 }}>
               <p>
                 {item.title}

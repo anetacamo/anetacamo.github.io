@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  CheckoutForm,
   Footer,
   Formspree,
   MetaTags,
   ShopSection,
   YourBag,
 } from "../components";
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
 
-const stripePromise = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
+// import { loadStripe } from "@stripe/stripe-js";
+//const stripePromise = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
 
 const Cart = ({ itemsInCart, onCartItemRemove, onItemAdd }) => {
   const [checkout, setCheckout] = useState("cart");
