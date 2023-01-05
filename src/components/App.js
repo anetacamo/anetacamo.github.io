@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import tagged from "../tagged.json";
-import blogs from "../blogs.json";
+import React, { useState, useEffect } from 'react';
+import tagged from '../tagged.json';
+import blogs from '../blogs.json';
 import {
   Blog,
   BlogList,
@@ -10,17 +10,19 @@ import {
   Logo,
   ShoppingCart,
   Tagged,
-} from "./";
-import { Route, Switch } from "react-router-dom";
-import { initGA, trackingPageGA } from "./reactGA";
+} from './';
+import { Route, Switch } from 'react-router-dom';
+import { initGA, trackingPageGA } from './reactGA';
+import WebApps from '../layouts/WebApps.js';
+import AllTags from '../layouts/AllTags.js';
 
 function App() {
   useEffect(() => {
     initGA(); // Initialize google analytics
-    trackingPageGA("/"); // = ReactGA.pageview (window.location.pathname);
+    trackingPageGA('/'); // = ReactGA.pageview (window.location.pathname);
   }, []);
   //items in the cart - first check the local storage
-  const cartContent = JSON.parse(localStorage.getItem("cartContent")) || [];
+  const cartContent = JSON.parse(localStorage.getItem('cartContent')) || [];
   const [itemsInCart, setItemsInCart] = useState(cartContent);
 
   //sorting the blogs here
@@ -38,26 +40,19 @@ function App() {
     );
     const filteredTwo = itemsInCart.filter((item) => item.title !== title);
     const itemInCart = { title: title, size: size, amount: 1, price: price };
-    console.log("allItems: ", itemsInCart);
-    console.log("items without chosen item: ", filtered);
-    console.log(itemInCart);
 
     // if not here, simply add it.
     if (filtered.length === itemsInCart.length) {
-      console.log("created new item");
       localStorage.setItem(
-        "cartContent",
+        'cartContent',
         JSON.stringify([...itemsInCart, itemInCart])
       );
       setItemsInCart([...itemsInCart, itemInCart]); //simple value
-      console.log(filtered);
-      console.log(itemsInCart);
-      console.log("added one");
     } else {
       // otherwise increase amount plus 1
-      console.log("increased number at existing item");
+      console.log('increased number at existing item');
       localStorage.setItem(
-        "cartContent",
+        'cartContent',
         JSON.stringify([
           ...filteredTwo,
           {
@@ -77,7 +72,7 @@ function App() {
     const filtered = itemsInCart.filter(
       (item) => item.title !== title || item.size !== size
     );
-    localStorage.setItem("cartContent", JSON.stringify(filtered));
+    localStorage.setItem('cartContent', JSON.stringify(filtered));
     setItemsInCart(filtered);
   };
 
@@ -85,7 +80,7 @@ function App() {
     const filtered = itemsInCart.filter(
       (item) => item.title !== title || item.size !== size
     );
-    localStorage.setItem("cartContent", JSON.stringify(filtered));
+    localStorage.setItem('cartContent', JSON.stringify(filtered));
     setItemsInCart(filtered);
   };
 
@@ -96,15 +91,17 @@ function App() {
       <ShoppingCart itemsInCart={itemsInCart} />
       <Switch>
         <Route
-          path="/"
+          path='/'
           render={() => (
             <BlogList onItemAdd={addThisItem} itemsInCart={itemsInCart} />
           )}
           exact
         />
-        <Route path="/cv" component={Cv} exact />
+        <Route path='/cv' component={Cv} exact />
+        <Route path='/web' component={WebApps} exact />
+        <Route path='/all-tags' component={AllTags} exact />
         <Route
-          path="/cart"
+          path='/cart'
           render={() => (
             <Cart
               itemsInCart={itemsInCart}

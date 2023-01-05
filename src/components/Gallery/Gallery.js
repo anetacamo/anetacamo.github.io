@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { slugify } from "../../utils/slugify";
-import { Link } from "react-router-dom";
-import styles from "./Gallery.module.scss";
+import React, { useState } from 'react';
+import { slugify } from '../../utils/slugify';
+import { Link } from 'react-router-dom';
+import styles from './Gallery.module.scss';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const Gallery = ({ blog }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,31 +18,31 @@ const Gallery = ({ blog }) => {
 
   return (
     <>
-      <div className="flex-center">
+      <div className={`flex-center ${styles['dot-holder']}`}>
+        {images.map((value, index) => (
+          <button
+            key={index}
+            className={`${currentSlide === index && 'active'} ${
+              styles.taggeddot
+            }`}
+            onClick={() => setCurrentSlide(index)}
+          ></button>
+        ))}
+      </div>
+      <div className='flex-center'>
         <span className={styles.left} onClick={handleLeft}>
-          L
+          <FaArrowLeft />
         </span>
         <Link to={`/${slugify(blog.title)}`}>
           <img
             src={`${blog.image}/${currentSlide}.jpg`}
             alt={blog.title}
-            className="fully-covering-image"
+            className='fully-covering-image'
           />
         </Link>
         <span onClick={handleRight} className={styles.right}>
-          R
+          <FaArrowRight />
         </span>
-      </div>
-      <div className="flex-center">
-        {images.map((value, index) => (
-          <button
-            key={index}
-            className={currentSlide === index && "active"}
-            onClick={() => setCurrentSlide(index)}
-          >
-            {index}
-          </button>
-        ))}
       </div>
     </>
   );

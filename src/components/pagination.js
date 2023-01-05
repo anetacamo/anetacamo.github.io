@@ -1,39 +1,44 @@
 import React from 'react';
 import { Button } from './';
 
-const sortBy = [10, 25, 40];
+const sortBy = [15, 25, 40];
 
 function Pagination({
-  page,
+  currentPage,
   pages,
+  pageSize,
   onChangePage,
   onPageSizeChange,
-  thisPages,
 }) {
   if (pages > 1) {
     return (
       <div className='pagination'>
-        {page === 1 ? null : (
-          <Button activity={() => onChangePage(page - 1)} divname='number'>
+        {currentPage === 1 ? null : (
+          <Button
+            activity={() => onChangePage(currentPage - 1)}
+            divname='number'
+          >
             previous
           </Button>
         )}
         {Array(pages)
           .fill(null)
           .map((_, i) => {
-            const thisPage = i + 1;
             return (
               <Button
                 key={i}
-                divname={`number ${page === thisPage && 'active'}`}
-                activity={() => onChangePage(thisPage)}
+                divname={`number ${i + 1 === currentPage && 'active'}`}
+                activity={() => onChangePage(i + 1)}
               >
-                {thisPage}
+                {i + 1}
               </Button>
             );
           })}
-        {pages === page ? null : (
-          <Button activity={() => onChangePage(page + 1)} divname='number'>
+        {pages === currentPage ? null : (
+          <Button
+            activity={() => onChangePage(currentPage + 1)}
+            divname='number'
+          >
             next
           </Button>
         )}
@@ -43,7 +48,7 @@ function Pagination({
             <Button
               key={number}
               activity={() => onPageSizeChange(number)}
-              divname={`number ${number === thisPages && 'active'}`}
+              divname={`number ${number === pageSize && 'active'}`}
             >
               {' '}
               {number}
