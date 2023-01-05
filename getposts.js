@@ -25,9 +25,12 @@ const getPosts = () => {
         lines.forEach(
           (line) => (obj[line.split(': ')[0]] = line.split(': ')[1])
         );
+        obj['number'] = file.split('.')[0];
 
-        console.log(obj);
-        console.log(i);
+        console.log('obj:', obj);
+        console.log('i:', i);
+        console.log('lines:', lines);
+        console.log('file:', file.split('.')[0]);
         postlist.push(obj);
         if (postlist.length === files.length) {
           let data = JSON.stringify(postlist);
