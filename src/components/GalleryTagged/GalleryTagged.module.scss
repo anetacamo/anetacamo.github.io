@@ -1,12 +1,12 @@
-@import "/./src/styles/colors.scss";
+@import '/./src/styles/colors.scss';
 
 .taggeddot {
-  background-color: #eee;
   border: none;
   text-decoration: underline;
   padding: 8px;
   margin: 4px;
   border-radius: 50%;
+  border: 2px solid $pink;
   &.active {
     background-color: $pink;
     cursor: default;

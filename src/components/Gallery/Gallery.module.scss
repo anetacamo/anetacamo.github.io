@@ -1,23 +1,46 @@
-@import "/./src/styles/colors.scss";
+@import '/./src/styles/colors.scss';
 
-.left {
-  font-size: 69px;
+.left,
+.right {
+  font-size: 16px;
   position: absolute;
-  left: -13px;
   background-color: white;
   z-index: 2;
-  padding: 12px;
+  padding: 12px 8px;
+  display: flex;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.left {
+  left: -8px;
 }
 .right {
-  font-size: 69px;
-  position: absolute;
-  right: -13px;
-  background-color: white;
-  z-index: 2;
-  padding: 12px;
+  right: -8px;
 }
 
 .active {
   background-color: $pink;
   cursor: default;
+}
+
+.taggeddot {
+  //background-color: #eee;
+  border: none;
+  text-decoration: underline;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 50%;
+  border: 2px solid $pink;
+  &.active {
+    background-color: $pink;
+    cursor: default;
+  }
+}
+
+.dot-holder {
+  position: absolute;
+  top: 6px;
+  margin: auto;
+  width: 100%;
+  z-index: 3;
 }

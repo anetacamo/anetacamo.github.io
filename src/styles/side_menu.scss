@@ -78,6 +78,7 @@
 // scrollbar + cursor
 body::-webkit-scrollbar {
   width: 12px;
+  background-color: #e5e5e5;
 }
 body::-webkit-scrollbar-thumb {
   background-color: $pink;

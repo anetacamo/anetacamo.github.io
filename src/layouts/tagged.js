@@ -1,11 +1,11 @@
-import React from "react";
-import blogs from "../blogs.json";
-import { Link } from "react-router-dom";
-import { slugify } from "../utils/slugify";
-import { Carousel, MetaTags } from "../components/";
-import ShopItems from "./shopItems";
-import FlowerItems from "./FlowerItems";
-import GalleryTagged from "../components/GalleryTagged/GalleryTagged";
+import React from 'react';
+import blogs from '../blogs.json';
+import { Link } from 'react-router-dom';
+import { slugify } from '../utils/slugify';
+import { Carousel, MetaTags } from '../components/';
+import ShopItems from './shopItems';
+import FlowerItems from './FlowerItems';
+import GalleryTagged from '../components/GalleryTagged/GalleryTagged';
 
 const Tagged = ({ match, onItemAdd }) => {
   let title = match.params.name;
@@ -17,9 +17,9 @@ const Tagged = ({ match, onItemAdd }) => {
   const singleTags = [];
   // eslint-disable-next-line
   blogs.map((blog) => {
-    var blogtags = blog.tags.split(", ");
+    var blogtags = blog.tags?.split(', ');
     // eslint-disable-next-line
-    blogtags.map((btag) => {
+    blogtags?.map((btag) => {
       tags.push(btag);
       singleTags.indexOf(btag) === -1 && singleTags.push(btag);
     });
@@ -32,12 +32,12 @@ const Tagged = ({ match, onItemAdd }) => {
         name={`tagged ${title}`}
         description={`all blogs tagged ${title}`}
       />
-      <div className="tagged">
+      <div className='tagged'>
         <p>
-          all blogs tagged <span className="pink underlined">{title}</span>
+          all blogs tagged <span className='pink underlined'>{title}</span>
         </p>
-        {title === "print" && (
-          <div className="center">
+        {title === 'print' && (
+          <div className='center'>
             <h1>SHOP</h1>
             <p style={{ marginTop: 0 }}>
               Following prints can be sent by post in EU or picked up in Aarhus.
@@ -46,17 +46,17 @@ const Tagged = ({ match, onItemAdd }) => {
               frame included in price. <br />
               Shipping costs 50dkk. Pick up is free.
             </p>
-            <div className="divider" style={{ margin: "44px auto" }}></div>
+            <div className='divider' style={{ margin: '44px auto' }}></div>
           </div>
         )}
 
         <div
-          className={`squares ${title === "print" && "prints"} ${
-            title === "flower" && "prints"
+          className={`squares ${title === 'print' && 'prints'} ${
+            title === 'flower' && 'prints'
           }`}
         >
-          {sametag.map((blog) => (
-            <div className="square">
+          {sametag.map((blog, i) => (
+            <div className='square' key={i}>
               {blog.gallery ? (
                 <GalleryTagged blog={blog} />
               ) : (
@@ -64,26 +64,26 @@ const Tagged = ({ match, onItemAdd }) => {
                   <img
                     src={blog.image}
                     alt={blog.title}
-                    className="fully-covering-image"
+                    className='fully-covering-image'
                   />
                 </Link>
               )}
-              {blog.tags.includes("print") && (
+              {blog.tags.includes('print') && (
                 <ShopItems blog={blog} onItemAdd={onItemAdd} />
               )}
-              {blog.tags.includes("flower") && (
+              {blog.tags.includes('flower') && (
                 <FlowerItems blog={blog} onItemAdd={onItemAdd} />
               )}
             </div>
           ))}
         </div>
       </div>
-      <p className="center" style={{ paddingTop: 32 }}>
+      <p className='center' style={{ paddingTop: 32 }}>
         all & featured tags
       </p>
       <p
-        className="center"
-        style={{ maxWidth: 800, margin: "auto", paddingBottom: 32 }}
+        className='center'
+        style={{ maxWidth: 800, margin: 'auto', paddingBottom: 32 }}
       >
         {singleTags.map((tag) => (
           <Link to={`/tagged/${slugify(tag)}`}>#{tag} </Link>
