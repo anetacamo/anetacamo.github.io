@@ -1,14 +1,13 @@
-import React, { useState } from "react";
-import tagged from "../tagged.json";
-import { slugify } from "../utils/slugify";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function KeywordSearch() {
-  const [hash, displayHash] = useState(false);
   return (
-    <div className="top-right">
-      <div className="hash desktop" onClick={() => displayHash(!hash)}></div>
-      <div
+    <div className='top-right'>
+      {/* <Link to='all-tags'>
+        <div className='hash desktop'></div>
+      </Link> */}
+      {/* <div
         className={`right-side-menu ${hash || "hidden"}`}
         onClick={() => displayHash(!hash)}
       >
@@ -22,13 +21,13 @@ function KeywordSearch() {
             <ul>
               {tagged.map((tag, index) => (
                 <li key={index}>
-                  <Link to={`/tagged/${slugify(tag.title)}`}>{tag.title}</Link>
+                 
                 </li>
               ))}
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

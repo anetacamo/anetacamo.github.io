@@ -29,7 +29,7 @@ const Gallery = ({ blog }) => {
           ></button>
         ))}
       </div>
-      <div className='flex-center'>
+      <div className='flex-center' style={{ width: '100%' }}>
         <span className={styles.left} onClick={handleLeft}>
           <FaArrowLeft />
         </span>

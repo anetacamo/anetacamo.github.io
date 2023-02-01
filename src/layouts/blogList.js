@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import blogs from '../blogs.json';
-import { Blogs, Carousel, Footer, MetaTags, Pagination } from '../components';
+import { Blogs, Footer, MetaTags, Pagination } from '../components';
 import { Link } from 'react-router-dom';
 
 function BlogList({ onItemAdd, itemsInCart }) {
@@ -26,33 +26,13 @@ function BlogList({ onItemAdd, itemsInCart }) {
       {/* <div className='carousel-top' />
       <Carousel /> */}
       <div className='blog-container'>
-        <div className='flex' style={{ justifyContent: 'space-between' }}>
-          <Link to='/all-tags'>
-            <h2>SEE ALL</h2>
-          </Link>
-          <div className='flex' style={{ alignItems: 'baseline' }}>
-            <h2>SHOP</h2>
-            <Link to='/tagged/ceramics'>
-              <h3 style={{ marginLeft: 12, textDecoration: 'underline' }}>
-                ceramics
-              </h3>
-            </Link>
-
-            <Link to='/tagged/print'>
-              <h3 style={{ marginLeft: 12, textDecoration: 'underline' }}>
-                prints
-              </h3>
-            </Link>
-            {/* <Link to='/tagged/flower'>
-              <h3 style={{ marginLeft: 12, textDecoration: 'underline' }}>
-                paper flowers
-              </h3>
-            </Link> */}
-          </div>
-        </div>
         <div
           className='flex'
-          style={{ alignItems: 'center', justifyContent: 'space-between' }}
+          style={{
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            paddingTop: 12,
+          }}
         >
           <p style={{ fontSize: 10, margin: 0 }}>
             showing {pageSize * (currentPage - 1)} to {pageSize * currentPage}{' '}

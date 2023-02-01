@@ -7,6 +7,28 @@
   cursor: pointer;
   z-index: 4;
 }
+.logo-container {
+  @media (max-width: 500px) {
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+  }
+}
+.mob-menu {
+  padding: 12px;
+  text-align: right;
+  padding-right: 70px;
+  p {
+    margin: 0;
+    cursor: pointer;
+  }
+  @media (min-width: 500px) {
+    display: none;
+  }
+}
 .portrait,
 .postcard {
   position: fixed;
@@ -18,12 +40,12 @@
   z-index: 4;
 }
 .portrait {
-  width: 400px;
+  width: 180px;
   bottom: 12px;
-  height: 140px;
+  height: 120px;
   background-image: url(/images/profile.gif);
   &.movedup {
-    bottom: 174px;
+    bottom: 116px;
   }
   &:hover {
     background-image: url(/images/meh.png);
@@ -42,8 +64,8 @@
 }
 .postcard {
   bottom: 4px;
-  height: 160px;
-  width: 280px;
+  height: 120px;
+  width: 180px;
   background-image: url(/images/homes.jpg);
   &:hover {
     background-image: url(/images/homes_bw.jpg);

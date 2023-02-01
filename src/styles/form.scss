@@ -3,7 +3,6 @@ button {
   background: transparent;
   margin: 4px;
   font-size: 12px;
-  font-family: Roboto Slab;
   border-style: dashed;
   border-color: $pink;
   cursor: pointer;
@@ -23,7 +22,6 @@ select {
   margin: 4px;
   border: 2px solid $pink;
   color: $pink;
-  font-family: Roboto Slab;
   font-size: 12px;
   letter-spacing: 0.4px;
   font-weight: 300;
@@ -52,17 +50,17 @@ select {
   &:valid {
     position: relative;
     &:after {
-      content: "✓";
+      content: '✓';
       position: absolute;
       right: 8px;
       color: $blue;
     }
   }
 }
-input[type="radio"] {
+input[type='radio'] {
   width: auto;
   &:after {
-    content: "";
+    content: '';
   }
 }
 textarea {

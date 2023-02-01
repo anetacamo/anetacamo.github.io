@@ -1,17 +1,27 @@
-import React from "react";
-
-import { Link } from "react-router-dom";
-import RadioCount from "../components/RadioCount";
+import React from 'react';
+import { FaArrowRight } from 'react-icons/fa';
 
 function ShopItemsLeft({ blog, onItemAdd }) {
   return (
-    <div className="selling-button left">
-      <p className="pink">This drawing is available as a print in:</p>
+    <div className='selling-button left'>
+      <p className='pink' style={{ marginTop: 12 }}>
+        This item is available
+      </p>
+      {/* <RadioCount onItemAdd={onItemAdd} blog={blog} />
+      {blog.variants}
+      {blog.price} */}
+      <div className='flex-center'>
+        <p className='pink bolded price' style={{ marginRight: 4 }}>
+          {blog.price ?? 450}dkk <FaArrowRight style={{ marginBottom: -2 }} />
+        </p>
 
-      <RadioCount onItemAdd={onItemAdd} blog={blog} />
-      <Link to="/tagged/print">
-        <button>print shop</button>
-      </Link>
+        <p
+          className='underlined bolded'
+          onClick={() => onItemAdd(blog.title, '', blog.price ?? 450)}
+        >
+          add to cart
+        </p>
+      </div>
     </div>
   );
 }

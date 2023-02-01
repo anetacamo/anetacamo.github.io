@@ -6,15 +6,24 @@
 - cv contact fix
 - make more components
 - run md generation automatically
-- typescript
 - get md filenames
 - form name and mail into state
 - date of last update
 - add accessibility
 
+- constant menu with shop links
+- about page
+- capital letters in jsx files
+- available icon bug
+- add plus on hover
+- add available icon functionality to add to cart
+- shop pages fix with all blogs tagged
+- items can be added multiple times
+
 DONE
 
 - fix cart remove click
+- problem with print vs linoprint
 - add stripe checkout
 - add helmet
 - update checkout flow

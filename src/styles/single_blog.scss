@@ -14,12 +14,16 @@
     @media (max-width: 1000px) {
       object-position: right;
       height: calc(100vh - 24px);
-      width: calc(100vw - 24px);
+      width: calc(100vw - 36px);
+      .gallery-image {
+        height: calc(100vh - 156px);
+      }
     }
     @media (max-width: 600px) {
       object-position: center;
       height: auto;
     }
+
     @media (min-width: 1000px) {
       &.wide {
         width: calc(100vw - 160px);
@@ -29,6 +33,9 @@
         object-position: center;
       }
     }
+  }
+  .gallery-image {
+    height: calc(100vh - 156px);
   }
   .blog-text {
     position: absolute;
@@ -41,7 +48,8 @@
     padding: 12px;
     background-color: white;
     p {
-      margin: 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
       line-height: 1.4;
     }
     @media (max-width: 600px) {

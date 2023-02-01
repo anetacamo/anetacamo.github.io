@@ -23,7 +23,7 @@
       border: none;
       outline: none;
       background-color: transparent;
-      font-family: Roboto Slab;
+
       font-weight: 600;
       color: $pink;
       @media (max-width: 1000px) {
@@ -31,7 +31,6 @@
       }
     }
     ::placeholder {
-      font-family: Roboto Slab;
       font-size: 12px;
       letter-spacing: 0.4px;
       cursor: pointer;
