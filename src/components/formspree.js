@@ -1,10 +1,10 @@
 // Make sure to run npm install @formspree/react
 // For more help visit https://formspr.ee/react-help
-import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 function ContactForm({ itemsInCart, messageText }) {
-  const [state, handleSubmit] = useForm("mqkwowdd");
+  const [state, handleSubmit] = useForm('mqkwowdd');
 
   if (state.succeeded) {
     return (
@@ -15,28 +15,28 @@ function ContactForm({ itemsInCart, messageText }) {
     );
   }
   return (
-    <form className="formspree" onSubmit={handleSubmit}>
+    <form className='formspree' onSubmit={handleSubmit}>
       <input
-        id="name"
-        type="textl"
-        name="name"
-        placeholder="Your name"
-        className="large"
+        id='name'
+        type='textl'
+        name='name'
+        placeholder='Your name'
+        className='large'
       />
       <input
-        id="email"
-        type="email"
-        name="email"
-        className="large"
-        placeholder="Mail to contact you"
+        id='email'
+        type='email'
+        name='email'
+        className='large'
+        placeholder='Mail to contact you'
       />
-      <p style={{ textDecoration: "underline", marginBottom: 8 }}>
+      <p style={{ textDecoration: 'underline', marginBottom: 8 }}>
         those are the items from your cart:
       </p>
       <input
-        id="prints"
-        type="hidden"
-        name="prints"
+        id='prints'
+        type='hidden'
+        name='prints'
         value={itemsInCart.map((item) => ` ${item.title}: ${item.size}`)}
       />
       <ul>
@@ -47,22 +47,20 @@ function ContactForm({ itemsInCart, messageText }) {
         ))}
       </ul>
       <p style={{ marginTop: 8 }}>
-        <i>When the form is sent, I will see the list of the items.</i>
-        <br /> If you wanna add/remove any, either scroll to the top or choose
-        them on the web.
+        <i>If you wish to edit, scroll to the top or browse the shop.</i>
       </p>
 
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
+      <ValidationError prefix='Email' field='email' errors={state.errors} />
       <textarea
-        id="message"
-        name="message"
-        className="large"
+        id='message'
+        name='message'
+        className='large'
         placeholder={messageText}
       />
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
+      <ValidationError prefix='Message' field='message' errors={state.errors} />
       <br />
       <br />
-      <button type="submit" disabled={state.submitting}>
+      <button type='submit' disabled={state.submitting}>
         Send the message
       </button>
     </form>

@@ -13,7 +13,7 @@
     width: calc(100% - 24px);
   }
   .blogs {
-    overflow: auto;
+    // overflow: auto;
     margin: auto;
     @media (max-width: 1200px) {
       margin: 0;
@@ -34,6 +34,7 @@
 
     .text-container {
       position: relative;
+      overflow: auto;
       padding-bottom: 24px;
       padding-right: 36px;
       font-size: 10px;

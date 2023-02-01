@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import { prints } from "../types/shopItems";
-import Radio from "./Radio";
+import React, { useState } from 'react';
+import { prints } from '../types/shopItems';
+import Radio from './Radio';
+import { FaArrowRight } from 'react-icons/fa';
 
 function RadioCount({ onItemAdd, blog }) {
   const [radio, setRadio] = useState(0);
@@ -11,11 +12,17 @@ function RadioCount({ onItemAdd, blog }) {
   };
 
   return (
-    <>
+    <div className='flex-center'>
       <Radio onRadioChange={setRadio} radio={radio} />
-      <p className="pink bolded price">{prints[radio].price}dkk</p>
+      <p
+        className='pink bolded price'
+        style={{ marginLeft: 16, marginRight: 4 }}
+      >
+        {prints[radio].price}dkk <FaArrowRight style={{ marginBottom: -2 }} />
+      </p>
 
-      <button
+      <p
+        className='underlined bolded'
         onClick={() =>
           onItemAdd(
             blog.title,
@@ -25,8 +32,8 @@ function RadioCount({ onItemAdd, blog }) {
         }
       >
         add to cart
-      </button>
-    </>
+      </p>
+    </div>
   );
 }
 export default RadioCount;

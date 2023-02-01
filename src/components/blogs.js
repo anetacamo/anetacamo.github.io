@@ -7,6 +7,8 @@ import { db } from '../firebase';
 import { collection, doc, getDocs, setDoc, addDoc } from 'firebase/firestore';
 import ShopItemsLeft from '../layouts/shopItemsLeft';
 import FlowerItemsLeft from '../layouts/flowerItemsLeft';
+import PrintsItemsLeft from '../layouts/PrintsItemsLeft';
+
 import Gallery from '../components/Gallery/Gallery';
 
 const Blogs = ({ blogs, onItemAdd }) => {
@@ -95,7 +97,7 @@ const Blogs = ({ blogs, onItemAdd }) => {
     <div className='blogs'>
       {blogs.map(
         (blog) =>
-          blog.tags.includes('flower') || (
+          blog.tags?.includes('flower') || (
             <div
               className='blogs'
               style={{ position: 'relative' }}
@@ -109,11 +111,11 @@ const Blogs = ({ blogs, onItemAdd }) => {
                 </Link>
               )}
 
-              {blog.tags.includes('print') && (
+              {/* {blog.tags.includes('print') && (
                 <div className='circle prints-icon'>
                   <h2>get this</h2>
                 </div>
-              )}
+              )} */}
               <div className='text-container'>
                 <p className='title'>{blog.title}</p>
 
@@ -128,13 +130,16 @@ const Blogs = ({ blogs, onItemAdd }) => {
                   <span className='bolded'>published</span>{' '}
                   <Moment date={blog.date} format='dddd MMMM D, YYYY'></Moment>
                 </p>
-                <div className='blog-text'>{blog.content}</div>
+                <div className='blog-text'>{blog?.content}</div>
 
-                {blog.tags.includes('print') && (
-                  <ShopItemsLeft blog={blog} onItemAdd={onItemAdd} />
+                {blog.tags?.includes('print') && (
+                  <PrintsItemsLeft blog={blog} onItemAdd={onItemAdd} />
                 )}
-                {blog.tags.includes('flower') && (
+                {blog.tags?.includes('flower') && (
                   <FlowerItemsLeft blog={blog} onItemAdd={onItemAdd} />
+                )}
+                {blog.tags?.includes('shop') && (
+                  <ShopItemsLeft blog={blog} onItemAdd={onItemAdd} />
                 )}
               </div>
             </div>
