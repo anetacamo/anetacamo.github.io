@@ -11,7 +11,7 @@
       "Redux toolkit",
       "PHP",
       "Git",
-      "CMSs like Wordpress, Forestry, Webflow, Squarespace, HubSpot",
+      "CMSs like Wordpress, Forestry, Contentful, Webflow, Squarespace, HubSpot",
       "SEO, UX",
       "Photoshop"
     ],
@@ -20,7 +20,7 @@
         "company": "Nodes - now MonstarLab",
         "position": "frontend engineer",
         "time": "from December 2021",
-        "text": "Got an opportunity to work on multiple large-scale projects, mostly built with next and react, material UI, communicating with backend through openAPI and swagger. Learnt to work with Redux toolkit and had a change to work with Material UI and most ANT fields ",
+        "text": "Got an opportunity to work on multiple large-scale projects, mostly built with next and react, communicating with backend through openAPI and swagger. Learnt to work with Redux toolkit and had a change to work with typescript more closely. Also got introduced to material UI and ANT fields ",
         "link": "https://www.monstarlab.com",
         "tags": [
           "react",
@@ -29,7 +29,9 @@
           "redux toolkit",
           "openAPI",
           "swagger",
-          "ANT design"
+          "ANT design",
+          "accessibility",
+          "storybook"
         ]
       },
       {
@@ -42,7 +44,7 @@
       {
         "company": "Praqma - now Eficode",
         "time": "August 2017 - June 2020",
-        "text": "Rebuilding two large websites in Jekyll with contents generated from markdown files and maintaining it.",
+        "text": "Rebuilding two large websites in Jekyll with contents generated from markdown files and maintaining it. Other related frontend tasks",
         "link": "https://www.eficode.com",
         "tags": ["jekyll", "liquid", "sass"]
       },
@@ -63,7 +65,23 @@
         "title": "Sydhavnen Aarhus",
         "text": "For this project I have created a system of 'blogs' in Next. Which in this case, are the places that fall into certain categories and by their coordinates they are displayed on interactive open map. Search feature, filtering feature. yet to implement a possibility to submit own enties",
         "link": "https://sydhaven.vercel.app/",
-        "tags": ["Design", "React", "Next", "open map"]
+        "tags": ["Design", "React", "Next", "open map", "typescript"]
+      },
+      {
+        "image": "/images/anetacamo_small.png",
+        "time": "Last update 2023",
+        "title": "My portfolio",
+        "text": "My own blog where I can organise my activities and illustartions into different categories. Tagging & blogging system, interactive pagination, shoping cart. Liking feature - likes stored in firebase plus Cart items & like arrays stored in local storage. Also implemented Stripe payment with own Node server hosted on Heroku. For now removed",
+        "link": "/",
+        "tags": ["React", "Node", "stripe", "Design", "Illustration"]
+      },
+      {
+        "image": "/images/sidliste.png",
+        "time": "2022",
+        "title": "Prague suburbs",
+        "text": "Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. Created my own font via react images. Lots of css & js animations, still in progress + Illustrations",
+        "link": "https://anetacamo.github.io/sidliste",
+        "tags": ["react", "Design", "Illustration", "JS"]
       },
       {
         "image": "/images/sweetcity.png",
@@ -73,35 +91,26 @@
         "link": "http://www.sweetcity.dk",
         "tags": ["React", "Design", "Illustration"]
       },
+
       {
-        "image": "/images/anetacamo_small.png",
+        "image": "/images/movie-search.png",
         "time": "2021",
-        "title": "My portfolio",
-        "text": "My own blog where I can organise my activities and illustartions into different categories. Tagging & blogging system, interactive pagination, shoping cart. Liking feature - likes stored in firebase plus Cart items & like arrays stored in local storage. Also implemented Stripe payment with own Node server hosted on Heroku. For now removed",
-        "link": "/",
-        "tags": ["React", "Node", "stripe", "Design", "Illustration"]
+        "title": "Movie Search",
+        "text": "one page coded in React where you can search through the online database of movies and display their info, save them as liked or seen into the local browser storage. Authentication via Firebase",
+        "link": "https://anetacamo.github.io/filmclub",
+        "tags": ["React", "Design"]
       },
       {
-        "image": "/images/sidliste.png",
-        "time": "December 2021",
-        "title": "Prague suburbs",
-        "text": "Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. Created my own font via react images. Lots of css & js animations, still in progress + Illustrations",
-        "link": "https://anetacamo.github.io/sidliste",
-        "tags": ["react", "Design", "Illustration", "JS"]
+        "image": "/images/migrace.png",
+        "time": "2020",
+        "title": "Fair Migration Politics",
+        "text": "Building a webpage in wordpress on the custom built and designed template; illustrations also done by me",
+        "link": "http://www.ferovamigracnipolitika.cz/english/",
+        "tags": ["Wordpress", "PHP", "Illustration"]
       },
-
-      {
-        "image": "/images/praqma.png",
-        "time": "2019",
-        "title": "Verifa",
-        "text": "A website with blog built in Gatsby with React. Blogging system fed by markdown files via GraphQl",
-        "link": "https://www.verifa.io",
-        "tags": ["React", "Gatsby", "GraphQL"]
-      },
-
       {
         "image": "/images/mdm.png",
-        "time": "2019",
+        "time": "2019-2020",
         "title": "MDM / Minimum Decent Wage",
         "text": "Built and designed website via wordpress from scratch, Advanced Custom Fields to make it easier to fill in everything. Illustrations.",
         "link": "https://www.dustojnamzda.cz/minimum-decent-wage/",
@@ -115,20 +124,12 @@
         ]
       },
       {
-        "image": "/images/migrace.png",
-        "time": "October 2020",
-        "title": "Fair Migration Politics",
-        "text": "Building a webpage in wordpress on the custom built and designed template; illustrations also done by me",
-        "link": "http://www.ferovamigracnipolitika.cz/english/",
-        "tags": ["Wordpress", "PHP", "Illustration"]
-      },
-      {
-        "image": "/images/movie-search.png",
-        "time": "February 2020",
-        "title": "Movie Search",
-        "text": "one page coded in React where you can search through the online database of movies and display their info, save them as liked or seen into the local browser storage. Authentication via Firebase",
-        "link": "https://anetacamo.github.io/filmclub",
-        "tags": ["React", "Design"]
+        "image": "/images/praqma.png",
+        "time": "2019",
+        "title": "Verifa",
+        "text": "A website with blog built in Gatsby with React. Blogging system fed by markdown files via GraphQl. Implemented CMS called forestry on top of it",
+        "link": "https://www.verifa.io",
+        "tags": ["React", "Gatsby", "GraphQL", "forestry"]
       }
     ]
   }
