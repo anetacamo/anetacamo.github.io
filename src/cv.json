@@ -62,9 +62,9 @@
       {
         "image": "/images/sidliste.png",
         "time": "Still in progress",
-        "title": "Sydhavnen Aarhus",
-        "text": "For this project I have created a system of 'blogs' in Next. Which in this case, are the places that fall into certain categories and by their coordinates they are displayed on interactive open map. Search feature, filtering feature. yet to implement a possibility to submit own enties",
-        "link": "https://sydhaven.vercel.app/",
+        "title": "Nabø Aarhus",
+        "text": "Opensource to be interactive map (using OpenStreetMap API). Here for collecting cultural institutions scattered all over the city of Aarhus. Data are collected from google sheets. And also uploaded there through contact form",
+        "link": "https://nabo.vercel.app/",
         "tags": ["Design", "React", "Next", "open map", "typescript"]
       },
       {
