@@ -19,7 +19,7 @@
       {
         "company": "Nodes - now MonstarLab",
         "position": "frontend engineer",
-        "time": "from December 2021",
+        "time": "2021 - december 2022",
         "text": "Got an opportunity to work on multiple large-scale projects, mostly built with next and react, communicating with backend through openAPI and swagger. Learnt to work with Redux toolkit and had a change to work with typescript more closely. Also got introduced to material UI and ANT fields ",
         "link": "https://www.monstarlab.com",
         "tags": [
@@ -36,7 +36,7 @@
       },
       {
         "company": "Phable",
-        "time": "from June 2020",
+        "time": "2020",
         "text": "Working as a freelance front-end developer for a design office based in London, building webpages with Gatsby and React for various customers.",
         "link": "https://www.phable.io",
         "tags": ["react", "graphQL", "Gatsby"]
