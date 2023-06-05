@@ -20,7 +20,7 @@ function BlogList({ onItemAdd, itemsInCart }) {
       <Link to='/cv'>
         <div className='portrait movedup'></div>
       </Link>
-      <Link to='/tagged/comics/'>
+      <Link to='/tagged/illustration/'>
         <div className='postcard small-sized'></div>
       </Link>
       {/* <div className='carousel-top' />
