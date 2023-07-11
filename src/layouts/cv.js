@@ -39,19 +39,18 @@ const Cv = () => {
               I have been working as a freelance or employed front-ender mostly
               for the last four years. Before getting introduced to my favourite
               combo of React, Next and typescript I did a lot of in jekyll and
-              liquid and was tweaking my own wordpress templates. I had also a
-              chance to work with Angular, React Native, Vue. On top of that, I
-              dont usually turn down offer to design and implement my own
-              illustrations to the project.
+              liquid and was tweaking my own wordpress templates. On top of
+              that, I dont usually turn down offer to design and implement my
+              own illustrations to the project.
             </p>
             <p>
               {' '}
-              I beliebve I have eye for small details, smooth transitions and
-              enjoy making sure everything flows on all devices to implementing
-              the SEO practices. I have also learnt a lot about accessibility in
-              my previous poject. I like to automate things and make code as
-              modular and reusable as possible and am not afraid to set up own
-              server or hook the web to any kind of api or database.
+              I am trying to have an eye for small details, smooth transitions
+              and enjoy making sure everything flows on all devices. I have also
+              learnt a lot about accessibility in my previous poject. I like to
+              automate things and make code as modular and reusable as possible
+              and am not afraid to set up my own server or hook the web to any
+              kind of api.
             </p>
             <h2>TOOLSTACK</h2>
             {cv.cv.toolstack.map((tool) => (
