@@ -12,12 +12,10 @@ import {
   ShoppingCart,
   Shop,
   Tagged,
-  WebApps,
+  Pleo,
 } from './';
 import { Route, Switch } from 'react-router-dom';
 import { initGA, trackingPageGA } from './reactGA';
-import { Link } from 'react-router-dom';
-import { FaArrowRight } from 'react-icons/fa';
 
 function App() {
   useEffect(() => {
@@ -53,7 +51,6 @@ function App() {
       setItemsInCart([...itemsInCart, itemInCart]); //simple value
     } else {
       // otherwise increase amount plus 1
-      console.log('increased number at existing item');
       localStorage.setItem(
         'cartContent',
         JSON.stringify([
@@ -91,59 +88,6 @@ function App() {
     <>
       <Logo />
       <KeywordSearch />
-      {/* <div
-        className='flex'
-        style={{
-          justifyContent: 'space-between',
-          position: 'fixed',
-          width: '100%',
-          justifyContent: 'center',
-          zIndex: 3,
-          paddingTop: 0,
-          marginTop: -6,
-          paddingBottom: 48,
-          backgroundImage:
-            'linear-gradient(180deg, rgb(114 255 210) 40%, transparent)',
-        }}
-      > */}
-      {/* <div className='flex' style={{}}>
-          <Link to='/all-tags'>
-            <h3 style={{ textDecoration: 'underline' }}>shop</h3>
-          </Link>
-          <FaArrowRight style={{ marginLeft: 12, paddingTop: 20 }} />
-          <Link to='/tagged/ceramics'>
-            <h3 style={{ marginLeft: 12, textDecoration: 'underline' }}>
-              ceramics
-            </h3>
-          </Link>
-
-          <Link to='/tagged/print'>
-            <h3 style={{ marginLeft: 12, textDecoration: 'underline' }}>
-              prints
-            </h3>
-          </Link>
-          <Link to='/tagged/linoleum'>
-            <h3 style={{ marginLeft: 12, textDecoration: 'underline' }}>
-              linocut
-            </h3>
-          </Link>
-          {/* <Link to='/tagged/linoleum'>
-            <h3 style={{ marginLeft: 12, textDecoration: 'underline' }}>
-              all tags
-            </h3>
-          </Link>
-          <Link to='/tagged/linoleum'>
-            <h3 style={{ marginLeft: 12, textDecoration: 'underline' }}>
-              about
-            </h3>
-          </Link> */}
-      {/* <Link to='/tagged/flower'>
-              <h3 style={{ marginLeft: 12, textDecoration: 'underline' }}>
-                paper flowers
-              </h3>
-            </Link> 
-        </div> */}
-      {/* </div> */}
       <ShoppingCart itemsInCart={itemsInCart} />
       <Switch>
         <Route
@@ -154,8 +98,9 @@ function App() {
           exact
         />
         <Route path='/cv' component={Cv} exact />
-        <Route path='/web' component={WebApps} exact />
+        {/* <Route path='/web' component={WebApps} exact /> */}
         <Route path='/all-tags' component={AllTags} exact />
+        <Route path='/pleo' component={Pleo} exact />
         <Route path='/shop' component={Shop} exact />
         <Route
           path='/cart'

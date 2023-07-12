@@ -30,9 +30,9 @@ const Cart = ({ itemsInCart, onCartItemRemove, onItemAdd }) => {
         name='Your Bag'
         description='Review your items and proceed to checkout'
       />
-      <Link to='/cv'>
+      {/* <Link to='/cv'>
         <div className='portrait'></div>
-      </Link>
+      </Link> */}
       <div className='center'>
         <div className='divider'></div>
         <YourBag

@@ -17,9 +17,9 @@ function BlogList({ onItemAdd, itemsInCart }) {
         description='Hi! My name is Aneta and I have been working as a freelance front end developer and illustrator'
         image='/images/intro.png'
       />
-      <Link to='/cv'>
+      {/* <Link to='/cv'>
         <div className='portrait movedup'></div>
-      </Link>
+      </Link> */}
       <Link to='/tagged/illustration/'>
         <div className='postcard small-sized'></div>
       </Link>
