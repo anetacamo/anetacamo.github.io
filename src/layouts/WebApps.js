@@ -1,5 +1,4 @@
 import React from 'react';
-import cv from '../cv.json';
 import { Footer, Href, MetaTags } from '../components';
 import { Link } from 'react-router-dom';
 

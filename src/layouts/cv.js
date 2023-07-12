@@ -11,9 +11,9 @@ const Cv = () => {
         description='Hi! My name is Aneta and I have been working as a freelance front end developer and illustrator'
         image='/images/intro.png'
       />
-      <Link to='/cv'>
+      {/* <Link to='/cv'>
         <div className='portrait'></div>
-      </Link>
+      </Link> */}
       <div className='blog-container cv-container'>
         <div className='blogs'>
           <div className='portrait-img'>
@@ -36,22 +36,27 @@ const Cv = () => {
             </p>
             <div className='divider'></div>
             <p>
-              I have been working as a freelance or employed front-ender mostly
-              for the last four years. Before getting introduced to my favourite
-              combo of React, Next and typescript I did a lot of in jekyll and
-              liquid and was tweaking my own wordpress templates. On top of
-              that, I dont usually turn down offer to design and implement my
-              own illustrations to the project.
+              I have been working as a freelance or employed front-end developer
+              since 2018. Before getting introduced to my favourite combo of
+              _React, Next and typescript_ I did a lot of in jekyll and liquid
+              and was tweaking my own wordpress templates.
             </p>
             <p>
-              {' '}
-              I am trying to have an eye for small details, smooth transitions
-              and enjoy making sure everything flows on all devices. I have also
-              learnt a lot about accessibility in my previous poject. I like to
-              automate things and make code as modular and reusable as possible
-              and am not afraid to set up my own server or hook the web to any
-              kind of api.
+              I have the most experience with creating smaller web-aps, with
+              blogs, filtering, maps, interactive forms, tables, loggings in,
+              graphs and any other custom features by tweeking my own react
+              component libraries. I am also used to communicate with APIs,
+              mostly using swagger, openapi and redux toolkit. I have also seted
+              up simple logging in, liking features and other databases using
+              firebase or simply google sheets.
             </p>
+            <p>
+              Although I am still definitely placed more on visual side of FE
+              development I am really curious about all the exciting and
+              powerful features that working more with servers and databases can
+              bring.
+            </p>
+
             <h2>TOOLSTACK</h2>
             {cv.cv.toolstack.map((tool) => (
               <li>{tool}</li>

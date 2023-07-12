@@ -19,9 +19,9 @@ const Blog = ({ match, onItemAdd }) => {
         description={blog.description}
         image={blog.image}
       />
-      <Link to='/cv'>
+      {/* <Link to='/cv'>
         <div className='portrait'></div>
-      </Link>
+      </Link> */}
 
       <div className='single-blog-container'>
         {blog.gallery ? (
