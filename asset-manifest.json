@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.66b98722.chunk.css",
-    "main.js": "/static/js/main.b2265596.chunk.js",
-    "main.js.map": "/static/js/main.b2265596.chunk.js.map",
+    "main.css": "/static/css/main.c07d0dd1.chunk.css",
+    "main.js": "/static/js/main.f6f0dfa3.chunk.js",
+    "main.js.map": "/static/js/main.f6f0dfa3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fbc8ac00.js",
     "runtime-main.js.map": "/static/js/runtime-main.fbc8ac00.js.map",
     "static/js/2.c79c7df0.chunk.js": "/static/js/2.c79c7df0.chunk.js",
     "static/js/2.c79c7df0.chunk.js.map": "/static/js/2.c79c7df0.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.66b98722.chunk.css.map": "/static/css/main.66b98722.chunk.css.map",
+    "static/css/main.c07d0dd1.chunk.css.map": "/static/css/main.c07d0dd1.chunk.css.map",
     "static/js/2.c79c7df0.chunk.js.LICENSE.txt": "/static/js/2.c79c7df0.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/static/media/violetsans-regular-webfont.919ee072.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.fbc8ac00.js",
     "static/js/2.c79c7df0.chunk.js",
-    "static/css/main.66b98722.chunk.css",
-    "static/js/main.b2265596.chunk.js"
+    "static/css/main.c07d0dd1.chunk.css",
+    "static/js/main.f6f0dfa3.chunk.js"
   ]
 }
