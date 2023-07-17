@@ -1,54 +1,36 @@
 import React from 'react';
-import { Footer, MetaTags } from '../components';
+import { Footer, MetaTags, Portrait } from '../components';
 import { Link } from 'react-router-dom';
 
 const Pleo = () => {
   return (
     <>
-      <MetaTags
-        name='CV'
-        description='Hi! My name is Aneta and I have been working as a freelance front end developer and illustrator'
-        image='/images/intro.png'
-      />
-      {/* <Link to='/cv'>
-        <div className='portrait'></div>
-      </Link> */}
+      <MetaTags name='Pleo' image='/images/intro.png' />
       <div className='blog-container cv-container'>
         <div className='blogs'>
-          <div className='portrait-img'>
-            <img
-              src='/images/intro.png'
-              alt='aneta camo portrait'
-              style={{ objectFit: 'cover', filter: 'none' }}
-            />
-          </div>
+          <Portrait />
           <div className='header' style={{ marginTop: 80, marginBottom: 80 }}>
             <h1>Dear Pleo</h1>
 
             <p>
               I found your really nicely written application through LinkedIn
-              where you are looking for a front end developer. And because I
-              usually write in form of code, and do not have any advanced text
-              editor installed at my current machine, I thought I might as well
-              write you through my website in a very frontend way. Thank you for
-              following the suspicious link:){' '}
-            </p>
-            <p>
-              I would love to work at Pleo because aside that it sounds like
-              there is a bunch of nice and competent collegues and genuinely
-              nice vibe - it also feels like a place where one could learn a lot
-              and get to work on some exciting and challenging work. I really
-              like the pleo website, both its playfil design and nice tone.
-              Therefore I would love to write you a bit about me in hopes there
-              could be a potential match.
+              where you are looking for a front end developer. I would love to
+              work at Pleo because aside that it sounds like there is a bunch of
+              nice and competent collegues and genuinely nice vibe - it also
+              feels like a place where one could learn a lot and get to work on
+              some exciting and challenging projects. I really like the pleo
+              website, both its playful design and nice tone. Therefore I would
+              love to write you a bit about me in hopes there could be a
+              potential match. :)
             </p>
             <p>
               I come from Prague and have lived in Denmark for the past 6 years
-              and can speak danish in a slow manner. I came here to study my
-              masters in Aarhus that were combination of IT and sociology - and
-              since I landed the first internship (in Praqma at the time, now
-              Eficode - I afterwards stayed and worked there for almost three
-              years), I have been working as a front end developer.
+              and can speak danish [slowly]. I came here to study my macpsters
+              in Aarhus that were combination of IT and sociology - and since I
+              landed the first internship (in Praqma at the time, now Eficode) ,
+              I have been working as a front end developer. I afterwards stayed
+              in Praqma and worked there for almost three years. Mostly with
+              liquid, jekyll and wordpress.
             </p>
             <p>
               Four years ago, I started working with react and have been coding
@@ -86,7 +68,8 @@ const Pleo = () => {
               I really enjoy frontend, love setting up new projects and seeing
               nice designs becoming interactive, I also enjoy trying out new
               frameworks or languages and would love to have an opportunity to
-              work on some lbigger projects again.{' '}
+              work on some bigger projects again and solve problems that it
+              brings.{' '}
             </p>
             <p>
               For the most of my time in Denmark I have been based in Aarhus but

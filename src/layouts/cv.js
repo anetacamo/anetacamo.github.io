@@ -1,7 +1,6 @@
 import React from 'react';
 import cv from '../cv.json';
-import { Footer, Href, MetaTags } from '../components';
-import { Link } from 'react-router-dom';
+import { Footer, Href, MetaTags, Portrait } from '../components';
 
 const Cv = () => {
   return (
@@ -16,13 +15,7 @@ const Cv = () => {
       </Link> */}
       <div className='blog-container cv-container'>
         <div className='blogs'>
-          <div className='portrait-img'>
-            <img
-              src='/images/intro.png'
-              alt='aneta camo portrait'
-              style={{ objectFit: 'cover', filter: 'none' }}
-            />
-          </div>
+          <Portrait />
           <div className='header'>
             <h2>
               <span className='large-font'>Hi</span> my name is Aneta Camo

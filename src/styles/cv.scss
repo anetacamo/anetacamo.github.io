@@ -19,29 +19,6 @@
     }
   }
 
-  .portrait-img {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    right: 0;
-    margin-top: -40px;
-    img {
-      object-fit: contain;
-    }
-    @media (max-width: 1200px) {
-      position: fixed;
-      left: -36px;
-      bottom: 6px;
-      width: 300px;
-      margin-top: 8px;
-      margin-bottom: -48px;
-    }
-    @media (max-width: 1000px) {
-      position: static;
-      margin-left: -40px;
-    }
-  }
-
   li:before,
   i,
   a {
