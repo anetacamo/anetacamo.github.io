@@ -31,23 +31,18 @@ const Cv = () => {
             <p>
               I have been working as a freelance or employed front-end developer
               since 2018. Before getting introduced to my favourite combo of
-              _React, Next and typescript_ I did a lot of in jekyll and liquid
-              and was tweaking my own wordpress templates.
+              _React, Next and typescript_ I did code a lot in jekyll and liquid
+              and was tweaking my own wordpress templates with PHP.
             </p>
             <p>
-              I have the most experience with creating smaller web-aps, with
-              blogs, filtering, maps, interactive forms, tables, loggings in,
-              graphs and any other custom features by tweeking my own react
-              component libraries. I am also used to communicate with APIs,
-              mostly using swagger, openapi and redux toolkit. I have also seted
-              up simple logging in, liking features and other databases using
-              firebase or simply google sheets.
-            </p>
-            <p>
-              Although I am still definitely placed more on visual side of FE
-              development I am really curious about all the exciting and
-              powerful features that working more with servers and databases can
-              bring.
+              I have extensive expertise in developing compact web applications,
+              building blogs, filtering, maps, interactive forms, tables,
+              loggings in, graphs and any other custom features. I love
+              challenges and enjoy coding more complex solutions in javascript.
+              I am also used to communicate with APIs, mostly using swagger,
+              openapi and redux toolkit. I have also set up backend for logging
+              in, liking features and more complex data setups. Also built a
+              node server to communicate with Stripe and handle payments.
             </p>
 
             <h2>TOOLSTACK</h2>

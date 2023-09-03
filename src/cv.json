@@ -4,23 +4,24 @@
       "React",
       "Next",
       "Typescript",
+      "Ant Design, Material UI, Bootstrap, Sass",
+      "Firebase, Heroku",
+      "OpenAPI, Postman",
+      "Axios",
+      "Redux toolkit",
+      "Git",
+      "Serverless Deployment via Vercel",
+      "React Router",
       "Jekyll & liquid",
       "Gatsby and GraphQl",
-      "Ant Design, Material UI, Bootstrap, Sass",
-      "Firebase",
-      "Redux toolkit",
-      "PHP",
-      "Git",
-      "CMSs like Wordpress, Forestry, Contentful, Webflow, Squarespace, HubSpot",
-      "SEO, UX",
-      "Photoshop"
+      "PHP"
     ],
     "experience": [
       {
         "company": "Nodes - now MonstarLab",
         "position": "frontend engineer",
         "time": "2021 - december 2022",
-        "text": "Got an opportunity to work on multiple large-scale projects, mostly built with next and react, communicating with backend through openAPI and swagger. Learnt to work with Redux toolkit and had a change to work with typescript more closely. Also got introduced to material UI and ANT fields ",
+        "text": "I had an opportunity to contribute to numerous large-scale projects primarily, communicating with backend through openAPI and swagger. Also had a chance to work with Redux toolkit and typescript more closely. I have Also gotten introduced to material UI and ANT fields.",
         "link": "https://www.monstarlab.com",
         "tags": [
           "react",
@@ -43,7 +44,7 @@
       {
         "company": "Praqma - now Eficode",
         "time": "August 2017 - June 2020",
-        "text": "Rebuilding two large websites in Jekyll with contents generated from markdown files and maintaining it. Other related frontend tasks",
+        "text": "My responsibilities included rebuilding and optimizing two extensive websites using Jekyll, generating content from markdown files, and performing frontend maintenance tasks.",
         "link": "https://www.eficode.com",
         "tags": ["jekyll", "liquid", "sass"]
       },
@@ -51,7 +52,7 @@
         "company": "SYMBIO digital,s.r.o.",
         "position": "intern",
         "time": "November 2015 - June 2016",
-        "text": "Building the small websites and doing smaller front-end tasks for various customers, mostly taking care of HTML & CSS, workings with various CMSs.",
+        "text": "I crafted small websites and handled various front-end tasks for clients, mainly focusing on HTML, CSS, and working with various CMS platforms.",
         "link": "https://www.symbio.agency",
         "tags": ["php", "wordpress", "html", "js"]
       }
