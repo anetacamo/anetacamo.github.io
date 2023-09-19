@@ -1,15 +1,17 @@
 .cv-container {
   .header {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: -2rem;
     .large-font {
-      font-size: 6.5em;
+      font-size: 8em;
       color: $blue;
-      float: left;
-      margin-top: -0.33em;
-      margin-left: -12px;
+      margin: 0;
+      margin-left: -6px;
       margin-right: 12px;
       @media (max-width: 380px) {
-        font-size: 3.1em;
-        margin-top: -0.26em;
+        font-size: 5em;
         margin-left: -4px;
         margin-right: 8px;
       }
@@ -72,6 +74,9 @@
     li {
       margin: 4px;
       margin-left: 0;
+    }
+    .tags {
+      max-width: 400px;
     }
     .tags li {
       display: inline-block;

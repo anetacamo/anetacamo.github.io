@@ -16,22 +16,24 @@ const Cv = () => {
       <div className='blog-container cv-container'>
         <div className='blogs'>
           <Portrait />
-          <div className='header'>
-            <h2>
-              <span className='large-font'>Hi</span>
-            </h2>
-            <Href href='mailto:anetacamova@gmail.com?subject=greeting'>
-              anetacamo@gmail.com
-            </Href>
-            <br />
-            <p style={{ marginTop: 4 }}>
-              born in Prague &nbsp; | &nbsp; based in Aarhus &nbsp;
-            </p>
+          <div>
+            <div className='header'>
+              <h2 className='large-font'>Hi</h2>
+              <div>
+                <Href href='mailto:anetacamova@gmail.com?subject=greeting'>
+                  anetacamo@gmail.com
+                </Href>
+                <br />
+                <p style={{ marginTop: 4, marginBottom: -34 }}>
+                  born in Prague &nbsp; | &nbsp; based in Aarhus &nbsp;
+                </p>
+              </div>
+            </div>
             <div className='divider'></div>
             <p>
               I have been working as a freelance or employed front-end developer
               since 2018. Before getting introduced to my favourite combo of
-              _React, Next and typescript_ I did code a lot in jekyll and liquid
+              React, Next and typescript. I did code a lot in jekyll and liquid
               and was tweaking my own wordpress templates with PHP.
             </p>
             <p>
