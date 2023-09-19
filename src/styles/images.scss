@@ -42,5 +42,10 @@
     object-fit: contain;
     object-position: center;
     filter: brightness(0) !important;
+    &.no-filter {
+      filter: none !important;
+      height: 80%;
+      margin: 10% -10%;
+    }
   }
 }

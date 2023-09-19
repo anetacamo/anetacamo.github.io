@@ -13,6 +13,7 @@ import {
   Shop,
   Tagged,
   Pleo,
+  Invoice,
 } from './';
 import { Route, Switch } from 'react-router-dom';
 import { initGA, trackingPageGA } from './reactGA';
@@ -101,6 +102,7 @@ function App() {
         {/* <Route path='/web' component={WebApps} exact /> */}
         <Route path='/all-tags' component={AllTags} exact />
         <Route path='/pleo' component={Pleo} exact />
+        <Route path='/invoice' component={Invoice} exact />
         <Route path='/shop' component={Shop} exact />
         <Route
           path='/cart'

@@ -18,7 +18,7 @@ const Cv = () => {
           <Portrait />
           <div className='header'>
             <h2>
-              <span className='large-font'>Hi</span> my name is Aneta Camo
+              <span className='large-font'>Hi</span>
             </h2>
             <Href href='mailto:anetacamova@gmail.com?subject=greeting'>
               anetacamo@gmail.com
@@ -37,12 +37,11 @@ const Cv = () => {
             <p>
               I have extensive expertise in developing compact web applications,
               building blogs, filtering, maps, interactive forms, tables,
-              loggings in, graphs and any other custom features. I love
-              challenges and enjoy coding more complex solutions in javascript.
-              I am also used to communicate with APIs, mostly using swagger,
-              openapi and redux toolkit. I have also set up backend for logging
-              in, liking features and more complex data setups. Also built a
-              node server to communicate with Stripe and handle payments.
+              loggins, graphs and any other custom features. I love challenges
+              and enjoy coding more complex solutions in javascript. I am also
+              used to communicate with APIs, mostly using swagger, openapi and
+              redux toolkit. I have also set up backend for logging in, liking
+              features and more complex data setups.
             </p>
 
             <h2>TOOLSTACK</h2>
@@ -76,10 +75,14 @@ const Cv = () => {
             <h2>REFERENCES</h2>
             <div className='boxes'>
               {cv.cv.references.map((ref) => (
-                <div className='box'>
+                <div className='box' key={ref.title}>
                   <div className='cv-circle circle'>
                     <Href href={ref.link}>
-                      <img src={ref.image} alt='a wallet illustration' />
+                      <img
+                        src={ref.image}
+                        className={ref.title === 'PipeGame' && 'no-filter'}
+                        alt={ref.title}
+                      />
                     </Href>
                   </div>
                   <h2>
@@ -92,6 +95,11 @@ const Cv = () => {
                       <li>{tag}</li>
                     ))}
                   </div>
+                  {ref.repo && (
+                    <Href href={ref.repo}>
+                      <p>github repo</p>
+                    </Href>
+                  )}
                 </div>
               ))}
             </div>

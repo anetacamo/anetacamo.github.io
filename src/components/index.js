@@ -13,6 +13,7 @@ export { default as Formspree } from './formspree';
 export { default as Href } from './href';
 export { default as Image } from './image';
 export { default as Input } from './input';
+export { default as Invoice } from '../layouts/Invoice';
 export { default as JumpingText } from './jumpingText';
 export { default as KeywordSearch } from './keywordSearch';
 export { default as Like } from './like';
