@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.63875c5c.chunk.css",
-    "main.js": "/static/js/main.9fea01ce.chunk.js",
-    "main.js.map": "/static/js/main.9fea01ce.chunk.js.map",
+    "main.css": "/static/css/main.8801c85c.chunk.css",
+    "main.js": "/static/js/main.8e0e5ce6.chunk.js",
+    "main.js.map": "/static/js/main.8e0e5ce6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fbc8ac00.js",
     "runtime-main.js.map": "/static/js/runtime-main.fbc8ac00.js.map",
     "static/js/2.05fa20da.chunk.js": "/static/js/2.05fa20da.chunk.js",
     "static/js/2.05fa20da.chunk.js.map": "/static/js/2.05fa20da.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.63875c5c.chunk.css.map": "/static/css/main.63875c5c.chunk.css.map",
+    "static/css/main.8801c85c.chunk.css.map": "/static/css/main.8801c85c.chunk.css.map",
     "static/js/2.05fa20da.chunk.js.LICENSE.txt": "/static/js/2.05fa20da.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/static/media/violetsans-regular-webfont.919ee072.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.fbc8ac00.js",
     "static/js/2.05fa20da.chunk.js",
-    "static/css/main.63875c5c.chunk.css",
-    "static/js/main.9fea01ce.chunk.js"
+    "static/css/main.8801c85c.chunk.css",
+    "static/js/main.8e0e5ce6.chunk.js"
   ]
 }
