@@ -8,7 +8,7 @@ const Logo = () => {
       <Link to='/'>
         <Image path='/anetacamo_small.png' nameclass='logo' />
       </Link>
-      <div className='mob-menu'>
+      {/* <div className='mob-menu'>
         <Link to='/all-tags'>
           <p>All tags & shop</p>
         </Link>
@@ -20,7 +20,7 @@ const Logo = () => {
           {' '}
           <p>shop ceramics</p>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

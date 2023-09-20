@@ -63,7 +63,7 @@
         "image": "/images/sidliste.png",
         "time": "August 2023",
         "title": "Nabø Aarhus",
-        "text": "Opensource to be interactive map (using OpenStreetMap API). Here for collecting cultural institutions scattered all over the city of Aarhus. Data are collected from google sheets. And also uploaded there through contact form",
+        "text": "interactive map (OpenStreetMap API). for collecting cultural institutions scattered all over the city of Aarhus and Tromso, Norway. Data are collected from google sheets. And also uploaded there through contact form",
         "link": "https://kultur-kortet/",
         "tags": ["React", "Next", "open map", "typescript"],
         "repo": "https://github.com/anetacamo/nabo"

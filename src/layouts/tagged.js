@@ -116,7 +116,6 @@ const Tagged = ({ match, onItemAdd }) => {
               {blog.tags.includes('shop') && !blog.sold && (
                 <div
                   className='flex shopping-info'
-                  style={{ backgroundColor: '#c0ffeb' }}
                   onClick={() => onItemAdd(blog.title, '', blog.price)}
                 >
                   <div>
@@ -127,6 +126,7 @@ const Tagged = ({ match, onItemAdd }) => {
                   </div>
                   <div className='shop-icon'>
                     <img src='/images/shopping_bag.png' />
+                    <span className='plus-icon'>+</span>
                   </div>
                 </div>
               )}

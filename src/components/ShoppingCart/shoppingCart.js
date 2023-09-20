@@ -35,7 +35,8 @@ const ShoppingCart = ({ itemsInCart }) => {
         <Link to="/tagged/flower">flowers</Link>
       </div> */}{' '}
       <Link to='/all-tags'>
-        <Image path='/obyvak.png' title='Shop' />
+        <Image path='/blank.png' title='Shop' />
+        <span className='shop-link'>SHOP</span>
       </Link>
     </div>
   );
