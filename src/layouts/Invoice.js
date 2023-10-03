@@ -18,7 +18,8 @@ const Invoice = () => {
       <div className='blog-container cv-container'>
         <div className='blogs'>
           Aneta Camo <br />
-          Aarhus 8240 <br />
+          Vejle Ø 7120 <br />
+          Stejlbjergvej 15 <br />
           AnetaCamo@gmail.com <br />
           anetacamo.github.io <br />
           <br />
@@ -59,7 +60,7 @@ const Invoice = () => {
           <i>Payment Information</i> <br />
           Bank Name: NORDEA <br />
           Account Number: 4391803280 <br />
-          SWIFT/BIC: 2316 <br />
+          REG NR: 2316 <br />
         </div>
       </div>
       <Footer />

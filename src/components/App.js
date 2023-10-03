@@ -101,7 +101,7 @@ function App() {
         <Route path='/cv' component={Cv} exact />
         {/* <Route path='/web' component={WebApps} exact /> */}
         <Route path='/all-tags' component={AllTags} exact />
-        <Route path='/pleo' component={Pleo} exact />
+
         <Route path='/invoice' component={Invoice} exact />
         <Route path='/shop' component={Shop} exact />
         <Route
