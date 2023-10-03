@@ -7,7 +7,9 @@ function BlogList({ onItemAdd, itemsInCart }) {
   const [pageSize, setPageSize] = useState(15);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const posts = blogs.filter((blog) => !blog.tags?.includes('ceramics'));
+  const posts = blogs
+    .filter((blog) => !blog.tags?.includes('ceramics'))
+    .filter((blog) => !blog.unpublished);
   const pages = Math.ceil(posts?.length / pageSize);
 
   return (

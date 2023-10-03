@@ -5,24 +5,6 @@ import { slugify } from '../utils/slugify';
 import shop from '../shop.json';
 
 const AllTags = ({}) => {
-  // const tags = [];
-  // // eslint-disable-next-line
-  // blogs.map((blog) => {
-  //   var blogtags = blog.tags.split(', ');
-  //   // var image = blog.image;
-  //   // eslint-disable-next-line
-  //   blogtags.map((btag) => {
-  //     //check if tags array contains an object with btag
-  //     if (tags.filter((tag) => tag.title === btag).length > 0) {
-  //     } else {
-  //       let obj = {};
-  //       obj['name'] = btag;
-  //       obj['image'] = blog.image;
-  //       tags.push(obj);
-  //     }
-  //   });
-  // });
-
   const singleTags = [];
   // eslint-disable-next-line
   blogs.map((blog) => {

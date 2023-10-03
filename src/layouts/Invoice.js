@@ -36,7 +36,8 @@ const Invoice = () => {
           {invoice.town}
           <br />
           {invoice.city}
-          <br /> CVR: 13003335
+          <br />
+          {invoice.cvr}
           <br />
           <br />
           <i>Description of Services/Products Provided</i>
@@ -45,7 +46,7 @@ const Invoice = () => {
             <div>{invoice.job}</div>
             <div>{invoice.price}</div>
           </div>
-          kultur-kortet.dk
+          {invoice.link}
           <br />
           <br />
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>

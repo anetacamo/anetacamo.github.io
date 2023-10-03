@@ -1,9 +1,11 @@
 {
-  "number": "03-2023",
-  "billto": "FRONTLØBERNE",
-  "street": "Jægergårdsgade 154c",
-  "town": "Sydhavnen",
+  "number": "04-2023",
+  "billto": "Laurits Helligsøe",
+  "street": "",
+  "town": "",
   "city": "Aarhus C 8000",
-  "job": "Maintenance work and updates",
-  "price": "8.000DKK"
+  "job": "frontloberne room sharing for september 2023",
+  "link": "https://www.frontloberne.dk/",
+  "price": "550dkk",
+  "cvr": ""
 }

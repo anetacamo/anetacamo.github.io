@@ -111,11 +111,6 @@ const Blogs = ({ blogs, onItemAdd }) => {
                 </Link>
               )}
 
-              {/* {blog.tags.includes('print') && (
-                <div className='circle prints-icon'>
-                  <h2>get this</h2>
-                </div>
-              )} */}
               <div className='text-container'>
                 <p className='title'>{blog.title}</p>
 
