@@ -1,21 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import tagged from '../tagged.json';
+import React, { useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import blogs from '../blogs.json';
+import tagged from '../tagged.json';
 import {
   AllTags,
   Blog,
   BlogList,
   Cart,
   Cv,
+  Invoice,
   KeywordSearch,
   Logo,
-  ShoppingCart,
   Shop,
+  ShoppingCart,
   Tagged,
-  Pleo,
-  Invoice,
 } from './';
-import { Route, Switch } from 'react-router-dom';
 import { initGA, trackingPageGA } from './reactGA';
 
 function App() {

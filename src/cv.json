@@ -61,7 +61,7 @@
     "references": [
       {
         "image": "/images/sidliste.png",
-        "time": "August 2023",
+        "time": "September 2023",
         "title": "Nabø Aarhus",
         "text": "interactive map (OpenStreetMap API). for collecting cultural institutions scattered all over the city of Aarhus and Tromso, Norway. Data are collected from google sheets. And also uploaded there through contact form",
         "link": "https://kultur-kortet/",
@@ -69,13 +69,12 @@
         "repo": "https://github.com/anetacamo/nabo"
       },
       {
-        "image": "/images/g.png",
-        "time": "Still in progress",
-        "title": "PipeGame",
-        "text": "I coded my favourite old MS DOS game in order to get some challenge in javascript and a chance to work more with react native. but that is still in progress and the version is desktop only.",
-        "link": "https://anetacamo.github.io/pipegame",
-        "tags": ["React", "Javascript", "illustration"],
-        "repo": "https://github.com/anetacamo/pipegame"
+        "image": "/images/praqma.png",
+        "time": "in progress",
+        "title": "Sydhavnen",
+        "text": "Simple website done in next",
+        "link": "https://sydhaven.vercel.app",
+        "tags": ["typescript", "react", "next.js"]
       },
       {
         "image": "/images/anetacamo_small.png",
@@ -110,28 +109,15 @@
         "link": "https://anetacamo.github.io/filmclub",
         "tags": ["React", "Open Film Database", "Firebase"]
       },
+
       {
-        "image": "/images/migrace.png",
-        "time": "2020",
-        "title": "Fair Migration Politics",
-        "text": "Building a webpage in wordpress on the custom built and designed template; illustrations also done by me",
-        "link": "http://www.ferovamigracnipolitika.cz/english/",
-        "tags": ["Wordpress", "PHP", "Illustration"]
-      },
-      {
-        "image": "/images/mdm.png",
-        "time": "2019-2020",
-        "title": "MDM / Minimum Decent Wage",
-        "text": "Built and designed website via wordpress from scratch, Advanced Custom Fields to make it easier to fill in everything. Illustrations.",
-        "link": "https://www.dustojnamzda.cz/minimum-decent-wage/",
-        "tags": [
-          "Wordpress",
-          "Php",
-          "Advanced Custom Fields",
-          "Javascript",
-          "Design",
-          "Illustration"
-        ]
+        "image": "/images/g.png",
+        "time": "Still in progress",
+        "title": "PipeGame",
+        "text": "I coded my favourite old MS DOS game in order to get some challenge in javascript and a chance to work more with react native. but that is still in progress and the version is desktop only.",
+        "link": "https://anetacamo.github.io/pipegame",
+        "tags": ["React", "Javascript", "illustration"],
+        "repo": "https://github.com/anetacamo/pipegame"
       },
       {
         "image": "/images/praqma.png",

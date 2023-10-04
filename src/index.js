@@ -1,10 +1,10 @@
+import axios from 'axios';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style.scss';
-import { App } from './components';
 import { HashRouter } from 'react-router-dom';
+import { App } from './components';
 import { ScrollToTop } from './components/';
-import axios from 'axios';
+import './style.scss';
 
 axios.defaults.baseUrl = '/';
 

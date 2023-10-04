@@ -113,3 +113,27 @@ const Cv = () => {
   );
 };
 export default Cv;
+
+// {
+//   "image": "/images/migrace.png",
+//   "time": "2020",
+//   "title": "Fair Migration Politics",
+//   "text": "Building a webpage in wordpress on the custom built and designed template; illustrations also done by me",
+//   "link": "http://www.ferovamigracnipolitika.cz/english/",
+//   "tags": ["Wordpress", "PHP", "Illustration"]
+// },
+// {
+//         "image": "/images/mdm.png",
+//         "time": "2019-2020",
+//         "title": "MDM / Minimum Decent Wage",
+//         "text": "Built and designed website via wordpress from scratch, Advanced Custom Fields to make it easier to fill in everything. Illustrations.",
+//         "link": "https://www.dustojnamzda.cz/minimum-decent-wage/",
+//         "tags": [
+//           "Wordpress",
+//           "Php",
+//           "Advanced Custom Fields",
+//           "Javascript",
+//           "Design",
+//           "Illustration"
+//         ]
+//       },
