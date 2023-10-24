@@ -4,7 +4,7 @@ import { Footer, Href, MetaTags, Portrait } from '../components';
 
 const Cv = () => {
   return (
-    <>
+    <div>
       <MetaTags
         name='CV'
         description='Hi! My name is Aneta and I have been working as a freelance front end developer and illustrator'
@@ -120,7 +120,7 @@ const Cv = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 export default Cv;

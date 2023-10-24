@@ -9,11 +9,11 @@ const MetaTags = ({ name, description, image }) => {
       <title>{name} | AnetaCamo</title>
       <meta name='description' content={description}></meta>
       <link rel='canonical' href='https://anetacamo.github.io' />
-      <meta name='keywords' content='politians, Aarhus, young, culture' />
+      <meta name='keywords' content='web development, art, illustration, react, next.js, javascript, typescript' />
       <meta name='author' content='Aneta Camo' />
       <meta
         property='og:url'
-        content={`https://anetacamo.github.io/${slugify(name)}`}
+        content={`https://anetacamo.github.io/#/${slugify(name)}`}
       />
       <meta property='og:title' content={`${name} | AnetaCamo`} />
       <meta property='og:description' content={description} />
