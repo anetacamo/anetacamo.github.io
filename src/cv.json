@@ -4,24 +4,20 @@
       "React",
       "Next",
       "Typescript",
-      "Ant Design, Material UI, Bootstrap, Sass",
-      "Firebase, Heroku",
+      "Ant Design, Bootstrap, Sass",
+      "Firebase",
       "OpenAPI, Postman",
       "Axios",
-      "Redux toolkit",
-      "Git",
-      "Serverless Deployment via Vercel",
-      "React Router",
-      "Jekyll & liquid",
-      "Gatsby and GraphQl",
-      "PHP"
+      "Redux & redux toolkit",
+      "Git, Vercel",
+      "Jekyll & liquid"
     ],
     "experience": [
       {
         "company": "Nodes - now MonstarLab",
         "position": "frontend engineer",
         "time": "2021 - december 2022",
-        "text": "I had an opportunity to contribute to numerous large-scale projects primarily, communicating with backend through openAPI and swagger. Also had a chance to work with Redux toolkit and typescript more closely. I have Also gotten introduced to material UI and ANT fields.",
+        "text": "I had an opportunity to contribute to numerous large-scale projects primarily Next.js and typescript, communicating with backend through openAPI and swagger. Worked with Redux toolkit more closely and got introduced to material UI and ANT fields.",
         "link": "https://www.monstarlab.com",
         "tags": [
           "react",
@@ -77,6 +73,15 @@
         "tags": ["typescript", "react", "next.js"]
       },
       {
+        "image": "/images/g.png",
+        "time": "Still in progress",
+        "title": "PipeGame",
+        "text": "I coded my favourite old MS DOS game in order to get some challenge in javascript and a chance to work more with react native. but that is still in progress and the version is desktop only.",
+        "link": "https://anetacamo.github.io/pipegame",
+        "tags": ["React", "Javascript", "illustration"],
+        "repo": "https://github.com/anetacamo/pipegame"
+      },
+      {
         "image": "/images/anetacamo_small.png",
         "time": "Last update 2023",
         "title": "My portfolio",
@@ -97,7 +102,7 @@
         "time": "September 2021",
         "title": "Sweet City",
         "text": "A project built in React to promote the upcoming local elections and try to get young people more involved in the process. Implemented markdown files as a way to add new events via github repo. Generated timeline feed by running custom script.",
-        "link": "http://www.sweetcity.dk",
+        "link": "https://anetacamo.github.io/sc/",
         "tags": ["React", "Design", "Illustration"]
       },
 
@@ -110,15 +115,6 @@
         "tags": ["React", "Open Film Database", "Firebase"]
       },
 
-      {
-        "image": "/images/g.png",
-        "time": "Still in progress",
-        "title": "PipeGame",
-        "text": "I coded my favourite old MS DOS game in order to get some challenge in javascript and a chance to work more with react native. but that is still in progress and the version is desktop only.",
-        "link": "https://anetacamo.github.io/pipegame",
-        "tags": ["React", "Javascript", "illustration"],
-        "repo": "https://github.com/anetacamo/pipegame"
-      },
       {
         "image": "/images/praqma.png",
         "time": "2019",

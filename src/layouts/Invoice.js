@@ -20,6 +20,9 @@ const Invoice = () => {
           Aneta Camo <br />
           Vejle Ø 7120 <br />
           Stejlbjergvej 15 <br />
+          <br />
+          VAT {invoice.VAT}
+          <br />
           AnetaCamo@gmail.com <br />
           anetacamo.github.io <br />
           <br />

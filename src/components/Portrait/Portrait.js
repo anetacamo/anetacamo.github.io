@@ -8,9 +8,9 @@ const Portrait = () => {
         <img src='/images/me.png' alt='aneta camo portrait' />
       </div>
 
-      <div className={`${styles.portrait} ${styles.second}`}>
+      {/* <div className={`${styles.portrait} ${styles.second}`}>
         <img src='/images/intro.png' alt='aneta camo portrait' />
-      </div>
+      </div> */}
     </>
   );
 };

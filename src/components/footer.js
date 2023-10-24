@@ -17,7 +17,7 @@ const Footer = () => {
         </Href>
       </h4> */}
       <h4>
-        insta <Href href='https://www.instagram.com/anetacamo'>anetacamo</Href>
+        <Href href='mailto:anetacamo@gmail.com'>anetacamo@gmail.com</Href>
       </h4>
       <h4 style={{ marginBottom: 0 }}>2022, coded by me</h4>
     </div>

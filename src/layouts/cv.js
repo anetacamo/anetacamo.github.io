@@ -19,31 +19,39 @@ const Cv = () => {
           <div>
             <div className='header'>
               <h2 className='large-font'>Hi</h2>
-              <div>
+              <div style={{ marginBottom: 18 }}>
+                <p style={{ marginTop: 0, marginBottom: 0 }}>
+                  my name is Aneta
+                </p>
+                <p style={{ marginTop: 0, marginBottom: 0 }}>
+                  +45 52 82 55 36 &nbsp; | &nbsp; CV: anetacamo.github.io/#/cv
+                </p>
                 <Href href='mailto:anetacamova@gmail.com?subject=greeting'>
                   anetacamo@gmail.com
                 </Href>
                 <br />
-                <p style={{ marginTop: 4, marginBottom: -34 }}>
-                  born in Prague &nbsp; | &nbsp; based in Aarhus &nbsp;
+                <p style={{ marginTop: 4, marginBottom: -12 }}>
+                  born in Prague &nbsp; | &nbsp; based in Aarhus and Prague
+                  &nbsp;
                 </p>
               </div>
             </div>
             <div className='divider'></div>
             <p>
-              I have been working as a freelance or employed front-end developer
-              since 2018. Before getting introduced to my favourite combo of
-              React, Next and typescript. I did code a lot in jekyll and liquid
-              and was tweaking my own wordpress templates with PHP.
+              I'm primarily a React developer with 4+ years of experience.
+              Before I discovered my favourite combination of Typescript,
+              Next.Js and React, I have worked with different frontend setups
+              like jekyll, liquid, php and wordpress.
             </p>
             <p>
               I have extensive expertise in developing compact web applications,
-              building blogs, filtering, maps, interactive forms, tables,
-              loggins, graphs and any other custom features. I love challenges
-              and enjoy coding more complex solutions in javascript. I am also
-              used to communicate with APIs, mostly using swagger, openapi and
-              redux toolkit. I have also set up backend for logging in, liking
-              features and more complex data setups.
+              building blogs, filtering, maps, interactive forms, loggins,
+              graphs and any other custom features as well as I enjoy coding
+              games or any sort of functionalities in javascript that make live
+              easier. Besides technical skills, I enjoy illustration and have
+              designed smaller projects where I have also secured simpler
+              backend set-ups for logging in, liking or manipulating more
+              complex data setups.
             </p>
 
             <h2>TOOLSTACK</h2>
@@ -57,7 +65,7 @@ const Cv = () => {
                 <h4>
                   <a href={exp.link}>{exp.company}</a>
                 </h4>
-                <p>
+                <p style={{ marginBottom: -10 }}>
                   <i>{exp.time}</i>
                 </p>
                 <p>
@@ -92,7 +100,10 @@ const Cv = () => {
                   </h2>
                   <p style={{ marginTop: '-4px' }}>{ref.time}</p>
                   <p>{ref.text}</p>
-                  <div className='tags'>
+                  <div
+                    className='tags'
+                    style={{ marginLeft: 'auto', marginRight: 'auto' }}
+                  >
                     {ref.tags.map((tag) => (
                       <li>{tag}</li>
                     ))}
