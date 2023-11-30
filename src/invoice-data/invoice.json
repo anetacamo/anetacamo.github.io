@@ -1,0 +1,55 @@
+[
+  {
+    "year": "2023",
+    "invoices": [
+      {
+        "date": "03-20",
+        "billto": "Frotloberne",
+        "job": ["Website for the nabø project, design code and illustration"],
+        "price": "12500dkk"
+      },
+      {
+        "date": "05-20",
+        "billto": "Frotloberne",
+        "job": ["Second part of the project for nabø project"],
+        "price": "12500dkk"
+      },
+      {
+        "date": "03-20",
+        "billto": "Frotloberne",
+        "job": ["Additional works for the nabø project"],
+        "price": "8000dkk"
+      },
+      {
+        "date": "09-30",
+        "billto": "laurits",
+        "job": ["frontloberne room sharing for september 2023"],
+        "price": "550dkk"
+      },
+      {
+        "date": "10-30",
+        "billto": "laurits",
+        "job": ["frontloberne room sharing for october 2023"],
+        "price": "550dkk"
+      },
+      {
+        "date": "11-30",
+        "billto": "laurits",
+        "job": ["frontloberne room sharing for november 2023"],
+        "price": "550dkk"
+      },
+      {
+        "date": "11-30",
+        "billto": "brainz",
+        "job": [
+          "fixes on skoda and staropramen websites",
+          "upgrading National Gallery website from nuxt 2 to nuxt 3",
+          "hours worked 86.25h",
+          "86.25 * 375czk = 32343.75czk"
+        ],
+        "price": "32343.75czk",
+        "billed": true
+      }
+    ]
+  }
+]

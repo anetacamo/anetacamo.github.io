@@ -1,0 +1,11 @@
+[
+  { "nick": "frontloberne", "web": "https://www.frontloberne.dk/" },
+  {
+    "nick": "brainz",
+    "name": "Brainz Disruptive s.r.o.",
+    "address": ["Fibichova 13/2", "Praha 3, Žižkov"],
+    "in": "27869032",
+    "dic": "CZ27869032"
+  },
+  { "nick": "laurits", "name": "Laurits Helligsøe" }
+]

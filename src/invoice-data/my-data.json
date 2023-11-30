@@ -1,0 +1,11 @@
+{
+  "name": "Aneta Camo",
+  "address": ["Stejlbjergvej 152", "Vejle Ø 7120"],
+  "vat": "42565369",
+  "mail": "AnetaCamo@gmail.com",
+  "web": "anetacamo.github.io",
+  "cards": [
+    { "name": "NORDEA", "accountnumber": "4391803280", "regnr": "2316" },
+    { "name": "MBANK", "accountnumber": "4391803280", "regnr": "2316" }
+  ]
+}
