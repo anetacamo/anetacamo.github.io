@@ -7,5 +7,10 @@
     "in": "27869032",
     "dic": "CZ27869032"
   },
-  { "nick": "laurits", "name": "Laurits Helligsøe" }
+  { "nick": "laurits", "name": "Laurits Helligsøe" },
+  {
+    "nick": "æblefald",
+    "name": "Æblefald",
+    "address": ["Sydhavnsgade 7", "8000, Aarhus C", "Denmark"]
+  }
 ]

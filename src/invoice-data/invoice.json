@@ -44,11 +44,20 @@
         "job": [
           "fixes on skoda and staropramen websites",
           "upgrading National Gallery website from nuxt 2 to nuxt 3",
-          "hours worked 86.25h",
-          "86.25 * 375czk = 32343.75czk"
+          "hours worked 80.00h",
+          "80 * 375czk = 30000.00czk"
         ],
-        "price": "32343.75czk",
+        "price": "30000.00czk",
         "billed": true
+      },
+      {
+        "date": "12-3",
+        "billto": "æbletoft",
+        "job": [
+          "illustration for the cider label for sydhavnen festival",
+          "August 2023"
+        ],
+        "price": "750dkk"
       }
     ]
   }
