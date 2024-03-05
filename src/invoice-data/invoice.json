@@ -92,9 +92,10 @@
         "billto": "brainz",
         "job": [
           "upgrading National Gallery website from nuxt 2 to nuxt 3",
-          "hours worked"
+          "hours worked",
+          "-"
         ],
-        "pay": ["", "96h", "97.5 * 375czk"],
+        "pay": ["-", "97.5h", "97.5 * 375czk"],
         "price": "36 560czk",
         "billed": true
       }

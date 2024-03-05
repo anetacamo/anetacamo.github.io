@@ -9,29 +9,33 @@ const Invoice = () => {
   const [yearIndex, setYearIndex] = useState(invoices.length - 1);
 
   const currentYearsInvoices = invoices[yearIndex];
-  const currentYear = invoices[yearIndex].year;
 
   const [invoiceNum, setInvoiceNum] = useState(
     currentYearsInvoices.invoices.length - 1
   );
 
+  //getting the data
   const invoice = currentYearsInvoices.invoices[invoiceNum];
-
   const card = invoice.billed ? 1 : 0;
-
   const billTo = invoice.billto;
   const client = clients.filter((client) => client.nick === billTo)[0];
-  console.log(client);
+
+  //date formatting
+  const formatDate = (date) => {
+    const dueMonth = date.getMonth() + 1;
+    const dueDay = date.getDate();
+    const dueYear = date.getFullYear();
+    return `${dueDay}/${dueMonth} ${dueYear}`;
+  };
 
   const dateString = `${currentYearsInvoices.year}-${invoice.date}`;
-  var date = `${dateString}T10:20:30Z`;
-  var currentDate = new Date(date);
-  var futureDate = new Date();
-  futureDate.setDate(currentDate.getDate() + 14);
 
-  // Format the future date as "dd/m/yy"
-  var formattedFutureDate = futureDate.toLocaleDateString('en-GB');
-  var formattedCurrentDate = currentDate.toLocaleDateString('en-GB');
+  const currentDate = new Date(dateString);
+  const dueDate = new Date(dateString);
+  dueDate.setDate(currentDate.getDate() + 14);
+
+  const formattedCurrentDate = formatDate(currentDate);
+  const formatteddueDate = formatDate(dueDate);
 
   const onYearChange = (index) => {
     setYearIndex(index);
@@ -43,104 +47,128 @@ const Invoice = () => {
       <MetaTags name='Invoice' image='/images/intro.png' />
       <div className={`blog-container cv-container ${styles.invoice}`}>
         <div className='blogs'>
-          <div style={{ display: 'flex' }}>
-            {invoices.map((invoice, index) => (
-              <span
-                style={{ textDecoration: 'underline' }}
-                onClick={() => onYearChange(index)}
-              >
-                {`${index}: ${invoice.year}(${invoice.invoices.length}), `}
-              </span>
-            ))}
-            <button
-              onClick={() =>
-                setInvoiceNum(
-                  invoiceNum === 1
-                    ? setYearIndex(yearIndex - 1) &&
-                        setInvoiceNum(invoices.yearIndex.invoices.length - 1)
-                    : invoiceNum - 1
-                )
-              }
-            >
-              show previous
-            </button>
-            <p>
-              {yearIndex} / {invoiceNum}
-            </p>
-            <button onClick={() => setInvoiceNum(invoiceNum + 1)}>
-              show next
-            </button>
-          </div>
-
-          <p>
-            <i>
-              Invoice Number: {currentYearsInvoices.year}-
-              {currentYearsInvoices.invoices.length}
-            </i>
-          </p>
-          <p>Invoice Date: {formattedCurrentDate}</p>
-          <p>Due Date: {formattedFutureDate}</p>
-
-          <p>
-            <i>Invoice By</i>
-          </p>
-          <p>{me.name}</p>
-          {me.address.map((line) => (
-            <p>{line}</p>
-          ))}
-          <p>VAT {me.vat}</p>
-          <p>{me.mail}</p>
-          <p>{me.web}</p>
-          <p>
-            <i>Bill To</i>
-          </p>
-          {client.name && (
-            <p>
-              <b>{client.name}</b>
-            </p>
-          )}
-          {client.in && <p>{client.in}</p>}
-          {client.dic && <p>{client.dic}</p>}
-          {client.web && <p>{client.web}</p>}
-          {client.address && client.address.map((line) => <p>{line}</p>)}
-          <p>
-            <i>Description of Services/Products Provided</i>
-          </p>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <div>
-              {invoice.job.map((line) => (
-                <p>{line}</p>
+              {invoices.map((invoice, index) => (
+                <p
+                  style={{ textDecoration: 'underline' }}
+                  onClick={() => onYearChange(index)}
+                  key={index}
+                >
+                  {`show ${invoice.year} `}
+                </p>
               ))}
             </div>
-            {invoice.pay && (
-              <div style={{ textAlign: 'right' }}>
-                {invoice.pay.map((line) => (
+            <div>
+              <p>
+                showing{' '}
+                <span className='purple'>
+                  {currentYearsInvoices.year}—{invoiceNum + 1}
+                </span>
+                <span className='gray'>
+                  /{currentYearsInvoices.invoices.length}
+                </span>
+              </p>
+            </div>
+            <div>
+              <button
+                onClick={() => setInvoiceNum(invoiceNum - 1)}
+                disabled={invoiceNum === 0}
+              >
+                show previous
+              </button>
+
+              <button
+                onClick={() => setInvoiceNum(invoiceNum + 1)}
+                disabled={
+                  invoiceNum === invoices[yearIndex].invoices.length - 1
+                }
+              >
+                show next
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <h2>invoice</h2>
+            <p>
+              <i style={{ marginTop: 0 }}>
+                {currentYearsInvoices.year}—
+                {currentYearsInvoices.invoices.length}
+              </i>
+            </p>
+            <p>Invoice Date: {formattedCurrentDate}</p>
+            <p>Due Date: {formatteddueDate}</p>
+            <div className='flex'>
+              <div style={{ marginRight: 48 }}>
+                <h2>Invoice By</h2>
+                <p>
+                  <i style={{ marginTop: 0 }}>{me.name}</i>
+                </p>
+                {me.address.map((line) => (
                   <p>{line}</p>
                 ))}
+                <p>VAT {me.vat}</p>
+                <p>{me.mail}</p>
+                <p>{me.web}</p>
               </div>
-            )}
-          </div>
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              marginTop: 12,
-            }}
-          >
-            <div>
-              <b>Total Amount: </b>{' '}
+              <div>
+                <h2>Bill To</h2>
+                {client.name && (
+                  <p>
+                    <i style={{ marginTop: 0 }}>{client.name}</i>
+                  </p>
+                )}
+                {client.in && <p>{client.in}</p>}
+                {client.dic && <p>{client.dic}</p>}
+                {client.web && <p>{client.web}</p>}
+                {client.address &&
+                  client.address.map((line, index) => (
+                    <p key={index}>{line}</p>
+                  ))}
+              </div>
             </div>
-            <div>
-              <b>{invoice.price}</b>{' '}
+            <p>
+              <i>Description of Services/Products Provided</i>
+            </p>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div>
+                {invoice.job.map((line, index) => (
+                  <p key={index}>{line}</p>
+                ))}
+              </div>
+              {invoice.pay && (
+                <div style={{ textAlign: 'right' }}>
+                  {invoice.pay.map((line, index) => (
+                    <p key={index}>{line}</p>
+                  ))}
+                </div>
+              )}
             </div>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                marginTop: 12,
+                backgroundColor: '#ddd2fc',
+                padding: 4,
+              }}
+            >
+              <div>
+                <b>Total Amount: </b>{' '}
+              </div>
+              <div>
+                <b>{invoice.price}</b>{' '}
+              </div>
+            </div>
+            <br />
+            <p>
+              <i>Payment Information</i>
+            </p>
+            <p>Bank name: {me.cards[card].name}</p>
+            <p>Account Number: {me.cards[card].accountnumber}</p>
+            <p>REG NR: {me.cards[card].regnr}</p>
           </div>
-          <br />
-          <p>
-            <i>Payment Information</i>
-          </p>
-          <p>Bank name: {me.cards[card].name}</p>
-          <p>Account Number: {me.cards[card].accountnumber}</p>
-          <p>REG NR: {me.cards[card].regnr}</p>
         </div>
       </div>
 
