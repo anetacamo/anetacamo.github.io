@@ -38,10 +38,11 @@ const Cv = () => {
             </div>
             <div className='divider'></div>
             <p>
-              I'm primarily a React developer with 4+ years of experience.
-              Before I discovered my favourite combination of Typescript,
+              I'm primarily a react developer with 4+ years of experience.
+              <br /> Last year, I have also started working with Vue 2 & 3 and
+              Nuxt. Before I discovered my favourite combination of Typescript,
               Next.Js and React, I have worked with different frontend setups
-              like jekyll, liquid, php and wordpress.
+              like jekyll, liquid and wordpress.
             </p>
             <p>
               I have extensive expertise in developing compact web applications,
@@ -53,6 +54,13 @@ const Cv = () => {
               backend set-ups for logging in, liking or manipulating more
               complex data setups.
             </p>
+            {/* <p>
+              I love working on cultural, creative and meaningful projects and
+              in my free - /or freelance/ time I love to design and illustrate
+              the projects too. I really enjoy being an employee for 20-30 hours
+              a week and working on my own projects in the rest of time but I am
+              open to any kind of interesting .
+            </p> */}
 
             <h2>TOOLSTACK</h2>
             {cv.cv.toolstack.map((tool) => (

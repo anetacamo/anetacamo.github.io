@@ -1,27 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Footer, MetaTags } from '../../components';
 import invoices from '../../invoice-data/invoice.json';
 import me from '../../invoice-data/my-data.json';
 import clients from '../../invoice-data/clients.json';
 import styles from './Invoice.module.scss';
 
-const lastYearsInvoices = invoices[invoices.length - 1];
-const invoice =
-  lastYearsInvoices.invoices[lastYearsInvoices.invoices.length - 1];
-
-const card = invoice.billed ? 1 : 0;
-
-const billTo = invoice.billto;
-const client = clients.filter((client) => client.nick === billTo)[0];
-
-// const duedate = date.toUTCString();
-
 const Invoice = () => {
-  // var currentDate = new Date();
-  // console.log(invoice.date);
+  const [yearIndex, setYearIndex] = useState(invoices.length - 1);
 
-  // var formattedDate = currentDate.toLocaleDateString('en-GB');
-  const dateString = `${lastYearsInvoices.year}-${invoice.date}`;
+  const currentYearsInvoices = invoices[yearIndex];
+  const currentYear = invoices[yearIndex].year;
+
+  const [invoiceNum, setInvoiceNum] = useState(
+    currentYearsInvoices.invoices.length - 1
+  );
+
+  const invoice = currentYearsInvoices.invoices[invoiceNum];
+
+  const card = invoice.billed ? 1 : 0;
+
+  const billTo = invoice.billto;
+  const client = clients.filter((client) => client.nick === billTo)[0];
+  console.log(client);
+
+  const dateString = `${currentYearsInvoices.year}-${invoice.date}`;
   var date = `${dateString}T10:20:30Z`;
   var currentDate = new Date(date);
   var futureDate = new Date();
@@ -31,15 +33,49 @@ const Invoice = () => {
   var formattedFutureDate = futureDate.toLocaleDateString('en-GB');
   var formattedCurrentDate = currentDate.toLocaleDateString('en-GB');
 
+  const onYearChange = (index) => {
+    setYearIndex(index);
+    setInvoiceNum(invoices[index].invoices.length - 1);
+  };
+
   return (
     <>
       <MetaTags name='Invoice' image='/images/intro.png' />
       <div className={`blog-container cv-container ${styles.invoice}`}>
         <div className='blogs'>
+          <div style={{ display: 'flex' }}>
+            {invoices.map((invoice, index) => (
+              <span
+                style={{ textDecoration: 'underline' }}
+                onClick={() => onYearChange(index)}
+              >
+                {`${index}: ${invoice.year}(${invoice.invoices.length}), `}
+              </span>
+            ))}
+            <button
+              onClick={() =>
+                setInvoiceNum(
+                  invoiceNum === 1
+                    ? setYearIndex(yearIndex - 1) &&
+                        setInvoiceNum(invoices.yearIndex.invoices.length - 1)
+                    : invoiceNum - 1
+                )
+              }
+            >
+              show previous
+            </button>
+            <p>
+              {yearIndex} / {invoiceNum}
+            </p>
+            <button onClick={() => setInvoiceNum(invoiceNum + 1)}>
+              show next
+            </button>
+          </div>
+
           <p>
             <i>
-              Invoice Number: {lastYearsInvoices.year}-
-              {lastYearsInvoices.invoices.length}
+              Invoice Number: {currentYearsInvoices.year}-
+              {currentYearsInvoices.invoices.length}
             </i>
           </p>
           <p>Invoice Date: {formattedCurrentDate}</p>
@@ -58,12 +94,15 @@ const Invoice = () => {
           <p>
             <i>Bill To</i>
           </p>
-          <p>
-            <b>{client.name}</b>
-          </p>
-          {client.address.map((line) => (
-            <p>{line}</p>
-          ))}
+          {client.name && (
+            <p>
+              <b>{client.name}</b>
+            </p>
+          )}
+          {client.in && <p>{client.in}</p>}
+          {client.dic && <p>{client.dic}</p>}
+          {client.web && <p>{client.web}</p>}
+          {client.address && client.address.map((line) => <p>{line}</p>)}
           <p>
             <i>Description of Services/Products Provided</i>
           </p>
@@ -73,9 +112,21 @@ const Invoice = () => {
                 <p>{line}</p>
               ))}
             </div>
-            <div>{invoice.price}</div>
+            {invoice.pay && (
+              <div style={{ textAlign: 'right' }}>
+                {invoice.pay.map((line) => (
+                  <p>{line}</p>
+                ))}
+              </div>
+            )}
           </div>
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              marginTop: 12,
+            }}
+          >
             <div>
               <b>Total Amount: </b>{' '}
             </div>
@@ -92,6 +143,14 @@ const Invoice = () => {
           <p>REG NR: {me.cards[card].regnr}</p>
         </div>
       </div>
+
+      {/* <video width='325' height='400' controls>
+          <source
+            src='https://www.youtube.com/watch?v=xLU-VE6UgOg&ab_channel=ParasportDanmark'
+            type='video/mp4'
+          />
+        </video> */}
+
       <Footer />
     </>
   );

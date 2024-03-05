@@ -4,39 +4,24 @@
     "invoices": [
       {
         "date": "03-20",
-        "billto": "Frotloberne",
+        "billto": "frontloberne",
         "job": ["Website for the nabø project, design code and illustration"],
-        "price": "12500dkk"
+        "price": "12500dkk",
+        "paid": true
       },
       {
         "date": "05-20",
-        "billto": "Frotloberne",
+        "billto": "frontloberne",
         "job": ["Second part of the project for nabø project"],
-        "price": "12500dkk"
+        "price": "12500dkk",
+        "paid": true
       },
       {
         "date": "03-20",
-        "billto": "Frotloberne",
+        "billto": "frontloberne",
         "job": ["Additional works for the nabø project"],
-        "price": "8000dkk"
-      },
-      {
-        "date": "09-30",
-        "billto": "laurits",
-        "job": ["frontloberne room sharing for september 2023"],
-        "price": "550dkk"
-      },
-      {
-        "date": "10-30",
-        "billto": "laurits",
-        "job": ["frontloberne room sharing for october 2023"],
-        "price": "550dkk"
-      },
-      {
-        "date": "11-30",
-        "billto": "laurits",
-        "job": ["frontloberne room sharing for november 2023"],
-        "price": "550dkk"
+        "price": "8000dkk",
+        "paid": true
       },
       {
         "date": "11-30",
@@ -44,20 +29,74 @@
         "job": [
           "fixes on skoda and staropramen websites",
           "upgrading National Gallery website from nuxt 2 to nuxt 3",
-          "hours worked 80.00h",
-          "80 * 375czk = 30000.00czk"
+          "hours worked",
+          ""
         ],
+        "pay": ["", "", "80.00h", "80 * 375czk"],
         "price": "30000.00czk",
+        "billed": true,
+        "paid": true
+      },
+      {
+        "date": "12-10",
+        "billto": "ablefald",
+        "job": [
+          "illustration for the cider label for sydhavnen festival",
+          "August 2023",
+          "MOMS 25%"
+        ],
+        "pay": ["", "", "187.5dkk"],
+        "price": "750dkk",
+        "paid": true
+      },
+      {
+        "date": "12-31",
+        "billto": "brainz",
+        "job": [
+          "upgrading National Gallery website from nuxt 2 to nuxt 3",
+          "hours worked"
+        ],
+        "pay": ["", "89h", "89 * 375czk"],
+        "price": "33 375czk",
+        "billed": true
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "invoices": [
+      {
+        "date": "01-03",
+        "billto": "laurits",
+        "job": [
+          "rent for FL for oct + nov + dec",
+          "rent for FL for January 2024"
+        ],
+        "pay": ["3 * 550dkk", "1 * 650dkk"],
+        "price": "2.300dkk",
+        "paid": true
+      },
+      {
+        "date": "01-31",
+        "billto": "brainz",
+        "job": [
+          "upgrading National Gallery website from nuxt 2 to nuxt 3",
+          "hours worked"
+        ],
+        "pay": ["", "76h", "76 * 375czk"],
+        "price": "28 500czk",
         "billed": true
       },
       {
-        "date": "12-3",
-        "billto": "æbletoft",
+        "date": "02-29",
+        "billto": "brainz",
         "job": [
-          "illustration for the cider label for sydhavnen festival",
-          "August 2023"
+          "upgrading National Gallery website from nuxt 2 to nuxt 3",
+          "hours worked"
         ],
-        "price": "750dkk"
+        "pay": ["", "96h", "97.5 * 375czk"],
+        "price": "36 560czk",
+        "billed": true
       }
     ]
   }

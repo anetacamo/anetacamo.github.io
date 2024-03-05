@@ -11,6 +11,7 @@ import {
   Invoice,
   KeywordSearch,
   Logo,
+  Pleo,
   Shop,
   ShoppingCart,
   Tagged,
@@ -88,7 +89,7 @@ function App() {
     <>
       <Logo />
       <KeywordSearch />
-      <ShoppingCart itemsInCart={itemsInCart} />
+      {/* <ShoppingCart itemsInCart={itemsInCart} /> */}
       <Switch>
         <Route
           path='/'
@@ -98,9 +99,8 @@ function App() {
           exact
         />
         <Route path='/cv' component={Cv} exact />
-        {/* <Route path='/web' component={WebApps} exact /> */}
+        <Route path='/video' component={Pleo} exact />
         <Route path='/all-tags' component={AllTags} exact />
-
         <Route path='/invoice' component={Invoice} exact />
         <Route path='/shop' component={Shop} exact />
         <Route

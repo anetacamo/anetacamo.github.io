@@ -1,5 +1,9 @@
 [
-  { "nick": "frontloberne", "web": "https://www.frontloberne.dk/" },
+  {
+    "nick": "frontloberne",
+    "name": "frontloberne",
+    "web": "https://www.frontloberne.dk/"
+  },
   {
     "nick": "brainz",
     "name": "Brainz Disruptive s.r.o.",
@@ -9,7 +13,7 @@
   },
   { "nick": "laurits", "name": "Laurits Helligsøe" },
   {
-    "nick": "æblefald",
+    "nick": "ablefald",
     "name": "Æblefald",
     "address": ["Sydhavnsgade 7", "8000, Aarhus C", "Denmark"]
   }

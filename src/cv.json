@@ -2,20 +2,36 @@
   "cv": {
     "toolstack": [
       "React",
-      "Next",
+      "Vue 2 & 3",
+      "Next, Nuxt",
       "Typescript",
-      "Ant Design, Bootstrap, Sass",
-      "Firebase",
       "OpenAPI, Postman",
-      "Axios",
+      "GraphQl, Axios",
+      "Pinia, Vuex",
       "Redux & redux toolkit",
-      "Git, Vercel",
+      "Ant Design, Bootstrap, Sass",
+      "Git, Bitbucket, Vercel",
       "Jekyll & liquid"
     ],
     "experience": [
       {
+        "company": "Brainz Discruptive",
+        "position": "Vue developer",
+        "time": "from 2023 - till now",
+        "text": "I got a pleasure to be hired as a part-time employee in Prague based company where I started working in Vue 2 and 3, mostly focusing on upgrading their big projects to vue 3.",
+        "link": "https://www.monstarlab.com",
+        "tags": [
+          "vue 2 & 3",
+          "options API & composition API",
+          "nuxt",
+          "graphQl",
+          "vuex & pinia",
+          "i18n"
+        ]
+      },
+      {
         "company": "Nodes - now MonstarLab",
-        "position": "frontend engineer",
+        "position": "react developer",
         "time": "2021 - december 2022",
         "text": "I had an opportunity to contribute to numerous large-scale projects primarily Next.js and typescript, communicating with backend through openAPI and swagger. Worked with Redux toolkit more closely and got introduced to material UI and ANT fields.",
         "link": "https://www.monstarlab.com",
@@ -57,26 +73,34 @@
     "references": [
       {
         "image": "/images/sidliste.png",
+        "time": "March 2024",
+        "title": "NGP Prague",
+        "text": "in 2023 I started learning Vue and while working as a freelancer for Brainz Discruptive based in Prague I have upgraded large and beatiful website for National Gallery Prague from Options API & Vue 2 to Vue 3 in composition API",
+        "link": "https://ngp-production.dexter.brainz.cz/",
+        "tags": [
+          "Nuxt",
+          "vue 2 & 3",
+          "options API & composition API",
+          "graphQl",
+          "vuex & pinia",
+          "i18n"
+        ]
+      },
+      {
+        "image": "/images/sidliste.png",
         "time": "September 2023",
-        "title": "Nabø Aarhus",
-        "text": "interactive map (OpenStreetMap API). for collecting cultural institutions scattered all over the city of Aarhus and Tromso, Norway. Data are collected from google sheets. And also uploaded there through contact form",
-        "link": "https://kultur-kortet/",
+        "title": "Nåbø Aarhus",
+        "text": "interactive map (integrated OpenStreetMap API). for collecting cultural institutions scattered all over the city of Aarhus and Tromso, Norway. Data are collected from google sheets. And also uploaded there through contact form",
+        "link": "https://www.kultur-kortet.dk/",
         "tags": ["React", "Next", "open map", "typescript"],
         "repo": "https://github.com/anetacamo/nabo"
       },
-      {
-        "image": "/images/praqma.png",
-        "time": "in progress",
-        "title": "Sydhavnen",
-        "text": "Simple website done in next",
-        "link": "https://sydhaven.vercel.app",
-        "tags": ["typescript", "react", "next.js"]
-      },
+
       {
         "image": "/images/g.png",
-        "time": "Still in progress",
+        "time": "Last update Septemeber 2023",
         "title": "PipeGame",
-        "text": "I coded my favourite old MS DOS game in order to get some challenge in javascript and a chance to work more with react native. but that is still in progress and the version is desktop only.",
+        "text": "I coded my favourite old MS DOS game in order to get some challenge in javascript with life chart of highest scores. Current version is desktop only.",
         "link": "https://anetacamo.github.io/pipegame",
         "tags": ["React", "Javascript", "illustration"],
         "repo": "https://github.com/anetacamo/pipegame"
@@ -93,9 +117,9 @@
         "image": "/images/sidliste.png",
         "time": "2022",
         "title": "Prague suburbs",
-        "text": "Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. Created my own font via react images. Lots of css & js animations, still in progress + Illustrations",
+        "text": "Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. Created my own font via react and images. Lots of custom made js animations, illustrated and designed by me, too.",
         "link": "https://anetacamo.github.io/sidliste",
-        "tags": ["react", "Illustration"]
+        "tags": ["react", "Illustration", "design"]
       },
       {
         "image": "/images/sweetcity.png",
@@ -104,24 +128,6 @@
         "text": "A project built in React to promote the upcoming local elections and try to get young people more involved in the process. Implemented markdown files as a way to add new events via github repo. Generated timeline feed by running custom script.",
         "link": "https://anetacamo.github.io/sc/",
         "tags": ["React", "Design", "Illustration"]
-      },
-
-      {
-        "image": "/images/movie-search.png",
-        "time": "2021",
-        "title": "Movie Search",
-        "text": "one page coded in React where you can search through the online database of movies and display their info, save them as liked or seen into the local browser storage. Authentication via Firebase",
-        "link": "https://anetacamo.github.io/filmclub",
-        "tags": ["React", "Open Film Database", "Firebase"]
-      },
-
-      {
-        "image": "/images/praqma.png",
-        "time": "2019",
-        "title": "Verifa",
-        "text": "A website with blog built in Gatsby with React. Blogging system fed by markdown files via GraphQl. Implemented CMS called forestry on top of it",
-        "link": "https://www.verifa.io",
-        "tags": ["React", "Gatsby", "GraphQL", "forestry"]
       }
     ]
   }
