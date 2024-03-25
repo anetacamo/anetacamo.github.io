@@ -7,12 +7,9 @@ const Cv = () => {
     <div>
       <MetaTags
         name='CV'
-        description='Hi! My name is Aneta and I have been working as a freelance front end developer and illustrator'
+        description='Hi! My name is Aneta and I am React and Vue web developer'
         image='/images/intro.png'
       />
-      {/* <Link to='/cv'>
-        <div className='portrait'></div>
-      </Link> */}
       <div className='blog-container cv-container'>
         <div className='blogs'>
           <Portrait />
@@ -24,32 +21,31 @@ const Cv = () => {
                   my name is Aneta
                 </p>
                 <p style={{ marginTop: 0, marginBottom: 0 }}>
-                  +45 52 82 55 36 &nbsp; | &nbsp; CV: anetacamo.github.io/#/cv
+                  +45 52 82 55 36 &nbsp;
                 </p>
                 <Href href='mailto:anetacamova@gmail.com?subject=greeting'>
                   anetacamo@gmail.com
                 </Href>
                 <br />
                 <p style={{ marginTop: 4, marginBottom: -12 }}>
-                  born in Prague &nbsp; | &nbsp; based in Aarhus and Prague
-                  &nbsp;
+                  born in Prague &nbsp; | &nbsp; based in Aarhus &nbsp;
                 </p>
               </div>
             </div>
             <div className='divider'></div>
             <p>
               I'm primarily a react developer with 4+ years of experience.
-              <br /> Last year, I have also started working with Vue 2 & 3 and
-              Nuxt. Before I discovered my favourite combination of Typescript,
+              <br /> Last year, I have also started working with Nuxt, Vue 2 &
+              3. Before I discovered my favourite combination of Typescript,
               Next.Js and React, I have worked with different frontend setups
-              like jekyll & liquid or wordpress & tiny bit of php (before 2020).
+              like jekyll & liquid or wordpress & bit of php.
             </p>
             <p>
               I have expertise in developing compact web applications, building
               blogs, filtering, maps, interactive forms, loggins, graphs and any
               other custom features and connectiong those to various back-ends
               as well as I enjoy coding games or any sort of functionalities in
-              javascript that make live easier. Besides frontend, I enjoy
+              javascript that make live easier. Beside frontend, I enjoy
               illustration and have designed smaller projects where I have also
               secured simpler backend set-ups for logging in, liking or
               manipulating simple data structures.
