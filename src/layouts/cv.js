@@ -42,17 +42,17 @@ const Cv = () => {
               <br /> Last year, I have also started working with Vue 2 & 3 and
               Nuxt. Before I discovered my favourite combination of Typescript,
               Next.Js and React, I have worked with different frontend setups
-              like jekyll, liquid and wordpress.
+              like jekyll & liquid or wordpress & tiny bit of php (before 2020).
             </p>
             <p>
-              I have extensive expertise in developing compact web applications,
-              building blogs, filtering, maps, interactive forms, loggins,
-              graphs and any other custom features as well as I enjoy coding
-              games or any sort of functionalities in javascript that make live
-              easier. Besides technical skills, I enjoy illustration and have
-              designed smaller projects where I have also secured simpler
-              backend set-ups for logging in, liking or manipulating more
-              complex data setups.
+              I have expertise in developing compact web applications, building
+              blogs, filtering, maps, interactive forms, loggins, graphs and any
+              other custom features and connectiong those to various back-ends
+              as well as I enjoy coding games or any sort of functionalities in
+              javascript that make live easier. Besides frontend, I enjoy
+              illustration and have designed smaller projects where I have also
+              secured simpler backend set-ups for logging in, liking or
+              manipulating simple data structures.
             </p>
             {/* <p>
               I love working on cultural, creative and meaningful projects and

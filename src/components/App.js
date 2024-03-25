@@ -11,9 +11,7 @@ import {
   Invoice,
   KeywordSearch,
   Logo,
-  Pleo,
   Shop,
-  ShoppingCart,
   Tagged,
 } from './';
 import { initGA, trackingPageGA } from './reactGA';
@@ -99,7 +97,6 @@ function App() {
           exact
         />
         <Route path='/cv' component={Cv} exact />
-        <Route path='/video' component={Pleo} exact />
         <Route path='/all-tags' component={AllTags} exact />
         <Route path='/invoice' component={Invoice} exact />
         <Route path='/shop' component={Shop} exact />

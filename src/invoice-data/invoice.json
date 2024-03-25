@@ -95,8 +95,8 @@
           "hours worked",
           "-"
         ],
-        "pay": ["-", "97.5h", "97.5 * 375czk"],
-        "price": "36 560czk",
+        "pay": ["-", "96h"],
+        "price": "36 000czk",
         "billed": true
       }
     ]

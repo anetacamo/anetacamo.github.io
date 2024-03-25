@@ -20,7 +20,6 @@ export { default as Like } from './like';
 export { default as Logo } from './logo';
 export { default as MetaTags } from './metaTags';
 export { default as Pagination } from './pagination';
-export { default as Pleo } from '../layouts/Pleo';
 export { default as Portrait } from './Portrait/Portrait';
 export { default as ScrollToTop } from './scrollToTop';
 export { default as Select } from './select';

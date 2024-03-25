@@ -9,14 +9,14 @@
       "GraphQl, Axios",
       "Pinia, Vuex",
       "Redux & redux toolkit",
-      "Bootstrap, Sass, Tailwind, ANTdesign",
+      "Ant Design, Bootstrap, Sass",
       "Git, Bitbucket, Vercel",
       "Jekyll & liquid"
     ],
     "experience": [
       {
-        "company": "Brainz Disruptive",
-        "position": "part-time freelance Vue developer",
+        "company": "Brainz Discruptive",
+        "position": "Vue developer",
         "time": "from 2023 - till now",
         "text": "I got a pleasure to be hired as a part-time employee in Prague based company where I started working in Vue 2 and 3, mostly focusing on upgrading their big projects to vue 3.",
         "link": "https://www.monstarlab.com",
@@ -46,13 +46,27 @@
           "storybook"
         ]
       },
-
+      {
+        "company": "Phable",
+        "time": "2020",
+        "text": "Working as a freelance front-end developer for a design office based in London, building webpages with Gatsby and React for various customers.",
+        "link": "https://www.phable.io",
+        "tags": ["react", "graphQL", "Gatsby"]
+      },
       {
         "company": "Praqma - now Eficode",
         "time": "August 2017 - June 2020",
         "text": "My responsibilities included rebuilding and optimizing two extensive websites using Jekyll, generating content from markdown files, and performing frontend maintenance tasks.",
         "link": "https://www.eficode.com",
         "tags": ["jekyll", "liquid", "sass"]
+      },
+      {
+        "company": "SYMBIO digital,s.r.o.",
+        "position": "intern",
+        "time": "November 2015 - June 2016",
+        "text": "I crafted small websites and handled various front-end tasks for clients, mainly focusing on HTML, CSS, and working with various CMS platforms.",
+        "link": "https://www.symbio.agency",
+        "tags": ["php", "wordpress", "html", "js"]
       }
     ],
 
@@ -81,14 +95,7 @@
         "tags": ["React", "Next", "open map", "typescript"],
         "repo": "https://github.com/anetacamo/nabo"
       },
-      {
-        "image": "/images/sweetcity.png",
-        "time": "September 2021",
-        "title": "Sweet City",
-        "text": "A project built in React to promote the upcoming local elections and try to get young people more involved in the process. Implemented markdown files as a way to add new events via github repo. Generated timeline feed by running custom script.",
-        "link": "https://anetacamo.github.io/sc/",
-        "tags": ["React", "Design", "Illustration"]
-      },
+
       {
         "image": "/images/g.png",
         "time": "Last update Septemeber 2023",
@@ -113,6 +120,14 @@
         "text": "Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. Created my own font via react and images. Lots of custom made js animations, illustrated and designed by me, too.",
         "link": "https://anetacamo.github.io/sidliste",
         "tags": ["react", "Illustration", "design"]
+      },
+      {
+        "image": "/images/sweetcity.png",
+        "time": "September 2021",
+        "title": "Sweet City",
+        "text": "A project built in React to promote the upcoming local elections and try to get young people more involved in the process. Implemented markdown files as a way to add new events via github repo. Generated timeline feed by running custom script.",
+        "link": "https://anetacamo.github.io/sc/",
+        "tags": ["React", "Design", "Illustration"]
       }
     ]
   }
