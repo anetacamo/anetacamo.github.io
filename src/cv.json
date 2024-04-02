@@ -3,7 +3,8 @@
     "toolstack": [
       "React",
       "Vue 2 & 3",
-      "Next, Nuxt",
+      "Next",
+      "Nuxt",
       "Typescript",
       "OpenAPI, Postman",
       "GraphQl, Axios",
@@ -16,24 +17,39 @@
     "experience": [
       {
         "company": "Brainz Disruptive",
-        "position": "part-time freelance Vue developer",
+        "clients": ["national gallery prague", "stanton chase", "skoda"],
+        "position": "part-time Vue developer",
+        "location": "Prague, remote from Skanderborg",
         "time": "from 2023 - till now",
-        "text": "I got a pleasure to be hired as a part-time employee in Prague based company where I started working in Vue 2 and 3, mostly focusing on upgrading their big projects to vue 3.",
-        "link": "https://www.monstarlab.com",
+        "text": "I got a pleasure to work as a freelancer for Prague based agency in Vue 2 and 3, mostly focusing on upgrading their large projects to vue 3.",
+        "link": "https://disruptive.cz/",
         "tags": [
           "vue 2 & 3",
           "options API & composition API",
           "nuxt",
           "graphQl",
           "vuex & pinia",
-          "i18n"
+          "i18n",
+          "postman"
         ]
       },
       {
-        "company": "Nodes - now MonstarLab",
-        "position": "react developer",
-        "time": "2021 - december 2022",
-        "text": "I had an opportunity to contribute to numerous large-scale projects primarily Next.js and typescript, communicating with backend through openAPI and swagger. Worked with Redux toolkit more closely and got introduced to material UI and ANT fields.",
+        "company": "Aneta Camo",
+        "position": "self employed react & vue developer",
+        "clients": ["Verifa", "Institut X", "Frontløberne"],
+        "location": "Aarhus",
+        "time": "2018 - now",
+        "text": "I have been working on medium-sized projects as a freelancer for various, mostly danish clients (such as Frontløberne, Intitut X, Verifa, Parasport dk). If the project allows I try to setup simple backend or my own design solution",
+        "link": "https://anetacamo.github.io",
+        "tags": ["react", "typescript", "next", "vue 2 & 3", "redux"]
+      },
+      {
+        "company": "MonstarLab",
+        "clients": ["Princess Trust", "Oterra"],
+        "position": "full time front end engineer",
+        "location": "Aarhus Ø",
+        "time": "2021 - 2022",
+        "text": "I had an opportunity to contribute to numerous large-scale projects primarily built with Next.js, Typescript and react, communicating with backend through openAPI and swagger, all done in the agency-like environment. Worked with Redux toolkit more closely and got introduced to material UI and ANT fields.",
         "link": "https://www.monstarlab.com",
         "tags": [
           "react",
@@ -42,7 +58,7 @@
           "redux toolkit",
           "openAPI",
           "swagger",
-          "ANT design",
+          "ant design",
           "storybook"
         ]
       },
@@ -50,24 +66,26 @@
       {
         "company": "Praqma - now Eficode",
         "time": "August 2017 - June 2020",
-        "text": "My responsibilities included rebuilding and optimizing two extensive websites using Jekyll, generating content from markdown files, and performing frontend maintenance tasks.",
+        "location": "Aarhus V",
+        "text": "My responsibilities included rebuilding and optimizing few extensive websites using mostly Jekyll and liquid, generating content from markdown files and performing frontend maintenance tasks.",
         "link": "https://www.eficode.com",
-        "tags": ["jekyll", "liquid", "sass"]
+        "tags": ["Jekyll & liquid", "Wordpress & php", "sass"]
       }
     ],
 
     "references": [
       {
         "image": "/images/sidliste.png",
-        "time": "March 2024",
+        "time": "March 2024, Prague",
         "title": "NGP Prague",
-        "text": "in 2023 I started learning Vue and while working as a freelancer for Brainz Discruptive based in Prague I have upgraded large and beatiful website for National Gallery Prague from Options API & Vue 2 to Vue 3 in composition API",
+        "client": "Prague National Gallery",
+        "text": "in 2023 I started learning Vue and while working as a freelancer for Brainz Discruptive based in Prague I have upgraded large and beautiful website for National Gallery Prague from Options API & Vue 2 to Vue 3 in composition API",
         "link": "https://ngp-production.dexter.brainz.cz/",
         "tags": [
-          "Nuxt",
+          "nuxt",
           "vue 2 & 3",
           "options API & composition API",
-          "graphQl",
+          "graphql",
           "vuex & pinia",
           "i18n"
         ]
@@ -76,43 +94,54 @@
         "image": "/images/sidliste.png",
         "time": "September 2023",
         "title": "Nåbø Aarhus",
-        "text": "interactive map (integrated OpenStreetMap API). for collecting cultural institutions scattered all over the city of Aarhus and Tromso, Norway. Data are collected from google sheets. And also uploaded there through contact form",
+        "location": "Aarhus",
+        "client": "Frontløberne, Aarhus",
+        "text": "interactive map (integrated OpenStreetMap API). for collecting cultural institutions scattered all over the city of Aarhus and Tromso, Norway. Data are collected from google sheets. And also submitted there through contact form",
         "link": "https://www.kultur-kortet.dk/",
-        "tags": ["React", "Next", "open map", "typescript"],
+        "tags": ["react", "next", "open map", "typescript"],
         "repo": "https://github.com/anetacamo/nabo"
       },
       {
         "image": "/images/sweetcity.png",
-        "time": "September 2021",
+        "time": "September 2021, Aarhus",
+        "location": "Aarhus",
+        "client": "Frontløberne | Institut X | UKH",
         "title": "Sweet City",
-        "text": "A project built in React to promote the upcoming local elections and try to get young people more involved in the process. Implemented markdown files as a way to add new events via github repo. Generated timeline feed by running custom script.",
+        "text": "A project built in React to promote the upcoming local elections and to get young people more involved in the politics. new events filled as markdown files via github repo. Generated timeline feed by running custom script.",
         "link": "https://anetacamo.github.io/sc/",
-        "tags": ["React", "Design", "Illustration"]
+        "tags": ["react", "design", "illustration", "typescript", "next"]
       },
       {
         "image": "/images/g.png",
         "time": "Last update Septemeber 2023",
         "title": "PipeGame",
-        "text": "I coded my favourite old MS DOS game in order to get some challenge in javascript with life chart of highest scores. Current version is desktop only.",
+        "text": "I coded my favourite old MS DOS game in order to get some challenge in javascript with live chart of highest scores stored in firebase. Current version is desktop only.",
         "link": "https://anetacamo.github.io/pipegame",
-        "tags": ["React", "Javascript", "illustration"],
+        "tags": [
+          "React",
+          "Javascript",
+          "illustration",
+          "redux",
+          "typescript",
+          "firebase"
+        ],
         "repo": "https://github.com/anetacamo/pipegame"
       },
       {
         "image": "/images/anetacamo_small.png",
         "time": "Last update 2023",
         "title": "My portfolio",
-        "text": "My own blog where I can organise my activities and illustartions into different categories. Tagging & blogging system, interactive pagination, shoping cart. Liking feature - likes stored in firebase plus Cart items & like arrays stored in local storage. Also implemented Stripe payment with own Node server hosted on Heroku. For now removed",
+        "text": "My own blog where I can organise my activities and illustartions into different categories. Tagging & blogging system, interactive pagination, shoping cart, now hidden. Liking feature - likes stored in firebase. Cart items & like arrays stored in local storage. Also implemented Stripe payment with own Node server hosted on Heroku. For now removed",
         "link": "/",
-        "tags": ["React", "Node", "stripe"]
+        "tags": ["react", "node", "stripe"]
       },
       {
         "image": "/images/sidliste.png",
         "time": "2022",
         "title": "Prague suburbs",
-        "text": "Nine chapters about the trasitions that Prague post-soviet suburbs undertook over the years. Created my own font via react and images. Lots of custom made js animations, illustrated and designed by me, too.",
+        "text": "Nine chapters about the trasitions that Prague suburbs undertook over the years. Made my own font and provided lots of custom js animations.",
         "link": "https://anetacamo.github.io/sidliste",
-        "tags": ["react", "Illustration", "design"]
+        "tags": ["react", "illustration", "design"]
       }
     ]
   }

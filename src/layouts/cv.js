@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import cv from '../cv.json';
 import { Footer, Href, MetaTags, Portrait } from '../components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAsterisk } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Cv = () => {
+  const [filter, setFilter] = useState(null);
+
   return (
     <div>
       <MetaTags
@@ -10,6 +15,38 @@ const Cv = () => {
         description='Hi! My name is Aneta and I am React and Vue web developer'
         image='/images/intro.png'
       />
+      {filter && (
+        <div
+          style={{
+            position: 'fixed',
+            bottom: 12,
+            left: 12,
+            cursor: 'pointer',
+          }}
+        >
+          <p style={{ marginBottom: 0 }}>filter is on</p>
+          <p
+            className='tag'
+            onClick={() => setFilter(null)}
+            style={{
+              cursor: 'pointer',
+              marginLeft: 0,
+            }}
+          >
+            {filter}{' '}
+            <FontAwesomeIcon
+              icon={faTimes}
+              className='purple'
+              style={{
+                marginLeft: 7,
+                fontSize: 11,
+                marginRight: 0,
+                marginBottom: -1,
+              }}
+            />
+          </p>
+        </div>
+      )}
       <div className='blog-container cv-container'>
         <div className='blogs'>
           <Portrait />
@@ -42,7 +79,7 @@ const Cv = () => {
             </p>
             <p>
               I have expertise in developing compact web applications, building
-              blogs, filtering, maps, interactive forms, loggins, graphs and any
+              blogs, filtering, maps, interactive forms, log-ins, graphs and any
               other custom features and connectiong those to various back-ends
               as well as I enjoy coding games or any sort of functionalities in
               javascript that make live easier. Beside frontend, I enjoy
@@ -50,6 +87,12 @@ const Cv = () => {
               secured simpler backend set-ups for logging in, liking or
               manipulating simple data structures.
             </p>
+            <i>
+              Clicking on any of the tags will trigger filtering
+              <br />
+              This cv is coded from scratch in react.
+            </i>
+
             {/* <p>
               I love working on cultural, creative and meaningful projects and
               in my free - /or freelance/ time I love to design and illustrate
@@ -60,17 +103,54 @@ const Cv = () => {
 
             <h2>TOOLSTACK</h2>
             {cv.cv.toolstack.map((tool) => (
-              <li>{tool}</li>
+              <li
+                onClick={() =>
+                  setFilter(
+                    tool.toLowerCase() === filter ? null : tool.toLowerCase()
+                  )
+                }
+              >
+                <span
+                  className={
+                    tool.toLowerCase() === filter && 'active span-active'
+                  }
+                >
+                  {tool}
+                  {tool.toLowerCase() === filter && 'active' && (
+                    <FontAwesomeIcon
+                      icon={faTimes}
+                      className='purple'
+                      style={{ marginLeft: 7, marginRight: 2 }}
+                    />
+                  )}
+                </span>
+              </li>
             ))}
             <div className='divider'></div>
             <h2>Working EXPERIENCE</h2>
             {cv.cv.experience.map((exp) => (
-              <>
+              <div
+                className={
+                  exp.tags.find((tag) => tag.toLowerCase() === filter) &&
+                  'active work-active'
+                }
+              >
                 <h4>
                   <a href={exp.link}>{exp.company}</a>
                 </h4>
                 <p style={{ marginBottom: -10 }}>
+                  {/* <FontAwesomeIcon
+                    icon={faLocation}
+                    className='purple'
+                    style={{ marginRight: 4 }}
+                  /> */}
                   <i>{exp.time}</i>
+                  <FontAwesomeIcon
+                    icon={faAsterisk}
+                    className='purple'
+                    style={{ marginLeft: 7, marginRight: 4 }}
+                  />
+                  {exp.location && <i>{exp.location}</i>}
                 </p>
                 <p>
                   {exp.text}
@@ -80,16 +160,47 @@ const Cv = () => {
                 </p>
                 <div className='tags'>
                   {exp.tags.map((tag) => (
-                    <li>{tag}</li>
+                    <li
+                      className={
+                        tag.toLowerCase() === filter && 'active tag-active'
+                      }
+                      onClick={() =>
+                        setFilter(
+                          tag.toLowerCase() === filter
+                            ? null
+                            : tag.toLowerCase()
+                        )
+                      }
+                    >
+                      {tag}
+                      {tag.toLowerCase() === filter && 'active' && (
+                        <FontAwesomeIcon
+                          icon={faTimes}
+                          className='grren'
+                          style={{
+                            marginLeft: 7,
+                            fontSize: 11,
+                            marginBottom: -1,
+                          }}
+                        />
+                      )}
+                    </li>
                   ))}
                 </div>
-              </>
+              </div>
             ))}
             <div className='divider'></div>
             <h2>REFERENCES</h2>
             <div className='boxes'>
               {cv.cv.references.map((ref) => (
-                <div className='box' key={ref.title}>
+                <div
+                  key={ref.title}
+                  className={
+                    ref.tags.find((tag) => tag.toLowerCase() === filter)
+                      ? 'active work-active box'
+                      : 'box'
+                  }
+                >
                   <div className='cv-circle circle'>
                     <Href href={ref.link}>
                       <img
@@ -102,14 +213,41 @@ const Cv = () => {
                   <h2>
                     <Href href={ref.link}>{ref.title}</Href>
                   </h2>
-                  <p style={{ marginTop: '-4px' }}>{ref.time}</p>
+                  <p style={{ margin: 0 }} className='purple'>
+                    {ref.client}
+                  </p>
+                  <p style={{ marginTop: 0 }}>{ref.time}</p>
                   <p>{ref.text}</p>
                   <div
                     className='tags'
                     style={{ marginLeft: 'auto', marginRight: 'auto' }}
                   >
                     {ref.tags.map((tag) => (
-                      <li>{tag}</li>
+                      <li
+                        onClick={() =>
+                          setFilter(
+                            tag.toLowerCase() === filter
+                              ? null
+                              : tag.toLowerCase()
+                          )
+                        }
+                        className={
+                          tag.toLowerCase() === filter && 'active tag-active'
+                        }
+                      >
+                        {tag}
+                        {tag.toLowerCase() === filter && 'active' && (
+                          <FontAwesomeIcon
+                            icon={faTimes}
+                            className='grren'
+                            style={{
+                              marginLeft: 7,
+                              fontSize: 11,
+                              marginBottom: -1,
+                            }}
+                          />
+                        )}
+                      </li>
                     ))}
                   </div>
                   {ref.repo && (

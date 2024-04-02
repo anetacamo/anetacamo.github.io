@@ -16,10 +16,11 @@ const Footer = () => {
           _email_me_
         </Href>
       </h4> */}
+      {/*/a-set-of-illustrations-for-the-fair-migration-website*/}
       <h4>
         <Href href='mailto:anetacamo@gmail.com'>anetacamo@gmail.com</Href>
       </h4>
-      <h4 style={{ marginBottom: 0 }}>2022, coded by me</h4>
+      <h4 style={{ marginBottom: 0 }}>2022, coded & illustrated by me</h4>
     </div>
   );
 };
