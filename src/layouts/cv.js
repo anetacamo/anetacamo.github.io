@@ -128,22 +128,22 @@ const Cv = () => {
             ))}
             <div className='divider'></div>
             <h2>Working EXPERIENCE</h2>
+            {filter?.toLowerCase().includes('postman') && 'active work-active'}
             {cv.cv.experience.map((exp) => (
               <div
                 className={
-                  exp.tags.find((tag) => tag.toLowerCase() === filter) &&
-                  'active work-active'
+                  exp.tags.find(
+                    (tag) =>
+                      filter && filter.toLowerCase().includes(tag.toLowerCase())
+                  )
+                    ? 'active work-active'
+                    : ''
                 }
               >
                 <h4>
                   <a href={exp.link}>{exp.company}</a>
                 </h4>
                 <p style={{ marginBottom: -10 }}>
-                  {/* <FontAwesomeIcon
-                    icon={faLocation}
-                    className='purple'
-                    style={{ marginRight: 4 }}
-                  /> */}
                   <i>{exp.time}</i>
                   <FontAwesomeIcon
                     icon={faAsterisk}
@@ -162,7 +162,9 @@ const Cv = () => {
                   {exp.tags.map((tag) => (
                     <li
                       className={
-                        tag.toLowerCase() === filter && 'active tag-active'
+                        filter &&
+                        filter.toLowerCase().includes(tag.toLowerCase()) &&
+                        'active tag-active'
                       }
                       onClick={() =>
                         setFilter(
@@ -196,7 +198,11 @@ const Cv = () => {
                 <div
                   key={ref.title}
                   className={
-                    ref.tags.find((tag) => tag.toLowerCase() === filter)
+                    ref.tags.find(
+                      (tag) =>
+                        filter &&
+                        filter.toLowerCase().includes(tag.toLowerCase())
+                    )
                       ? 'active work-active box'
                       : 'box'
                   }
@@ -232,7 +238,9 @@ const Cv = () => {
                           )
                         }
                         className={
-                          tag.toLowerCase() === filter && 'active tag-active'
+                          filter &&
+                          filter.toLowerCase().includes(tag.toLowerCase()) &&
+                          'active tag-active'
                         }
                       >
                         {tag}
