@@ -133,7 +133,7 @@
         "title": "My portfolio",
         "text": "My own blog where I can organise my activities and illustartions into different categories. Tagging & blogging system, interactive pagination, shoping cart, now hidden. Liking feature - likes stored in firebase. Cart items & like arrays stored in local storage. Also implemented Stripe payment with own Node server hosted on Heroku. For now removed",
         "link": "/",
-        "tags": ["react", "node", "stripe", "firebase"]
+        "tags": ["react", "node", "stripe", "firebase", "illustration"]
       },
       {
         "image": "/images/sidliste.png",

@@ -98,6 +98,19 @@
         "pay": ["-", "96h"],
         "price": "36 000czk",
         "billed": true
+      },
+      {
+        "date": "03-30",
+        "billto": "brainz",
+        "job": [
+          "upgrading National Gallery website from nuxt 2 to nuxt 3",
+          "stanton chase website works",
+          "hours worked",
+          "-"
+        ],
+        "pay": ["-", "96h"],
+        "price": "36 000czk",
+        "billed": true
       }
     ]
   }
