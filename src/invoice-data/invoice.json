@@ -111,6 +111,19 @@
         "pay": ["-", "96h"],
         "price": "36 000czk",
         "billed": true
+      },
+      {
+        "date": "04-30",
+        "billto": "brainz",
+        "job": [
+          "NGP a Skoda ugrade technologii",
+          "stanton chase a Opero website works",
+          "hours worked",
+          "-"
+        ],
+        "pay": ["-", "96h"],
+        "price": "36 000czk",
+        "billed": true
       }
     ]
   }
