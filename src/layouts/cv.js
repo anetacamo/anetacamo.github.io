@@ -73,33 +73,28 @@ const Cv = () => {
             </div>
             <div className="divider"></div>
             <p>
-              I am a react developer with over 4 years of experience and a keen
-              interest in design. Before I discovered my preferred stack of{" "}
-              <HighlightedWord
-                text="TypeScript"
-                filter={filter}
-                setFilter={setFilter}
-              />
-              ,{" "}
-              <HighlightedWord
-                text="Next"
-                filter={filter}
-                setFilter={setFilter}
-              />
-              , and{" "}
+              I am a{" "}
               <HighlightedWord
                 text="React"
                 filter={filter}
                 setFilter={setFilter}
               />{" "}
-              - or recently Vue and{" "}
+              developer with over 4 years of experience working with this very
+              framework, preferably combined with{" "}
               <HighlightedWord
-                text="Nuxt"
+                text="Next"
                 filter={filter}
                 setFilter={setFilter}
               />{" "}
-              which I happen to like almost equally -, I explored various
-              frontend setups, including Jekyll & Liquid and WordPress & PHP.
+              and
+              <HighlightedWord
+                text="TypeScript"
+                filter={filter}
+                setFilter={setFilter}
+              />
+              . Last year I have discovered Vue and Nuxt which I happen to like
+              almost equally. Before that, I explored various frontend setups,
+              including Jekyll & Liquid and WordPress & PHP.
             </p>
 
             <p>
