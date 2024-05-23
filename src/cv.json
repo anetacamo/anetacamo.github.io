@@ -17,9 +17,9 @@
     "experience": [
       {
         "company": "Brainz Disruptive",
-        "clients": ["national gallery prague", "stanton chase", "skoda"],
+        "clients": [{"name":"National Gallery Prague", "link":"https://www.ngprague.cz/", "description":"full upgrade from Vue 2 to Vue 3 with a lot of code refractoring"},{"name":"Stanton Chase", "link":"https://www.stantonchase.com/"}, {"name":"Skoda", "link":"https://www.skodagroup.com/"}],
         "position": "part-time Vue developer",
-        "location": "Prague, remote from Skanderborg",
+        "location": "Prague, remote from Aarhus",
         "time": "from 2023 - till now",
         "text": "I got a pleasure to work as a freelancer for Prague based agency in Vue 2 and 3, mostly focusing on upgrading their large projects to vue 3.",
         "link": "https://disruptive.cz/",
@@ -36,7 +36,7 @@
       {
         "company": "Aneta Camo",
         "position": "self employed react & vue developer",
-        "clients": ["Verifa", "Institut X", "Frontløberne"],
+        "clients": [{"name":"Verifa", "link":"https://verifa.io/", "description":"Built the website in Gatsby and graphql."},{"name":"Sweet City", "link":"https://anetacamo.github.io/sc/"}, {"name":"Nabø Map", "link":"https://nabo-helsingor.vercel.app/"}],
         "location": "Aarhus",
         "time": "2018 - now",
         "text": "I have been working on medium-sized projects as a freelancer for various, mostly danish clients (such as Frontløberne, Intitut X, Verifa, Parasport dk). If the project allows I try to setup simple backend or my own design solution",
@@ -45,7 +45,7 @@
       },
       {
         "company": "MonstarLab",
-        "clients": ["Princess Trust", "Oterra"],
+        "clients": [{"name":"Prince's Trust", "link":"https://www.princes-trust.org.uk/"}, {"name":"Oterra", "link": "https://oterra.com/"}],
         "position": "full time front end engineer",
         "location": "Aarhus Ø",
         "time": "2021 - 2022",

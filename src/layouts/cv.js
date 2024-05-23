@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
-import cv from '../cv.json';
-import { Footer, Href, MetaTags, Portrait } from '../components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAsterisk } from '@fortawesome/free-solid-svg-icons';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from "react";
+import cv from "../cv.json";
+import { Footer, Href, MetaTags, Portrait } from "../components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAsterisk } from "@fortawesome/free-solid-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { slugify } from "../utils/slugify";
+import HighlightedWord from "../components/HighlightedWord";
 
 const Cv = () => {
   const [filter, setFilter] = useState(null);
@@ -11,32 +13,32 @@ const Cv = () => {
   return (
     <div>
       <MetaTags
-        name='CV'
-        description='Hi! My name is Aneta and I am React and Vue web developer'
-        image='/images/intro.png'
+        name="CV"
+        description="Hi! My name is Aneta and I am React and Vue web developer"
+        image="/images/intro.png"
       />
       {filter && (
         <div
           style={{
-            position: 'fixed',
+            position: "fixed",
             bottom: 12,
             left: 12,
-            cursor: 'pointer',
+            cursor: "pointer",
           }}
         >
           <p style={{ marginBottom: 0 }}>filter is on</p>
           <p
-            className='tag'
+            className="tag"
             onClick={() => setFilter(null)}
             style={{
-              cursor: 'pointer',
+              cursor: "pointer",
               marginLeft: 0,
             }}
           >
-            {filter}{' '}
+            {filter}{" "}
             <FontAwesomeIcon
               icon={faTimes}
-              className='purple'
+              className="purple"
               style={{
                 marginLeft: 7,
                 fontSize: 11,
@@ -47,12 +49,12 @@ const Cv = () => {
           </p>
         </div>
       )}
-      <div className='blog-container cv-container'>
-        <div className='blogs'>
+      <div className="blog-container cv-container">
+        <div className="blogs">
           <Portrait />
           <div>
-            <div className='header'>
-              <h2 className='large-font'>Hi</h2>
+            <div className="header">
+              <h2 className="large-font">Hi</h2>
               <div style={{ marginBottom: 18 }}>
                 <p style={{ marginTop: 0, marginBottom: 0 }}>
                   my name is Aneta
@@ -60,7 +62,7 @@ const Cv = () => {
                 <p style={{ marginTop: 0, marginBottom: 0 }}>
                   +45 52 82 55 36 &nbsp;
                 </p>
-                <Href href='mailto:anetacamova@gmail.com?subject=greeting'>
+                <Href href="mailto:anetacamova@gmail.com?subject=greeting">
                   anetacamo@gmail.com
                 </Href>
                 <br />
@@ -69,36 +71,62 @@ const Cv = () => {
                 </p>
               </div>
             </div>
-            <div className='divider'></div>
+            <div className="divider"></div>
             <p>
-              I'm primarily a react developer with 4+ years of experience.
-              <br /> Last year, I have also started working with Nuxt, Vue 2 &
-              3. Before I discovered my favourite combination of Typescript,
-              Next.Js and React, I have worked with different frontend setups
-              like jekyll & liquid or wordpress & bit of php.
+              I am a react developer with over 4 years of experience and a keen
+              interest in design. Before I discovered my preferred stack of{" "}
+              <HighlightedWord
+                text="TypeScript"
+                filter={filter}
+                setFilter={setFilter}
+              />
+              ,{" "}
+              <HighlightedWord
+                text="Next"
+                filter={filter}
+                setFilter={setFilter}
+              />
+              , and{" "}
+              <HighlightedWord
+                text="React"
+                filter={filter}
+                setFilter={setFilter}
+              />{" "}
+              - or recently Vue and{" "}
+              <HighlightedWord
+                text="Nuxt"
+                filter={filter}
+                setFilter={setFilter}
+              />{" "}
+              which I happen to like almost equally -, I explored various
+              frontend setups, including Jekyll & Liquid and WordPress & PHP.
+            </p>
+
+            <p>
+              I have experience in building and maintaining complex web
+              applications, implementing filtering, maps, interactive forms,
+              log-ins, graphs and any other custom features, connectiong those
+              to various back-ends as well as I enjoy coding games or any sort
+              of functionalities in javascript that make live easier. I made my
+              own invoice generator, app for sorting my budget or voting system
+              for our film club linked to open film database. Beside frontend, I
+              have designed projects where I have secured simpler backend
+              set-ups for logging in, liking or manipulating data structures.
             </p>
             <p>
-              I have expertise in developing compact web applications, building
-              blogs, filtering, maps, interactive forms, log-ins, graphs and any
-              other custom features and connectiong those to various back-ends
-              as well as I enjoy coding games or any sort of functionalities in
-              javascript that make live easier. Beside frontend, I enjoy
-              illustration and have designed smaller projects where I have also
-              secured simpler backend set-ups for logging in, liking or
-              manipulating simple data structures.
+              I've worked in agencies with diverse clients in Prague and Aarhus,
+              and volunteered as a JavaScript teacher at ReDi School Aarhus. I
+              am used to be switching between projects and communicating clearly
+              about complex problems.
             </p>
-            <i>
-              Clicking on any of the tags will trigger filtering
-              <br />
-              This cv is coded from scratch in react.
-            </i>
+            <i>You can filter by clicking any of the tags</i>
+            {/* <br />
+            <i>this cv is coded and designed by me</i> */}
 
             {/* <p>
               I love working on cultural, creative and meaningful projects and
               in my free - /or freelance/ time I love to design and illustrate
-              the projects too. I really enjoy being an employee for 20-30 hours
-              a week and working on my own projects in the rest of time but I am
-              open to any kind of interesting .
+              the projects too.
             </p> */}
 
             <h2>TOOLSTACK</h2>
@@ -112,23 +140,23 @@ const Cv = () => {
               >
                 <span
                   className={
-                    tool.toLowerCase() === filter && 'active span-active'
+                    tool.toLowerCase() === filter && "active span-active"
                   }
                 >
                   {tool}
-                  {tool.toLowerCase() === filter && 'active' && (
+                  {tool.toLowerCase() === filter && "active" && (
                     <FontAwesomeIcon
                       icon={faTimes}
-                      className='purple'
+                      className="purple"
                       style={{ marginLeft: 7, marginRight: 2 }}
                     />
                   )}
                 </span>
               </li>
             ))}
-            <div className='divider'></div>
+            <div className="divider"></div>
             <h2>Working EXPERIENCE</h2>
-            {filter?.toLowerCase().includes('postman') && 'active work-active'}
+            {filter?.toLowerCase().includes("postman") && "active work-active"}
             {cv.cv.experience.map((exp) => (
               <div
                 className={
@@ -136,8 +164,8 @@ const Cv = () => {
                     (tag) =>
                       filter && filter.toLowerCase().includes(tag.toLowerCase())
                   )
-                    ? 'active work-active'
-                    : ''
+                    ? "active work-active"
+                    : ""
                 }
               >
                 <h4>
@@ -147,24 +175,34 @@ const Cv = () => {
                   <i>{exp.time}</i>
                   <FontAwesomeIcon
                     icon={faAsterisk}
-                    className='purple'
+                    className="purple"
                     style={{ marginLeft: 7, marginRight: 4 }}
                   />
                   {exp.location && <i>{exp.location}</i>}
                 </p>
                 <p>
                   {exp.text}
-                  <li>
+                  {/* <li>
                     <a href={exp.link}>{exp.company}</a>
-                  </li>
+                  </li> */}
                 </p>
-                <div className='tags'>
+                {exp.clients && (
+                  <p>
+                    <i>main projects</i>
+                    {exp.clients?.map((client) => (
+                      <li>
+                        <a href={client.link}>{client.name}</a>
+                      </li>
+                    ))}
+                  </p>
+                )}
+                <div className="tags">
                   {exp.tags.map((tag) => (
                     <li
                       className={
                         filter &&
                         filter.toLowerCase().includes(tag.toLowerCase()) &&
-                        'active tag-active'
+                        "active tag-active"
                       }
                       onClick={() =>
                         setFilter(
@@ -175,10 +213,10 @@ const Cv = () => {
                       }
                     >
                       {tag}
-                      {tag.toLowerCase() === filter && 'active' && (
+                      {tag.toLowerCase() === filter && "active" && (
                         <FontAwesomeIcon
                           icon={faTimes}
-                          className='grren'
+                          className="grren"
                           style={{
                             marginLeft: 7,
                             fontSize: 11,
@@ -191,11 +229,12 @@ const Cv = () => {
                 </div>
               </div>
             ))}
-            <div className='divider'></div>
+            <div className="divider"></div>
             <h2>REFERENCES</h2>
-            <div className='boxes'>
+            <div className="boxes">
               {cv.cv.references.map((ref) => (
                 <div
+                  id={slugify(ref.title)}
                   key={ref.title}
                   className={
                     ref.tags.find(
@@ -203,15 +242,15 @@ const Cv = () => {
                         filter &&
                         filter.toLowerCase().includes(tag.toLowerCase())
                     )
-                      ? 'active work-active box'
-                      : 'box'
+                      ? "active work-active box"
+                      : "box"
                   }
                 >
-                  <div className='cv-circle circle'>
+                  <div className="cv-circle circle">
                     <Href href={ref.link}>
                       <img
                         src={ref.image}
-                        className={ref.title === 'PipeGame' && 'no-filter'}
+                        className={ref.title === "PipeGame" && "no-filter"}
                         alt={ref.title}
                       />
                     </Href>
@@ -219,14 +258,14 @@ const Cv = () => {
                   <h2>
                     <Href href={ref.link}>{ref.title}</Href>
                   </h2>
-                  <p style={{ margin: 0 }} className='purple'>
+                  <p style={{ margin: 0 }} className="purple">
                     {ref.client}
                   </p>
                   <p style={{ marginTop: 0 }}>{ref.time}</p>
                   <p>{ref.text}</p>
                   <div
-                    className='tags'
-                    style={{ marginLeft: 'auto', marginRight: 'auto' }}
+                    className="tags"
+                    style={{ marginLeft: "auto", marginRight: "auto" }}
                   >
                     {ref.tags.map((tag) => (
                       <li
@@ -240,14 +279,14 @@ const Cv = () => {
                         className={
                           filter &&
                           filter.toLowerCase().includes(tag.toLowerCase()) &&
-                          'active tag-active'
+                          "active tag-active"
                         }
                       >
                         {tag}
-                        {tag.toLowerCase() === filter && 'active' && (
+                        {tag.toLowerCase() === filter && "active" && (
                           <FontAwesomeIcon
                             icon={faTimes}
-                            className='grren'
+                            className="grren"
                             style={{
                               marginLeft: 7,
                               fontSize: 11,
